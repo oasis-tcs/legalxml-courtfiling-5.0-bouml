@@ -1,0 +1,37 @@
+format 209
+
+componentcanvas 128002 component_ref 134530 // ServiceMDE
+  
+  xyzwh 224 51 2000 199 165
+end
+componentcanvas 128130 component_ref 134658 // FilingReviewMDE
+  
+  xyzwh 539 309 2000 199 189
+end
+componentcanvas 128514 component_ref 141186 // FilingAssemblyMDE
+  
+  xyzwh 227 309 2000 199 189
+end
+componentcanvas 128642 component_ref 141314 // CourtRecordMDE
+  
+  xyzwh 858 320 2000 199 165
+end
+simplerelationcanvas 128770 simplerelation_ref 141058
+  from ref 128514 z 2001 to ref 128002
+end
+simplerelationcanvas 128898 simplerelation_ref 141186
+  from ref 128002 z 2001 to ref 128514
+end
+simplerelationcanvas 129026 simplerelation_ref 141314
+  from ref 128514 z 2001 to ref 128130
+end
+simplerelationcanvas 129154 simplerelation_ref 141442
+  from ref 128130 z 2001 to ref 128514
+end
+simplerelationcanvas 129282 simplerelation_ref 141570
+  from ref 128130 z 2001 to ref 128642
+end
+simplerelationcanvas 129410 simplerelation_ref 141698
+  from ref 128642 z 2001 to ref 128130
+end
+end

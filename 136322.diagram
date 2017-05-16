@@ -1,0 +1,75 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 1120 41 2000
+end
+classcanvas 128130 class_ref 134274 // GetDocumentResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 1010 322 2000
+end
+classcanvas 128258 class_ref 132866 // ResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 1087 169 2006
+end
+classcanvas 128770 class_ref 131074 // Document
+  classdiagramsettings member_max_width 0 end
+  xyz 839 361 2000
+end
+classcanvas 129026 class_ref 131202 // DocumentMetadata
+  classdiagramsettings member_max_width 0 end
+  xyz 657 531 2006
+end
+classcanvas 129282 class_ref 134658 // AttachmentMetadata
+  classdiagramsettings member_max_width 0 end
+  xyz 140 977 2000
+end
+classcanvas 129410 class_ref 162690 // DocumentRenditionMetadata
+  classdiagramsettings member_max_width 0 end
+  xyz 36 640 2012
+end
+classcanvas 129794 class_ref 131586 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 1440 306 2000
+end
+relationcanvas 128386 relation_ref 151170 // <generalisation>
+  decenter_end 472
+  from ref 128258 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 129026 // <generalisation>
+  decenter_begin 488
+  from ref 128130 z 2007 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 155522 // <directional aggregation>
+  decenter_end 540
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 727 409 3000 to ref 128770
+  role_a_pos 979 371 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 138498 // <directional aggregation>
+  from ref 128770 z 2007 stereotype "<<niem>>" xyz 819 493 3000 to ref 129026
+  role_a_pos 912 494 3000 no_role_b
+  multiplicity_a_pos 879 494 3000 no_multiplicity_b
+end
+relationcanvas 129538 relation_ref 138882 // <directional aggregation>
+  from ref 129410 z 2013 stereotype "<<niem>>" xyz 196 916 3000 to ref 129282
+  role_a_pos 292 940 3000 no_role_b
+  multiplicity_a_pos 263 940 3000 no_multiplicity_b
+end
+relationcanvas 129666 relation_ref 138626 // <directional aggregation>
+  decenter_begin 504
+  from ref 129026 z 2013 stereotype "<<niem>>" xyz 959 576 3000 to ref 129410
+  role_a_pos 630 754 3000 no_role_b
+  multiplicity_a_pos 630 803 3000 no_multiplicity_b
+end
+relationcanvas 129922 relation_ref 2416386 // <directional aggregation>
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 1340 411 3000 to ref 129794
+  role_a_pos 1379 372 3000 no_role_b
+  multiplicity_a_pos 1389 421 3000 multiplicity_b_pos 1408 421 3000
+end
+preferred_whz 1719 1193 1
+end

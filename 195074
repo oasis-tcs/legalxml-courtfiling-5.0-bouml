@@ -1,0 +1,738 @@
+format 212
+"Messages - Scheduling" // UML::Messages - Scheduling
+  revision 85
+  modified_by 2 "JamesECabral"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  classview 166018 "AllocateCourtDateMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    comment "A request to allocate a court date on the schedule."
+    class 198914 "AllocateCourtDateMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      associated_diagram classdiagram_ref 178306 // AllocateCourtDateMessage
+      ncouples 9
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage"
+      key "niem-profile:niem:Type" value "allocatedate:AllocateCourtDateMessageType"
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value "ecf:CaseFilingType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      key "niem-profile:niem:CodeList" value ""
+      comment "A request to allocate a court date on the schedule."
+      attribute 1545602 "messageExtension"
+	public type class_ref 2113794 // extension
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/allocatedate:AllocateCourtDateMessageAugmentationPoint"
+	key "niem-profile:niem:Type" value "allocatedate:AllocateCourtDateMessageType"
+	key "niem-profile:niem:Property" value "allocatedate:AllocateCourtDateMessageAugmentationPoint"
+	key "niem-profile:niem:BaseType" value "abstract"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:Notes" value ""
+	key "niem-profile:niem:CodeList" value ""
+	comment "An extension point for the enclosing message."
+      end
+
+      classrelation 3942530 // <generalisation>
+	relation 3940354 ---|>
+	  a public
+	    classrelation_ref 3942530 // <generalisation>
+	  b parent class_ref 138114 // ElectronicFilingMessage
+      end
+
+      attribute 14525442 "eventType"
+	public explicit_type "string"
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode"
+	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CourtLocationCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A type of court event"
+      end
+
+      attribute 14525570 "startTime"
+	public type class_ref 6085378 // time
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/j:ScheduleDayStartTime"
+	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
+	key "niem-profile:niem:Property" value "nc:ScheduleDayStartTime"
+	key "niem-profile:niem:BaseType" value "niem-xs:time"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The start date and time of a court event"
+      end
+
+      attribute 14525698 "endTime"
+	public type class_ref 6627842 // time
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime"
+	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
+	key "niem-profile:niem:Property" value "nc:ScheduleDayEndTime"
+	key "niem-profile:niem:BaseType" value "niem-xs:time"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The end date and time of a court event"
+      end
+
+      attribute 14615682 "eventLocation"
+	public explicit_type "string"
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode"
+	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CourtEventLocationCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value "Genericode code list CodeLocationCode.gc"
+	comment "A court location"
+      end
+
+      attribute 14615810 "calendarEvent"
+	public explicit_type "calendar"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/xcal:icalendar/xcal:xcalendar/xcal:components/xcal:vevent"
+	key "niem-profile:niem:Type" value "allocatedate:AllocateCourtDateMessageType"
+	key "niem-profile:niem:Property" value "xcal:icalendar"
+	key "niem-profile:niem:BaseType" value "xcal:IcalendarType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An event to add to a calendar"
+      end
+
+      classrelation 5176706 // case (<directional aggregation>)
+	relation 5174402 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "case" multiplicity "0..1" public
+	    comment "A court case	"
+	    classrelation_ref 5176706 // case (<directional aggregation>)
+	  b parent class_ref 131586 // Case
+	ncouples 9
+	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case"
+	key "niem-profile:niem:Type" value "allocatedate:AllocateCourtDateMessageType"
+	key "niem-profile:niem:Property" value "nc:Case"
+	key "niem-profile:niem:BaseType" value "nc:CaseType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classdiagram 178306 "AllocateCourtDateMessage"
+      classdiagramsettings member_max_width 0 end
+      comment "A request to allocate a court date on the schedule."
+      size Letter-Landscape
+    end
+
+    classinstance 3147138 "AllocateCourtDateMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 198914 // AllocateCourtDateMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage"
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value "allocatedate:AllocateCourtDateMessage"
+      key "niem-profile:niem:BaseType" value "allocatedate:AllocateCourtDateMessageType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      key "niem-profile:niem:CodeList" value ""
+      comment "A request to allocate a court date on the schedule."
+    end
+  end
+
+  classview 326274 "NotifyCourtDateMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    comment "The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest."
+    class 5257730 "NotifyCourtDateMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      associated_diagram classdiagram_ref 231554 // NotifyCourtDateMessage
+      ncouples 9
+      key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage"
+      key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value "ecf:CaseFilingType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      comment "The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest."
+      classrelation 3894658 // <generalisation>
+	relation 3892482 ---|>
+	  a public
+	    classrelation_ref 3894658 // <generalisation>
+	  b parent class_ref 145922 // ElectronicFilingCallbackMessage
+      end
+
+      attribute 9008002 "messageExtension"
+	public type class_ref 2113794 // extension
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/datecallback:NotifyCourtDateMessageAugmentationPoint"
+	key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
+	key "niem-profile:niem:Property" value "datecallback:NotifyCourtDateMessageAugmentationPoint"
+	key "niem-profile:niem:BaseType" value "abstract"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An extension point for the enclosing message."
+      end
+
+      attribute 14525954 "eventType"
+	public explicit_type "string"
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode"
+	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CourtEventTypeCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value "Genericode code list CourtEventTypeCode.gc"
+	comment "A type of court event"
+      end
+
+      attribute 14526082 "startTime"
+	public type class_ref 6085378 // time
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/j:ScheduleDayStartTime"
+	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
+	key "niem-profile:niem:Property" value "nc:ScheduleDayStartTime"
+	key "niem-profile:niem:BaseType" value "niem-xs:time"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The start date and time of a court event"
+      end
+
+      attribute 14526210 "endTime"
+	public type class_ref 6085378 // time
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime"
+	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
+	key "niem-profile:niem:Property" value "nc:ScheduleDayEndTime"
+	key "niem-profile:niem:BaseType" value "niem-xs:time"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The end date and time of a court event"
+      end
+
+      attribute 14526466 "eventLocation"
+	public explicit_type "string"
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode"
+	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CourtLocationCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value "Genericode code list CourtLocationCode.gc"
+	comment "A court location"
+      end
+
+      attribute 14615938 "calendarEvent"
+	public explicit_type "calendar"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/xcal:icalendar/xcal:xcalendar/xcal:components/xcal:vevent"
+	key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
+	key "niem-profile:niem:Property" value "xcal:icalendar"
+	key "niem-profile:niem:BaseType" value "xcal:IcalendarType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An event to add to a calendar	"
+      end
+
+      classrelation 5176834 // case (<directional aggregation>)
+	relation 5174530 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "case" multiplicity "0..1" public
+	    comment "A court case"
+	    classrelation_ref 5176834 // case (<directional aggregation>)
+	  b parent class_ref 131586 // Case
+	ncouples 9
+	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case"
+	key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
+	key "niem-profile:niem:Property" value "nc:Case"
+	key "niem-profile:niem:BaseType" value "nc:CaseType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classdiagram 231554 "NotifyCourtDateMessage"
+      classdiagramsettings member_max_width 0 end
+      comment "The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest."
+      size Letter-Landscape
+    end
+
+    classinstance 6195458 "NotifyCourtDateMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 5257730 // NotifyCourtDateMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage"
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value "datecallback:NotifyCourtDateMessage"
+      key "niem-profile:niem:BaseType" value "datecallback:NotifyCourtDateMessageType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      comment "The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest."
+    end
+  end
+
+  classview 165890 "ReserveCourtDateMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    comment "A request to allocate a court date on the schedule."
+    class 199170 "ReserveCourtDateMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      associated_diagram classdiagram_ref 178562 // ReserveCourtDateMessage
+      ncouples 9
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage"
+      key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value "ecf:CaseFilingType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      key "niem-profile:niem:CodeList" value ""
+      comment "A request to allocate a court date on the schedule."
+      attribute 1545858 "messageExtension"
+	public type class_ref 2113794 // extension
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:ReserveCourtDateMessageAugmentationPoint"
+	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+	key "niem-profile:niem:Property" value "reservedate:ReserveCourtDateMessageAugmentationPoint"
+	key "niem-profile:niem:BaseType" value "abstract"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:Notes" value ""
+	key "niem-profile:niem:CodeList" value ""
+	comment "An extension point for the enclosing message."
+      end
+
+      classrelation 3942402 // <generalisation>
+	relation 3940226 ---|>
+	  a public
+	    classrelation_ref 3942402 // <generalisation>
+	  b parent class_ref 138114 // ElectronicFilingMessage
+      end
+
+      attribute 14524674 "eventType"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode"
+	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CourtEventTypeCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value "Genericode code list CourtEventTypeCode.gc"
+	comment "A type of court event"
+      end
+
+      attribute 14526338 "partyType"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+	key "niem-profile:niem:Property" value "ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value "Genericode code list CaseParticipantRoleCode.gc"
+	comment "A type of participant in a court case"
+      end
+
+      attribute 14524930 "startAfterTime"
+	public type class_ref 6085378 // time
+	multiplicity "0..3"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:PotentialStartTimeRange/nc:StartDate"
+	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+	key "niem-profile:niem:Property" value "reservedate:PotentialStartTimeRange"
+	key "niem-profile:niem:BaseType" value "nc:DateRangeType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A time after which a court event may begin"
+      end
+
+      attribute 14524802 "startBeforeTime"
+	public type class_ref 6085378 // time
+	multiplicity "0..3"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:PotentialTimeRange/nc:EndDate"
+	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+	key "niem-profile:niem:Property" value "reservedate:PotentialStartTimeRange"
+	key "niem-profile:niem:BaseType" value "nc:DateRangeType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A time before which a court date must begin	"
+      end
+
+      attribute 14525058 "duration"
+	public type class_ref 6081282 // duration
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:EstimatedDuration"
+	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+	key "niem-profile:niem:Property" value "reservedate:EstimatedDuration"
+	key "niem-profile:niem:BaseType" value "niem-xs:duration"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The estimated duration of a court hearing"
+      end
+
+      classrelation 5176962 // case (<directional aggregation>)
+	relation 5174658 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "case" multiplicity "0..1" public
+	    classrelation_ref 5176962 // case (<directional aggregation>)
+	  b parent class_ref 131586 // Case
+	ncouples 9
+	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/nc:Case"
+	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
+	key "niem-profile:niem:Property" value "nc:Case"
+	key "niem-profile:niem:BaseType" value "nc:CaseType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classdiagram 178562 "ReserveCourtDateMessage"
+      classdiagramsettings member_max_width 0 end
+      comment "A request to allocate a court date on the schedule."
+      size Letter-Landscape
+    end
+
+    classinstance 3147394 "ReserveCourtDateMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 199170 // ReserveCourtDateMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage"
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value "reservedate:ReserveCourtDateMessage"
+      key "niem-profile:niem:BaseType" value "reservedate:ReserveCourtDateMessageType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      key "niem-profile:niem:CodeList" value ""
+      comment "A request to allocate a court date on the schedule."
+    end
+  end
+end

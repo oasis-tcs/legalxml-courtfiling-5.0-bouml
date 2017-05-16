@@ -1,0 +1,53 @@
+format 210
+"PSM" // PSM
+  revision 1
+  modified_by 2 "Jim"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  classview 179458 "NIEMXSD"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    associated_deployment_view deploymentview_ref 134658 // NIEMXSD
+  end
+
+  deploymentview 134658 "NIEMXSD"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+  end
+end

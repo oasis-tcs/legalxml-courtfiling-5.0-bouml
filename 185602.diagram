@@ -1,0 +1,98 @@
+format 212
+
+componentcanvas 134274 component_ref 128642 // ECFSystem
+  
+  xyzwh 69.6187 83.5204 2000 801 767
+end
+componentcanvas 134402 component_ref 128002 // FilingAssembly
+  
+  xyzwh 515.032 346.304 2005 304 133
+end
+componentcanvas 134530 component_ref 128130 // FilingReview
+  
+  xyzwh 102.83 480.846 2005 304 133
+end
+componentcanvas 134658 component_ref 128258 // CourtRecord
+  
+  xyzwh 104.745 696.531 2005 304 133
+end
+componentcanvas 135042 component_ref 128386 // Service
+  
+  xyzwh 105.966 191.107 2005 304 133
+end
+componentcanvas 135170 component_ref 128514 // CourtScheduling
+  
+  xyzwh 497.799 662.062 2005 304 133
+end
+componentcanvas 135298 component_ref 129026 // CMS/DMS
+   draw_component_as_icon yes
+  xyzwh 919.566 764.56 2000 163 87
+end
+componentcanvas 135426 component_ref 129154 // Legal CMS
+   draw_component_as_icon yes
+  xyzwh 913.468 257.192 2005 169 87
+end
+arrowjunctioncanvas 135682 class_ref 129282 // FilingReviewMDE
+  xyz 411.326 410.807 3005 label_xy 345 430
+arrowjunctioncanvas 136450 class_ref 129538 // CourtRecordMDE
+  xyz 261.2 631.563 3005 label_xy 195 649
+arrowjunctioncanvas 136962 class_ref 129410 // FilingAssemblyMDE
+  xyz 519.402 534.299 3005 label_xy 421 554
+arrowjunctioncanvas 137218 class_ref 130434 // ServiceMDE
+  xyz 270.255 375.747 3005 label_xy 222 394
+arrowjunctioncanvas 137474 class_ref 198786 // CourtSchedulingMDE
+  xyz 715.043 582.426 3005 label_xy 635 602
+componentcanvas 141058 component_ref 135810 // CourtPolicy
+  
+  xyzwh 559.265 140.599 2011 241 95
+end
+arrowjunctioncanvas 141186 class_ref 2087554 // CourtPolicyMDE
+  xyz 529.086 250.648 3005 label_xy 448 269
+line 135810 ---O
+  from ref 134530 z 3006 to ref 135682
+line 136578 ---O
+  from ref 134658 z 3006 to ref 136450
+line 137090 ---O
+  from ref 134402 z 3006 to ref 136962
+line 137346 ---O
+  from ref 135042 z 3006 to ref 137218
+line 137602 ---O
+  from ref 135170 z 3006 to ref 137474
+line 137730 ---(
+  from ref 134402 z 3006 to ref 135682
+line 137858 ---(
+  from ref 134530 z 3006 to ref 136962
+line 138114 ---(
+  from ref 134402 z 3006 to ref 137218
+line 138242 ---(
+  from ref 134402 z 3006 to ref 137474
+line 138498 ---(
+  from ref 134530 z 3006 to point 270.68 629.14
+  line 140034 z 3006 to ref 136450
+line 138882 ---(
+  from ref 134530 z 3006 to ref 137218
+simplerelationcanvas 139650 simplerelation_ref 128642
+  from ref 135298 z 2006 to ref 135170
+end
+simplerelationcanvas 140418 simplerelation_ref 135682
+  decenter_end 847
+  from ref 135298 z 2006 to point 953.7 806.52
+  line 141442 z 2006 to ref 134658
+end
+simplerelationcanvas 140674 simplerelation_ref 135810
+  from ref 135426 z 2006 to ref 134402
+end
+line 140802 ---(
+  from ref 135170 z 3006 to ref 136962
+simplerelationcanvas 140930 simplerelation_ref 142338
+  decenter_end 827
+  from ref 135426 z 2006 to ref 135042
+end
+line 141314 ---O
+  from ref 141058 z 3006 to ref 141186
+line 141570 ---(
+  from ref 134402 z 3006 to ref 141186
+line 141698 ---(
+  from ref 134530 z 3006 to ref 141186
+preferred_whz 1112 924 0.98
+end

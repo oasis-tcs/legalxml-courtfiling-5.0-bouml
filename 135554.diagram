@@ -1,0 +1,55 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 584 141 2000
+end
+classcanvas 128130 class_ref 145154 // GetCaseRequestMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 480 265 2006
+end
+classcanvas 128386 class_ref 170114 // CaseQueryCriteria
+  classdiagramsettings member_max_width 0 end
+  xyz 37 223 2000
+end
+classcanvas 128642 class_ref 133378 // TimeRange
+  classdiagramsettings member_max_width 0 end
+  xyzwh 136 41 2000 409 143
+end
+classcanvas 129026 class_ref 131586 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 888 234 2000
+end
+relationcanvas 128258 relation_ref 130562 // <generalisation>
+  decenter_end 472
+  from ref 128130 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 151426 // <directional aggregation>
+  decenter_end 479
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 360 312 3000 to ref 128386
+  role_a_pos 453 299 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 151554 // <directional aggregation>
+  decenter_begin 949
+  decenter_end 703
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 376.5 183.5 3000 to ref 128642
+  role_a_pos 433 196 3000 no_role_b
+  multiplicity_a_pos 373 196 3000 no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 151682 // <directional aggregation>
+  decenter_begin 282
+  decenter_end 39
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 104.5 177 3000 to ref 128642
+  role_a_pos 161 196 3000 no_role_b
+  multiplicity_a_pos 101 196 3000 no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 3357954 // <directional aggregation>
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 839 333 3000 to ref 129026
+  role_a_pos 827 303 3000 no_role_b
+  multiplicity_a_pos 864 352 3000 multiplicity_b_pos 858 353 3000
+end
+preferred_whz 1167 531 1
+end

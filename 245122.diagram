@@ -1,0 +1,26 @@
+format 212
+
+classcanvas 128002 class_ref 134914 // ContactInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 108.848 524.047 2000
+end
+classcanvas 128130 class_ref 5366146 // PostalAddress
+  classdiagramsettings member_max_width 0 end
+  xyz 497.169 500.617 2000
+end
+classcanvas 128258 class_ref 5359362 // TelephoneNumber
+  classdiagramsettings member_max_width 0 end
+  xyz 37.7782 42.3004 2000
+end
+relationcanvas 128514 relation_ref 4524162 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 463 808 3000 to ref 128130
+  role_a_pos 318 615 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128642 relation_ref 4524290 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 227 492.5 3000 to ref 128258
+  role_a_pos 291 470 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 910 906 0.99
+end

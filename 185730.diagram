@@ -1,0 +1,62 @@
+format 212
+
+usecasecanvas 128002 usecase_ref 128002 // Submit Court Filing
+  xyzwh 367 275 3005 69 35 label_xy 352 309
+end
+classcanvas 128130 class_ref 232578 // Filer
+  simpleclassdiagramsettings end
+  xyz 153 199 2000
+end
+classcanvas 128258 class_ref 232706 // Clerk
+  simpleclassdiagramsettings end
+  xyz 599 333 2000
+end
+classcanvas 128386 class_ref 232834 // ServiceRecipient
+  simpleclassdiagramsettings end
+  xyz 109 80 2000
+end
+usecasecanvas 128514 usecase_ref 128130 // Review Filing
+  xyzwh 375 361 3005 64 32 label_xy 360 393
+end
+usecasecanvas 128642 usecase_ref 128258 // Submit Service
+  xyzwh 364 164 3005 64 32 label_xy 346 196
+end
+usecasecanvas 128770 usecase_ref 128386 // Receive Service
+  xyzwh 366 67 3005 64 32 label_xy 340 99
+end
+usecasecanvas 129026 usecase_ref 128514 // Submit Filing
+  xyzwh 521 229 3005 64 32 label_xy 507 261
+end
+classcanvas 130306 class_ref 232962 // CMSDMS
+  simpleclassdiagramsettings class_drawing_mode natural end
+  xyz 347 455 2000
+end
+usecasecanvas 131586 usecase_ref 135042 // Schedule Court Date
+  xyzwh 159 347 3005 64 32 label_xy 78 378
+end
+line 130178 ---> decenter_end 437
+  from ref 128258 z 3006 to ref 128514
+line 130434 --->
+  from ref 128642 z 3006 to ref 128770
+line 130690 --->
+  from ref 128002 z 3006 to ref 128514
+line 130818 ---> decenter_end 504
+  from ref 128514 z 3006 to ref 130306
+line 130946 ---> decenter_end 192
+  from ref 128770 z 3006 to ref 128386
+line 131074 --->
+  from ref 128130 z 3006 to ref 128642
+line 131202 --->
+  from ref 128130 z 3006 to ref 128002
+simplerelationcanvas 131330 simplerelation_ref 135426
+  from ref 128642 z 3006 to ref 129026
+end
+simplerelationcanvas 131458 simplerelation_ref 135554
+  from ref 128002 z 3006 to ref 129026
+end
+line 131714 --->
+  from ref 128130 z 3006 to ref 131586
+line 131842 ---> decenter_end 402
+  from ref 131586 z 3006 to ref 130306
+preferred_whz 1456 1125 2
+end

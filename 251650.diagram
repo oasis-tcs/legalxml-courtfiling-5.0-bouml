@@ -1,0 +1,16 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 158.749 79.2865 2005
+end
+classcanvas 128130 class_ref 6684290 // GetCourtAvailabilityRequestMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 20.5864 201.507 2000
+end
+relationcanvas 128258 relation_ref 5121666 // <generalisation>
+  from ref 128130 z 2006 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

@@ -1,0 +1,29 @@
+format 212
+
+classcanvas 128002 class_ref 5308418 // Address
+  classdiagramsettings member_max_width 0 end
+  xyz 556.541 41.5737 2000
+end
+classcanvas 128130 class_ref 5366146 // PostalAddress
+  classdiagramsettings member_max_width 0 end
+  xyz 41.0608 208.684 2000
+end
+classcanvas 128258 class_ref 5366018 // StreetAddress
+  classdiagramsettings member_max_width 0 end
+  xyz 466.541 210.974 2000
+end
+relationcanvas 128386 relation_ref 4523650 // <generalisation>
+  geometry VHV unfixed
+  from ref 128130 z 2001 to point 230.061 168.114
+  line 128642 z 2001 to point 614.541 168.114
+  line 128770 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 4523778 // <generalisation>
+  from ref 128258 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 797 610 0.99
+end

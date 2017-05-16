@@ -1,0 +1,26 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 412 41 2000
+end
+classcanvas 128130 class_ref 145666 // MessageReceiptMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 345 169 2006
+end
+classcanvas 128386 class_ref 146562 // Error
+  classdiagramsettings member_max_width 0 end
+  xyz 40 138 2000
+end
+relationcanvas 128258 relation_ref 130818 // <generalisation>
+  from ref 128130 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 177538 // <directional aggregation>
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 261.5 217 3000 to ref 128386
+  role_a_pos 314 188 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 678 384 1
+end

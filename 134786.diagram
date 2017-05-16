@@ -1,0 +1,55 @@
+format 212
+
+classcanvas 128002 class_ref 146178 // CaseTypeSpecificInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 690.837 41.0536 2000
+end
+classcanvas 128130 class_ref 138370 // CivilCaseInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 618.837 168.831 2000
+end
+classcanvas 128386 class_ref 139010 // FiduciaryCaseInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 53.9423 281.214 2000
+end
+classcanvas 128642 class_ref 139138 // PersonInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 38.9423 904.396 2000
+end
+classcanvas 128898 class_ref 139906 // DecedentEstateCaseInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 673.837 618.497 2005
+end
+classcanvas 129154 class_ref 131842 // Person
+  classdiagramsettings member_max_width 0 end
+  xyz 250.186 536.113 2005
+end
+relationcanvas 128258 relation_ref 182018 // <generalisation>
+  from ref 128130 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 182146 // <directional aggregation>
+  decenter_begin 509
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 728 152 3000 to ref 128386
+  role_a_pos 373 299 3000 no_role_b
+  multiplicity_a_pos 373 348 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 182274 // <directional aggregation>
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 187 687 3000 to ref 128642
+  role_a_pos 218 867 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 182402 // <directional aggregation>
+  from ref 128130 z 2006 stereotype "<<niem>>" xyz 767 533 3000 to ref 128898
+  role_a_pos 870 581 3000 no_role_b
+  multiplicity_a_pos 810 581 3000 no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 3262594 // <directional aggregation>
+  decenter_end 509
+  from ref 128898 z 2006 stereotype "<<niem>>" xyz 393 693 3000 to ref 129154
+  role_a_pos 640 667 3000 no_role_b
+  multiplicity_a_pos 640 716 3000 multiplicity_b_pos 649 715 3000
+end
+preferred_whz 1245 1255 0.967802
+end

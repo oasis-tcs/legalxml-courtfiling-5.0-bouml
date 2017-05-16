@@ -1,0 +1,16 @@
+format 212
+
+classcanvas 128002 class_ref 135938 // PaymentMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 show_infonote yes end
+  xyz 40.5 40.5 2000
+  constraint 128130
+    hidden
+    end
+    "See PaymentMessage
+"
+      xyzwh 183.5 167.5 2000 195 85
+end
+line 128258 -_-_
+  from ref 128002 z 2001 to ref 128130
+preferred_whz 408 325 1
+end

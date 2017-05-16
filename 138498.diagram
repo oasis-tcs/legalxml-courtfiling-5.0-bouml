@@ -1,0 +1,17 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 188 41 2000
+end
+classcanvas 128130 class_ref 142210 // GetServiceInformationRequestMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 38 169 2006
+end
+relationcanvas 128258 relation_ref 130050 // <generalisation>
+  from ref 128130 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 537 385 1
+end

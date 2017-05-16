@@ -1,0 +1,26 @@
+format 212
+
+classcanvas 128002 class_ref 5257730 // NotifyCourtDateMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 50 173 2000
+end
+classcanvas 128130 class_ref 145922 // ElectronicFilingCallbackMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 36 41 2005
+end
+classcanvas 128770 class_ref 131586 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 579.62 173.98 2000
+end
+relationcanvas 128642 relation_ref 3892482 // <generalisation>
+  from ref 128002 z 2006 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 5174530 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 444 296 3000 to ref 128770
+  role_a_pos 518 257 3000 no_role_b
+  multiplicity_a_pos 528 306 3000 no_multiplicity_b
+end
+preferred_whz 459 353 1
+end

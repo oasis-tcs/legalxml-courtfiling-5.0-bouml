@@ -1,0 +1,39 @@
+format 212
+
+classcanvas 128002 class_ref 131842 // Person
+  classdiagramsettings member_max_width 0 end
+  xyz 458.271 40.1595 2000
+end
+classcanvas 128130 class_ref 147586 // CriminalPerson
+  classdiagramsettings member_max_width 0 end
+  xyz 152.075 447.93 2000
+end
+classcanvas 128386 class_ref 139138 // CivilPerson
+  classdiagramsettings member_max_width 0 end
+  xyz 478.271 448.479 2000
+end
+classcanvas 128642 class_ref 143490 // Defendant
+  classdiagramsettings member_max_width 0 end
+  xyz 41.2087 968.884 2000
+end
+relationcanvas 128258 relation_ref 4523906 // <generalisation>
+  geometry VHV unfixed
+  from ref 128130 z 2001 to point 294.075 408.252
+  line 128770 z 2001 to point 646.271 408.252
+  line 128898 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 4530946 // <generalisation>
+  from ref 128386 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 4531074 // <generalisation>
+  decenter_begin 505
+  from ref 128642 z 2001 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 869 1618 0.98
+end

@@ -1,0 +1,5 @@
+format 212
+
+classinstance 128002 class_ref 130434 // ServiceInterface
+  name ""   xyz 49 4 2000 life_line_z 2000
+end

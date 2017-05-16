@@ -1,0 +1,143 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 1033.06 596.136 2000
+end
+classcanvas 128130 class_ref 136834 // GetPolicyResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 927.019 875.986 2000
+end
+classcanvas 128258 class_ref 132866 // ResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 998.019 723.987 2006
+end
+classcanvas 129026 class_ref 137602 // DevelopmentPolicyParameters
+  classdiagramsettings member_max_width 0 end
+  xyz 1719.07 402.962 2000
+end
+classcanvas 129282 class_ref 136962 // RuntimePolicyParameters
+  classdiagramsettings member_max_width 0 end
+  xyz 345.607 913.965 2000
+end
+classcanvas 129538 class_ref 137090 // PublicKeyInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 40.8317 913.945 2000
+end
+classcanvas 129794 class_ref 137218 // CoreCodelist
+  classdiagramsettings member_max_width 0 end
+  xyz 373.046 1089.01 2000
+end
+classcanvas 130050 class_ref 137474 // AllowedCodeValue
+  classdiagramsettings member_max_width 0 end
+  xyz 657.906 1042.01 2000
+end
+classcanvas 130306 class_ref 137858 // CourtExtension
+  classdiagramsettings member_max_width 0 end
+  xyz 1288.94 291.931 2000
+end
+classcanvas 130562 class_ref 137986 // ExtensionReference
+  classdiagramsettings member_max_width 0 end
+  xyz 1238.96 413.978 2000
+end
+classcanvas 130818 class_ref 137730 // SupportedMessageProfile
+  classdiagramsettings member_max_width 0 end
+  xyz 2453.03 895.063 2000
+end
+classcanvas 131074 class_ref 170370 // SupportedSignatureProfile
+  classdiagramsettings member_max_width 0 end
+  xyz 1389.61 79.918 2006
+end
+classcanvas 131330 class_ref 170498 // SupportedOperations
+  classdiagramsettings member_max_width 0 end
+  xyz 1781.01 1161.07 2000
+end
+classcanvas 131842 class_ref 170626 // SupportedCaseTypes
+  classdiagramsettings member_max_width 0 end
+  xyz 1940.99 39.9717 2000
+end
+classcanvas 132610 class_ref 6073218 // MajorDesignElements
+  classdiagramsettings member_max_width 0 end
+  xyz 1887.02 866.12 2000
+end
+relationcanvas 128386 relation_ref 151170 // <generalisation>
+  decenter_end 472
+  from ref 128258 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 153986 // <generalisation>
+  from ref 128130 z 2007 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 154114 // <directional aggregation>
+  decenter_begin 79
+  from ref 128130 z 2001 to point 1569 889
+  line 132354 z 2001 to point 1569 592.4
+  line 132482 z 2001 stereotype "<<niem>>" xyz 1590.5 573 3000 to ref 129026
+  role_a_pos 1383 539 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 154242 // <directional aggregation>
+  decenter_end 540
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 722 942 3000 to ref 129282
+  role_a_pos 669 922 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129666 relation_ref 154370 // <directional aggregation>
+  decenter_begin 540
+  decenter_end 540
+  from ref 129282 z 2001 stereotype "<<niem>>" xyz 260.5 953.5 3000 to ref 129538
+  role_a_pos 319 922 3000 no_role_b
+  multiplicity_a_pos 315 972 3000 no_multiplicity_b
+end
+relationcanvas 129922 relation_ref 154498 // <directional aggregation>
+  decenter_begin 485
+  from ref 129282 z 2001 stereotype "<<niem>>" xyz 430 1036.5 3000 to ref 129794
+  role_a_pos 507 1054 3000 no_role_b
+  multiplicity_a_pos 472 1054 3000 no_multiplicity_b
+end
+relationcanvas 130178 relation_ref 154626 // <directional aggregation>
+  from ref 129794 z 2001 stereotype "<<niem>>" xyz 574 1137 3000 to ref 130050
+  role_a_pos 436 1109 3000 no_role_b
+  multiplicity_a_pos 636 1159 3000 no_multiplicity_b
+end
+relationcanvas 130434 relation_ref 154754 // <directional aggregation>
+  decenter_end 814
+  from ref 129026 z 2001 stereotype "<<niem>>" xyz 1541 389.5 3000 to ref 130306
+  role_a_pos 1493 327 3000 no_role_b
+  multiplicity_a_pos 1491 377 3000 no_multiplicity_b
+end
+relationcanvas 130690 relation_ref 154882 // <directional aggregation>
+  from ref 130306 z 2001 stereotype "<<niem>>" xyz 1329 388.5 3000 to ref 130562
+  role_a_pos 1400 378 3000 no_role_b
+  multiplicity_a_pos 1336 378 3000 no_multiplicity_b
+end
+relationcanvas 131202 relation_ref 155138 // <directional aggregation>
+  from ref 129026 z 2007 stereotype "<<niem>>" xyz 1655.5 278.5 3000 to ref 131074
+  role_a_pos 1620 161 3000 no_role_b
+  multiplicity_a_pos 1618 211 3000 no_multiplicity_b
+end
+relationcanvas 131970 relation_ref 155394 // <directional aggregation>
+  from ref 129026 z 2001 stereotype "<<niem>>" xyz 1988 313 3000 to ref 131842
+  role_a_pos 2114 315 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132738 relation_ref 4583042 // <directional aggregation>
+  from ref 132610 z 2001 stereotype "<<niem>>" xyz 1975 1083 3000 to ref 131330
+  role_a_pos 2046 1126 3000 no_role_b
+  multiplicity_a_pos 1982 1126 3000 no_multiplicity_b
+end
+relationcanvas 132866 relation_ref 4583170 // <directional aggregation>
+  from ref 129026 z 2001 stereotype "<<niem>>" xyz 1951 781 3000 to ref 132610
+  role_a_pos 2025 831 3000 no_role_b
+  multiplicity_a_pos 1962 831 3000 no_multiplicity_b
+end
+relationcanvas 132994 relation_ref 4583298 // <directional aggregation>
+  from ref 132610 z 2001 stereotype "<<niem>>" xyz 2247.5 942 3000 to ref 130818
+  role_a_pos 2163 909 3000 no_role_b
+  multiplicity_a_pos 2402 959 3000 no_multiplicity_b
+end
+preferred_whz 2410 1421 0.83
+end

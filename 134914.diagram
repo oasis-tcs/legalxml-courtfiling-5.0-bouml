@@ -1,0 +1,132 @@
+format 212
+
+classcanvas 128002 class_ref 146178 // CaseTypeExtension
+  classdiagramsettings member_max_width 0 end
+  xyz 842.613 41.9478 2000
+end
+classcanvas 128130 class_ref 143618 // CriminalCaseInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 754.893 170.603 2000
+end
+classcanvas 128386 class_ref 144002 // Citation
+  classdiagramsettings hide_attributes yes member_max_width 0 show_infonote yes end
+  xyz 1321 209.843 2006
+  constraint 130818
+    hidden
+    end
+    "See CitationCase
+"
+      xyzwh 1331.49 63.827 2006 187 86
+end
+classcanvas 128770 class_ref 143490 // Defendant
+  classdiagramsettings member_max_width 0 end
+  xyz 1125.64 523.664 2000
+end
+classcanvas 129026 class_ref 147586 // ExtendedPersonInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 1712.49 723.634 2000
+end
+classcanvas 129666 class_ref 143874 // Charge
+  classdiagramsettings member_max_width 0 end
+  xyz 455.568 382.774 2000
+end
+classcanvas 130306 class_ref 141570 // Arrest
+  classdiagramsettings member_max_width 0 end
+  xyz 402.748 1122.01 2005
+end
+classcanvas 131330 class_ref 143106 // Booking
+  classdiagramsettings member_max_width 0 end
+  xyz 39.971 1215.89 2011
+end
+classcanvas 131458 class_ref 141314 // ArrestingOfficer
+  classdiagramsettings member_max_width 0 end
+  xyz 481.988 1586.48 2006
+end
+classcanvas 133250 class_ref 5969794 // Biometric
+  classdiagramsettings member_max_width 0 end
+  xyz 1632 1304 2000
+end
+relationcanvas 128258 relation_ref 182530 // <generalisation>
+  from ref 128130 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128642 relation_ref 182658 // <directional aggregation>
+  decenter_end 540
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 1198 242 3000 to ref 128386
+  role_a_pos 1233 219 3000 no_role_b
+  multiplicity_a_pos 1300 268 3000 no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 182786 // <directional aggregation>
+  decenter_begin 971
+  decenter_end 275
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 1209 430.5 3000 to ref 128770
+  role_a_pos 1277 495 3000 no_role_b
+  multiplicity_a_pos 1215 495 3000 no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 182914 // <directional aggregation>
+  decenter_begin 488
+  decenter_end 488
+  from ref 128770 z 2001 stereotype "<<niem>>" xyz 1596 807.5 3000 to ref 129026
+  role_a_pos 1717 892 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129922 relation_ref 183426 // <directional aggregation>
+  decenter_begin 26
+  decenter_end 492
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 712 361 3000 to ref 129666
+  role_a_pos 777 345 3000 no_role_b
+  multiplicity_a_pos 721 345 3000 no_multiplicity_b
+end
+relationcanvas 130050 relation_ref 183554 // <directional aggregation>
+  decenter_begin 493
+  decenter_end 488
+  from ref 129666 z 2001 stereotype "<<niem>>" xyz 860 1056.5 3000 to ref 128770
+  role_a_pos 1130 768 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130434 relation_ref 200066 // <directional aggregation>
+  geometry HV unfixed
+  decenter_end 28
+  from ref 128130 z 2006 to point 413 253
+  line 133122 z 2006 stereotype "<<niem>>" xyz 361 688 3000 to ref 130306
+  role_a_pos 425 1085 3000 no_role_b
+  multiplicity_a_pos 365 1085 3000 no_multiplicity_b
+end
+relationcanvas 130562 relation_ref 200194 // <directional aggregation>
+  geometry HV unfixed
+  decenter_begin 508
+  from ref 130306 z 2006 to point 1371 1350
+  line 132738 z 2006 stereotype "<<niem>>" xyz 1420 1146.5 3000 to ref 128770
+  role_a_pos 1385 1103 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130690 relation_ref 200322 // <directional aggregation>
+  decenter_begin 777
+  decenter_end 492
+  from ref 130306 z 2006 stereotype "<<niem>>" xyz 713 1101 3000 to ref 129666
+  role_a_pos 777 1095 3000 no_role_b
+  multiplicity_a_pos 721 1095 3000 no_multiplicity_b
+end
+relationcanvas 131586 relation_ref 193282 // <directional aggregation>
+  decenter_begin 490
+  from ref 130306 z 2007 stereotype "<<niem>>" xyz 565 1539 3000 to ref 131458
+  role_a_pos 641 1549 3000 no_role_b
+  multiplicity_a_pos 581 1549 3000 no_multiplicity_b
+end
+relationcanvas 131714 relation_ref 193410 // <directional aggregation>
+  decenter_begin 508
+  decenter_end 513
+  from ref 130306 z 2012 stereotype "<<niem>>" xyz 308 1317 3000 to ref 131330
+  role_a_pos 371 1299 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 133378 relation_ref 4524418 // <directional aggregation>
+  from ref 128770 z 2001 stereotype "<<niem>>" xyz 1569 1199 3000 to ref 133250
+  role_a_pos 1697 1273 3000 no_role_b
+  multiplicity_a_pos 1662 1273 3000 no_multiplicity_b
+end
+line 130946 -_-_
+  from ref 128386 z 2007 to ref 130818
+preferred_whz 1754 1607 0.84
+end

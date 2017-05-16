@@ -1,0 +1,36 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 324 41 2000
+end
+classcanvas 128130 class_ref 133122 // GetFilingStatusResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 203 319 2000
+end
+classcanvas 128258 class_ref 132866 // ResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 295 169 2006
+end
+classcanvas 128642 class_ref 131074 // Document
+  classdiagramsettings member_max_width 0 end
+  xyz 39 409 2000
+end
+relationcanvas 128386 relation_ref 151170 // <generalisation>
+  from ref 128258 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 128258 // <generalisation>
+  from ref 128130 z 2007 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 3358722 // <directional aggregation>
+  decenter_end 448
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 137 384 3000 to ref 128642
+  role_a_pos 179 412 3000 no_role_b
+  multiplicity_a_pos 179 461 3000 multiplicity_b_pos 179 466 3000
+end
+preferred_whz 644 659 1
+end

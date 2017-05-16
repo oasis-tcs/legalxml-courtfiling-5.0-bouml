@@ -1,0 +1,32 @@
+format 210
+
+classcanvas 128002 class_ref 239490 // PersonType
+  classdiagramsettings member_max_width 0 end
+  xyz 188 529 2000
+end
+classcanvas 128386 class_ref 131842 // Person
+  classdiagramsettings member_max_width 0 end
+  xyz 120 173 2000
+end
+classcanvas 128642 class_ref 142466 // ElectronicServiceInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 78 661 2006
+end
+classcanvas 128770 class_ref 162946 // Entity
+  classdiagramsettings member_max_width 0 end
+  xyz 522 201 2000
+end
+classcanvas 128898 class_ref 163202 // Employment
+  classdiagramsettings member_max_width 0 end
+  xyz 32 414 2005
+end
+classcanvas 129026 class_ref 134914 // ContactInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 181 26 2005
+end
+relationcanvas 128514 relation_ref 259202 // <realization>
+  from ref 128386 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

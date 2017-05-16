@@ -1,0 +1,36 @@
+format 212
+
+classcanvas 128002 class_ref 142594 // ServiceRecipientStatus
+  classdiagramsettings member_max_width 0 end
+  xyz 40 322 2000
+end
+classcanvas 128130 class_ref 142082 // ServiceReceiptMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 361 365 2000
+end
+classcanvas 128258 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 416 41 2006
+end
+classcanvas 128642 class_ref 145666 // MessageReceiptMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 353 169 2012
+end
+relationcanvas 128514 relation_ref 177282 // <directional aggregation>
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 286 407.5 3000 to ref 128002
+  role_a_pos 330 372 3000 no_role_b
+  multiplicity_a_pos 330 421 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 130818 // <generalisation>
+  decenter_end 519
+  from ref 128642 z 2013 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 177410 // <generalisation>
+  from ref 128130 z 2013 to ref 128642
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 686 568 1
+end

@@ -1,0 +1,46 @@
+format 212
+
+classcanvas 128002 class_ref 132226 // BaseMessage
+  classdiagramsettings hide_attributes yes member_max_width 0 end
+  xyz 456 41 2000
+end
+classcanvas 128130 class_ref 133506 // GetFilingListResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 354 321 2000
+end
+classcanvas 128258 class_ref 132866 // ResponseMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 431 169 2006
+end
+classcanvas 128642 class_ref 133634 // MatchingFiling
+  classdiagramsettings member_max_width 0 end
+  xyz 40 208 2000
+end
+classcanvas 128898 class_ref 131586 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 52 578 2000
+end
+relationcanvas 128386 relation_ref 151170 // <generalisation>
+  decenter_end 518
+  from ref 128258 z 2007 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 128514 // <generalisation>
+  from ref 128130 z 2007 to ref 128258
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 162178 // <directional aggregation>
+  decenter_end 509
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 506 356 3000 to ref 128642
+  role_a_pos 322 339 3000 no_role_b
+  multiplicity_a_pos 322 388 3000 no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 3358338 // <directional aggregation>
+  from ref 128642 z 2001 stereotype "<<niem>>" xyz 135 529 3000 to ref 128898
+  role_a_pos 186 541 3000 no_role_b
+  multiplicity_a_pos 153 541 3000 multiplicity_b_pos 153 549 3000
+end
+preferred_whz 765 856 1
+end

@@ -1,0 +1,70 @@
+format 212
+"legalxml-courtfiling-5.0-bouml"
+  revision 513
+  modified_by 2 "JamesECabral"
+
+
+  
+  // class settings
+  default_attribute_visibility public default_relation_visibility public default_operation_visibility public
+  
+  classdiagramsettings draw_all_relations no hide_attributes no hide_operations yes hide_getset_operations yes show_members_full_definition yes show_members_visibility no show_members_stereotype no show_members_context no show_members_multiplicity yes show_members_initialization no show_attribute_modifiers no member_max_width 127 show_parameter_dir no show_parameter_name no package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes gradient none show_stereotype_properties no end
+  
+  usecasediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes gradient none show_stereotype_properties no end
+  
+  sequencediagramsettings show_full_operations_definition no show_class_of_operation no write_horizontally no instances_drawing_mode class drawing_language uml draw_all_relations yes shadow yes gradient none show_stereotype_properties no show_class_context_mode no show_msg_context_mode no end
+  
+  collaborationdiagramsettings show_full_operations_definition no show_class_of_operation no show_hierarchical_rank no write_horizontally yes instances_drawing_mode natural drawing_language uml package_name_in_tab no show_class_pack_context_mode no show_msg_context_mode no draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  objectdiagramsettings write_horizontally yes package_name_in_tab no show_class_pack_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none show_stereotype_properties no end
+  
+  componentdiagramsettings package_name_in_tab no show_context_mode no auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  deploymentdiagramsettings package_name_in_tab no show_context_mode no write_horizontally yes auto_label_position yes draw_all_relations yes shadow yes gradient none
+   draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no end
+  
+  statediagramsettings package_name_in_tab no show_context_mode no auto_label_position yes write_label_horizontally yes show_trans_definition no draw_all_relations yes shadow yes gradient none
+   show_activities yes region_horizontally yes drawing_language uml show_stereotype_properties no end
+  
+  activitydiagramsettings package_name_in_tab no show_context_mode no show_opaque_action_definition no auto_label_position yes write_label_horizontally no draw_all_relations yes shadow yes gradient none
+   show_infonote yes drawing_language uml show_stereotype_properties no end
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white generalization_color black 
+  dpi 96
+  font_size 9
+  diagram_format Letter-Landscape
+
+  image_root_dir ""
+
+  mark_for_import
+  
+  stereotype "toplevel"
+  ncouples 21
+  key "gxmi path" value ""
+  key "gxmi no model" value "no"
+  key "gxmi gen views" value "no"
+  key "gxmi encoding" value "UTF-8"
+  key "gxmi umlversion" value "23"
+  key "gxmi pk prefix" value "no"
+  key "gxmi vis prefix" value "no"
+  key "gxmi primitive type" value "no"
+  key "gxmi gen extensions" value "no"
+  key "gxmi gen eclipse" value "no"
+  key "gxmi comment exporter" value "no"
+  key "gxmi linefeed" value "yes"
+  key "html dir" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\model"
+  key "IEPDURI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/"
+  key "IEPDName" value "LegalXML Electronic Court Filing Core Specification"
+  key "IEPDVersion" value "5.0"
+  key "IEPDStatus" value "Working Draft"
+  key "IEPDOrganization" value "OASIS LegalXML Electronic Court Filing Technical Committee"
+  key "IEPDContact" value "https://www.oasis-open.org/committees/legalxml-courtfiling"
+  key "ignorePrefixes" value "cac,cbc,ds"
+  key "externalSchemas" value "cac=urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/common/UBL-CommonAggregateComponents-2.1.xsd,cbc=urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/common/UBL-CommonBasicComponents-2.1.xsd,ds=http://www.w3.org/2000/09/xmldsig#=http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd,xcal=urn:ietf:params:xml:ns:icalendar-2.0=ws-calendar/iCalendar.xsd"
+  package_ref 168066 // UML
+
+  package_ref 161538 // niem-profile
+
+  package_ref 201602 // NIEM
+end

@@ -1,0 +1,17 @@
+format 212
+
+classcanvas 128002 class_ref 1498626 // CancelFilingMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 78.6082 42.2623 2000
+end
+classcanvas 128770 class_ref 909826 // RequestMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 153.597 215.599 2000
+end
+relationcanvas 128898 relation_ref 1259266 // <generalisation>
+  from ref 128002 z 2001 to ref 128770
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 477 375 1.00232
+end

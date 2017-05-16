@@ -1,0 +1,45 @@
+format 212
+
+classcanvas 128002 class_ref 146178 // CaseTypeSpecificInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 426.42 41.3188 2000
+end
+classcanvas 128130 class_ref 136322 // BankruptcyCaseInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 370.816 165.652 2000
+end
+classcanvas 128386 class_ref 136450 // BankruptcyStatute
+  classdiagramsettings member_max_width 0 end
+  xyz 879.241 305.652 2000
+end
+classcanvas 128642 class_ref 136578 // Debtor
+  classdiagramsettings member_max_width 0 end
+  xyz 124.222 305.652 2000
+end
+classcanvas 128770 class_ref 162946 // Entity
+  classdiagramsettings member_max_width 0 end
+  xyz 42.2221 457.29 2000
+end
+relationcanvas 128258 relation_ref 179330 // <generalisation>
+  decenter_begin 490
+  from ref 128130 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 179458 // <directional aggregation>
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 821 291 3000 to ref 128386
+  role_a_pos 670 324 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 179714 // <directional aggregation>
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 225 282 3000 to ref 128642
+  role_a_pos 254 324 3000 no_role_b
+  multiplicity_a_pos 254 373 3000 no_multiplicity_b
+end
+relationcanvas 129794 relation_ref 179586 // <directional aggregation>
+  from ref 128642 z 2001 stereotype "<<niem>>" xyz 130 426 3000 to ref 128770
+  role_a_pos 194 420 3000 no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+preferred_whz 1136 673 0.98
+end

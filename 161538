@@ -1,0 +1,200 @@
+format 212
+"niem-profile" // niem-profile
+  revision 1
+  modified_by 2 "JamesECabral"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  stereotype "profile"
+  oid -1
+  ncouples 15
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "" value ""
+  key "metamodelReference" value "http://schema.omg.org/spec/UML/2.1/uml.xml"
+  key "metaclassreference" value ""
+  classview 172802 "Stereotypes"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    oid 172802
+    class 206082 "niem"
+      visibility package stereotype "stereotype"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      oid 206082
+      ncouples 6
+      key "stereotypeSet" value ""
+      key "stereotypeCheck" value ""
+      key "stereotypeSetParameters" value ""
+      key "stereotypeCheckParameters" value ""
+      key "stereotypeApplyOn" value "Attribute Class ClassInstance Relation"
+      key "stereotypeIconPath" value ""
+      attribute 246146 "XPath"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 246146
+	comment "XML mapping to the NIEM"
+      end
+
+      attribute 253058 "Type"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 253058
+	comment "The NIEM type that implements the source class or property"
+      end
+
+      attribute 253314 "Property"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 253314
+	comment "The NIEM property that implements the source class or property"
+      end
+
+      attribute 253570 "BaseType"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 253570
+	comment "The NIEM base type that implements the source class or property"
+      end
+
+      attribute 253954 "Multiplicity"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 253954
+	comment "The multiplicity of the NIEM property that implements the source class or property"
+      end
+
+      attribute 260482 "CodeList"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 260482
+	comment "The values and definitions of a code list in the format \"value1\", \"definition1\", \"value2\", \"definition2\""
+      end
+
+      attribute 246018 "OldXPath"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 246018
+	comment "Old XML mapping to the NIEM"
+      end
+
+      attribute 253698 "OldMultiplicity"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 253698
+	comment "The old mutiplicity of the NIEM property that implements the source class or property"
+      end
+
+      attribute 253826 "Notes"
+	public explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 253826
+	comment "Notes regarding the mapping of the source class and property to the NIEM"
+      end
+    end
+  end
+end

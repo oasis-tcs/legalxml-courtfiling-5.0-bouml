@@ -1,0 +1,263 @@
+format 212
+
+classinstancecanvas 128130 classinstance_ref 134530 // Service MDE
+ color lightmediumblue  drawing_mode class  xyz 7.98856 4.02 2005 life_line_z 2000
+end
+classinstancecanvas 128258 classinstance_ref 134658 // Filing Assembly MDE
+ color lightorange  xyz 369.96 5.03745 2000 life_line_z 2005
+end
+classinstancecanvas 128386 classinstance_ref 134786 // Filing Review MDE
+ color yellow  xyz 672.6 5.03745 2005 life_line_z 1990
+end
+classinstancecanvas 128514 classinstance_ref 134914 // Court Record MDE
+ color green  xyz 903.778 4.6453 2005 life_line_z 2000
+end
+fragment 138114 "opt"
+  xyzwh 52.8395 60.1797 2010 988 186
+end
+fragment 138242 "opt"
+  xyzwh 56.8395 318.849 2010 978 175
+end
+fragment 138370 "opt"
+  xyzwh 62.8476 651.688 2010 989 212
+end
+classinstancecanvas 139010 classinstance_ref 4658690 // Court Policy MDE
+  xyz 169.36 5.03745 2000 life_line_z 2000
+end
+durationcanvas 131586 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 131 2010 11 40
+end
+durationcanvas 131714 classinstance_ref 128514 // Court Record MDE:CourtRecordMDE
+  xyzwh 999 133.06 2010 11 34
+end
+durationcanvas 132098 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 196.1 2010 11 40
+end
+durationcanvas 132226 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 200.16 2000 11 30
+end
+durationcanvas 132610 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 275.48 2010 11 35
+end
+durationcanvas 132738 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 275.36 2000 11 39
+end
+durationcanvas 133122 classinstance_ref 128130 // Service MDE:ServiceMDE
+  xyzwh 75 277.48 2010 11 32
+end
+durationcanvas 133506 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 397.22 2010 11 33
+end
+durationcanvas 133634 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 391.58 2000 11 33
+end
+durationcanvas 134018 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 459.32 2010 11 40
+end
+durationcanvas 134146 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 461.38 2000 11 33
+end
+durationcanvas 134530 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 496.1 2000 11 40
+end
+durationcanvas 134658 classinstance_ref 128514 // Court Record MDE:CourtRecordMDE
+  xyzwh 999 503.8 2010 11 35
+end
+durationcanvas 135042 classinstance_ref 128514 // Court Record MDE:CourtRecordMDE
+  xyzwh 999 563.08 2010 11 40
+end
+durationcanvas 135170 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 567.96 2000 11 35
+end
+durationcanvas 135554 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 610.26 2000 11 40
+end
+durationcanvas 135682 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 610.38 2010 11 35
+end
+durationcanvas 136066 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 647.04 2010 11 40
+end
+durationcanvas 136194 classinstance_ref 128130 // Service MDE:ServiceMDE
+  xyzwh 75 647.04 2010 11 40
+end
+durationcanvas 136578 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 709.32 2010 11 40
+end
+durationcanvas 136706 classinstance_ref 128514 // Court Record MDE:CourtRecordMDE
+  xyzwh 999 709.56 2010 11 31
+end
+durationcanvas 137090 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 763.08 2010 11 40
+end
+durationcanvas 137218 classinstance_ref 128514 // Court Record MDE:CourtRecordMDE
+  xyzwh 999 765.08 2010 11 35
+end
+durationcanvas 137602 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 813.08 2010 11 40
+end
+durationcanvas 137730 classinstance_ref 128514 // Court Record MDE:CourtRecordMDE
+  xyzwh 999 814.08 2010 11 38
+end
+durationcanvas 138498 classinstance_ref 128258 // Filing Assembly MDE:FilingAssemblyMDE
+  xyzwh 475 331 2015 11 40
+end
+durationcanvas 138626 classinstance_ref 128386 // Filing Review MDE:FilingReviewMDE
+  xyzwh 768 331.24 2000 11 32
+end
+msg 131842 synchronous
+  from durationcanvas_ref 131586
+  to durationcanvas_ref 131714
+  yz 135 3035 msg operation_ref 129666 // "getServiceInformation(in query : ServiceInformationQueryMessage) : ServiceInformationResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 681 117
+msg 131970 return
+  from durationcanvas_ref 131714
+  to durationcanvas_ref 131586
+  yz 156 3040 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 132354 synchronous
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 132226
+  yz 202 3015 msg operation_ref 128386 // "getFeesCalculation(in query : FeesCalculationQueryMessage) : FeesCalculationResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 549 184
+msg 132482 return
+  from durationcanvas_ref 132226
+  to durationcanvas_ref 132098
+  yz 221 3020 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 132866 synchronous
+  from durationcanvas_ref 132610
+  to durationcanvas_ref 132738
+  yz 278 3045 msg operation_ref 128130 // "reviewFiling(in message : ReviewFiling, in payment : Payment) : MessageReceiptMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 575 260
+msg 132994 return
+  from durationcanvas_ref 132738
+  to durationcanvas_ref 132610
+  yz 290 3055 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 133250 asynchronous
+  from durationcanvas_ref 132610
+  to durationcanvas_ref 133122
+  yz 279 3050 msg operation_ref 129794 // "serveFiling(in  : ServeFiling) : ServiceReceiptMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 194 261
+msg 133378 return
+  from durationcanvas_ref 133122
+  to durationcanvas_ref 132610
+  yz 294 3060 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 133762 synchronous
+  from durationcanvas_ref 133506
+  to durationcanvas_ref 133634
+  yz 402 3015 msg operation_ref 128514 // "getFilingList(in query : FilingListQueryMessage) : FilingListResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 574 384
+msg 133890 return
+  from durationcanvas_ref 133634
+  to durationcanvas_ref 133506
+  yz 413 3020 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 134274 synchronous
+  from durationcanvas_ref 134018
+  to durationcanvas_ref 134146
+  yz 461 3020 msg operation_ref 128642 // "getFilingStatus(in query : FilingStatusQueryMessage) : FilingStatusResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 564 443
+msg 134402 return
+  from durationcanvas_ref 134146
+  to durationcanvas_ref 134018
+  yz 482 3025 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 134786 synchronous
+  from durationcanvas_ref 134530
+  to durationcanvas_ref 134658
+  yz 509 3015 msg operation_ref 129026 // "recordFiling(in message : RecordDocketingMessage) : MessageReceiptMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 872 491
+msg 134914 return
+  from durationcanvas_ref 134658
+  to durationcanvas_ref 134530
+  yz 528 3020 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 135298 synchronous
+  from durationcanvas_ref 135042
+  to durationcanvas_ref 135170
+  yz 566 3020 msg operation_ref 128258 // "notifyDocketingComplete(in message : NotifyFilingReviewCompleteMessage) : MessageReceiptMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 826 548
+msg 135426 return
+  from durationcanvas_ref 135170
+  to durationcanvas_ref 135042
+  yz 588 3025 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 135810 synchronous
+  from durationcanvas_ref 135554
+  to durationcanvas_ref 135682
+  yz 610 3025 msg operation_ref 128898 // "notifyFilingReviewComplete(in message : NotifyFilingReviewCompleteMessage) : MessageReceiptMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 519 592
+msg 135938 return
+  from durationcanvas_ref 135682
+  to durationcanvas_ref 135554
+  yz 633 3030 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 136322 asynchronous
+  from durationcanvas_ref 136066
+  to durationcanvas_ref 136194
+  yz 664 3035 msg operation_ref 142850 // "serveProcess(in message : )"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 184 646
+msg 136450 return
+  from durationcanvas_ref 136194
+  to durationcanvas_ref 136066
+  yz 681 3040 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 136834 synchronous
+  from durationcanvas_ref 136578
+  to durationcanvas_ref 136706
+  yz 709 3035 msg operation_ref 129154 // "getCaseList(in query : CaseListQueryMessage) : CaseListResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 705 691
+msg 136962 return
+  from durationcanvas_ref 136706
+  to durationcanvas_ref 136578
+  yz 729 3040 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 137346 synchronous
+  from durationcanvas_ref 137090
+  to durationcanvas_ref 137218
+  yz 765 3010 msg operation_ref 129282 // "getCase(in query : CaseQueryMessage) : CaseResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 718 747
+msg 137474 return
+  from durationcanvas_ref 137218
+  to durationcanvas_ref 137090
+  yz 788 3005 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 137858 synchronous
+  from durationcanvas_ref 137602
+  to durationcanvas_ref 137730
+  yz 820 2035 msg operation_ref 129410 // "getDocument(in query : DocumentQueryMessage) : DocumentResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 710 802
+msg 137986 return
+  from durationcanvas_ref 137730
+  to durationcanvas_ref 137602
+  yz 845 2040 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 138754 synchronous
+  from durationcanvas_ref 138498
+  to durationcanvas_ref 138626
+  yz 338 3015 msg operation_ref 156290 // "cancelFiling() : CancelFilingMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 584 314
+msg 138882 return
+  from durationcanvas_ref 138626
+  to durationcanvas_ref 138498
+  yz 352 3020 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+preferred_whz 1140 908 0.98
+end

@@ -1,0 +1,44 @@
+format 212
+
+classcanvas 128002 class_ref 131842 // Person
+  classdiagramsettings member_max_width 0 end
+  xyz 144.842 83.4882 2000
+end
+classcanvas 128130 class_ref 131970 // Organization
+  classdiagramsettings member_max_width 0 end
+  xyz 154.451 614.711 2000
+end
+classcanvas 128258 class_ref 136706 // OrganizationRelationship
+  classdiagramsettings member_max_width 0 end
+  xyz 716.572 648.62 2000
+end
+classcanvas 128386 class_ref 135426 // PersonOrganizationRelationship
+  classdiagramsettings member_max_width 0 end
+  xyz 653.241 457.429 2000
+end
+classcanvas 128514 class_ref 135298 // PersonRelationship
+  classdiagramsettings member_max_width 0 end
+  xyz 755.389 187.64 2005
+end
+relationcanvas 128642 relation_ref 142466 // <directional aggregation>
+  from ref 128258 z 2001 stereotype "<<niem>>" xyz 540.5 700.5 3000 to ref 128130
+  role_a_pos 484 664 3000 no_role_b
+  multiplicity_a_pos 484 713 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 142210 // <directional aggregation>
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 524.5 604 3000 to ref 128130
+  role_a_pos 484 602 3000 no_role_b
+  multiplicity_a_pos 484 651 3000 no_multiplicity_b
+end
+relationcanvas 128898 relation_ref 140418 // <directional aggregation>
+  from ref 128514 z 2006 stereotype "<<niem>>" xyz 585 242.5 3000 to ref 128002
+  role_a_pos 534 208 3000 no_role_b
+  multiplicity_a_pos 534 257 3000 no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 142978 // <directional aggregation>
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 578.5 400 3000 to ref 128002
+  role_a_pos 534 313 3000 no_role_b
+  multiplicity_a_pos 534 362 3000 no_multiplicity_b
+end
+preferred_whz 1072 860 0.98
+end
