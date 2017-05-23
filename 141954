@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 268
+  revision 273
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -5607,11 +5607,11 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "docket:RecordDocketingMessage/nc:Case"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "docket:RecordDocketingMessage/nc:Case"
+	key "niem-profile:niem:XPath" value "docket:RecordDocketingMessage/ecf:CorrectedCase"
 	key "niem-profile:niem:Type" value "docket:RecordDocketingMessageType"
-	key "niem-profile:niem:Property" value "nc:Case"
+	key "niem-profile:niem:Property" value "docket:CorrectedCase"
 	key "niem-profile:niem:BaseType" value "nc:CaseType"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end

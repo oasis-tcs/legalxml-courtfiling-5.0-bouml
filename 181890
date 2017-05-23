@@ -1,6 +1,6 @@
 format 212
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 90
+  revision 93
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1548,10 +1548,10 @@ format 212
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/nc:CaseCategoryText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseCategoryCode"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseTypeCode"
 	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:CaseCategoryCode"
-	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Property" value "ecf:CaseTypeCode"
+	key "niem-profile:niem:BaseType" value "niem-xs:normalizedString"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
@@ -2188,7 +2188,7 @@ format 212
 	key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage/ecf:CaseTypeCode"
 	key "niem-profile:niem:Type" value "schedulerequest:GetCourtScheduleRequestMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTypeCode"
-	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:BaseType" value "niem-xs:normalizedString"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value ""
