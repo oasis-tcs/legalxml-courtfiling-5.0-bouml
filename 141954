@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 273
+  revision 275
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1045,6 +1045,30 @@ ${items}};
 	key "niem-profile:niem:Notes" value ""
 	comment "A party represented by an attorney	"
       end
+
+      attribute 14986370 "attorneyID"
+	public type class_ref 156162 // id
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/ecf:CaseOfficialAugmentation/ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:Type" value "ecf:CaseOfficialAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:FilingAttorneyID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An identifier for an attorney"
+      end
     end
 
     class 138882 "CaseOrganizationRole"
@@ -2011,7 +2035,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "Indicator by the filer that the document must be redacted nu the court."
+	comment "Indicator by the filer that the document must be redacted by the court."
       end
 
       classrelation 139394 // documentRenditionMetadata (<directional aggregation>)
@@ -2163,7 +2187,7 @@ ${items}};
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/nc:PrimaryDocument, nc:SecondaryDocument"
 	key "niem-profile:niem:Type" value "nc:DocumentAssociationType"
-	key "niem-profile:niem:Property" value "@nc:PrimaryDocument, nc:SecondaryDocument"
+	key "niem-profile:niem:Property" value "@nc:PrimaryDocument"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
@@ -5099,10 +5123,10 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "payment:PaymentMessage/PayerName"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "payment:PaymentMessage/PayerName"
+	key "niem-profile:niem:XPath" value "payment:PaymentMessage/payment:Payer"
 	key "niem-profile:niem:Type" value "payment:PaymentMessageType"
-	key "niem-profile:niem:Property" value "ecf:PayerNameText"
-	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Property" value "payment:Payer"
+	key "niem-profile:niem:BaseType" value "nc:PersonType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
@@ -5653,7 +5677,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "docket:RecordDocketingMessageType"
 	key "niem-profile:niem:Property" value "filing:FilingMessage"
 	key "niem-profile:niem:BaseType" value "filing:FilingMessageType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end

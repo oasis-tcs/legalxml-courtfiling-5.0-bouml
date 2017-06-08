@@ -1,6 +1,6 @@
 format 212
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 93
+  revision 94
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1808,7 +1808,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/nc:SecondaryDocument/nc:DicumentIdentification/nc:IdenificationID, nc:DocumentAssociation/nc:PrimaryDocument/nc:DicumentIdentification/nc:IdenificationID"
 	key "niem-profile:niem:Type" value "nc:DocumentAssociationType"
-	key "niem-profile:niem:Property" value "@nc:PrimaryDocument, nc:SecondaryDocument"
+	key "niem-profile:niem:Property" value "@nc:PrimaryDocument"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
