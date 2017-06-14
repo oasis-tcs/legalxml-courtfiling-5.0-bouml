@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 275
+  revision 278
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1060,9 +1060,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/ecf:CaseOfficialAugmentation/ecf:CaseParticipantRoleCode"
 	key "niem-profile:niem:Type" value "ecf:CaseOfficialAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:FilingAttorneyID"
+	key "niem-profile:niem:Property" value "ecf:AttorneyID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
@@ -2123,7 +2123,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "Identifier recognized by the court as being unique within this case,and used to identify the attorney who is filing this document.  Not present for pro se litigants."
+	comment "Identifier recognized by the court as being unique within this case,and used to identify the attorney who is filing this document."
       end
 
       attribute 131842 "filingPartyID"
@@ -5897,7 +5897,7 @@ ${items}};
 	key "niem-profile:niem:XPath" value "nc:Document/nc:DocumentStatus/nc:StatusDescriptionText"
 	key "niem-profile:niem:Type" value "nc:StatusType"
 	key "niem-profile:niem:Property" value "nc:StatusDescriptionText"
-	key "niem-profile:niem:BaseType" value "nc:StatusType"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
@@ -5965,13 +5965,61 @@ ${items}};
 	key "niem-profile:niem:OldXPath" value "docketcallback:RecordDocketingMessage/ecf::ReviewedLeadDocument/nc:DocumentStatus"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument/nc:DocumentStatus"
-	key "niem-profile:niem:Type" value "ecf:ReviewedDocumentType"
+	key "niem-profile:niem:Type" value "nc:DocumentType"
 	key "niem-profile:niem:Property" value "nc:DocumentStatus"
 	key "niem-profile:niem:BaseType" value "nc:StatusType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "A status of a document."
+      end
+
+      attribute 15082754 "documentReviewer"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentReviewer"
+	key "niem-profile:niem:Type" value "ecf:ReviewedDocumentType"
+	key "niem-profile:niem:Property" value "ecf:DocumentReviewer"
+	key "niem-profile:niem:BaseType" value "nc:EntityType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The entity that reviews and accepts or rejects a filing."
+      end
+
+      attribute 15082882 "documentReviewStatus"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentReviewStatus"
+	key "niem-profile:niem:Type" value "ecf:ReviewedDocumentType"
+	key "niem-profile:niem:Property" value "ecf:DocumentReviewStatus"
+	key "niem-profile:niem:BaseType" value "nc:StatusType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The status of a document in the filing review process."
       end
     end
 
