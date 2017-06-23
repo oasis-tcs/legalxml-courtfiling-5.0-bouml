@@ -1,10 +1,8 @@
 window_sizes 2736 1699 553 2177 1411 211
 cleanlooks_style
 selected 
-  package_ref 141954 // Messages - Filing
+  package_ref 129 // legalxml-courtfiling-5.0-bouml
 open
-  classview_ref 347010 // Base Messages
-  classview_ref 142082 // Common Types
   
   package_ref 201602 // NIEM
 end

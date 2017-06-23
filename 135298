@@ -1,6 +1,6 @@
 format 212
 "Base Classes" // UML::Base Classes
-  revision 232
+  revision 234
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -852,7 +852,7 @@ ${members}};
 	key "niem-profile:niem:Property" value "cbrn:ErrorCodeText"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
-	key "niem-profile:niem:CodeList" value "0=No error; 1=Invalid per schema or code list; 2=Invalid per ECF specification; 3=invalid per service interaction profile;"
+	key "niem-profile:niem:CodeList" value "0=No error; 1=Invalid per schema or code list; 2=Invalid per ECF specification; 3=Invalid per service interaction profile; 4=Invalid per policy"
 	key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value "DISCUSS: Updated error code list"

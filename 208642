@@ -1,6 +1,6 @@
 format 212
 "NIEMExtension" // NIEM::NIEMExtension
-  revision 2
+  revision 1
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -56,7 +56,7 @@ format 212
       comment "A request to allocate a court date on the schedule."
     end
 
-    classinstance 7701762 "AllocateCourtDateMessageAugmentationPoint"
+    classinstance 7702018 "AllocateCourtDateMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -87,7 +87,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15059842 "allocatedate:AllocateCourtDateMessageAugmentationPoint"
+      attribute 15156610 "allocatedate:AllocateCourtDateMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -102,7 +102,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15041922 "nc:Case"
+      attribute 15138434 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -117,7 +117,7 @@ format 212
 	comment "An aggregation of information about a set of related activities and events."
       end
 
-      attribute 15040898 "xcal:icalendar"
+      attribute 15137410 "xcal:icalendar"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -195,7 +195,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15065858 "appellate:AppellateCaseParty"
+      attribute 15162754 "appellate:AppellateCaseParty"
 	public type class_ref 6640386 // EntityType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -210,7 +210,7 @@ format 212
 	comment "An identifier assigned to a party being added to the appeal."
       end
 
-      attribute 15065730 "appellate:AppellateCasePartyAddedReasonText"
+      attribute 15162626 "appellate:AppellateCasePartyAddedReasonText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -237,7 +237,7 @@ format 212
       comment "The basis for the jurisdiction of the appellate court in the case."
     end
 
-    classinstance 7713666 "AppellateCaseParty"
+    classinstance 7714050 "AppellateCaseParty"
       type class_ref 6640386 // EntityType
       attributes
         end
@@ -248,7 +248,7 @@ format 212
       comment "An identifier assigned to a party being added to the appeal."
     end
 
-    classinstance 7713538 "AppellateCasePartyAddedReasonText"
+    classinstance 7713922 "AppellateCasePartyAddedReasonText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -259,7 +259,7 @@ format 212
       comment "The reason a party is being added to the appeal."
     end
 
-    classinstance 7713794 "AppellateCasePartyRemovedReasonText"
+    classinstance 7714178 "AppellateCasePartyRemovedReasonText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -270,7 +270,7 @@ format 212
       comment "The reason a party is being removed from the appeal."
     end
 
-    classinstance 7723394 "AppellateCaseRemovedParty"
+    classinstance 7723778 "AppellateCaseRemovedParty"
       type class_ref 6673282 // AppellateCaseRemovedPartyType
       attributes
         end
@@ -301,7 +301,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15065986 "appellate:AppellateCaseParty"
+      attribute 15162882 "appellate:AppellateCaseParty"
 	public type class_ref 6640386 // EntityType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -316,7 +316,7 @@ format 212
 	comment "An identifier assigned to a party being added to the appeal."
       end
 
-      attribute 15066114 "appellate:AppellateCasePartyRemovedReasonText"
+      attribute 15163010 "appellate:AppellateCasePartyRemovedReasonText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -374,7 +374,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15071746 "appellate:RuleCollectionNumber"
+      attribute 15168642 "appellate:RuleCollectionNumber"
 	public type class_ref 6653314 // NumericType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -389,7 +389,7 @@ format 212
 	comment "An organized set or book of rules of the court that include the rule(s) in question."
       end
 
-      attribute 15071874 "appellate:RuleCollectionText"
+      attribute 15168770 "appellate:RuleCollectionText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -444,7 +444,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15038594 "appellate:AppellantInCustodyIndicator"
+      attribute 15135106 "appellate:AppellantInCustodyIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -459,7 +459,7 @@ format 212
 	comment "Indicator that the appellant is currently in custody."
       end
 
-      attribute 15037954 "appellate:AppellateCaseAddedParty"
+      attribute 15134466 "appellate:AppellateCaseAddedParty"
 	public type class_ref 6662402 // AppellateCaseAddedPartyType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -474,7 +474,7 @@ format 212
 	comment "Party added to the appeal that was not  a party in the original case.  For instance, the attorney in the original case may appeal sanctions against the attorney by the court."
       end
 
-      attribute 15043714 "appellate:AppellateCaseJurisdictionBasisText"
+      attribute 15140226 "appellate:AppellateCaseJurisdictionBasisText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -489,7 +489,7 @@ format 212
 	comment "The basis for the jurisdiction of the appellate court in the case."
       end
 
-      attribute 15070210 "appellate:AppellateCaseRemovedParty"
+      attribute 15167106 "appellate:AppellateCaseRemovedParty"
 	public type class_ref 6673282 // AppellateCaseRemovedPartyType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -504,7 +504,7 @@ format 212
 	comment "Party to the original case that is not party to the appeal."
       end
 
-      attribute 15044226 "appellate:AppellateCaseSettlementRequestText"
+      attribute 15140738 "appellate:AppellateCaseSettlementRequestText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -519,7 +519,7 @@ format 212
 	comment "A request for diversion to a settlement program in the appellate court."
       end
 
-      attribute 15048194 "appellate:AppellateCourtRuleCase"
+      attribute 15144706 "appellate:AppellateCourtRuleCase"
 	public type class_ref 6669186 // AppellateCourtRuleCaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -534,7 +534,7 @@ format 212
 	comment "Additional information specific to court rule appellate cases."
       end
 
-      attribute 15054466 "appellate:FeesWaivedIndicator"
+      attribute 15151234 "appellate:FeesWaivedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -549,7 +549,7 @@ format 212
 	comment "Indicator that filing fees were waived or deferred in the case in the lower court."
       end
 
-      attribute 15042050 "j:AppellateCase"
+      attribute 15138562 "j:AppellateCase"
 	public type class_ref 6641538 // AppellateCaseType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -565,7 +565,7 @@ format 212
       end
     end
 
-    classinstance 7686658 "FeesWaivedIndicator"
+    classinstance 7686914 "FeesWaivedIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -576,7 +576,7 @@ format 212
       comment "Indicator that filing fees were waived or deferred in the case in the lower court."
     end
 
-    classinstance 7725058 "RuleCollectionNumber"
+    classinstance 7725442 "RuleCollectionNumber"
       type class_ref 6653314 // NumericType
       attributes
         end
@@ -587,7 +587,7 @@ format 212
       comment "An organized set or book of rules of the court that include the rule(s) in question."
     end
 
-    classinstance 7725186 "RuleCollectionText"
+    classinstance 7725570 "RuleCollectionText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -651,7 +651,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15039106 "xs:any"
+      attribute 15135618 "xs:any"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -721,7 +721,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,AllowanceChargeType"
       comment "An authorization by the filer allowing the court to take money from the filer, for a particular purpose, and by a particular means.  Only for case-related activities.  This may only be included with the ReviewFiling message sent to the court - it must not be included with the ReviewFiling message served to other parties in the case."
-      attribute 15066754 "cbc:Amount"
+      attribute 15163650 "cbc:Amount"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -736,7 +736,7 @@ format 212
 	comment "An amount of money that the filer is paying to the court."
       end
 
-      attribute 15067010 "cac:PaymentMeans"
+      attribute 15163906 "cac:PaymentMeans"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -751,7 +751,7 @@ format 212
 	comment "The payment method employed to complete the transaction."
       end
 
-      attribute 15067266 "cbc:AllowanceChargeReason"
+      attribute 15164162 "cbc:AllowanceChargeReason"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -780,7 +780,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,BranchType"
       comment "A subunit of a financial organization, usually denoted by a physical location.  Examples:  the \"downtown\" or \"Willow Grove\" branch of the First National Bank."
-      attribute 15040386 "cac:Address"
+      attribute 15136898 "cac:Address"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -795,7 +795,7 @@ format 212
 	comment "The address of the owner of a financial account."
       end
 
-      attribute 15040514 "cbc:ID"
+      attribute 15137026 "cbc:ID"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -810,7 +810,7 @@ format 212
 	comment "A numerical identifier for a FinancialAccount."
       end
 
-      attribute 15040642 "cbc:Name"
+      attribute 15137154 "cbc:Name"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -825,7 +825,7 @@ format 212
 	comment "The person or organization in whose name the account is established and maintained."
       end
 
-      attribute 15056642 "cac:FinancialInstitution"
+      attribute 15153410 "cac:FinancialInstitution"
 	public type class_ref 6670850 // FinancialInstitutionType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -865,7 +865,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,CardAccountType"
       comment "An agreement between a person or organization and a financial institution by which the institution agrees to pay amounts incurred by the person or organization evidenced by the use of a card or card number issued by the institution to reflect a specific account at the institution.  The term includes both credit and debit accounts."
-      attribute 15036674 "cbc:PrimaryAccountNumberID"
+      attribute 15133186 "cbc:PrimaryAccountNumberID"
 	public type class_ref 6636162 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -880,7 +880,7 @@ format 212
 	comment "A number that idenitifies an account with a court or a financial institution."
       end
 
-      attribute 15037058 "cbc:HolderName"
+      attribute 15133570 "cbc:HolderName"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -895,7 +895,7 @@ format 212
 	comment "The person or organization in whose name the account is established and maintained."
       end
 
-      attribute 15041538 "cbc:ExpiryDate"
+      attribute 15138050 "cbc:ExpiryDate"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -910,7 +910,7 @@ format 212
 	comment "The month and year (expressed as mm/yy) after which the cardAccount will no longer be value unless renewed by the issuing financial institution."
       end
 
-      attribute 15041666 "cbc:CV2ID"
+      attribute 15138178 "cbc:CV2ID"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -925,7 +925,7 @@ format 212
 	comment "The secondary number (sometimes on the reverse) of the card for added security."
       end
 
-      attribute 15041794 "cbc:CardTypeCode"
+      attribute 15138306 "cbc:CardTypeCode"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -965,7 +965,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,CreditAccountType"
       comment "An account created within a court financial system crediting a person or organization with a balance against which future fees may be charged."
-      attribute 15036802 "cbc:AccountID"
+      attribute 15133314 "cbc:AccountID"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -994,7 +994,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,FinancialAccountType"
       comment "An account in a financial institution."
-      attribute 15037186 "cbc:Name"
+      attribute 15133698 "cbc:Name"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1009,7 +1009,7 @@ format 212
 	comment "The person or organization in whose name the account is established and maintained."
       end
 
-      attribute 15039618 "cbc:ID"
+      attribute 15136130 "cbc:ID"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1024,7 +1024,7 @@ format 212
 	comment "A numerical identifier for a FinancialAccount."
       end
 
-      attribute 15040258 "cac:FinancialInstitutionBranch"
+      attribute 15136770 "cac:FinancialInstitutionBranch"
 	public type class_ref 6665090 // BranchType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1040,7 +1040,7 @@ format 212
       end
     end
 
-    classinstance 7688834 "FinancialInstitution"
+    classinstance 7689090 "FinancialInstitution"
       type class_ref 6670850 // FinancialInstitutionType
       attributes
         end
@@ -1075,7 +1075,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,FinancialInstitutionType"
       comment "The bank, savings association, credit union or other entity in which a financial account exists."
-      attribute 15056770 "cac:Address"
+      attribute 15153538 "cac:Address"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1090,7 +1090,7 @@ format 212
 	comment "The address of the owner of a financial account."
       end
 
-      attribute 15056898 "cbc:ID"
+      attribute 15153666 "cbc:ID"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1105,7 +1105,7 @@ format 212
 	comment "A numerical identifier for a FinancialAccount."
       end
 
-      attribute 15057026 "cbc:Name"
+      attribute 15153794 "cbc:Name"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1121,7 +1121,7 @@ format 212
       end
     end
 
-    classinstance 7688706 "PayerFinancialAccount"
+    classinstance 7688962 "PayerFinancialAccount"
       type class_ref 6661634 // FinancialAccountType
       attributes
         end
@@ -1132,7 +1132,7 @@ format 212
       comment "The account in a financial institution used for this payment."
     end
 
-    classinstance 7714306 "Payment"
+    classinstance 7714690 "Payment"
       type class_ref 6673410 // PaymentType
       attributes
         end
@@ -1143,7 +1143,7 @@ format 212
       comment "A payment."
     end
 
-    classinstance 7714690 "PaymentMeans"
+    classinstance 7715074 "PaymentMeans"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -1167,7 +1167,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,PaymentMeansType"
       comment "The payment method employed to complete a transaction.  Examples: credit card, debit card, automatic funds transfer, debit to an escrow account held at the court, promise to pay at a future date.  Allowable values set forth in Court Policy."
-      attribute 15041410 "cac:CardAccount"
+      attribute 15137922 "cac:CardAccount"
 	public type class_ref 6661250 // CardAccountType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1182,7 +1182,7 @@ format 212
 	comment "The number of the credit or debit account against which this payment will be charged."
       end
 
-      attribute 15048450 "cac:CreditAccount"
+      attribute 15144962 "cac:CreditAccount"
 	public type class_ref 6661378 // CreditAccountType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1197,7 +1197,7 @@ format 212
 	comment "The account against which this payment will be charged."
       end
 
-      attribute 15056514 "cac:PayerFinancialAccount"
+      attribute 15153282 "cac:PayerFinancialAccount"
 	public type class_ref 6661634 // FinancialAccountType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1212,7 +1212,7 @@ format 212
 	comment "The account in a financial institution used for this payment."
       end
 
-      attribute 15066498 "cbc:PaymentID"
+      attribute 15163394 "cbc:PaymentID"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1227,7 +1227,7 @@ format 212
 	comment "The payment for which this means is specified."
       end
 
-      attribute 15067138 "cbc:PaymentMeansCode"
+      attribute 15164034 "cbc:PaymentMeansCode"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1256,7 +1256,7 @@ format 212
       ncouples 1
       key "URI" value "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2,PaymentType"
       comment "The payment submitted with a filing.  The payment may consist of a fee for filing of the document(s) submitted, or for a fine or other payment due to the court."
-      attribute 15075330 "cbc:ID"
+      attribute 15172226 "cbc:ID"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1271,7 +1271,7 @@ format 212
 	comment "A numerical identifier for a FinancialAccount."
       end
 
-      attribute 15075458 "cbc:PaidTime"
+      attribute 15172354 "cbc:PaidTime"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1318,7 +1318,7 @@ format 212
       comment "This is a request from the filer to the reviewer to cancel a previously submitted filing."
     end
 
-    classinstance 7701890 "CancelFilingMessageAugmentationPoint"
+    classinstance 7702146 "CancelFilingMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -1349,7 +1349,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15059970 "cancel:CancelFilingMessageAugmentationPoint"
+      attribute 15156738 "cancel:CancelFilingMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -1396,7 +1396,7 @@ format 212
       comment "Information describing a participant when a query seeks information about the cases in which the person or organization is a participant."
     end
 
-    classinstance 7689986 "GetCaseListRequestMessage"
+    classinstance 7690242 "GetCaseListRequestMessage"
       type class_ref 6667394 // GetCaseListRequestMessageType
       attributes
         end
@@ -1407,7 +1407,7 @@ format 212
       comment "This is a query for a list of cases that match a set of criteria including case participants, case classification, case status, and date of the case was initiated."
     end
 
-    classinstance 7702274 "GetCaseListRequestMessageAugmentationPoint"
+    classinstance 7702530 "GetCaseListRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -1438,7 +1438,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15043970 "caselistrequest:CaseParticipant"
+      attribute 15140482 "caselistrequest:CaseParticipant"
 	public type class_ref 6640386 // EntityType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1453,7 +1453,7 @@ format 212
 	comment "Information describing a participant when a query seeks information about the cases in which the person or organization is a participant."
       end
 
-      attribute 15060354 "caselistrequest:GetCaseListRequestMessageAugmentationPoint"
+      attribute 15157122 "caselistrequest:GetCaseListRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -1468,7 +1468,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15045250 "ecf:CaseCategoryCode"
+      attribute 15141762 "ecf:CaseCategoryCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1483,7 +1483,7 @@ format 212
 	comment "The type of trial in the lower court (e.g. bench, jury)."
       end
 
-      attribute 15044482 "nc:ActivityStatus"
+      attribute 15140994 "nc:ActivityStatus"
 	public type class_ref 6642434 // StatusType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1498,7 +1498,7 @@ format 212
 	comment "A status of an activity."
       end
 
-      attribute 15074946 "nc:DateRange"
+      attribute 15171842 "nc:DateRange"
 	public type class_ref 6641154 // DateRangeType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1534,7 +1534,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caselistresponse"
     key "path" value "caselistresponse.xsd"
-    classinstance 7690114 "GetCaseListResponseMessage"
+    classinstance 7690370 "GetCaseListResponseMessage"
       type class_ref 6671490 // GetCaseListResponseMessageType
       attributes
         end
@@ -1545,7 +1545,7 @@ format 212
       comment "A synchronous response to a GetCaseListQueryMessage."
     end
 
-    classinstance 7702402 "GetCaseListResponseMessageAugmentationPoint"
+    classinstance 7702658 "GetCaseListResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -1576,7 +1576,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15060482 "caselistresponse:GetCaseListResponseMessageAugmentationPoint"
+      attribute 15157250 "caselistresponse:GetCaseListResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -1591,7 +1591,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15058818 "nc:Case"
+      attribute 15155586 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -1670,7 +1670,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15041154 "caserequest:CalendarEventTimeRange"
+      attribute 15137666 "caserequest:CalendarEventTimeRange"
 	public type class_ref 6641154 // DateRangeType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1685,7 +1685,7 @@ format 212
 	comment "A filter criterion for calendar events. If present, the response should only include calendar events that fall between the from and to dates and times."
       end
 
-      attribute 15049986 "caserequest:DocketEntryTimeRange"
+      attribute 15146498 "caserequest:DocketEntryTimeRange"
 	public type class_ref 6641154 // DateRangeType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -1700,7 +1700,7 @@ format 212
 	comment "A filter criterion for docket entries. If present, the response should only include docket entries that fall between the from and to dates and times."
       end
 
-      attribute 15050242 "caserequest:DocketEntryTypeCodeFilterText"
+      attribute 15146754 "caserequest:DocketEntryTypeCodeFilterText"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1715,7 +1715,7 @@ format 212
 	comment "Filter criterion indicating that only docket entries of a specified type are being requested."
       end
 
-      attribute 15057282 "caserequest:IncludeCalendarEventIndicator"
+      attribute 15154050 "caserequest:IncludeCalendarEventIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1730,7 +1730,7 @@ format 212
 	comment "Indicates whether requester wishes calendar event information to be included in the response."
       end
 
-      attribute 15057410 "caserequest:IncludeDocketEntryIndicator"
+      attribute 15154178 "caserequest:IncludeDocketEntryIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1745,7 +1745,7 @@ format 212
 	comment "Indicates whether requester wishes docket entry information to be included in the response."
       end
 
-      attribute 15057538 "caserequest:IncludeParticipantsIndicator"
+      attribute 15154306 "caserequest:IncludeParticipantsIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1760,7 +1760,7 @@ format 212
 	comment "Indicates whether requester wishes participant information to be included in the response."
       end
 
-      attribute 15041282 "ecf:CourtEventTypeCode"
+      attribute 15137794 "ecf:CourtEventTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1798,7 +1798,7 @@ format 212
       comment "Filter criterion indicating that only docket entries of a specified type are being requested."
     end
 
-    classinstance 7690242 "GetCaseRequestMessage"
+    classinstance 7690498 "GetCaseRequestMessage"
       type class_ref 6666114 // GetCaseRequestMessageType
       attributes
         end
@@ -1809,7 +1809,7 @@ format 212
       comment "A message requesting a list of cases from a court case management information system conforming to the parameter or parameters identified in the message."
     end
 
-    classinstance 7702530 "GetCaseRequestMessageAugmentationPoint"
+    classinstance 7702786 "GetCaseRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -1840,7 +1840,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15044098 "caserequest:CaseQueryCriteria"
+      attribute 15140610 "caserequest:CaseQueryCriteria"
 	public type class_ref 6665474 // CaseQueryCriteriaType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -1855,7 +1855,7 @@ format 212
 	comment "Criteria limiting the case information to be returned."
       end
 
-      attribute 15060610 "caserequest:GetCaseRequestMessageAugmentationPoint"
+      attribute 15157378 "caserequest:GetCaseRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -1870,7 +1870,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15042434 "nc:CaseTrackingID"
+      attribute 15138946 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "1,2"
 	cpp_decl ""
@@ -1886,7 +1886,7 @@ format 212
       end
     end
 
-    classinstance 7693570 "IncludeCalendarEventIndicator"
+    classinstance 7693826 "IncludeCalendarEventIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -1897,7 +1897,7 @@ format 212
       comment "Indicates whether requester wishes calendar event information to be included in the response."
     end
 
-    classinstance 7693698 "IncludeDocketEntryIndicator"
+    classinstance 7693954 "IncludeDocketEntryIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -1908,7 +1908,7 @@ format 212
       comment "Indicates whether requester wishes docket entry information to be included in the response."
     end
 
-    classinstance 7693826 "IncludeParticipantsIndicator"
+    classinstance 7694082 "IncludeParticipantsIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -1939,7 +1939,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caseresponse"
     key "path" value "caseresponse.xsd"
-    classinstance 7690370 "GetCaseResponseMessage"
+    classinstance 7690626 "GetCaseResponseMessage"
       type class_ref 6667138 // GetCaseResponseMessageType
       attributes
         end
@@ -1950,7 +1950,7 @@ format 212
       comment "The response to a GetCaseInformationQuery."
     end
 
-    classinstance 7702658 "GetCaseResponseMessageAugmentationPoint"
+    classinstance 7702914 "GetCaseResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -1981,7 +1981,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15060738 "caseresponse:GetCaseResponseMessageAugmentationPoint"
+      attribute 15157506 "caseresponse:GetCaseResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -1996,7 +1996,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15043586 "nc:Case"
+      attribute 15140098 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2043,7 +2043,7 @@ format 212
       comment "A number that idenitifies an account with a court or a financial institution."
     end
 
-    classinstance 7715074 "AllowanceChargeReason"
+    classinstance 7715458 "AllowanceChargeReason"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -2054,7 +2054,7 @@ format 212
       comment "Purpose or reason for the filer making the payment; this would be a code valid according to and described by Court Policy."
     end
 
-    classinstance 7714434 "Amount"
+    classinstance 7714818 "Amount"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -2131,7 +2131,7 @@ format 212
       comment "The person or organization in whose name the account is established and maintained."
     end
 
-    classinstance 7733634 "PaidTime"
+    classinstance 7734018 "PaidTime"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -2142,7 +2142,7 @@ format 212
       comment "The date and time at which a transaction will or did occur."
     end
 
-    classinstance 7714178 "PaymentID"
+    classinstance 7714562 "PaymentID"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -2153,7 +2153,7 @@ format 212
       comment "The payment for which this means is specified."
     end
 
-    classinstance 7714818 "PaymentMeansCode"
+    classinstance 7715202 "PaymentMeansCode"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -2227,7 +2227,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15065602 "citation:ParkingViolation"
+      attribute 15162498 "citation:ParkingViolation"
 	public type class_ref 6673154 // ParkingViolationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2242,7 +2242,7 @@ format 212
 	comment "Information about a parking violation."
       end
 
-      attribute 15046274 "j:Citation"
+      attribute 15142786 "j:Citation"
 	public type class_ref 6643330 // CitationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -2257,7 +2257,7 @@ format 212
 	comment "An official summons to appear in court or pay a fine given to a subject from a peace official due to a subjects violation or infraction of a law."
       end
 
-      attribute 15046530 "j:CourtAppearance"
+      attribute 15143042 "j:CourtAppearance"
 	public type class_ref 6643458 // CourtAppearanceType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2272,7 +2272,7 @@ format 212
 	comment "An appearance required of a party in a court of law on a certain date."
       end
 
-      attribute 15052162 "j:DrivingIncident"
+      attribute 15148930 "j:DrivingIncident"
 	public type class_ref 6647170 // DrivingIncidentType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2287,7 +2287,7 @@ format 212
 	comment "An incident involving a vehicle."
       end
 
-      attribute 15076226 "j:IncidentViolatedStatuteAssociation"
+      attribute 15173122 "j:IncidentViolatedStatuteAssociation"
 	public type class_ref 6658178 // ViolatedStatuteAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -2302,7 +2302,7 @@ format 212
 	comment "An association providing details about a statute, rule, or ordinance that was violated in an incident."
       end
 
-      attribute 15069954 "nc:Vehicle"
+      attribute 15166850 "nc:Vehicle"
 	public type class_ref 6657410 // VehicleType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2318,7 +2318,7 @@ format 212
       end
     end
 
-    classinstance 7680770 "DrivingIncidentAugmentation"
+    classinstance 7681026 "DrivingIncidentAugmentation"
       type class_ref 6673922 // DrivingIncidentAugmentationType
       attributes
         end
@@ -2350,7 +2350,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15069570 "citation:RedLightCameraIndicator"
+      attribute 15166466 "citation:RedLightCameraIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2365,7 +2365,7 @@ format 212
 	comment "An indicator that a automated camera was used to detect traffic signal violations."
       end
 
-      attribute 15068674 "j:ItemTotalDamageValue"
+      attribute 15165570 "j:ItemTotalDamageValue"
 	public type class_ref 6656770 // ItemValueType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2381,7 +2381,7 @@ format 212
       end
     end
 
-    classinstance 7713154 "ParkingFacility"
+    classinstance 7713538 "ParkingFacility"
       type class_ref 6646146 // FacilityType
       attributes
         end
@@ -2392,7 +2392,7 @@ format 212
       comment "The name of a parking facility/lot."
     end
 
-    classinstance 7713282 "ParkingMeterSpaceNumber"
+    classinstance 7713666 "ParkingMeterSpaceNumber"
       type class_ref 6653314 // NumericType
       attributes
         end
@@ -2403,7 +2403,7 @@ format 212
       comment "An identifier for a parking space or meter."
     end
 
-    classinstance 7713410 "ParkingViolation"
+    classinstance 7713794 "ParkingViolation"
       type class_ref 6673154 // ParkingViolationType
       attributes
         end
@@ -2431,10 +2431,10 @@ format 212
 	relation 5367170 ---|>
 	  a public
 	    classrelation_ref 5369474 // <generalisation>
-	  b parent class_ref 6636418 // IncidentType
+	  b parent class_ref 6636290 // IncidentType
       end
 
-      attribute 15065346 "citation:ParkingFacility"
+      attribute 15162242 "citation:ParkingFacility"
 	public type class_ref 6646146 // FacilityType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2449,7 +2449,7 @@ format 212
 	comment "The name of a parking facility/lot."
       end
 
-      attribute 15065474 "citation:ParkingMeterSpaceNumber"
+      attribute 15162370 "citation:ParkingMeterSpaceNumber"
 	public type class_ref 6653314 // NumericType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2465,7 +2465,7 @@ format 212
       end
     end
 
-    classinstance 7721986 "RedLightCameraIndicator"
+    classinstance 7722370 "RedLightCameraIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -2476,7 +2476,7 @@ format 212
       comment "An indicator that a automated camera was used to detect traffic signal violations."
     end
 
-    classinstance 7708802 "SubjectAugmentation"
+    classinstance 7709058 "SubjectAugmentation"
       type class_ref 6664962 // SubjectAugmentationType
       attributes
         end
@@ -2508,7 +2508,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15053826 "j:DriverLicense"
+      attribute 15150594 "j:DriverLicense"
 	public type class_ref 6649218 // DriverLicenseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2523,7 +2523,7 @@ format 212
 	comment "A license issued to a person granting driving privileges."
       end
 
-      attribute 15040130 "j:PersonBloodAlcoholContentNumberText"
+      attribute 15136642 "j:PersonBloodAlcoholContentNumberText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2539,7 +2539,7 @@ format 212
       end
     end
 
-    classinstance 7735170 "VehicleAugmentation"
+    classinstance 7735554 "VehicleAugmentation"
       type class_ref 6673026 // VehicleAugmentationType
       attributes
         end
@@ -2571,7 +2571,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15064194 "ecf:VehicleOperatorInsuranceCoverage"
+      attribute 15160962 "ecf:VehicleOperatorInsuranceCoverage"
 	public type class_ref 6672002 // InsuranceType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2586,7 +2586,7 @@ format 212
 	comment "Information concerning whether a driver of a motor vehicle possesses proof of insurance coverage required by law."
       end
 
-      attribute 15076098 "j:ConveyanceRegistration"
+      attribute 15172994 "j:ConveyanceRegistration"
 	public type class_ref 6660482 // ConveyanceRegistrationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2666,7 +2666,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15038466 "civil:AmountInControversy"
+      attribute 15134978 "civil:AmountInControversy"
 	public type class_ref 6638082 // AmountType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2681,7 +2681,7 @@ format 212
 	comment "The amount set forth in an ad damnum clause in a complaint, counter claim, or cross complaint."
       end
 
-      attribute 15046658 "civil:CivilClassActionIndicator"
+      attribute 15143170 "civil:CivilClassActionIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2696,7 +2696,7 @@ format 212
 	comment "Whether the filer is requesting that this case proceed as a class action."
       end
 
-      attribute 15049218 "civil:DecedentEstateCase"
+      attribute 15145730 "civil:DecedentEstateCase"
 	public type class_ref 6669314 // DecedentEstateCaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2711,7 +2711,7 @@ format 212
 	comment "Information about a case administering and distributing the assets of a testate or intestate decedent."
       end
 
-      attribute 15054594 "civil:FiduciaryCaseAssociation"
+      attribute 15151362 "civil:FiduciaryCaseAssociation"
 	public type class_ref 6670338 // FiduciaryCaseAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2726,7 +2726,7 @@ format 212
 	comment "InfInformation about a guardianship, conservatorship, trust, or mental health case."
       end
 
-      attribute 15058050 "civil:JurisdictionalGroundsCode"
+      attribute 15154818 "civil:JurisdictionalGroundsCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2741,7 +2741,7 @@ format 212
 	comment "The grounds for invoking the jurisdiction of a limited jurisdiction court.  Allowed values set forth in Court policy. Not used in general jurisdiction courts."
       end
 
-      attribute 15058178 "civil:JuryDemandIndicator"
+      attribute 15154946 "civil:JuryDemandIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2756,7 +2756,7 @@ format 212
 	comment "Whether filer invokes the right to trial by jury."
       end
 
-      attribute 15070082 "civil:ReliefTypeCode"
+      attribute 15166978 "civil:ReliefTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -2771,7 +2771,7 @@ format 212
 	comment "Indicator of the type of relief requested in the case, e.g., damages, equitable relief (injunction).  Allowable values defined in Court Policy."
       end
 
-      attribute 15045634 "ecf:CauseOfActionCode"
+      attribute 15142146 "ecf:CauseOfActionCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -2841,7 +2841,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15049090 "civil:Decedent"
+      attribute 15145602 "civil:Decedent"
 	public type class_ref 6639746 // PersonType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -2856,7 +2856,7 @@ format 212
 	comment "The deceased person who estate is the subject of a court case."
       end
 
-      attribute 15048834 "civil:WillFilingDate"
+      attribute 15145346 "civil:WillFilingDate"
 	public type class_ref 6637186 // DateType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -2871,7 +2871,7 @@ format 212
 	comment "Date on which the will of the decesaed person was filed in the court."
       end
 
-      attribute 15048706 "nc:PersonDeathDate"
+      attribute 15145218 "nc:PersonDeathDate"
 	public type class_ref 6637186 // DateType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -2887,7 +2887,7 @@ format 212
       end
     end
 
-    classinstance 7686786 "FiduciaryCaseAssociation"
+    classinstance 7687042 "FiduciaryCaseAssociation"
       type class_ref 6670338 // FiduciaryCaseAssociationType
       attributes
         end
@@ -2919,7 +2919,7 @@ format 212
 	  b parent class_ref 6649986 // PersonCaseAssociationType
       end
 
-      attribute 15054722 "civil:FiduciaryTypeCode"
+      attribute 15151490 "civil:FiduciaryTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -2935,7 +2935,7 @@ format 212
       end
     end
 
-    classinstance 7686914 "FiduciaryTypeCode"
+    classinstance 7687170 "FiduciaryTypeCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -2948,7 +2948,7 @@ format 212
       comment "Legal description of the role of a fiduciary. Examples: guardian, trustee, conservator of the person, conservator of the estate."
     end
 
-    classinstance 7696770 "JurisdictionalGroundsCode"
+    classinstance 7697026 "JurisdictionalGroundsCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -2961,7 +2961,7 @@ format 212
       comment "The grounds for invoking the jurisdiction of a limited jurisdiction court.  Allowed values set forth in Court policy. Not used in general jurisdiction courts."
     end
 
-    classinstance 7697410 "JuryDemandIndicator"
+    classinstance 7697666 "JuryDemandIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -2972,7 +2972,7 @@ format 212
       comment "Whether filer invokes the right to trial by jury."
     end
 
-    classinstance 7723266 "ReliefTypeCode"
+    classinstance 7723650 "ReliefTypeCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -3049,7 +3049,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15068546 "criminal:PreliminaryHearingEstimatedDuration"
+      attribute 15165442 "criminal:PreliminaryHearingEstimatedDuration"
 	public type class_ref 6647298 // duration
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3064,7 +3064,7 @@ format 212
 	comment "The prosecutor estimate of the time that will be required to conduct a preliminary hearing."
       end
 
-      attribute 15068802 "criminal:ProsecutionRecommendedBailText"
+      attribute 15165698 "criminal:ProsecutionRecommendedBailText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3079,7 +3079,7 @@ format 212
 	comment "The bail amount recommended by the prosecutor."
       end
 
-      attribute 15038850 "j:Arrest"
+      attribute 15135362 "j:Arrest"
 	public type class_ref 6638722 // ArrestType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3094,7 +3094,7 @@ format 212
 	comment "An apprehension of a subject by a peace official based on an observed or a reported violation of a law or ordinance, an outstanding arrest warrant, or probable cause information."
       end
 
-      attribute 15046402 "j:Citation"
+      attribute 15142914 "j:Citation"
 	public type class_ref 6643330 // CitationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3109,7 +3109,7 @@ format 212
 	comment "An official summons to appear in court or pay a fine given to a subject from a peace official due to a subjects violation or infraction of a law."
       end
 
-      attribute 15072642 "j:Sentence"
+      attribute 15169538 "j:Sentence"
 	public type class_ref 6657666 // SentenceType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3168,7 +3168,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15038338 "criminal:ChargeAmendedIndicator"
+      attribute 15134850 "criminal:ChargeAmendedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3183,7 +3183,7 @@ format 212
 	comment "An indicator that the charge submitted amends an earlier submitted charge."
       end
 
-      attribute 15063810 "j:OffenseChargeAssociation"
+      attribute 15160578 "j:OffenseChargeAssociation"
 	public type class_ref 6653826 // OffenseChargeAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3198,7 +3198,7 @@ format 212
 	comment "A relationship between an offense that occurred and the formal charge that was assigned to it as a result of classifying the offense."
       end
 
-      attribute 15063938 "j:OffenseLocationAssociation"
+      attribute 15160706 "j:OffenseLocationAssociation"
 	public type class_ref 6662146 // OffenseLocationAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3213,7 +3213,7 @@ format 212
 	comment "A relationship between an offense and a location at which the offense occurred."
       end
 
-      attribute 15049346 "j:PersonChargeAssociation"
+      attribute 15145858 "j:PersonChargeAssociation"
 	public type class_ref 6645634 // PersonChargeAssociationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3229,7 +3229,7 @@ format 212
       end
     end
 
-    classinstance 7719170 "PreliminaryHearingEstimatedDuration"
+    classinstance 7719554 "PreliminaryHearingEstimatedDuration"
       type class_ref 6647298 // duration
       attributes
         end
@@ -3240,7 +3240,7 @@ format 212
       comment "The prosecutor estimate of the time that will be required to conduct a preliminary hearing."
     end
 
-    classinstance 7720066 "ProsecutionRecommendedBailText"
+    classinstance 7720450 "ProsecutionRecommendedBailText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -3251,7 +3251,7 @@ format 212
       comment "The bail amount recommended by the prosecutor."
     end
 
-    classinstance 7725954 "SentenceAugmentation"
+    classinstance 7726338 "SentenceAugmentation"
       type class_ref 6668546 // SentenceAugmentationType
       attributes
         end
@@ -3283,7 +3283,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15046914 "criminal:SentenceConcurrentAssociation"
+      attribute 15143426 "criminal:SentenceConcurrentAssociation"
 	public type class_ref 6643586 // RelatedActivityAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3330,7 +3330,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/datecallback"
     key "path" value "datecallback.xsd"
-    classinstance 7707778 "NotifyCourtDateMessage"
+    classinstance 7708034 "NotifyCourtDateMessage"
       type class_ref 6665346 // NotifyCourtDateMessageType
       attributes
         end
@@ -3341,7 +3341,7 @@ format 212
       comment "The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest."
     end
 
-    classinstance 7704578 "NotifyCourtDateMessageAugmentationPoint"
+    classinstance 7704834 "NotifyCourtDateMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -3372,7 +3372,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15062658 "datecallback:NotifyCourtDateMessageAugmentationPoint"
+      attribute 15159426 "datecallback:NotifyCourtDateMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3387,7 +3387,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15043074 "nc:Case"
+      attribute 15139586 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3402,7 +3402,7 @@ format 212
 	comment "An aggregation of information about a set of related activities and events."
       end
 
-      attribute 15041026 "xcal:icalendar"
+      attribute 15137538 "xcal:icalendar"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3449,7 +3449,7 @@ format 212
       comment "The court case in which the filing is being docketed."
     end
 
-    classinstance 7724674 "FilingReviewCommentsText"
+    classinstance 7725058 "FilingReviewCommentsText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -3460,7 +3460,7 @@ format 212
       comment "Comments provided by the clerk to the court record system during review."
     end
 
-    classinstance 7721602 "RecordDocketingMessage"
+    classinstance 7721986 "RecordDocketingMessage"
       type class_ref 6666882 // RecordDocketingMessageType
       attributes
         end
@@ -3471,7 +3471,7 @@ format 212
       comment "Message resulting from clerk review and edit of a ReviewFilingMessage."
     end
 
-    classinstance 7705090 "RecordDocketingMessageAugmentationPoint"
+    classinstance 7705346 "RecordDocketingMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -3502,7 +3502,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15043330 "docket:CorrectedCase"
+      attribute 15139842 "docket:CorrectedCase"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3517,7 +3517,7 @@ format 212
 	comment "The court case in which the filing is being docketed."
       end
 
-      attribute 15070594 "docket:FilingReviewCommentsText"
+      attribute 15167490 "docket:FilingReviewCommentsText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3532,7 +3532,7 @@ format 212
 	comment "Comments provided by the clerk to the court record system during review."
       end
 
-      attribute 15063170 "docket:RecordDocketingMessageAugmentationPoint"
+      attribute 15159938 "docket:RecordDocketingMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3547,7 +3547,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15072130 "docket:SealCaseIndicator"
+      attribute 15169026 "docket:SealCaseIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -3562,7 +3562,7 @@ format 212
 	comment "Instruction from the clerk to the court record to represent this case as \"sealed.\""
       end
 
-      attribute 15070850 "ecf:ReviewedConnectedDocument"
+      attribute 15167746 "ecf:ReviewedConnectedDocument"
 	public type class_ref 6669698 // ReviewedDocumentType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3577,7 +3577,7 @@ format 212
 	comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
       end
 
-      attribute 15071106 "ecf:ReviewedLeadDocument"
+      attribute 15168002 "ecf:ReviewedLeadDocument"
 	public type class_ref 6669698 // ReviewedDocumentType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -3592,7 +3592,7 @@ format 212
 	comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
       end
 
-      attribute 15064834 "filing:FilingMessage"
+      attribute 15161602 "filing:FilingMessage"
 	public type class_ref 6665858 // FilingMessageType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3608,7 +3608,7 @@ format 212
       end
     end
 
-    classinstance 7725442 "SealCaseIndicator"
+    classinstance 7725826 "SealCaseIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -3639,7 +3639,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/docketcallback"
     key "path" value "docketcallback.xsd"
-    classinstance 7707906 "NotifyDocketingCompleteMessage"
+    classinstance 7708162 "NotifyDocketingCompleteMessage"
       type class_ref 6672258 // NotifyDocketingCompleteMessageType
       attributes
         end
@@ -3650,7 +3650,7 @@ format 212
       comment "The message returned from the Court Record MDE to the Filing Review MDE when the functions of entering information onto the docket or register of actions and commiting a filed document(s) to the official court record have been completed, conveying the results of those functions."
     end
 
-    classinstance 7704706 "NotifyDocketingCompleteMessageAugmentationPoint"
+    classinstance 7704962 "NotifyDocketingCompleteMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -3681,7 +3681,7 @@ format 212
 	  b parent class_ref 6666754 // CallbackMessageType
       end
 
-      attribute 15062786 "docketcallback:NotifyDocketingCompleteMessageAugmentationPoint"
+      attribute 15159554 "docketcallback:NotifyDocketingCompleteMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3717,7 +3717,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/documentrequest"
     key "path" value "documentrequest.xsd"
-    classinstance 7690754 "GetDocumentRequestMessage"
+    classinstance 7691010 "GetDocumentRequestMessage"
       type class_ref 6666242 // GetDocumentRequestMessageType
       attributes
         end
@@ -3728,7 +3728,7 @@ format 212
       comment "The base information contained in any query message."
     end
 
-    classinstance 7703042 "GetDocumentRequestMessageAugmentationPoint"
+    classinstance 7703298 "GetDocumentRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -3759,7 +3759,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15061122 "documentrequest:GetDocumentRequestMessageAugmentationPoint"
+      attribute 15157890 "documentrequest:GetDocumentRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3774,7 +3774,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15042562 "nc:CaseTrackingID"
+      attribute 15139074 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3789,7 +3789,7 @@ format 212
 	comment "An identifier used to track a case."
       end
 
-      attribute 15050370 "nc:Document"
+      attribute 15146882 "nc:Document"
 	public type class_ref 6640130 // DocumentType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3825,7 +3825,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/documentresponse"
     key "path" value "documentresponse.xsd"
-    classinstance 7690882 "GetDocumentResponseMessage"
+    classinstance 7691138 "GetDocumentResponseMessage"
       type class_ref 6666370 // GetDocumentResponseMessageType
       attributes
         end
@@ -3836,7 +3836,7 @@ format 212
       comment "The court response to a request for an electronic document in the court official record."
     end
 
-    classinstance 7703170 "GetDocumentResponseMessageAugmentationPoint"
+    classinstance 7703426 "GetDocumentResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -3867,7 +3867,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15061250 "documentresponse:GetDocumentResponseMessageAugmentationPoint"
+      attribute 15158018 "documentresponse:GetDocumentResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3882,7 +3882,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15042690 "nc:CaseTrackingID"
+      attribute 15139202 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3897,7 +3897,7 @@ format 212
 	comment "An identifier used to track a case."
       end
 
-      attribute 15050498 "nc:Document"
+      attribute 15147010 "nc:Document"
 	public type class_ref 6640130 // DocumentType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -3933,7 +3933,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/domestic"
     key "path" value "domestic.xsd"
-    classinstance 7680002 "CaseAugmentation"
+    classinstance 7680258 "CaseAugmentation"
       type class_ref 6668034 // CaseAugmentationType
       attributes
         end
@@ -3965,7 +3965,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15046018 "cyfs:ChildSupportEnforcementCase"
+      attribute 15142530 "cyfs:ChildSupportEnforcementCase"
 	public type class_ref 6643202 // ChildSupportEnforcementCaseType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3980,7 +3980,7 @@ format 212
 	comment "A child support enforcement case."
       end
 
-      attribute 15065218 "cyfs:ParentChildAssociation"
+      attribute 15162114 "cyfs:ParentChildAssociation"
 	public type class_ref 6654850 // ParentChildAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -3995,7 +3995,7 @@ format 212
 	comment "An association between a child and a person who is in a parent role toward that child."
       end
 
-      attribute 15046146 "cyfs:PersonCaseAssociation"
+      attribute 15142658 "cyfs:PersonCaseAssociation"
 	public type class_ref 6649986 // PersonCaseAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4010,7 +4010,7 @@ format 212
 	comment "A relationship between a person and a case."
       end
 
-      attribute 15047426 "domestic:CaseContestedIndicator"
+      attribute 15143938 "domestic:CaseContestedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4025,7 +4025,7 @@ format 212
 	comment "Whether a divorce is contested."
       end
 
-      attribute 15051778 "domestic:DomesticCaseOrder"
+      attribute 15148546 "domestic:DomesticCaseOrder"
 	public type class_ref 6669058 // DomesticCaseOrderType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4040,7 +4040,7 @@ format 212
 	comment "Information concerning a court order in a domestic case."
       end
 
-      attribute 15052034 "domestic:DomesticViolencePetition"
+      attribute 15148802 "domestic:DomesticViolencePetition"
 	public type class_ref 6668290 // DomesticViolencePetitionType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4055,7 +4055,7 @@ format 212
 	comment "Information concerning a petition for domestic violence restraining or protective order."
       end
 
-      attribute 15045762 "ecf:CaseCauseOfActionCode"
+      attribute 15142274 "ecf:CaseCauseOfActionCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4070,7 +4070,7 @@ format 212
 	comment "The legal ground on which the request for relief is based.  Allowed values set forth in court policy. Example: the basis(es) for relief in a civil case; the grounds for divorce in a state that does not recognize no-fault divorce; grounds for entry of an order of protection in a domestic violence case."
       end
 
-      attribute 15051906 "nc:PersonUnionAssociation"
+      attribute 15148674 "nc:PersonUnionAssociation"
 	public type class_ref 6647042 // PersonUnionAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4130,7 +4130,7 @@ format 212
       comment "Description of temporary custody award that court is being asked to include in the order."
     end
 
-    classinstance 7680130 "DomesticCaseOrder"
+    classinstance 7680386 "DomesticCaseOrder"
       type class_ref 6669058 // DomesticCaseOrderType
       attributes
         end
@@ -4161,7 +4161,7 @@ format 212
 	  b parent class_ref 6639490 // CourtOrderType
       end
 
-      attribute 15048066 "domestic:CourtFindingsText"
+      attribute 15144578 "domestic:CourtFindingsText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4176,7 +4176,7 @@ format 212
 	comment "A description of the findings of the court."
       end
 
-      attribute 15064322 "domestic:DomesticCaseOrderTypeText"
+      attribute 15161090 "domestic:DomesticCaseOrderTypeText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4191,7 +4191,7 @@ format 212
 	comment "Category of order, including Establish, Modify, Enforce, Modify and Enforce, and Vacate."
       end
 
-      attribute 15063682 "domestic:FinancialObligation"
+      attribute 15160450 "domestic:FinancialObligation"
 	public type class_ref 6670978 // FinancialObligationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4207,7 +4207,7 @@ format 212
       end
     end
 
-    classinstance 7709698 "DomesticCaseOrderTypeText"
+    classinstance 7709954 "DomesticCaseOrderTypeText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -4218,7 +4218,7 @@ format 212
       comment "Category of order, including Establish, Modify, Enforce, Modify and Enforce, and Vacate."
     end
 
-    classinstance 7680386 "DomesticViolencePetition"
+    classinstance 7680642 "DomesticViolencePetition"
       type class_ref 6668290 // DomesticViolencePetitionType
       attributes
         end
@@ -4249,7 +4249,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15045890 "domestic:ChildSuportText"
+      attribute 15142402 "domestic:ChildSuportText"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4264,7 +4264,7 @@ format 212
 	comment "Description of temporary child support award that the court is being asked to order."
       end
 
-      attribute 15048578 "domestic:CustodyDescriptionText"
+      attribute 15145090 "domestic:CustodyDescriptionText"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4279,7 +4279,7 @@ format 212
 	comment "Description of temporary custody award that court is being asked to include in the order."
       end
 
-      attribute 15070466 "domestic:RespondentDangerAlertindicator"
+      attribute 15167362 "domestic:RespondentDangerAlertindicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4294,7 +4294,7 @@ format 212
 	comment "Whether the person against whom a proposed order would be entered should be considered a danger to others, including law enforcement officers responding to a domestic disturbance call."
       end
 
-      attribute 15068930 "j:ProtectionOrder"
+      attribute 15165826 "j:ProtectionOrder"
 	public type class_ref 6656898 // ProtectionOrderType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4310,7 +4310,7 @@ format 212
       end
     end
 
-    classinstance 7708546 "FinancialObligation"
+    classinstance 7708802 "FinancialObligation"
       type class_ref 6670978 // FinancialObligationType
       attributes
         end
@@ -4341,7 +4341,7 @@ format 212
 	  b parent class_ref 6650370 // ObligationType
       end
 
-      attribute 15073922 "cyfs:StateDisbursementIndicator"
+      attribute 15170818 "cyfs:StateDisbursementIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4356,7 +4356,7 @@ format 212
 	comment "True if the child-support order directs the obligor to make payments to a state agency for disbursement to the custodial parent; false otherwise."
       end
 
-      attribute 15057666 "domestic:IncomeAttachedIndicator"
+      attribute 15154434 "domestic:IncomeAttachedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4371,7 +4371,7 @@ format 212
 	comment "Indicates whether the responsible party income should be attached."
       end
 
-      attribute 15066882 "domestic:ObligationPaymentAmount"
+      attribute 15163778 "domestic:ObligationPaymentAmount"
 	public type class_ref 6638082 // AmountType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4387,7 +4387,7 @@ format 212
       end
     end
 
-    classinstance 7693954 "IncomeAttachedIndicator"
+    classinstance 7694210 "IncomeAttachedIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -4398,7 +4398,7 @@ format 212
       comment "Indicates whether the responsible party income should be attached."
     end
 
-    classinstance 7714562 "ObligationPaymentAmount"
+    classinstance 7714946 "ObligationPaymentAmount"
       type class_ref 6638082 // AmountType
       attributes
         end
@@ -4409,7 +4409,7 @@ format 212
       comment "he amount owed each payment period."
     end
 
-    classinstance 7724034 "RespondentDangerAlertindicator"
+    classinstance 7724418 "RespondentDangerAlertindicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -4440,7 +4440,7 @@ format 212
     ncouples 2
     key "URI" value "http://www.w3.org/2000/09/xmldsig#"
     key "path" value "ds.xsd"
-    classinstance 7720322 "KeyInfo"
+    classinstance 7720706 "KeyInfo"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -4513,7 +4513,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15055490 "ecf:FilingCompletionDate"
+      attribute 15152258 "ecf:FilingCompletionDate"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4528,7 +4528,7 @@ format 212
 	comment "the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE"
       end
 
-      attribute 15056130 "ecf:FilingStatus"
+      attribute 15152898 "ecf:FilingStatus"
 	public type class_ref 6670722 // FilingStatusType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4543,7 +4543,7 @@ format 212
 	comment "The status of a filing"
       end
 
-      attribute 15070722 "ecf:ReviewedConnectedDocument"
+      attribute 15167618 "ecf:ReviewedConnectedDocument"
 	public type class_ref 6669698 // ReviewedDocumentType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4558,7 +4558,7 @@ format 212
 	comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
       end
 
-      attribute 15070978 "ecf:ReviewedLeadDocument"
+      attribute 15167874 "ecf:ReviewedLeadDocument"
 	public type class_ref 6669698 // ReviewedDocumentType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -4573,7 +4573,7 @@ format 212
 	comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
       end
 
-      attribute 15043202 "nc:Case"
+      attribute 15139714 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4623,7 +4623,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15044866 "ecf:CaseCategoryCode"
+      attribute 15141378 "ecf:CaseCategoryCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4638,7 +4638,7 @@ format 212
 	comment "The type of trial in the lower court (e.g. bench, jury)."
       end
 
-      attribute 15064962 "ecf:CaseOtherEntityAttorney"
+      attribute 15161730 "ecf:CaseOtherEntityAttorney"
 	public type class_ref 6641666 // CaseOfficialType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4650,10 +4650,25 @@ format 212
 	MysqlColumn
 	ncouples 1
 	key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseOtherEntityAttorney"
-	comment "Attorney representing an \"other party\" in this case."
+	comment "Attorney representing an \"other participant\" in this case."
       end
 
-      attribute 15044354 "ecf:CaseShortTitleText"
+      attribute 15161858 "ecf:CaseOtherParty"
+	public type class_ref 6640386 // EntityType
+	multiplicity "0,unbounded"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 1
+	key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseOtherParty"
+	comment "A miscellaneous person involved in a court case.  Also, used to contain information about the parent(s) of a juvenile party in a juvenile case. Examples: caseworker, probation officer, bail bondsman, interested person, arresting officer,  intervenor, guardian ad litem, heir, beneficiary (e.g., of a trust), friend of court, interested party, CASA (court appointed special advocate)."
+      end
+
+      attribute 15140866 "ecf:CaseShortTitleText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4668,7 +4683,7 @@ format 212
 	comment "An abbreviated official name of a Case, usually shortened to contain only the last name of the first listed party on each side of the case.  Examples: Smith v. Jones, et al.; State v. Alexander. No title exists when the message is initiating a new case."
       end
 
-      attribute 15045122 "ecf:CaseTypeCode"
+      attribute 15141634 "ecf:CaseTypeCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4683,7 +4698,7 @@ format 212
 	comment "Indicates whether the e-filing system supports electronic filing of a certain case type."
       end
 
-      attribute 15043842 "nc:Metadata"
+      attribute 15140354 "nc:Metadata"
 	public type class_ref 6642178 // MetadataType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4698,7 +4713,7 @@ format 212
 	comment "Information that further qualifies primary data; data about data."
       end
 
-      attribute 15064706 "nc:OrganizationAssociation"
+      attribute 15161474 "nc:OrganizationAssociation"
 	public type class_ref 6654466 // OrganizationAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4713,7 +4728,7 @@ format 212
 	comment "An association between an organization and another organization."
       end
 
-      attribute 15067778 "nc:PersonAssociation"
+      attribute 15164674 "nc:PersonAssociation"
 	public type class_ref 6646914 // PersonAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4728,7 +4743,7 @@ format 212
 	comment "An association between people."
       end
 
-      attribute 15067650 "nc:PersonOrganizationAssociation"
+      attribute 15164546 "nc:PersonOrganizationAssociation"
 	public type class_ref 6655362 // PersonOrganizationAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4768,7 +4783,7 @@ format 212
       comment "The legal ground on which the request for relief is based.  Allowed values set forth in court policy. Example: the basis(es) for relief in a civil case; the grounds for divorce in a state that does not recognize no-fault divorce; grounds for entry of an order of protection in a domestic violence case."
     end
 
-    classinstance 7681154 "CaseFiling"
+    classinstance 7681410 "CaseFiling"
       type class_ref 6664706 // CaseFilingType
       attributes
         end
@@ -4799,7 +4814,7 @@ format 212
 	  b parent class_ref 6640130 // DocumentType
       end
 
-      attribute 15052546 "ecf:ElectronicServiceInformation"
+      attribute 15149314 "ecf:ElectronicServiceInformation"
 	public type class_ref 6669954 // ElectronicServiceInformationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4814,7 +4829,7 @@ format 212
 	comment "Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document."
       end
 
-      attribute 15054978 "ecf:FilingPartyID"
+      attribute 15151746 "ecf:FilingPartyID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4829,7 +4844,7 @@ format 212
 	comment "A unique identifier for a person or organization that requests information."
       end
 
-      attribute 15072386 "ecf:SendingMDELocationID"
+      attribute 15169282 "ecf:SendingMDELocationID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4844,7 +4859,7 @@ format 212
 	comment "Location for the MDE to which asynchronous and service messages can be sent. This unique location is self-assigned by the MDE."
       end
 
-      attribute 15072514 "ecf:ServiceInteractionProfileCode"
+      attribute 15169410 "ecf:ServiceInteractionProfileCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4859,7 +4874,7 @@ format 212
 	comment "An identifier, from a list of allowed values defined in the Court Filing specification, of a message profile supported by this court."
       end
 
-      attribute 15047682 "j:CaseCourt"
+      attribute 15144194 "j:CaseCourt"
 	public type class_ref 6644354 // CourtType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4874,7 +4889,7 @@ format 212
 	comment "A court of law in which the case is being tried."
       end
 
-      attribute 15055362 "nc:DocumentInformationCutOffDate"
+      attribute 15152130 "nc:DocumentInformationCutOffDate"
 	public type class_ref 6637186 // DateType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4889,7 +4904,7 @@ format 212
 	comment "A date after which contributions to the content of a document will no longer be accepted."
       end
 
-      attribute 15074306 "nc:DocumentPostDate"
+      attribute 15171202 "nc:DocumentPostDate"
 	public type class_ref 6637186 // DateType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4927,9 +4942,8 @@ format 212
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 2
+      ncouples 1
       key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseOfficialAugmentationType"
-      key "Notes" value "Genericode code list ecf:CaseParticipantRoleCode.gc"
       comment "An augmentation type"
       classrelation 5362306 // <generalisation>
 	relation 5360002 ---|>
@@ -4938,7 +4952,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15039490 "ecf:AttorneyID"
+      attribute 15136002 "ecf:AttorneyID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -4953,7 +4967,7 @@ format 212
 	comment "An identifier for an attorney"
       end
 
-      attribute 15071362 "ecf:CaseParticipantRoleCode"
+      attribute 15168258 "ecf:CaseParticipantRoleCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -4968,7 +4982,7 @@ format 212
 	comment "A type of participant in a court case"
       end
 
-      attribute 15070338 "ecf:CaseRepresentedParty"
+      attribute 15167234 "ecf:CaseRepresentedParty"
 	public type class_ref 6640386 // EntityType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -4984,7 +4998,7 @@ format 212
       end
     end
 
-    classinstance 7712002 "CaseOtherEntityAttorney"
+    classinstance 7712130 "CaseOtherEntityAttorney"
       type class_ref 6641666 // CaseOfficialType
       attributes
         end
@@ -4992,10 +5006,21 @@ format 212
         end
       ncouples 1
       key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseOtherEntityAttorney"
-      comment "Attorney representing an \"other party\" in this case."
+      comment "Attorney representing an \"other participant\" in this case."
     end
 
-    classinstance 7713922 "CaseParticipantRoleCode"
+    classinstance 7712386 "CaseOtherParty"
+      type class_ref 6640386 // EntityType
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseOtherParty"
+      comment "A miscellaneous person involved in a court case.  Also, used to contain information about the parent(s) of a juvenile party in a juvenile case. Examples: caseworker, probation officer, bail bondsman, interested person, arresting officer,  intervenor, guardian ad litem, heir, beneficiary (e.g., of a trust), friend of court, interested party, CASA (court appointed special advocate)."
+    end
+
+    classinstance 7714306 "CaseParticipantRoleCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5003,12 +5028,13 @@ format 212
         end
       ncouples 3
       key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,CaseParticipantRoleCode"
-      key "Notes" value "Genericode code list CaseParticipantRoleCode.gc; Genericode code list ecf:CaseParticipantRoleCode.gc"
-      key "codeList" value "Administrator; Bail bondsman; Beneficiary; Case worker; Defendant; Friend of court; Garnishee; Heir; Interested party; Intervenor; Next of kin; Petitioner; Plaintiff; Probation officer; Respondent; Special Master; Special Representative; Surety; Third party defendant; Third party plaintiff; Conflict defender; Defendant counsel; Guardian at litem=Child's attorney; Interpleader attorney; Intervenor attorney; Lead attorney; Plaintiff defender; Private defense counsel; Pro hac vice; Prosecutor; Public defender=Defendant's appointed counsel; Third party plaintiff attorney"
+      key "Notes" value "Genericode code list ecf:CaseParticipantRoleCode.gc"
+      key "codeList" value "Administrator=Court appointed manager of an estate;AdoptedChild=Child adopted by a parent;AdoptiveParent=Parent who adopts a child;Affiant=Author of an affidavit;Appellant=Party who appeals a to a higher court;Appellee=Party against whom an appeal is filed;Arbitrator=Person who decides disputes;Attorney=An advocate, counsel, or official agent employed in preparing, managing, and representing parties in cases in the courts.;Auditor=A person or organization appointed by the court to audit fiscal accountings;BailBondsman=Entity issuing bail bonds;Bailiff=A peace officer who keeps order in a court;Beneficiary=One who inherits under a will or other  estate, such as a trust;CASA=Person that provides assistance to a child in court matters;CaseWorker=Supervisor of a juvenile offender;Child=A person, age 12 or younger, who is the subject of an adoption, termination of parental rights or dependency matter;Claimant=The name given to a person who lays claim to property seized on a libel in rem. and who is authorized and admitted to defend the action;Clerk=An official who handles the business of a court;Constable=A peace officer;Contestee=A person who objects to a determination made by a personal representative.;Contestor=A personal representative, especially in the context of a trust.;CounterDefendant=A defendant in a counterclaim (the plaintiff of the original action);CounterPlaintiff=A plaintiff in a counterclaim (the defendant in the original action);CourtReporter=A person who records a court proceeding and produces a transcript;Creditor=An entity who is owed money or property, for example from an estate;CrossAppellant=The person or entity who files a cross appeal to counter an appeal already filed by the original appellant.;CrossAppellee=The person or entity who files a cross appeal to counter an appeal already filed by the original appellee.;CrossClaimant=Complainant in a cross-claim against a co-defendant or co-plaintiff;CrossDefendant=Defendant in a cross-claim against a co-defendant or co-plaintiff;Decedent=Person who died;Defendant=Party against whom an action is brought;Demandant=Initiator of a lawsuit;Executor=Manager of an estate designated by a will;Fiduciary=Person owing a duty of care or loyalty to another;CASA=Court appointed special advocate;Conflict defender=Alternate public defender;Defendant counsel=Attorney for a defendant;Guardian ad litem=Court appointed child's attorney;Interpleader attorney=Attorney for resolving property ownership ;Intervenor attorney=Attorney for an intervenor;Lead attorney=Advocate in charge;Petitioner attorney=Attorney for a petitioner;Plaintiff attorney=Attorney for a plaintiff;Private defense counsel=Attorney for a defendant;Pro hac vice=Out of state attorney;Prosecutor=Government attorney prosecuting crimes;Public defender=Defendant's appointed counsel;Respondent attorney=Attorney for a respondent;Third party plaintiff attorney=Attorney for a third party plaintiff;FosterParent=A person providing temporary care for a child;FriendOfCourt=Entity interested in influencing the outcome of a lawsuit but not an actual party to the suit;Garnishee=Person served with garnishment;GovernmentEntity=A governmental group, such as a municipality, county, parish, providence, commonwealth, country,
+ tribal authority, or governmental agency.;GrandParent=The parent of one's parents;Guardian=Court appointed provider for the wellbeing of a person and/or as their fiduciary for a minor or incapacitated person;HearingOfficer=A person that can hear mental health or other matters, under the supervision of the court.;Heir=Person inheriting an estate;InterestedParty=Entity with an interest in a legal matter;Interpreter=A natural language or sign language translator;Intervenor=Entity joining with another party or parties in a case, such as a plaintiff, defendant, appellant, etc.;InRemProperty=Property which is the object of a legal proceeding.;Judge=Public officer who presides over a court and decides questions of law;JudicialStaff=A person working for a judge;LegalDefender=Defendant's appointed counsel, such as a public defender.;LocalCounsel=Secondary counsel;Magistrate=Public officer who perfoms some functions of a judge;MarriageApplicant=Person who requests a marriage permit;Master=A person that can make some determinations under the supervision of a Judge;Mediator=Neutral third party that leads a mediation betwene parties in dispute;MedicalExaminer=Public official who investigates a death;Minor=A juvenile;MinorVictim=Minor against whom a crime was committed;NextFriend=A person representing a minor in court - they wouldn't represent- they just provide services;NextOfKin=Spouse or nearest blood relative;Other=A miscellaneous role played by an entity that is not a judicial officer,  attorney, or litigant;Parent=Legal or natural father or mother of a person;Patient=Person receiving medical care;Payor=Entity that submits a payment.;Person=A Person;Petitioner=Requestor of a court action;Plaintiff=Initiator of a lawsuit;ProbationOfficer=Supervisor of an offender on probation;ProbateOfficer=One who makes determinations about administration of an estate;Probationer=Offender sentenced to probation;ProcessServer=Person who delivers court documents;Property=Anything owned by a person or entity;RealPartyInInterest=Entity other than the plaintiff that will benefit from a lawsuit;Rehabilitator=One who determines the distribution of assets in an insurance company dissolution under the supervision of a Judge;Respondent=Person against whom an action is brought;SelfRepresentedLitigant=Person or organization representing themselves, with (e.g. advisory counsel) or  without an attorney;SentencingJudge=Judge issuing a sentence;SpecialMaster=Court appointed investigator;SpecialRepresentative=Court appointed child's attorney;SubpoenaedEntity=Person compelled by a writ to testify;Surety=Entity issuing court bonds;ThirdPartyDefendant=A defendant who is not a principal party;ThirdPartyDefendantAttorney=Attorney for a third party defendant;ThirdPartyProvider=One that provides physical, social or mental health services;ThirdPartyPlaintiff=A plaintiff who is not a principal party;TrustMaker=One who creates a trust;Trustee=Manager of property held in trust;Victim=Person against whom a crime was committed;IncapacitatedPerson=Minor or incapacitated person lacking physical or mental abilities to manage their own affairs;Witness=Person with first-hand knowledge of an event;"
       comment "A type of participant in a court case"
     end
 
-    classinstance 7723650 "CaseRepresentedParty"
+    classinstance 7724034 "CaseRepresentedParty"
       type class_ref 6640386 // EntityType
       attributes
         end
@@ -5056,7 +5082,7 @@ format 212
       comment "The legal ground on which the request for relief is based.  Allowed values set forth in court policy. Example: the basis(es) for relief in a civil case; the grounds for divorce in a state that does not recognize no-fault divorce; grounds for entry of an order of protection in a domestic violence case."
     end
 
-    classinstance 7722498 "ChildDocket"
+    classinstance 7722882 "ChildDocket"
       type class_ref 6642050 // CourtEventType
       attributes
         end
@@ -5078,7 +5104,7 @@ format 212
       comment "Indicates whether color is or is not relevant for the presentation of the document."
     end
 
-    classinstance 7699074 "ConnectedDocument"
+    classinstance 7699330 "ConnectedDocument"
       type class_ref 6640130 // DocumentType
       attributes
         end
@@ -5121,7 +5147,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15037826 "nc:RoleOf"
+      attribute 15134338 "nc:RoleOf"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5170,7 +5196,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15069698 "ecf:ChildDocket"
+      attribute 15166594 "ecf:ChildDocket"
 	public type class_ref 6642050 // CourtEventType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -5185,7 +5211,7 @@ format 212
 	comment "An entry on the docket or register of actions that is a child of the current docket entry."
       end
 
-      attribute 15058434 "ecf:ConnectedDocument"
+      attribute 15155202 "ecf:ConnectedDocument"
 	public type class_ref 6640130 // DocumentType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5200,7 +5226,7 @@ format 212
 	comment "The pleading, motion or order that is the subject of this docket entry."
       end
 
-      attribute 15037570 "ecf:CourtEventActor"
+      attribute 15134082 "ecf:CourtEventActor"
 	public type class_ref 6662018 // CourtEventOnBehalfOfActorType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5215,7 +5241,7 @@ format 212
 	comment "The actor who performed the action as set forth in the docket entry."
       end
 
-      attribute 15053186 "ecf:CourtEventEnteredOnDocketDate"
+      attribute 15149954 "ecf:CourtEventEnteredOnDocketDate"
 	public type class_ref 6637186 // DateType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5230,7 +5256,7 @@ format 212
 	comment "Date and time of entry into the court record."
       end
 
-      attribute 15053314 "ecf:CourtEventLocationCode"
+      attribute 15150082 "ecf:CourtEventLocationCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5245,7 +5271,7 @@ format 212
 	comment "A court location"
       end
 
-      attribute 15053570 "ecf:CourtEventLocationText"
+      attribute 15150338 "ecf:CourtEventLocationText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5260,7 +5286,7 @@ format 212
 	comment "A textual description of the location in a court of the calendar event."
       end
 
-      attribute 15037442 "ecf:CourtEventOnBehalfOfActor"
+      attribute 15133954 "ecf:CourtEventOnBehalfOfActor"
 	public type class_ref 6662274 // CourtEventActorType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5275,7 +5301,7 @@ format 212
 	comment "The actor on whose behalf the filing was submitted to the court as set forth in the docket entry."
       end
 
-      attribute 15050114 "ecf:CourtEventTypeCode"
+      attribute 15146626 "ecf:CourtEventTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5290,7 +5316,7 @@ format 212
 	comment "Filter criterion indicating that only calendar entries of a specified type are being requested."
       end
 
-      attribute 15053442 "ecf:CourtLocationCode"
+      attribute 15150210 "ecf:CourtLocationCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5306,7 +5332,7 @@ format 212
       end
     end
 
-    classinstance 7682306 "CourtEventEnteredOnDocketDate"
+    classinstance 7682562 "CourtEventEnteredOnDocketDate"
       type class_ref 6637186 // DateType
       attributes
         end
@@ -5317,7 +5343,7 @@ format 212
       comment "Date and time of entry into the court record."
     end
 
-    classinstance 7684354 "CourtEventLocationCode"
+    classinstance 7684610 "CourtEventLocationCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5329,7 +5355,7 @@ format 212
       comment "A court location"
     end
 
-    classinstance 7684610 "CourtEventLocationText"
+    classinstance 7684866 "CourtEventLocationText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5371,7 +5397,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15037698 "nc:RoleOf"
+      attribute 15134210 "nc:RoleOf"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5400,7 +5426,7 @@ format 212
       comment "Filter criterion indicating that only calendar entries of a specified type are being requested."
     end
 
-    classinstance 7684482 "CourtLocationCode"
+    classinstance 7684738 "CourtLocationCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5413,7 +5439,7 @@ format 212
       comment "A court location"
     end
 
-    classinstance 7722754 "DocumentAssociationAugmentation"
+    classinstance 7723138 "DocumentAssociationAugmentation"
       type class_ref 6674050 // DocumentAssociationAugmentationType
       attributes
         end
@@ -5446,7 +5472,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15069826 "ecf:DocumentRelatedCode"
+      attribute 15166722 "ecf:DocumentRelatedCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5495,7 +5521,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15038082 "ecf:AffectedPartyID"
+      attribute 15134594 "ecf:AffectedPartyID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5510,7 +5536,7 @@ format 212
 	comment "Identifier recognized by the court as being unique within this case,and used to identify a party other than the filer who is affected by the document."
       end
 
-      attribute 15051394 "ecf:DocumentRendition"
+      attribute 15147906 "ecf:DocumentRendition"
 	public type class_ref 6664322 // DocumentRenditionType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -5525,7 +5551,7 @@ format 212
 	comment "Descriptors for a rendition of a Document. This is meant to include all the information about the document that is needed to  enter it into the Document Management System."
       end
 
-      attribute 15055234 "ecf:FilingAttorneyID"
+      attribute 15152002 "ecf:FilingAttorneyID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5540,7 +5566,7 @@ format 212
 	comment "Identifier recognized by the court as being unique within this case,and used to identify the attorney who is filing this document."
       end
 
-      attribute 15051266 "ecf:RedactionRequiredIndicator"
+      attribute 15147778 "ecf:RedactionRequiredIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5555,7 +5581,7 @@ format 212
 	comment "Indicator by the filer that the document must be redacted by the court."
       end
 
-      attribute 15051650 "ecf:RegisterActionDescriptionCode"
+      attribute 15148418 "ecf:RegisterActionDescriptionCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5570,7 +5596,7 @@ format 212
 	comment "The docket code used by the court for the type of document submitted. Allowable values set forth in Court Policy."
       end
 
-      attribute 15073666 "ecf:SpecialHandlingInstructionsText"
+      attribute 15170562 "ecf:SpecialHandlingInstructionsText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5585,7 +5611,7 @@ format 212
 	comment "Any additional instructions for printing of a document (such as printing on front and back of the same page or printing on a particular color paper)."
       end
 
-      attribute 15047170 "nc:DocumentAssociation"
+      attribute 15143682 "nc:DocumentAssociation"
 	public type class_ref 6643970 // DocumentAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5600,7 +5626,7 @@ format 212
 	comment "An association between documents."
       end
 
-      attribute 15051138 "nc:Metadata"
+      attribute 15147650 "nc:Metadata"
 	public type class_ref 6642178 // MetadataType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -5627,7 +5653,7 @@ format 212
       comment "A hash of the document as it appears in the court record.  This attribute will be populated by either the clerk review process or the court record system.  If the latter, then it will be absent in the RecordDocketingMessage.  It will also be absent in callbacks for rejected documents."
     end
 
-    classinstance 7722882 "DocumentRelatedCode"
+    classinstance 7723266 "DocumentRelatedCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -5672,7 +5698,7 @@ format 212
 	  b parent class_ref 6640130 // DocumentType
       end
 
-      attribute 15050754 "cbrn:MultimediaDataMIMEKindText"
+      attribute 15147266 "cbrn:MultimediaDataMIMEKindText"
 	public type class_ref 6636674 // string
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5687,7 +5713,7 @@ format 212
 	comment "A media type listed in http://www.iana.org/assignments/media-types/index.html.  If the media type is not listed, then describe the media type using free-form text."
       end
 
-      attribute 15046786 "ecf:ColorRelevantIndicator"
+      attribute 15143298 "ecf:ColorRelevantIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5702,7 +5728,7 @@ format 212
 	comment "Indicates whether color is or is not relevant for the presentation of the document."
       end
 
-      attribute 15051522 "ecf:DocumentSignature"
+      attribute 15148290 "ecf:DocumentSignature"
 	public type class_ref 6669826 // DocumentSignatureType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5717,7 +5743,7 @@ format 212
 	comment "Information describing or constituting the signature on a document submitted to a court for filing"
       end
 
-      attribute 15069442 "ecf:RedactedIndicator"
+      attribute 15166338 "ecf:RedactedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5732,7 +5758,7 @@ format 212
 	comment "An indicator that sensitive information has been removed from this rendition of the document."
       end
 
-      attribute 15039362 "nc:Attachment"
+      attribute 15135874 "nc:Attachment"
 	public type class_ref 6639618 // BinaryType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -5748,7 +5774,7 @@ format 212
       end
     end
 
-    classinstance 7743874 "DocumentReviewStatus"
+    classinstance 7679362 "DocumentReviewStatus"
       type class_ref 6642434 // StatusType
       attributes
         end
@@ -5759,7 +5785,7 @@ format 212
       comment "The status of a document in the filing review process."
     end
 
-    classinstance 7743746 "DocumentReviewer"
+    classinstance 7679234 "DocumentReviewer"
       type class_ref 6640386 // EntityType
       attributes
         end
@@ -5770,7 +5796,7 @@ format 212
       comment "The entity that reviews and accepts or rejects a filing."
     end
 
-    classinstance 7679234 "DocumentSignature"
+    classinstance 7679490 "DocumentSignature"
       type class_ref 6669826 // DocumentSignatureType
       attributes
         end
@@ -5801,7 +5827,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15073154 "ecf:SignatureAugmentation"
+      attribute 15170050 "ecf:SignatureAugmentation"
 	public type class_ref 6674434 // SignatureAugmentationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -5816,7 +5842,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15073410 "ecf:SignatureProfileCode"
+      attribute 15170306 "ecf:SignatureProfileCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5832,7 +5858,7 @@ format 212
       end
     end
 
-    classinstance 7681282 "ElectronicServiceInformation"
+    classinstance 7681538 "ElectronicServiceInformation"
       type class_ref 6669954 // ElectronicServiceInformationType
       attributes
         end
@@ -5863,7 +5889,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15069186 "ecf:ReceivingMDELocationID"
+      attribute 15166082 "ecf:ReceivingMDELocationID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5878,7 +5904,7 @@ format 212
 	comment "The location of the filing assembly MDE associated with the person receiving service."
       end
 
-      attribute 15069314 "ecf:ReceivingMDEProfileCode"
+      attribute 15166210 "ecf:ReceivingMDEProfileCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5893,7 +5919,7 @@ format 212
 	comment "Code identifying the service interaction profile being used by the receiving filing assembly MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF."
       end
 
-      attribute 15072770 "ecf:ServiceRecipientID"
+      attribute 15169666 "ecf:ServiceRecipientID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -5909,7 +5935,7 @@ format 212
       end
     end
 
-    classinstance 7733762 "EntityAssociationTypeCode"
+    classinstance 7734146 "EntityAssociationTypeCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5922,7 +5948,7 @@ format 212
       comment "A code for the type of relationship between two persons, between two organizations, or between a person and an organization in a case.  Allowable values are set forth in Court Policy.  Examples include parent/child, subsidiary corporation, and chief executive officer."
     end
 
-    classinstance 7719298 "EntityItem"
+    classinstance 7719682 "EntityItem"
       type class_ref 6656642 // ItemType
       attributes
         end
@@ -5935,7 +5961,7 @@ format 212
       comment "A property entity"
     end
 
-    classinstance 7686402 "FeeExceptionReasonCode"
+    classinstance 7686658 "FeeExceptionReasonCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5948,7 +5974,7 @@ format 212
       comment "A code for the reason why a filer does not have to pay an otherwise applicable payment.  Allowable values set forth in Court Policy. Examples are in forma pauperis status granted or a fee waiver application submitted with the filing.."
     end
 
-    classinstance 7686530 "FeeExceptionSupportingText"
+    classinstance 7686786 "FeeExceptionSupportingText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -5959,7 +5985,7 @@ format 212
       comment "Any text needed to support the exemption assertion (reference to a court order, etc.)"
     end
 
-    classinstance 7687554 "FilingAttorneyID"
+    classinstance 7687810 "FilingAttorneyID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -5970,7 +5996,7 @@ format 212
       comment "Identifier recognized by the court as being unique within this case,and used to identify the attorney who is filing this document."
     end
 
-    classinstance 7687810 "FilingCompletionDate"
+    classinstance 7688066 "FilingCompletionDate"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -5981,7 +6007,7 @@ format 212
       comment "the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE"
     end
 
-    classinstance 7687170 "FilingPartyID"
+    classinstance 7687426 "FilingPartyID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -5992,7 +6018,7 @@ format 212
       comment "A unique identifier for a person or organization that requests information."
     end
 
-    classinstance 7688450 "FilingStatus"
+    classinstance 7688706 "FilingStatus"
       type class_ref 6670722 // FilingStatusType
       attributes
         end
@@ -6003,7 +6029,7 @@ format 212
       comment "The status of a filing"
     end
 
-    classinstance 7688578 "FilingStatusCode"
+    classinstance 7688834 "FilingStatusCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -6037,7 +6063,7 @@ format 212
 	  b parent class_ref 6642434 // StatusType
       end
 
-      attribute 15056386 "ecf:FilingStatusCode"
+      attribute 15153154 "ecf:FilingStatusCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -6112,7 +6138,7 @@ format 212
 	  b parent class_ref 6640130 // DocumentType
       end
 
-      attribute 15056258 "ecf:FilingStatus"
+      attribute 15153026 "ecf:FilingStatus"
 	public type class_ref 6670722 // FilingStatusType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -6127,7 +6153,7 @@ format 212
 	comment "The status of a filing"
       end
 
-      attribute 15042946 "nc:Case"
+      attribute 15139458 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6143,7 +6169,7 @@ format 212
       end
     end
 
-    classinstance 7726978 "MessageStatusAugmentation"
+    classinstance 7727362 "MessageStatusAugmentation"
       type class_ref 6670594 // MessageStatusAugmentationType
       attributes
         end
@@ -6176,7 +6202,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15072898 "ecf:ServiceRecipientID"
+      attribute 15169794 "ecf:ServiceRecipientID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6191,7 +6217,7 @@ format 212
 	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the submitterID for filings in this case, and asynchronous responses to filings."
       end
 
-      attribute 15074050 "ecf:ServiceStatusCode"
+      attribute 15170946 "ecf:ServiceStatusCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6206,7 +6232,7 @@ format 212
 	comment "Enumerated values: unrecognized - filerID is not recognized, received - filing received by MDE, sent - filing sent by MDE to service recipient  Future versions may add additional values, such as: delivered - filing delivered to service recipient. (i.e. under the control of the recipient) opened - filing opened by service recipient"
       end
 
-      attribute 15055874 "nc:DocumentIdentification"
+      attribute 15152642 "nc:DocumentIdentification"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -6222,7 +6248,7 @@ format 212
       end
     end
 
-    classinstance 7711618 "OrganizationAssociationAugmentation"
+    classinstance 7711874 "OrganizationAssociationAugmentation"
       type class_ref 6674818 // OrganizationAssociationAugmentationType
       attributes
         end
@@ -6255,7 +6281,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15075586 "ecf:EntityAssociationTypeCode"
+      attribute 15172482 "ecf:EntityAssociationTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6271,7 +6297,7 @@ format 212
       end
     end
 
-    classinstance 7710338 "OrganizationAugmentation"
+    classinstance 7710594 "OrganizationAugmentation"
       type class_ref 6670082 // OrganizationAugmentationType
       attributes
         end
@@ -6293,9 +6319,8 @@ format 212
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 2
+      ncouples 1
       key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,OrganizationAugmentationType"
-      key "Notes" value "Genericode code list CaseParticipantRoleCode.gc"
       comment "An augmentation type"
       classrelation 5365378 // <generalisation>
 	relation 5363074 ---|>
@@ -6304,7 +6329,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15071490 "ecf:CaseParticipantRoleCode"
+      attribute 15168386 "ecf:CaseParticipantRoleCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -6319,7 +6344,7 @@ format 212
 	comment "A type of participant in a court case"
       end
 
-      attribute 15052674 "ecf:ElectronicServiceInformation"
+      attribute 15149442 "ecf:ElectronicServiceInformation"
 	public type class_ref 6669954 // ElectronicServiceInformationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6334,7 +6359,7 @@ format 212
 	comment "Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document."
       end
 
-      attribute 15074434 "ecf:FilingPartyID"
+      attribute 15171330 "ecf:FilingPartyID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6349,7 +6374,7 @@ format 212
 	comment "A unique identifier for a person or organization that requests information."
       end
 
-      attribute 15064450 "nc:ContactInformationAssociation"
+      attribute 15161218 "nc:ContactInformationAssociation"
 	public type class_ref 6654082 // ContactInformationAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -6365,7 +6390,7 @@ format 212
       end
     end
 
-    classinstance 7717250 "PersonAssociationAugmentation"
+    classinstance 7717634 "PersonAssociationAugmentation"
       type class_ref 6675074 // PersonAssociationAugmentationType
       attributes
         end
@@ -6397,7 +6422,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15075842 "ecf:EntityAssociationTypeCode"
+      attribute 15172738 "ecf:EntityAssociationTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6413,7 +6438,7 @@ format 212
       end
     end
 
-    classinstance 7715458 "PersonAugmentation"
+    classinstance 7715842 "PersonAugmentation"
       type class_ref 6668674 // PersonAugmentationType
       attributes
         end
@@ -6445,7 +6470,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15071618 "ecf:CaseParticipantRoleCode"
+      attribute 15168514 "ecf:CaseParticipantRoleCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -6460,7 +6485,7 @@ format 212
 	comment "A type of participant in a court case"
       end
 
-      attribute 15052802 "ecf:ElectronicServiceInformation"
+      attribute 15149570 "ecf:ElectronicServiceInformation"
 	public type class_ref 6669954 // ElectronicServiceInformationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6475,7 +6500,7 @@ format 212
 	comment "Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document."
       end
 
-      attribute 15056002 "ecf:FilingPartyID"
+      attribute 15152770 "ecf:FilingPartyID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -6490,7 +6515,7 @@ format 212
 	comment "A unique identifier for a person or organization that requests information."
       end
 
-      attribute 15047298 "nc:ContactInformation"
+      attribute 15143810 "nc:ContactInformation"
 	public type class_ref 6644098 // ContactInformationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -6505,7 +6530,7 @@ format 212
 	comment "A set of details about how to contact a person or an organization."
       end
 
-      attribute 15067394 "nc:ContactInformationAssociation"
+      attribute 15164290 "nc:ContactInformationAssociation"
 	public type class_ref 6654082 // ContactInformationAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -6520,7 +6545,7 @@ format 212
 	comment "An association between contact information and an entity."
       end
 
-      attribute 15057794 "nc:Insurance"
+      attribute 15154562 "nc:Insurance"
 	public type class_ref 6651522 // InsuranceType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -6535,7 +6560,7 @@ format 212
 	comment "A coverage by a contract whereby one party agrees to indemnify or guarantee another against loss by a specified contingent event or peril."
       end
 
-      attribute 15053058 "nc:PersonEmploymentAssociation"
+      attribute 15149826 "nc:PersonEmploymentAssociation"
 	public type class_ref 6647554 // PersonEmploymentAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6573,8 +6598,9 @@ format 212
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 1
+      ncouples 2
       key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf,PersonCaseAssociationAugmentationType"
+      key "Notes" value "Genericode code list ecf:CaseParticipantRoleCode.gc"
       comment "An augmentation type"
       classrelation 5369858 // <generalisation>
 	relation 5367554 ---|>
@@ -6583,7 +6609,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15067906 "ecf:CaseParticipantRoleCode"
+      attribute 15164802 "ecf:CaseParticipantRoleCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6599,7 +6625,7 @@ format 212
       end
     end
 
-    classinstance 7716354 "PersonIdentificationCategoryCode"
+    classinstance 7716738 "PersonIdentificationCategoryCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -6633,7 +6659,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15075714 "ecf:EntityAssociationTypeCode"
+      attribute 15172610 "ecf:EntityAssociationTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6649,7 +6675,7 @@ format 212
       end
     end
 
-    classinstance 7716738 "PersonOrganizationAugmentation"
+    classinstance 7717122 "PersonOrganizationAugmentation"
       type class_ref 6674946 // PersonOrganizationAssociationAugmentationType
       attributes
         end
@@ -6661,7 +6687,7 @@ format 212
       comment "An augmentation"
     end
 
-    classinstance 7721090 "ReceivingMDELocationID"
+    classinstance 7721474 "ReceivingMDELocationID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -6672,7 +6698,7 @@ format 212
       comment "The location of the filing assembly MDE associated with the person receiving service."
     end
 
-    classinstance 7721218 "ReceivingMDEProfileCode"
+    classinstance 7721602 "ReceivingMDEProfileCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -6683,7 +6709,7 @@ format 212
       comment "Code identifying the service interaction profile being used by the receiving filing assembly MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF."
     end
 
-    classinstance 7721858 "RedactedIndicator"
+    classinstance 7722242 "RedactedIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -6705,7 +6731,7 @@ format 212
       comment "Indicator by the filer that the document must be redacted by the court."
     end
 
-    classinstance 7679874 "RegisterActionDescriptionCode"
+    classinstance 7680130 "RegisterActionDescriptionCode"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -6739,7 +6765,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15039234 "ecf:RelatedCaseAssociationTypeCode"
+      attribute 15135746 "ecf:RelatedCaseAssociationTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6768,7 +6794,7 @@ format 212
       comment "Nature of the relationship between the current case and the related case.  Allowable values to be set forth in Court Policy. Examples: associated, consolidated, related."
     end
 
-    classinstance 7722370 "RelationActivityAssociationAugmentation"
+    classinstance 7722754 "RelationActivityAssociationAugmentation"
       type class_ref 6664194 // RelatedActivityAssociationAugmentationType
       attributes
         end
@@ -6822,7 +6848,7 @@ format 212
       end
     end
 
-    classinstance 7724802 "ReviewedConnectedDocument"
+    classinstance 7725186 "ReviewedConnectedDocument"
       type class_ref 6669698 // ReviewedDocumentType
       attributes
         end
@@ -6854,7 +6880,7 @@ format 212
 	  b parent class_ref 6640130 // DocumentType
       end
 
-      attribute 15051010 "ecf:DocumentHash"
+      attribute 15147522 "ecf:DocumentHash"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6869,7 +6895,7 @@ format 212
 	comment "A hash of the document as it appears in the court record.  This attribute will be populated by either the clerk review process or the court record system.  If the latter, then it will be absent in the RecordDocketingMessage.  It will also be absent in callbacks for rejected documents."
       end
 
-      attribute 15083138 "ecf:DocumentReviewStatus"
+      attribute 15148162 "ecf:DocumentReviewStatus"
 	public type class_ref 6642434 // StatusType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6884,7 +6910,7 @@ format 212
 	comment "The status of a document in the filing review process."
       end
 
-      attribute 15083010 "ecf:DocumentReviewer"
+      attribute 15148034 "ecf:DocumentReviewer"
 	public type class_ref 6640386 // EntityType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6899,7 +6925,7 @@ format 212
 	comment "The entity that reviews and accepts or rejects a filing."
       end
 
-      attribute 15072258 "ecf:SealDocumentIndicator"
+      attribute 15169154 "ecf:SealDocumentIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6914,7 +6940,7 @@ format 212
 	comment "Clerk instruction to court record system to seal this document."
       end
 
-      attribute 15050882 "nc:CaseDocketID"
+      attribute 15147394 "nc:CaseDocketID"
 	public type class_ref 6636674 // string
 	multiplicity "0,1"
 	cpp_decl ""
@@ -6930,7 +6956,7 @@ format 212
       end
     end
 
-    classinstance 7724930 "ReviewedLeadDocument"
+    classinstance 7725314 "ReviewedLeadDocument"
       type class_ref 6669698 // ReviewedDocumentType
       attributes
         end
@@ -6942,7 +6968,7 @@ format 212
       comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
     end
 
-    classinstance 7725570 "SealDocumentIndicator"
+    classinstance 7725954 "SealDocumentIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -6953,7 +6979,7 @@ format 212
       comment "Clerk instruction to court record system to seal this document."
     end
 
-    classinstance 7725698 "SendingMDELocationID"
+    classinstance 7726082 "SendingMDELocationID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -6964,7 +6990,7 @@ format 212
       comment "Location for the MDE to which asynchronous and service messages can be sent. This unique location is self-assigned by the MDE."
     end
 
-    classinstance 7705474 "ServiceInteractionProfileCode"
+    classinstance 7705730 "ServiceInteractionProfileCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -6977,7 +7003,7 @@ format 212
       comment "An identifier, from a list of allowed values defined in the Court Filing specification, of a message profile supported by this court."
     end
 
-    classinstance 7726722 "ServiceRecipientID"
+    classinstance 7727106 "ServiceRecipientID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -6988,7 +7014,7 @@ format 212
       comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the submitterID for filings in this case, and asynchronous responses to filings."
     end
 
-    classinstance 7729410 "ServiceStatusCode"
+    classinstance 7729794 "ServiceStatusCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -7001,7 +7027,7 @@ format 212
       comment "Enumerated values: unrecognized - filerID is not recognized, received - filing received by MDE, sent - filing sent by MDE to service recipient  Future versions may add additional values, such as: delivered - filing delivered to service recipient. (i.e. under the control of the recipient) opened - filing opened by service recipient"
     end
 
-    classinstance 7727618 "SignatureAugmentation"
+    classinstance 7728002 "SignatureAugmentation"
       type class_ref 6674434 // SignatureAugmentationType
       attributes
         end
@@ -7032,7 +7058,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15073282 "xs:any"
+      attribute 15170178 "xs:any"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -7047,7 +7073,7 @@ format 212
       end
     end
 
-    classinstance 7727746 "SignatureProfileCode"
+    classinstance 7728130 "SignatureProfileCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -7060,7 +7086,7 @@ format 212
       comment "An identifier from the Court Filing specification that indicates the Signature Profile governing the structure of this signature."
     end
 
-    classinstance 7728002 "SpecialHandlingInstructionsText"
+    classinstance 7728386 "SpecialHandlingInstructionsText"
       type class_ref 6636546 // TextType
       attributes
         end
@@ -7103,7 +7129,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15039874 "biom:Biometric"
+      attribute 15136386 "biom:Biometric"
 	public type class_ref 6640258 // BiometricDataType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7118,7 +7144,7 @@ format 212
 	comment "A Root Element for Biometric data"
       end
 
-      attribute 15049474 "ecf:SubjectWarrantIssuedIndicator"
+      attribute 15145986 "ecf:SubjectWarrantIssuedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7133,7 +7159,7 @@ format 212
 	comment "Indicates whether an arrest warrant has been issued against the defendant."
       end
 
-      attribute 15040002 "j:RapSheetTransactionControlIdentification"
+      attribute 15136514 "j:RapSheetTransactionControlIdentification"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7160,7 +7186,7 @@ format 212
       comment "Indicates whether an arrest warrant has been issued against the defendant."
     end
 
-    classinstance 7709570 "VehicleOperatorInsuranceCoverage"
+    classinstance 7709826 "VehicleOperatorInsuranceCoverage"
       type class_ref 6672002 // InsuranceType
       attributes
         end
@@ -7191,7 +7217,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesrequest"
     key "path" value "feesrequest.xsd"
-    classinstance 7691010 "GetFeesCalculationRequestMessage"
+    classinstance 7691266 "GetFeesCalculationRequestMessage"
       type class_ref 6671618 // GetFeesCalculationRequestMessageType
       attributes
         end
@@ -7202,7 +7228,7 @@ format 212
       comment "This query is a request for the total amount of court fees required for filing of one or more documents in a case."
     end
 
-    classinstance 7703298 "GetFeesCalculationRequestMessageAugmentationPoint"
+    classinstance 7703554 "GetFeesCalculationRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7233,7 +7259,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15061378 "feesrequest:GetFeesCalculationRequestMessageAugmentationPoint"
+      attribute 15158146 "feesrequest:GetFeesCalculationRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7248,7 +7274,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15071234 "filing:FilingMessage"
+      attribute 15168130 "filing:FilingMessage"
 	public type class_ref 6665858 // FilingMessageType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -7284,7 +7310,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/feesresponse"
     key "path" value "feesresponse.xsd"
-    classinstance 7733378 "FeesCalculationAmount"
+    classinstance 7733762 "FeesCalculationAmount"
       type class_ref 6638082 // AmountType
       attributes
         end
@@ -7295,7 +7321,7 @@ format 212
       comment "A total of all fees required to submit a document."
     end
 
-    classinstance 7691138 "GetFeesCalculationResponseMessage"
+    classinstance 7691394 "GetFeesCalculationResponseMessage"
       type class_ref 6670466 // GetFeesCalculationResponseMessageType
       attributes
         end
@@ -7306,7 +7332,7 @@ format 212
       comment "The response to a CalculatedFeesQueryMessage, which may either be 0 indicating no fee is due, a currency amount indicating the fee due upon filing, or unknown indicating that the court case management information system is unable to calculate the fee for the proposed filing."
     end
 
-    classinstance 7703426 "GetFeesCalculationResponseMessageAugmentationPoint"
+    classinstance 7703682 "GetFeesCalculationResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7337,7 +7363,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15055618 "cac:AllowanceCharge"
+      attribute 15152386 "cac:AllowanceCharge"
 	public type class_ref 6663042 // AllowanceChargeType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7352,7 +7378,7 @@ format 212
 	comment "An authorization by the filer allowing the court to take money from the filer, for the purpose of this filing, by a particular means."
       end
 
-      attribute 15075202 "feesresponse:FeesCalculationAmount"
+      attribute 15172098 "feesresponse:FeesCalculationAmount"
 	public type class_ref 6638082 // AmountType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -7367,7 +7393,7 @@ format 212
 	comment "A total of all fees required to submit a document."
       end
 
-      attribute 15061506 "feesresponse:GetFeesCalculationResponseMessageAugmentationPoint"
+      attribute 15158274 "feesresponse:GetFeesCalculationResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7415,7 +7441,7 @@ format 212
       comment "A document included in a Filing that supports the Document.  This document is not separately entered on the docket or register of actions."
     end
 
-    classinstance 7699202 "FilingLeadDocument"
+    classinstance 7699458 "FilingLeadDocument"
       type class_ref 6640130 // DocumentType
       attributes
         end
@@ -7438,7 +7464,7 @@ format 212
       comment "The structure of a Filing including any Payment Information will be documented in this section. This describes the filing transaction between the Filing Assembly MDE and the Filing Review MDE. This information will become part of the Record Docketing between the Filing Review MDE and the Court Record MDE but does not necessarily describe the information that is actually stored in the Court Record."
     end
 
-    classinstance 7702018 "FilingMessageAugmentationPoint"
+    classinstance 7702274 "FilingMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7469,7 +7495,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15047042 "filing:FilingConnectedDocument"
+      attribute 15143554 "filing:FilingConnectedDocument"
 	public type class_ref 6640130 // DocumentType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7484,7 +7510,7 @@ format 212
 	comment "A document included in a Filing that supports the Document.  This document is not separately entered on the docket or register of actions."
       end
 
-      attribute 15058562 "filing:FilingLeadDocument"
+      attribute 15155330 "filing:FilingLeadDocument"
 	public type class_ref 6640130 // DocumentType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -7499,7 +7525,7 @@ format 212
 	comment "The pleading, motion or order that is the main document in a Filing. A Document may have Attachments."
       end
 
-      attribute 15060098 "filing:FilingMessageAugmentationPoint"
+      attribute 15156866 "filing:FilingMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7514,7 +7540,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15042178 "nc:Case"
+      attribute 15138690 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -7550,7 +7576,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filinglistrequest"
     key "path" value "filinglistrequest.xsd"
-    classinstance 7691266 "GetFilingListRequestMessage"
+    classinstance 7691522 "GetFilingListRequestMessage"
       type class_ref 6666498 // GetFilingListRequestMessageType
       attributes
         end
@@ -7561,7 +7587,7 @@ format 212
       comment "This is query to get a list of filings by Filer Identification, Case Identifier, or time period."
     end
 
-    classinstance 7703554 "GetFilingListRequestMessageAugmentationPoint"
+    classinstance 7703810 "GetFilingListRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7592,7 +7618,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15061634 "filinglistrequest:GetFilingListRequestMessageAugmentationPoint"
+      attribute 15158402 "filinglistrequest:GetFilingListRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7607,7 +7633,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15042818 "nc:CaseTrackingID"
+      attribute 15139330 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7622,7 +7648,7 @@ format 212
 	comment "An identifier used to track a case."
       end
 
-      attribute 15075074 "nc:DateRange"
+      attribute 15171970 "nc:DateRange"
 	public type class_ref 6641154 // DateRangeType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7637,7 +7663,7 @@ format 212
 	comment "A time period measured by a starting and ending point."
       end
 
-      attribute 15054850 "nc:DocumentSubmitter"
+      attribute 15151618 "nc:DocumentSubmitter"
 	public type class_ref 6640386 // EntityType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7673,7 +7699,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filinglistresponse"
     key "path" value "filinglistresponse.xsd"
-    classinstance 7691394 "GetFilingListResponseMessage"
+    classinstance 7691650 "GetFilingListResponseMessage"
       type class_ref 6671746 // GetFilingListResponseMessageType
       attributes
         end
@@ -7684,7 +7710,7 @@ format 212
       comment "This is a response to a query for a list of filings by Filer Identification, Case Identifier, or time period."
     end
 
-    classinstance 7703682 "GetFilingListResponseMessageAugmentationPoint"
+    classinstance 7703938 "GetFilingListResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7715,7 +7741,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15058946 "ecf:MatchingFiling"
+      attribute 15155714 "ecf:MatchingFiling"
 	public type class_ref 6666626 // MatchingFilingType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7730,7 +7756,7 @@ format 212
 	comment "The document that is the subject of this query."
       end
 
-      attribute 15061762 "filinglistresponse:GetFilingListResponseMessageAugmentationPoint"
+      attribute 15158530 "filinglistresponse:GetFilingListResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7766,7 +7792,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusrequest"
     key "path" value "filingstatusrequest.xsd"
-    classinstance 7691522 "GetFilingStatusRequestMessage"
+    classinstance 7691778 "GetFilingStatusRequestMessage"
       type class_ref 6667522 // GetFilingStatusRequestMessageType
       attributes
         end
@@ -7777,7 +7803,7 @@ format 212
       comment "This is query to get a filing status by Filing Number."
     end
 
-    classinstance 7703810 "GetFilingStatusRequestMessageAugmentationPoint"
+    classinstance 7704066 "GetFilingStatusRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7808,7 +7834,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15061890 "filingstatusrequest:GetFilingStatusRequestMessageAugmentationPoint"
+      attribute 15158658 "filingstatusrequest:GetFilingStatusRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7823,7 +7849,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15044610 "nc:CaseTrackingID"
+      attribute 15141122 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "0,1"
 	cpp_decl ""
@@ -7859,7 +7885,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/filingstatusresponse"
     key "path" value "filingstatusresponse.xsd"
-    classinstance 7691650 "GetFilingStatusResponseMessage"
+    classinstance 7691906 "GetFilingStatusResponseMessage"
       type class_ref 6669570 // GetFilingStatusResponseMessageType
       attributes
         end
@@ -7870,7 +7896,7 @@ format 212
       comment "A court response to a FilingStatusQueryMessage."
     end
 
-    classinstance 7703938 "GetFilingStatusResponseMessageAugmentationPoint"
+    classinstance 7704194 "GetFilingStatusResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -7901,7 +7927,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15050626 "ecf:MatchingFiling"
+      attribute 15147138 "ecf:MatchingFiling"
 	public type class_ref 6666626 // MatchingFilingType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -7916,7 +7942,7 @@ format 212
 	comment "The document that is the subject of this query."
       end
 
-      attribute 15062018 "filingstatusresponse:GetFilingStatusResponseMessageAugmentationPoint"
+      attribute 15158786 "filingstatusresponse:GetFilingStatusResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -7952,7 +7978,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/juvenile"
     key "path" value "juvenile.xsd"
-    classinstance 7698050 "CaseAugmentation"
+    classinstance 7698306 "CaseAugmentation"
       type class_ref 6661762 // CaseAugmentationType
       attributes
         end
@@ -7984,8 +8010,8 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15037314 "cyfs:DelinquentAct"
-	public type class_ref 6636418 // IncidentType
+      attribute 15133826 "cyfs:DelinquentAct"
+	public type class_ref 6636290 // IncidentType
 	multiplicity "0,1"
 	cpp_decl ""
 	java_decl ""
@@ -7999,7 +8025,7 @@ format 212
 	comment "A delinquent act."
       end
 
-      attribute 15049602 "cyfs:DependencyPetition"
+      attribute 15146242 "cyfs:DependencyPetition"
 	public type class_ref 6646018 // DependencyPetitionType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -8014,7 +8040,7 @@ format 212
 	comment "A document that is filed with the Court, typically by an attorney representing the Child Welfare Agency, that formally files allegations of abuse and/or neglect against one or more alleged perpetrators."
       end
 
-      attribute 15049730 "cyfs:JuvenileAbuseNeglectAllegation"
+      attribute 15146114 "cyfs:JuvenileAbuseNeglectAllegation"
 	public type class_ref 6662786 // JuvenileAbuseNeglectAllegationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8029,7 +8055,7 @@ format 212
 	comment "A set of specifics of the referred incident of abuse or neglect as it relates to the victim. Information recorded includes the Abuse/Neglect Category and Type as well as narrative descriptions of the abuse and/or injuries"
       end
 
-      attribute 15058306 "cyfs:JuvenileCase"
+      attribute 15155074 "cyfs:JuvenileCase"
 	public type class_ref 6652418 // JuvenileCaseType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8044,7 +8070,7 @@ format 212
 	comment "An aggregation of information about a set of related activities and events pertaining to a juvenile. This can be, but is not necessarily, a court case."
       end
 
-      attribute 15065090 "cyfs:ParentChildAssociation"
+      attribute 15161986 "cyfs:ParentChildAssociation"
 	public type class_ref 6654850 // ParentChildAssociationType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -8059,7 +8085,7 @@ format 212
 	comment "An association between a child and a person who is in a parent role toward that child."
       end
 
-      attribute 15038978 "j:Arrest"
+      attribute 15135490 "j:Arrest"
 	public type class_ref 6638722 // ArrestType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8121,7 +8147,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15074178 "j:IncidentViolatedStatuteAssociation"
+      attribute 15171074 "j:IncidentViolatedStatuteAssociation"
 	public type class_ref 6658178 // ViolatedStatuteAssociationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8137,7 +8163,7 @@ format 212
       end
     end
 
-    classinstance 7697794 "JuvenileAugmentation"
+    classinstance 7698050 "JuvenileAugmentation"
       type class_ref 6673538 // JuvenileAugmentationType
       attributes
         end
@@ -8169,7 +8195,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15068034 "cyfs:JuvenilePlacement"
+      attribute 15164930 "cyfs:JuvenilePlacement"
 	public type class_ref 6655618 // JuvenilePlacementType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8184,7 +8210,7 @@ format 212
 	comment "A description of the placement where a juvenile is directed to reside during the pendency of the delinquency proceeding."
       end
 
-      attribute 15073026 "j:RegisteredSexOffender"
+      attribute 15169922 "j:RegisteredSexOffender"
 	public type class_ref 6658050 // RegisteredOffenderType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8199,7 +8225,7 @@ format 212
 	comment "A person who is required to register as a sexual offender."
       end
 
-      attribute 15067522 "juvenile:PersonEmacipatedIndicator"
+      attribute 15164418 "juvenile:PersonEmacipatedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8215,7 +8241,7 @@ format 212
       end
     end
 
-    classinstance 7716098 "PersonEmacipatedIndicator"
+    classinstance 7716482 "PersonEmacipatedIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -8226,7 +8252,7 @@ format 212
       comment "Indicator whether a minor has been adjudicated an emancipated person by a court."
     end
 
-    classinstance 7718018 "PlacementAugmentation"
+    classinstance 7718402 "PlacementAugmentation"
       type class_ref 6673794 // PlacementAugmentationType
       attributes
         end
@@ -8258,7 +8284,7 @@ format 212
 	  b parent class_ref 6635778 // AugmentationType
       end
 
-      attribute 15068162 "cyfs:JuvenilePlacementFacilityAssociation"
+      attribute 15165058 "cyfs:JuvenilePlacementFacilityAssociation"
 	public type class_ref 6655874 // JuvenilePlacementFacilityAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8273,7 +8299,7 @@ format 212
 	comment "An association between a juvenile and a facility where the juvenile is directed to reside (e.g., orphanage, teen shelter, detention center, etc.)."
       end
 
-      attribute 15068290 "cyfs:JuvenilePlacementPersonAssociation"
+      attribute 15165186 "cyfs:JuvenilePlacementPersonAssociation"
 	public type class_ref 6656002 // JuvenilePlacementPersonAssociationType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8309,7 +8335,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/payment"
     key "path" value "payment.xsd"
-    classinstance 7714050 "Payer"
+    classinstance 7714434 "Payer"
       type class_ref 6639746 // PersonType
       attributes
         end
@@ -8320,7 +8346,7 @@ format 212
       comment "Name of the payer of the FilingPayment."
     end
 
-    classinstance 7714946 "PaymentMessage"
+    classinstance 7715330 "PaymentMessage"
       type class_ref 6661506 // PaymentMessageType
       attributes
         end
@@ -8352,7 +8378,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15036930 "cac:Address"
+      attribute 15133442 "cac:Address"
 	public type class_ref 6635522 // abstract
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8367,7 +8393,7 @@ format 212
 	comment "The address of the owner of a financial account."
       end
 
-      attribute 15038210 "cac:AllowanceCharge"
+      attribute 15134722 "cac:AllowanceCharge"
 	public type class_ref 6663042 // AllowanceChargeType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -8382,7 +8408,7 @@ format 212
 	comment "An authorization by the filer allowing the court to take money from the filer, for the purpose of this filing, by a particular means."
       end
 
-      attribute 15066626 "cac:Payment"
+      attribute 15163522 "cac:Payment"
 	public type class_ref 6673410 // PaymentType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8397,7 +8423,7 @@ format 212
 	comment "A payment."
       end
 
-      attribute 15054210 "ecf:FeeExceptionReasonCode"
+      attribute 15150978 "ecf:FeeExceptionReasonCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8412,7 +8438,7 @@ format 212
 	comment "A code for the reason why a filer does not have to pay an otherwise applicable payment.  Allowable values set forth in Court Policy. Examples are in forma pauperis status granted or a fee waiver application submitted with the filing.."
       end
 
-      attribute 15054338 "ecf:FeeExceptionSupportingText"
+      attribute 15151106 "ecf:FeeExceptionSupportingText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8427,7 +8453,7 @@ format 212
 	comment "Any text needed to support the exemption assertion (reference to a court order, etc.)"
       end
 
-      attribute 15066370 "payment:Payer"
+      attribute 15163266 "payment:Payer"
 	public type class_ref 6639746 // PersonType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8463,7 +8489,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/policyrequest"
     key "path" value "policyrequest.xsd"
-    classinstance 7691778 "GetPolicyRequestMessage"
+    classinstance 7692034 "GetPolicyRequestMessage"
       type class_ref 6667906 // GetPolicyRequestMessageType
       attributes
         end
@@ -8474,7 +8500,7 @@ format 212
       comment "A request for a court's Court Policy."
     end
 
-    classinstance 7704066 "GetPolicyRequestMessageAugmentationPoint"
+    classinstance 7704322 "GetPolicyRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -8505,7 +8531,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15045378 "ecf:CaseTypeCode"
+      attribute 15141890 "ecf:CaseTypeCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8520,7 +8546,7 @@ format 212
 	comment "Indicates whether the e-filing system supports electronic filing of a certain case type."
       end
 
-      attribute 15062146 "policyrequest:GetPolicyRequestMessageAugmentationPoint"
+      attribute 15158914 "policyrequest:GetPolicyRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -8621,7 +8647,7 @@ format 212
 	  b parent class_ref 6663554 // ExtensionType
       end
 
-      attribute 15052930 "policyresponse:ECFCanonicalURI"
+      attribute 15149698 "policyresponse:ECFCanonicalURI"
 	public type class_ref 6638466 // anyURI
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8669,7 +8695,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15036290 "policyresponse:AcceptConfidentialFilingsIndicator"
+      attribute 15132802 "policyresponse:AcceptConfidentialFilingsIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8684,7 +8710,7 @@ format 212
 	comment "Whether the court will accept electronic filing of documents for which the filer requests confidential or sealed treatment by the court."
       end
 
-      attribute 15036418 "policyresponse:AcceptDocumentsRequiringFeesIndicator"
+      attribute 15132930 "policyresponse:AcceptDocumentsRequiringFeesIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8699,7 +8725,7 @@ format 212
 	comment "Whether the court will accept electronic filing of documents requiring filing fees."
       end
 
-      attribute 15036546 "policyresponse:AcceptMultipleLeadDocumentsIndicator"
+      attribute 15133058 "policyresponse:AcceptMultipleLeadDocumentsIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8714,7 +8740,7 @@ format 212
 	comment "Does court accept placing multiple lead documents in a single message"
       end
 
-      attribute 15055106 "policyresponse:FilerRequiredToServeIndicator"
+      attribute 15151874 "policyresponse:FilerRequiredToServeIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8729,7 +8755,7 @@ format 212
 	comment "Indicator whether the filer is required to serve"
       end
 
-      attribute 15055746 "policyresponse:FilingFeesMayBeApplicableIndicator"
+      attribute 15152514 "policyresponse:FilingFeesMayBeApplicableIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8744,7 +8770,7 @@ format 212
 	comment "Indicates whether fees may be required for some filings."
       end
 
-      attribute 15058690 "policyresponse:MajorDesignElement"
+      attribute 15155458 "policyresponse:MajorDesignElement"
 	public type class_ref 6672130 // MajorDesignElementType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -8759,7 +8785,7 @@ format 212
 	comment "An ECF major design element (MDE)"
       end
 
-      attribute 15059074 "policyresponse:MaximumAllowedAttachmentPageQuantity"
+      attribute 15155842 "policyresponse:MaximumAllowedAttachmentPageQuantity"
 	public type class_ref 6653314 // NumericType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8774,7 +8800,7 @@ format 212
 	comment "The maximum allowed number of pages in an attachment."
       end
 
-      attribute 15059202 "policyresponse:MaximumAllowedAttachmentSize"
+      attribute 15155970 "policyresponse:MaximumAllowedAttachmentSize"
 	public type class_ref 6651138 // MeasureType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8789,7 +8815,7 @@ format 212
 	comment "The maximum allowed attachment size, in bytes.  Does not appear if there is no maximum."
       end
 
-      attribute 15059330 "policyresponse:MaximumAllowedMessageSize"
+      attribute 15156098 "policyresponse:MaximumAllowedMessageSize"
 	public type class_ref 6651138 // MeasureType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -8804,7 +8830,7 @@ format 212
 	comment "Maximum allowed size of the Court Filing Message Stream, in bytes.  Does not appear if there is no maximum."
       end
 
-      attribute 15047810 "policyresponse:SchemaExtension"
+      attribute 15144322 "policyresponse:SchemaExtension"
 	public type class_ref 6668930 // SchemaExtensionType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -8819,7 +8845,7 @@ format 212
 	comment "A structure representing the court-specific extensions for this court"
       end
 
-      attribute 15045506 "policyresponse:SupportedCaseCategories"
+      attribute 15142018 "policyresponse:SupportedCaseCategories"
 	public type class_ref 6664578 // SupportedCaseCategoriesType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -8834,7 +8860,7 @@ format 212
 	comment "A list of ECF case types."
       end
 
-      attribute 15074690 "policyresponse:SupportedSignaturesProfiles"
+      attribute 15171586 "policyresponse:SupportedSignaturesProfiles"
 	public type class_ref 6674562 // SupportedSignatureProfilesType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -8849,7 +8875,7 @@ format 212
 	comment "A signature profile approved for use with ECF by the OASIS LegalXML Member Section Electronic Court Filing Technical Committee that is supported by this court."
       end
 
-      attribute 15075970 "policyresponse:URLAttachmentSupportedIndicator"
+      attribute 15172866 "policyresponse:URLAttachmentSupportedIndicator"
 	public type class_ref 6635906 // boolean
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8865,7 +8891,7 @@ format 212
       end
     end
 
-    classinstance 7681410 "ECFCanonicalURI"
+    classinstance 7681666 "ECFCanonicalURI"
       type class_ref 6638466 // anyURI
       attributes
         end
@@ -8887,7 +8913,7 @@ format 212
       comment "A court extension to ECF."
     end
 
-    classinstance 7685634 "ExtensionCanonicalVersionURI"
+    classinstance 7685890 "ExtensionCanonicalVersionURI"
       type class_ref 6638466 // anyURI
       attributes
         end
@@ -8898,7 +8924,7 @@ format 212
       comment "A structure representing the specific court extension."
     end
 
-    classinstance 7685506 "ExtensionElementName"
+    classinstance 7685762 "ExtensionElementName"
       type class_ref 6638466 // anyURI
       attributes
         end
@@ -8940,7 +8966,7 @@ format 212
 	  b parent class_ref 6640130 // DocumentType
       end
 
-      attribute 15047938 "policyresponse:ExtensionCanonicalURI"
+      attribute 15144450 "policyresponse:ExtensionCanonicalURI"
 	public type class_ref 6638466 // anyURI
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8955,7 +8981,7 @@ format 212
 	comment "A court extension to ECF."
       end
 
-      attribute 15054082 "policyresponse:ExtensionCanonicalVersionURI"
+      attribute 15150850 "policyresponse:ExtensionCanonicalVersionURI"
 	public type class_ref 6638466 // anyURI
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8970,7 +8996,7 @@ format 212
 	comment "A structure representing the specific court extension."
       end
 
-      attribute 15038722 "policyresponse:ExtensionLocationURI"
+      attribute 15135234 "policyresponse:ExtensionLocationURI"
 	public type class_ref 6638466 // anyURI
 	multiplicity "1,1"
 	cpp_decl ""
@@ -8986,7 +9012,7 @@ format 212
       end
     end
 
-    classinstance 7687298 "FilerRequiredToServeIndicator"
+    classinstance 7687554 "FilerRequiredToServeIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -8997,7 +9023,7 @@ format 212
       comment "Indicator whether the filer is required to serve"
     end
 
-    classinstance 7688194 "FilingFeesMayBeApplicableIndicator"
+    classinstance 7688450 "FilingFeesMayBeApplicableIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -9008,7 +9034,7 @@ format 212
       comment "Indicates whether fees may be required for some filings."
     end
 
-    classinstance 7691906 "GetPolicyResponseMessage"
+    classinstance 7692162 "GetPolicyResponseMessage"
       type class_ref 6669442 // GetPolicyResponseMessageType
       attributes
         end
@@ -9019,7 +9045,7 @@ format 212
       comment "The response to a request for a court Court Policy."
     end
 
-    classinstance 7704194 "GetPolicyResponseMessageAugmentationPoint"
+    classinstance 7704450 "GetPolicyResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -9051,7 +9077,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15052418 "nc:Metadata"
+      attribute 15149186 "nc:Metadata"
 	public type class_ref 6642178 // MetadataType
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9066,7 +9092,7 @@ format 212
 	comment "Information that further qualifies primary data; data about data."
       end
 
-      attribute 15049858 "policyresponse:DevelopmentPolicy"
+      attribute 15146370 "policyresponse:DevelopmentPolicy"
 	public type class_ref 6660994 // DevelopmentPolicyType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9081,7 +9107,7 @@ format 212
 	comment "The response to a request for a court Court Policy."
       end
 
-      attribute 15062274 "policyresponse:GetPolicyResponseMessageAugmentationPoint"
+      attribute 15159042 "policyresponse:GetPolicyResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -9096,7 +9122,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15068418 "policyresponse:PolicyVersionID"
+      attribute 15165314 "policyresponse:PolicyVersionID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9111,7 +9137,7 @@ format 212
 	comment "The version of court policy reported by this message.  Up to the court to define the format of this, and describe in human-readable court policy."
       end
 
-      attribute 15072002 "policyresponse:RuntimePolicy"
+      attribute 15168898 "policyresponse:RuntimePolicy"
 	public type class_ref 6668802 // RuntimePolicyType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9127,7 +9153,7 @@ format 212
       end
     end
 
-    classinstance 7700866 "MajorDesignElement"
+    classinstance 7701122 "MajorDesignElement"
       type class_ref 6672130 // MajorDesignElementType
       attributes
         end
@@ -9138,7 +9164,7 @@ format 212
       comment "An ECF major design element (MDE)"
     end
 
-    classinstance 7701506 "MajorDesignElementLocationID"
+    classinstance 7701762 "MajorDesignElementLocationID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -9169,7 +9195,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15059458 "policyresponse:MajorDesignElementLocationID"
+      attribute 15156226 "policyresponse:MajorDesignElementLocationID"
 	public type class_ref 6637058 // IdentificationType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9184,7 +9210,7 @@ format 212
 	comment "The unique URL location of a major design element."
       end
 
-      attribute 15059714 "policyresponse:MajorDesignElementTypeCode"
+      attribute 15156482 "policyresponse:MajorDesignElementTypeCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9199,7 +9225,7 @@ format 212
 	comment "Name of a major design element."
       end
 
-      attribute 15074818 "policyresponse:SupportedOperations"
+      attribute 15171714 "policyresponse:SupportedOperations"
 	public type class_ref 6671362 // SupportedOperationsType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9214,7 +9240,7 @@ format 212
 	comment "A structure containing indicators that signal support by the e-filing system for optional ECF operations. E.g. particular queries"
       end
 
-      attribute 15074562 "policyresponse:SupportedServiceInteractionProfiles"
+      attribute 15171458 "policyresponse:SupportedServiceInteractionProfiles"
 	public type class_ref 6672770 // SupportedServiceInteractionProfilesType
 	multiplicity "1,1"
 	cpp_decl ""
@@ -9230,7 +9256,7 @@ format 212
       end
     end
 
-    classinstance 7701634 "MajorDesignElementTypeCode"
+    classinstance 7701890 "MajorDesignElementTypeCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -9243,7 +9269,7 @@ format 212
       comment "Name of a major design element."
     end
 
-    classinstance 7701122 "MaximumAllowedAttachmentPageQuantity"
+    classinstance 7701378 "MaximumAllowedAttachmentPageQuantity"
       type class_ref 6653314 // NumericType
       attributes
         end
@@ -9254,7 +9280,7 @@ format 212
       comment "The maximum allowed number of pages in an attachment."
     end
 
-    classinstance 7701250 "MaximumAllowedAttachmentSize"
+    classinstance 7701506 "MaximumAllowedAttachmentSize"
       type class_ref 6651138 // MeasureType
       attributes
         end
@@ -9265,7 +9291,7 @@ format 212
       comment "The maximum allowed attachment size, in bytes.  Does not appear if there is no maximum."
     end
 
-    classinstance 7701378 "MaximumAllowedMessageSize"
+    classinstance 7701634 "MaximumAllowedMessageSize"
       type class_ref 6651138 // MeasureType
       attributes
         end
@@ -9276,7 +9302,7 @@ format 212
       comment "Maximum allowed size of the Court Filing Message Stream, in bytes.  Does not appear if there is no maximum."
     end
 
-    classinstance 7689858 "OperationNameCode"
+    classinstance 7690114 "OperationNameCode"
       type class_ref 6639874 // normalizedString
       attributes
         end
@@ -9289,7 +9315,7 @@ format 212
       comment "Indicates whether the e-filing system supports a certain operation."
     end
 
-    classinstance 7718658 "PolicyVersionID"
+    classinstance 7719042 "PolicyVersionID"
       type class_ref 6637058 // IdentificationType
       attributes
         end
@@ -9300,7 +9326,7 @@ format 212
       comment "The version of court policy reported by this message.  Up to the court to define the format of this, and describe in human-readable court policy."
     end
 
-    classinstance 7725314 "RuntimePolicy"
+    classinstance 7725698 "RuntimePolicy"
       type class_ref 6668802 // RuntimePolicyType
       attributes
         end
@@ -9332,7 +9358,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15069058 "ds:KeyInfo"
+      attribute 15165954 "ds:KeyInfo"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9347,7 +9373,7 @@ format 212
 	comment "Symmetric or asymmetric keys used to encrypt and decrypt, or verify signed messages or documents exchanged with the court."
       end
 
-      attribute 15047554 "policyresponse:CodeListExtension"
+      attribute 15144066 "policyresponse:CodeListExtension"
 	public type class_ref 6663170 // CodeListExtensionType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -9395,7 +9421,7 @@ format 212
 	  b parent class_ref 6663554 // ExtensionType
       end
 
-      attribute 15053954 "policyresponse:ExtensionElementName"
+      attribute 15150722 "policyresponse:ExtensionElementName"
 	public type class_ref 6638466 // anyURI
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9410,7 +9436,7 @@ format 212
 	comment "The element(s) in the extension schema that are are the root of the extension and substitute for an extension (augmentation) point."
       end
 
-      attribute 15059586 "policyresponse:MajorDesignElementTypeCode"
+      attribute 15156354 "policyresponse:MajorDesignElementTypeCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9425,7 +9451,7 @@ format 212
 	comment "Name of a major design element."
       end
 
-      attribute 15064066 "policyresponse:OperationNameCode"
+      attribute 15160834 "policyresponse:OperationNameCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9473,7 +9499,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15039746 "ecf:CaseTypeCode"
+      attribute 15136258 "ecf:CaseTypeCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9489,7 +9515,7 @@ format 212
       end
     end
 
-    classinstance 7732354 "SupportedOperations"
+    classinstance 7732738 "SupportedOperations"
       type class_ref 6671362 // SupportedOperationsType
       attributes
         end
@@ -9520,7 +9546,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15057154 "policyresponse:OperationNameCode"
+      attribute 15153922 "policyresponse:OperationNameCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9536,7 +9562,7 @@ format 212
       end
     end
 
-    classinstance 7732098 "SupportedServiceInteractionProfiles"
+    classinstance 7732482 "SupportedServiceInteractionProfiles"
       type class_ref 6672770 // SupportedServiceInteractionProfilesType
       attributes
         end
@@ -9568,7 +9594,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15063554 "ecf:ServiceInteractionProfileCode"
+      attribute 15160322 "ecf:ServiceInteractionProfileCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9605,7 +9631,7 @@ format 212
 	  b parent class_ref 6635650 // ObjectType
       end
 
-      attribute 15073538 "ecf:SignatureProfileCode"
+      attribute 15170434 "ecf:SignatureProfileCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "1,unbounded"
 	cpp_decl ""
@@ -9621,7 +9647,7 @@ format 212
       end
     end
 
-    classinstance 7732226 "SupportedSignaturesProfiles"
+    classinstance 7732610 "SupportedSignaturesProfiles"
       type class_ref 6674562 // SupportedSignatureProfilesType
       attributes
         end
@@ -9632,7 +9658,7 @@ format 212
       comment "A signature profile approved for use with ECF by the OASIS LegalXML Member Section Electronic Court Filing Technical Committee that is supported by this court."
     end
 
-    classinstance 7734658 "URLAttachmentSupportedIndicator"
+    classinstance 7735042 "URLAttachmentSupportedIndicator"
       type class_ref 6635906 // boolean
       attributes
         end
@@ -9663,7 +9689,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reservedate"
     key "path" value "reservedate.xsd"
-    classinstance 7680898 "EstimatedDuration"
+    classinstance 7681154 "EstimatedDuration"
       type class_ref 6647298 // duration
       attributes
         end
@@ -9674,7 +9700,7 @@ format 212
       comment "The estimated duration of a court hearing"
     end
 
-    classinstance 7728514 "PotentialStartTimeRange"
+    classinstance 7728898 "PotentialStartTimeRange"
       type class_ref 6641154 // DateRangeType
       attributes
         end
@@ -9685,7 +9711,7 @@ format 212
       comment "A time after which a court event may begin"
     end
 
-    classinstance 7723906 "ReserveCourtDateMessage"
+    classinstance 7724290 "ReserveCourtDateMessage"
       type class_ref 6667010 // ReserveCourtDateMessageType
       attributes
         end
@@ -9696,7 +9722,7 @@ format 212
       comment "A request to allocate a court date on the schedule."
     end
 
-    classinstance 7705218 "ReserveCourtDateMessageAugmentationPoint"
+    classinstance 7705474 "ReserveCourtDateMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -9717,9 +9743,8 @@ format 212
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 2
+      ncouples 1
       key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reservedate,ReserveCourtDateMessageType"
-      key "Notes" value "Genericode code list CaseParticipantRoleCode.gc"
       comment "A request to allocate a court date on the schedule."
       classrelation 5370882 // <generalisation>
 	relation 5368578 ---|>
@@ -9728,7 +9753,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15066242 "ecf:CaseParticipantRoleCode"
+      attribute 15163138 "ecf:CaseParticipantRoleCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9743,7 +9768,7 @@ format 212
 	comment "A type of participant in a court case"
       end
 
-      attribute 15043458 "nc:Case"
+      attribute 15139970 "nc:Case"
 	public type class_ref 6641410 // CaseType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9758,7 +9783,7 @@ format 212
 	comment "An aggregation of information about a set of related activities and events."
       end
 
-      attribute 15052290 "reservedate:EstimatedDuration"
+      attribute 15149058 "reservedate:EstimatedDuration"
 	public type class_ref 6647298 // duration
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9773,7 +9798,7 @@ format 212
 	comment "The estimated duration of a court hearing"
       end
 
-      attribute 15073794 "reservedate:PotentialStartTimeRange"
+      attribute 15170690 "reservedate:PotentialStartTimeRange"
 	public type class_ref 6641154 // DateRangeType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -9788,7 +9813,7 @@ format 212
 	comment "A time after which a court event may begin"
       end
 
-      attribute 15063298 "reservedate:ReserveCourtDateMessageAugmentationPoint"
+      attribute 15160066 "reservedate:ReserveCourtDateMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -9824,7 +9849,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/reviewfilingcallback"
     key "path" value "reviewfilingcallback.xsd"
-    classinstance 7708162 "NotifyFilingReviewCompleteMessage"
+    classinstance 7708418 "NotifyFilingReviewCompleteMessage"
       type class_ref 6672514 // NotifyFilingReviewCompleteMessageType
       attributes
         end
@@ -9835,7 +9860,7 @@ format 212
       comment "The asynchronous message from the Filing Review MDE to the Filing Assembly MDE conveying information concerning the court actions on the documents submitted for filing in a ReviewFilingMessage."
     end
 
-    classinstance 7704962 "NotifyFilingReviewCompleteMessageAugmentationPoint"
+    classinstance 7705218 "NotifyFilingReviewCompleteMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -9866,7 +9891,7 @@ format 212
 	  b parent class_ref 6666754 // CallbackMessageType
       end
 
-      attribute 15063042 "reviewfilingcallback:NotifyFilingReviewCompleteMessageAugmentationPoint"
+      attribute 15159810 "reviewfilingcallback:NotifyFilingReviewCompleteMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -9902,7 +9927,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/schedulerequest"
     key "path" value "schedulerequest.xsd"
-    classinstance 7690498 "GetCourtScheduleRequestMessage"
+    classinstance 7690754 "GetCourtScheduleRequestMessage"
       type class_ref 6667778 // GetCourtScheduleRequestMessageType
       attributes
         end
@@ -9913,7 +9938,7 @@ format 212
       comment "A request for the schedule of upcoming events in a court"
     end
 
-    classinstance 7702786 "GetCourtScheduleRequestMessageAugmentationPoint"
+    classinstance 7703042 "GetCourtScheduleRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -9945,7 +9970,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15044994 "ecf:CaseTypeCode"
+      attribute 15141506 "ecf:CaseTypeCode"
 	public type class_ref 6639874 // normalizedString
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9960,7 +9985,7 @@ format 212
 	comment "Indicates whether the e-filing system supports electronic filing of a certain case type."
       end
 
-      attribute 15053698 "ecf:CourtEventTypeCode"
+      attribute 15150466 "ecf:CourtEventTypeCode"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9975,7 +10000,7 @@ format 212
 	comment "Filter criterion indicating that only calendar entries of a specified type are being requested."
       end
 
-      attribute 15048322 "j:CourtAdministrativeUnitText"
+      attribute 15144834 "j:CourtAdministrativeUnitText"
 	public type class_ref 6636546 // TextType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -9990,7 +10015,7 @@ format 212
 	comment "A unit within a court system responsible for record maintenance."
       end
 
-      attribute 15057922 "j:Judge"
+      attribute 15154690 "j:Judge"
 	public type class_ref 6641794 // JudicialOfficialType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -10005,7 +10030,7 @@ format 212
 	comment "An official who hears and decides a case or who rules over a case proceeding."
       end
 
-      attribute 15048962 "nc:DateRange"
+      attribute 15145474 "nc:DateRange"
 	public type class_ref 6641154 // DateRangeType
 	multiplicity "0,1"
 	cpp_decl ""
@@ -10020,7 +10045,7 @@ format 212
 	comment "A time period measured by a starting and ending point."
       end
 
-      attribute 15060866 "schedulerequest:GetCourtScheduleRequestMessageAugmentationPoint"
+      attribute 15157634 "schedulerequest:GetCourtScheduleRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10056,7 +10081,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/scheduleresponse"
     key "path" value "scheduleresponse.xsd"
-    classinstance 7690626 "GetCourtScheduleResponseMessage"
+    classinstance 7690882 "GetCourtScheduleResponseMessage"
       type class_ref 6665218 // GetCourtScheduleResponseMessageType
       attributes
         end
@@ -10067,7 +10092,7 @@ format 212
       comment "The schedule of upcoming events in a court"
     end
 
-    classinstance 7702914 "GetCourtScheduleResponseMessageAugmentationPoint"
+    classinstance 7703170 "GetCourtScheduleResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -10098,7 +10123,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15060994 "scheduleresponse:GetCourtScheduleResponseMessageAugmentationPoint"
+      attribute 15157762 "scheduleresponse:GetCourtScheduleResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10113,7 +10138,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15040770 "xcal:icalendar"
+      attribute 15137282 "xcal:icalendar"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,1"
 	cpp_decl ""
@@ -10149,7 +10174,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/serveprocess"
     key "path" value "serveprocess.xsd"
-    classinstance 7726594 "ServeProcessMessage"
+    classinstance 7726978 "ServeProcessMessage"
       type class_ref 6672642 // ServeProcessMessageType
       attributes
         end
@@ -10160,7 +10185,7 @@ format 212
       comment "A message to deliver a filing to a process server."
     end
 
-    classinstance 7705346 "ServeProcessMessageAugmentationPoint"
+    classinstance 7705602 "ServeProcessMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -10191,7 +10216,7 @@ format 212
 	  b parent class_ref 6665858 // FilingMessageType
       end
 
-      attribute 15063426 "serveprocess:ServeProcessMessageAugmentationPoint"
+      attribute 15160194 "serveprocess:ServeProcessMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10227,7 +10252,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/serviceinformationrequest"
     key "path" value "serviceinformationrequest.xsd"
-    classinstance 7692034 "GetServiceInformationRequestMessage"
+    classinstance 7692290 "GetServiceInformationRequestMessage"
       type class_ref 6667650 // GetServiceInformationRequestMessageType
       attributes
         end
@@ -10238,7 +10263,7 @@ format 212
       comment "A message requesting information concerning the persons entitled to services of filings in a particular court case, together with the electronic addresses and message profiles of their Filing Assembly MDEs and their physical addresses if they are not currently using a Filing Assembly MDE."
     end
 
-    classinstance 7704322 "GetServiceInformationRequestMessageAugmentationPoint"
+    classinstance 7704578 "GetServiceInformationRequestMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -10269,7 +10294,7 @@ format 212
 	  b parent class_ref 6674178 // RequestMessageType
       end
 
-      attribute 15044738 "nc:CaseTrackingID"
+      attribute 15141250 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "1,1"
 	cpp_decl ""
@@ -10284,7 +10309,7 @@ format 212
 	comment "An identifier used to track a case."
       end
 
-      attribute 15062402 "serviceinformationrequest:GetServiceInformationRequestMessageAugmentationPoint"
+      attribute 15159170 "serviceinformationrequest:GetServiceInformationRequestMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10320,7 +10345,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/serviceinformationresponse"
     key "path" value "serviceinformationresponse.xsd"
-    classinstance 7692162 "GetServiceInformationResponseMessage"
+    classinstance 7692418 "GetServiceInformationResponseMessage"
       type class_ref 6671874 // GetServiceInformationResponseMessageType
       attributes
         end
@@ -10331,7 +10356,7 @@ format 212
       comment "The response to a serviceInformationQueryMessage, setting forth the requested information."
     end
 
-    classinstance 7704450 "GetServiceInformationResponseMessageAugmentationPoint"
+    classinstance 7704706 "GetServiceInformationResponseMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -10362,7 +10387,7 @@ format 212
 	  b parent class_ref 6674306 // ResponseMessageType
       end
 
-      attribute 15062530 "serviceinformationresponse:GetServiceInformationResponseMessageAugmentationPoint"
+      attribute 15159298 "serviceinformationresponse:GetServiceInformationResponseMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10377,7 +10402,7 @@ format 212
 	comment "An augmentation"
       end
 
-      attribute 15064578 "serviceinformationresponse:ServiceRecipient"
+      attribute 15161346 "serviceinformationresponse:ServiceRecipient"
 	public type class_ref 6640386 // EntityType
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10393,7 +10418,7 @@ format 212
       end
     end
 
-    classinstance 7710594 "ServiceRecipient"
+    classinstance 7710850 "ServiceRecipient"
       type class_ref 6640386 // EntityType
       attributes
         end
@@ -10424,7 +10449,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/stampinformation"
     key "path" value "stampinformation.xsd"
-    classinstance 7679362 "DocumentStampInformationMessage"
+    classinstance 7679618 "DocumentStampInformationMessage"
       type class_ref 6665986 // DocumentStampInformationMessageType
       attributes
         end
@@ -10435,7 +10460,7 @@ format 212
       comment "A request to get document stamping information."
     end
 
-    classinstance 7702146 "DocumentStampInformationMessageAugmentationPoint"
+    classinstance 7702402 "DocumentStampInformationMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -10466,7 +10491,7 @@ format 212
 	  b parent class_ref 6664706 // CaseFilingType
       end
 
-      attribute 15042306 "nc:CaseTrackingID"
+      attribute 15138818 "nc:CaseTrackingID"
 	public type class_ref 6636674 // string
 	multiplicity "1,1"
 	cpp_decl ""
@@ -10481,7 +10506,7 @@ format 212
 	comment "An identifier used to track a case."
       end
 
-      attribute 15060226 "stampinformation:DocumentStampInformationMessageAugmentationPoint"
+      attribute 15156994 "stampinformation:DocumentStampInformationMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""
@@ -10517,7 +10542,7 @@ format 212
     ncouples 2
     key "URI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/stampinformationcallback"
     key "path" value "stampinformationcallback.xsd"
-    classinstance 7708034 "NotifyDocumentStampInformationMessage"
+    classinstance 7708290 "NotifyDocumentStampInformationMessage"
       type class_ref 6672386 // NotifyDocumentStampInformationMessageType
       attributes
         end
@@ -10528,7 +10553,7 @@ format 212
       comment "A response to a request for document stamping information."
     end
 
-    classinstance 7704834 "NotifyDocumentStampInformationMessageAugmentationPoint"
+    classinstance 7705090 "NotifyDocumentStampInformationMessageAugmentationPoint"
       type class_ref 6635522 // abstract
       attributes
         end
@@ -10559,7 +10584,7 @@ format 212
 	  b parent class_ref 6666754 // CallbackMessageType
       end
 
-      attribute 15062914 "stampinformationcallback:NotifyDocumentStampInformationMessageAugmentationPoint"
+      attribute 15159682 "stampinformationcallback:NotifyDocumentStampInformationMessageAugmentationPoint"
 	public type class_ref 6635522 // abstract
 	multiplicity "0,unbounded"
 	cpp_decl ""

@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 278
+  revision 281
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -676,7 +676,7 @@ ${items}};
 	relation 139010 o-->
 	  stereotype "niem-profile:niem"
 	  a role_name "initiatingParty" multiplicity "1" public
-	    comment "The person in a court case that is required to answer a complaint or petition for a court order or judgment or a writ requiring him/her to take some action, halt an activity or obey a court direction. In an appeal, the party who must respond to an appeal initiated by a party seeking to overturn the trial court decision in whole or in part (called appellant) in the appellate court. The accused in a domestic violence case or criminal action."
+	    comment "The person who filed a complaint or petition for a court order or judgment.  In an appeal, the appellant party seeking to overturn the trial court decision in whole or in part in the appellate court."
 	    classrelation_ref 140162 // initiatingParty (<directional aggregation>)
 	  b parent class_ref 162946 // Entity
 	ncouples 9
@@ -756,7 +756,7 @@ ${items}};
 	relation 139394 o-->
 	  stereotype "niem-profile:niem"
 	  a role_name "otherActor" multiplicity "*" public
-	    comment "A person who files a lawsuit against another in a court of law. Can be either a victim in a criminal case (in a state where an individual may bring criminal charges against another) or a plaintiff or petitioner in a civil case."
+	    comment "A miscellaneous person involved in a court case.  Also, used to contain information about the parent(s) of a juvenile party in a juvenile case. Examples: caseworker, probation officer, bail bondsman, interested person, arresting officer,  intervenor, guardian ad litem, heir, beneficiary (e.g., of a trust), friend of court, interested party, CASA (court appointed special advocate)."
 	    classrelation_ref 140802 // otherActor (<directional aggregation>)
 	  b parent class_ref 162946 // Entity
 	ncouples 9
@@ -781,21 +781,21 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity"
-	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseOtherEntity"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseOtherParty"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseOtherParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
 
-      classrelation 152706 // otherPartyAttorney (<directional aggregation>)
+      classrelation 152706 // otherActorAttorney (<directional aggregation>)
 	relation 150530 o-->
 	  stereotype "niem-profile:niem"
-	  a role_name "otherPartyAttorney" multiplicity "*" public
-	    comment "Attorney representing an \"other party\" in this case."
-	    classrelation_ref 152706 // otherPartyAttorney (<directional aggregation>)
+	  a role_name "otherActorAttorney" multiplicity "*" public
+	    comment "Attorney representing an \"other participant\" in this case."
+	    classrelation_ref 152706 // otherActorAttorney (<directional aggregation>)
 	  b parent class_ref 131842 // Person
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseOtherEntityAttorney"
@@ -870,7 +870,7 @@ ${items}};
 	relation 141954 o-->
 	  stereotype "niem-profile:niem"
 	  a role_name "respondentParty" multiplicity "*" public
-	    comment "The property in an  in rem  court case against which a claim is made."
+	    comment "The person in a court case that is required to answer a complaint or petition for a court order or judgment or a writ requiring him/her to take some action, halt an activity or obey a court direction. In an appeal, the party who must respond to an appeal initiated by a party seeking to overturn the trial court decision in whole or in part (called appellant) in the appellate court. The accused in a domestic violence case or criminal action. The property in an  in rem  court case against which a claim is made."
 	    classrelation_ref 144130 // respondentParty (<directional aggregation>)
 	  b parent class_ref 132098 // Property
 	ncouples 9
@@ -1017,8 +1017,8 @@ ${items}};
 	key "niem-profile:niem:Property" value "ecf:CaseParticipantRoleCode"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
-	key "niem-profile:niem:Notes" value "Genericode code list ecf:CaseParticipantRoleCode.gc"
-	key "niem-profile:niem:CodeList" value "Conflict defender; Defendant counsel; Guardian at litem=Child's attorney; Interpleader attorney; Intervenor attorney; Lead attorney; Plaintiff defender; Private defense counsel; Pro hac vice; Prosecutor; Public defender=Defendant's appointed counsel; Third party plaintiff attorney"
+	key "niem-profile:niem:Notes" value ""
+	key "niem-profile:niem:CodeList" value ""
 	comment "A code that describes the role played by a person or organization in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust)."
       end
 
@@ -1129,8 +1129,8 @@ ${items}};
 	key "niem-profile:niem:Property" value "ecf:CaseParticipantRoleCode"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
-	key "niem-profile:niem:Notes" value "Genericode code list CaseParticipantRoleCode.gc"
-	key "niem-profile:niem:CodeList" value "Administrator; Bail bondsman; Beneficiary; Case worker; Defendant; Friend of court; Garnishee; Heir; Interested party; Intervenor; Next of kin; Petitioner; Plaintiff; Probation officer; Respondent; Special Master; Special Representative; Surety; Third party defendant; Third party plaintiff; Conflict defender; Defendant counsel; Guardian at litem=Child's attorney; Interpleader attorney; Intervenor attorney; Lead attorney; Plaintiff defender; Private defense counsel; Pro hac vice; Prosecutor; Public defender=Defendant's appointed counsel; Third party plaintiff attorney"
+	key "niem-profile:niem:Notes" value ""
+	key "niem-profile:niem:CodeList" value ""
 	comment "A code that describes the role played by a person or organization in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust).
 "
       end

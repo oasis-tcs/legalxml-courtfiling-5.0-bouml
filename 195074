@@ -1,6 +1,6 @@
 format 212
 "Messages - Scheduling" // UML::Messages - Scheduling
-  revision 90
+  revision 92
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -614,7 +614,7 @@ format 212
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value "Genericode code list CaseParticipantRoleCode.gc"
+	key "niem-profile:niem:Notes" value ""
 	comment "A type of participant in a court case"
       end
 
