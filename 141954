@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 281
+  revision 284
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1333,6 +1333,41 @@ ${items}};
 	key "niem-profile:niem:CodeList" value ""
 	comment "A code that describes the role played by a person or organization in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust).
 "
+      end
+    end
+
+    class 6684034 "CasePropertyRole"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "A description of the specific role played by a item/property involved in the case."
+      attribute 15179778 "roleCode"
+	public type class_ref 192130 // code
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity/nc:EntityItem/ecf:ItemAugmentation/ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:Type" value "ecf:ItemAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A code that describes the role played by an item/property in a case.  "
       end
     end
 
@@ -3709,6 +3744,30 @@ ${items}};
       key "niem-profile:niem:Notes" value "DISCUS: NIEM 3.x no longer defines nc:EntityItem.  Can we use nc:EntityOrganization or we need an extension (e.g. ecf:EntityItem)?"
       key "niem-profile:niem:CodeList" value ""
       comment "An inanimate object that is named as a party in a case.  Examples include an automobile, airplane, gun, or cash sought to be forfeited to the state as an instrumentality of a crime or a vessel against which a warrant issues in an admiralty case."
+      attribute 15179650 "propertyAugmentation"
+	public explicit_type ""
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Entity/ecf:EntityItem/ecf:ItemAugmentation"
+	key "niem-profile:niem:Type" value "nc:ItemType"
+	key "niem-profile:niem:Property" value "nc:ItemAugmentationPoint, (ecf:ItemAugmentation)"
+	key "niem-profile:niem:BaseType" value "ecf:ItemAugmentationType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An augmentation to a property entity"
+      end
+
       classrelation 155906 // <realization>
 	relation 153730 -_-|>
 	  a public

@@ -1,46 +1,46 @@
 format 212
 
 classinstance 128002 class_ref 129410 // FilingAssemblyMDE
- color verylightorange  name ""   xyz 31.2943 4.50415 2000 life_line_z 2000
+ color verylightorange  name ""   xyz 31.2943 4.74415 2000 life_line_z 2000
 classinstance 128130 class_ref 198786 // CourtSchedulingMDE
- color lightred  name ""   xyz 450.021 4.50415 2000 life_line_z 2000
+ color lightred  name ""   xyz 450.661 4.74415 2000 life_line_z 2000
 classinstance 128258 class_ref 129538 // CourtRecordMDE
- color lightgreen  name ""   xyz 896.427 4.50415 2000 life_line_z 2000
+ color lightgreen  name ""   xyz 896.307 4.74415 2000 life_line_z 2000
 fragment 131842 "opt"
-  color lightgray xyzwh 27.1627 48.127 0 1067 346
+  color lightgray xyzwh 27.9627 47.727 0 1067 346
 end
 durationcanvas 128770 classinstance_ref 128002 // :FilingAssemblyMDE
-  xyzwh 145 76.1 2010 11 40
+  xyzwh 145 76.2 2010 11 40
 end
 durationcanvas 128898 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 573 80.48 2010 11 33
+  xyzwh 573 80.56 2010 11 33
 end
 durationcanvas 129282 classinstance_ref 128002 // :FilingAssemblyMDE
-  xyzwh 145 227.48 2010 11 40
+  xyzwh 145 226.56 2010 11 40
 end
 durationcanvas 129410 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 573 228.34 2010 11 31
+  xyzwh 573 228.48 2010 11 31
 end
 durationcanvas 130178 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 573 284.14 2010 11 40
+  xyzwh 573 284.08 2010 11 40
 end
 durationcanvas 130306 classinstance_ref 128258 // :CourtRecordMDE
-  xyzwh 996 289.52 2010 11 31
+  xyzwh 996 289.44 2010 11 31
 end
 durationcanvas 130690 classinstance_ref 128258 // :CourtRecordMDE
-  xyzwh 996 355.12 2010 11 40
+  xyzwh 996 354.64 2010 11 40
 end
 durationcanvas 130818 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 573 360.36 2010 11 25
+  xyzwh 573 360.92 2010 11 25
 end
 durationcanvas 131074 classinstance_ref 128258 // :CourtRecordMDE
-  xyzwh 996 368.68 2010 11 25
+  xyzwh 994 368.8 2010 11 25
 end
 durationcanvas 131330 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 573 413.16 2010 11 40
+  xyzwh 573 412.52 2010 11 40
 end
 durationcanvas 131458 classinstance_ref 128002 // :FilingAssemblyMDE
-  xyzwh 145 415.02 2010 11 29
+  xyzwh 143 415.44 2010 11 29
 end
 msg 129026 synchronous
   from durationcanvas_ref 128770
@@ -97,5 +97,5 @@ msg 131714 return
   to durationcanvas_ref 131330
   yz 435 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-preferred_whz 1933 753 1.7
+preferred_whz 1901 838 1.69
 end
