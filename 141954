@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 284
+  revision 285
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -951,6 +951,24 @@ ${items}};
 	key "niem-profile:niem:Notes" value ""
 	comment "Metadata about a case."
       end
+
+      classrelation 5379202 // caseItemRole (<directional aggregation>)
+	relation 5376898 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "caseItemRole" multiplicity "*" public
+	    classrelation_ref 5379202 // caseItemRole (<directional aggregation>)
+	  b parent class_ref 6739202 // CaseItemRole
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity"
+	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "j:CaseOtherEntity"
+	key "niem-profile:niem:BaseType" value "nc:EntityType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
     end
 
     classdiagram 164994 "Case"
@@ -1068,6 +1086,60 @@ ${items}};
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
 	comment "An identifier for an attorney"
+      end
+    end
+
+    class 6739202 "CaseItemRole"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "The role played by an item in this case."
+      attribute 15276802 "roleCode"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Entity/ecf:EntityItem/ecf:ItemAugmentation/ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:Type" value "ecf:ItemAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseParticipantRoleCode"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A code that describes the role played by an item in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust)."
+      end
+
+      classrelation 5379330 // item (<directional aggregation>)
+	relation 5377026 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "item" multiplicity "1" public
+	    classrelation_ref 5379330 // item (<directional aggregation>)
+	  b parent class_ref 132098 // Property
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity/nc:EntityItem"
+	key "niem-profile:niem:Type" value "nc:EntityType"
+	key "niem-profile:niem:Property" value "nc:EntityRepresentation, (ecf:EntityItem)"
+	key "niem-profile:niem:BaseType" value "nc:ItemType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 
