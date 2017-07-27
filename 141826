@@ -1,6 +1,6 @@
 format 212
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 248
+  revision 253
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -7112,6 +7112,30 @@ format 212
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Category of order, including Establish, Modify, Enforce, Modify and Enforce, and Vacate."
+      end
+
+      attribute 15373826 "orderExtension"
+	public explicit_type ""
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "domestic:CaseAugmentation/domestic:DomesticCaseOrder/j:CourtOrderAugmentationPoint"
+	key "niem-profile:niem:Type" value "j:CourtOrderType"
+	key "niem-profile:niem:Property" value "j:CourtOrderAugmentationPoint"
+	key "niem-profile:niem:BaseType" value "abstract"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An extension to a court order."
       end
     end
 

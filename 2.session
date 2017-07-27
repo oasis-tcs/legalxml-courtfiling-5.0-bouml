@@ -1,12 +1,9 @@
-window_sizes 2736 1699 553 2177 1411 211
+window_sizes 3840 2035 553 3281 1747 211
 cleanlooks_style
-diagrams
-  active  classdiagram_ref 164994 // Case
-    3033 1743 93 D-Landscape 12 0
-end
 selected 
-  package_ref 129 // legalxml-courtfiling-5.0-bouml
+  package_ref 208514 // NIEMSubset
 open
+  class_ref 138114 // ElectronicFilingMessage
   
   package_ref 201602 // NIEM
 end

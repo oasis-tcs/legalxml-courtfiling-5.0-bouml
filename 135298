@@ -1,6 +1,6 @@
 format 212
 "Base Classes" // UML::Base Classes
-  revision 235
+  revision 240
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -559,6 +559,30 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
       end
+
+      attribute 15464322 "filerID"
+	public type class_ref 156162 // id
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "ecf:CaseFiling/ecf:DocumentFiler"
+	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:DocumentFiler"
+	key "niem-profile:niem:BaseType" value "nc:EntityType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "An attorney, judicial official or a pro se (self-represented) litigant who electronically provides  filings (combinations of data and documents) for acceptance and filing by a court, or who has successfully filed filings with a court."
+      end
     end
 
     class 909826 "RequestMessage"
@@ -759,10 +783,10 @@ ${members}};
       key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error"
       key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
       key "niem-profile:niem:XPath" value "ecf:ResponseMessage"
-      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Type" value "ecf:ResponseMessageType"
       key "niem-profile:niem:Property" value "cbrn:MessageStatus"
       key "niem-profile:niem:BaseType" value "cbrn:MessageStatusType"
-      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:Multiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
       comment "Representation of an error that occured when synchronously processing the message."
