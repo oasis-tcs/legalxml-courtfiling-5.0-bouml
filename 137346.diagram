@@ -68,8 +68,8 @@ relationcanvas 129410 relation_ref 169346 // <directional aggregation>
 end
 relationcanvas 129666 relation_ref 169474 // <directional aggregation>
   decenter_begin 855
-  decenter_end 217
-  from ref 128386 z 2001 stereotype "<<niem>>" xyz 604 407 3000 to ref 129538
+  decenter_end 216
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 558 393 3000 to ref 129538
   role_a_pos 491 371 3000 no_role_b
   multiplicity_a_pos 628 420 3000 no_multiplicity_b
 end

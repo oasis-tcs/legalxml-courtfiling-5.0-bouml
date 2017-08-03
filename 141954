@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 290
+  revision 295
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1008,7 +1008,7 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPersonReference"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPersonReference"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPerson"
 	key "niem-profile:niem:Type" value "j:JudicialOfficialType"
 	key "niem-profile:niem:Property" value "@nc:RoleOfPerson"
 	key "niem-profile:niem:BaseType" value "nc:PersonType"
@@ -1076,9 +1076,9 @@ ${items}};
 	mysql_decl ""
 	MysqlColumn
 	ncouples 9
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/ecf:CaseOfficialAugmentation/ecf:CaseParticipantRoleCode"
-	key "niem-profile:niem:Type" value "ecf:CaseOfficialAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:AttorneyID"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPerson/ecf:PersonAugmentation/ecf:ParticipantID"
+	key "niem-profile:niem:Type" value "ecf:PersonAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:ParticipantID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -1140,6 +1140,30 @@ ${items}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 15652354 "submitterID"
+	public type class_ref 156162 // id
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A unique identifier for an item participating in a case."
       end
     end
 
@@ -2031,8 +2055,8 @@ ${items}};
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:AffectedPartyID"
 	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:AffectedPartyID"
-	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Property" value "ecf:AffectedParty"
+	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
@@ -2233,9 +2257,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentMetadata/ecf:FilingAttorneyID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:FilingAttorneyIdentification"
-	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:FilingAttorneyID"
+	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentFiler/ecf:EntityPerson/ecf:PersonAugmentation/ecf:ParticipantID"
+	key "niem-profile:niem:Type" value "ecf:PersonAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:ParticipantID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
@@ -2256,9 +2280,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentMetadata/ecf:FilingPartyID"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Document/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:FilingPartyID"
+	key "niem-profile:niem:XPath" value "nc:Document/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:ParticipantID"
 	key "niem-profile:niem:Type" value "ecf:PersonAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:FilingPartyID"
+	key "niem-profile:niem:Property" value "ecf:ParticipantID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
@@ -2979,7 +3003,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the submitterID for filings in this case, and asynchronous responses to filings."
+	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the participant ID for filings in this case, and asynchronous responses to filings."
       end
     end
 
@@ -5297,6 +5321,30 @@ ${items}};
 	key "niem-profile:niem:Notes" value ""
 	comment "A payment."
       end
+
+      attribute 15561474 "maximumPayment"
+	public type class_ref 177154 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "payment:PaymentMessage/cac:PaymentMandate"
+	key "niem-profile:niem:Type" value "payment:PaymentMessageType"
+	key "niem-profile:niem:Property" value "cac:PaymentMandate"
+	key "niem-profile:niem:BaseType" value "cac:PaymentMandateType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The maximum payment associated with a transaction	"
+      end
     end
 
     class 136194 "FinancialAccount"
@@ -6395,7 +6443,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the submitterID for filings in this case, and asynchronous responses to filings."
+	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the participant ID for filings in this case, and asynchronous responses to filings."
       end
 
       attribute 159234 "statusCode"

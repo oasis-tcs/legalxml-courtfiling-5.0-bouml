@@ -1,9 +1,13 @@
-window_sizes 3840 2035 553 3281 1747 211
+window_sizes 2730 1684 553 2171 1396 211
 cleanlooks_style
+marked
+  attribute_ref 158722 // serviceRecipientID
+  attribute_ref 159106 // serviceRecipientID
+end
 selected 
-  package_ref 208514 // NIEMSubset
+  package_ref 129 // legalxml-courtfiling-5.0-bouml
 open
-  class_ref 138114 // ElectronicFilingMessage
+  usecaseview_ref 141058 // Use Cases
   
   package_ref 201602 // NIEM
 end
