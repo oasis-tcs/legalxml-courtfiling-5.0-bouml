@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 295
+  revision 298
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1085,7 +1085,7 @@ ${items}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	comment "An identifier for an attorney"
+	comment "A unique identifier for an entity participating in a case."
       end
     end
 
@@ -1163,7 +1163,7 @@ ${items}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	comment "A unique identifier for an item participating in a case."
+	comment "A unique identifier for an entity participating in a case."
       end
     end
 
@@ -1227,7 +1227,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "A code that describes the role played by a person or organization in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust).
+	comment "A unique identifier for an entity participating in a case.
 "
       end
     end
@@ -1427,7 +1427,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "A code that describes the role played by a person or organization in a case.  Allowed values are set forth in Court Policy. Examples: Lead attorney, guardian ad litem, friend of court, court appointed special advocate (CASA), caseworker, probation officer, bail bondsman, interested person, interested party, intervenor, heir, trustee or beneficiary (e.g., of a trust).
+	comment "A unique identifier for an entity participating in a case.
 "
       end
     end
@@ -2264,7 +2264,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "Identifier recognized by the court as being unique within this case,and used to identify the attorney who is filing this document."
+	comment "Identifier recognized by the court as being unique within this case,and used to identify the entity who is filing this document."
       end
 
       attribute 131842 "filingPartyID"
@@ -2281,13 +2281,13 @@ ${items}};
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentMetadata/ecf:FilingPartyID"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Document/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:ParticipantID"
-	key "niem-profile:niem:Type" value "ecf:PersonAugmentationType"
+	key "niem-profile:niem:Type" value "ecf:ItemAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:ParticipantID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "Identifier recognized by the court as being unique within this case,and used to identify the party on whose behalf this document is being filed."
+	comment "Identifier recognized by the court as being unique within this case,and used to identify the entity on whose behalf this document is being filed."
       end
 
       attribute 131330 "parentDocumentID"
@@ -2377,7 +2377,7 @@ ${items}};
 	key "niem-profile:niem:Property" value "ecf:DocumentRelatedCode"
 	key "niem-profile:niem:BaseType" value "niem-xs:normalizedString"
 	key "niem-profile:niem:Multiplicity" value "1,1"
-	key "niem-profile:niem:CodeList" value "parent;prior-related"
+	key "niem-profile:niem:CodeList" value "parent;prior-related;reviewed"
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentMetadata/ecf:PriorRelatedDocumentID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list DocumentRelatedCode.gc"
@@ -2935,7 +2935,7 @@ ${items}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      comment "Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document. This information can constitute the certificate of service for service performed electronically. This information is also provided by the filing assembly MDE to service MDEs to identify persons to whom the service MDEs are required to deliver the filing."
+      comment "Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this filing. This information can constitute the certificate of service for service performed electronically. This information is also provided by the filing assembly MDE to service MDEs to identify persons to whom the service MDEs are required to deliver the filing."
       attribute 158850 "receivingMDELocationID"
 	public type class_ref 156162 // id
 	stereotype "niem-profile:niem"
@@ -2956,7 +2956,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "The location of the filing assembly MDE associated with the person receiving service."
+	comment "The location of the service MDE associated with the person receiving service."
       end
 
       attribute 158978 "receivingMDEProfileCode"
@@ -2979,7 +2979,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "Code identifying the service interaction profile being used by the receiving filing assembly MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF.
+	comment "Code identifying the service interaction profile being used by the receiving MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF.
 "
       end
 
@@ -3003,7 +3003,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the participant ID for filings in this case, and asynchronous responses to filings."
+	comment "A value assigned to a person, organization or item entity for the purpose of uniquely specifying the entity within a legal service context with respect to e-filing. The service recipient identifier value must be known and understood by both the service provider and the service requester. "
       end
     end
 
@@ -6443,7 +6443,7 @@ ${items}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the participant ID for filings in this case, and asynchronous responses to filings."
+	comment "A value assigned to a person, organization or item entity for the purpose of uniquely specifying the entity within a legal service context with respect to e-filing. The service recipient identifier value must be known and understood by both the service provider and the service requester. "
       end
 
       attribute 159234 "statusCode"

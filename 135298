@@ -1,6 +1,6 @@
 format 212
 "Base Classes" // UML::Base Classes
-  revision 243
+  revision 245
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -486,8 +486,8 @@ format 212
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingMessage/ecf:ElectronicServiceInformation"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "ecf:CaseFiling/ecf:ElectronicServiceInformation"
-	key "niem-profile:niem:Type" value "ecf:CaseFilingType"
+	key "niem-profile:niem:XPath" value "filing:FilingMessage/ecf:ElectronicServiceInformation"
+	key "niem-profile:niem:Type" value "filing:FilingMessageType"
 	key "niem-profile:niem:Property" value "ecf:ElectronicServiceInformation"
 	key "niem-profile:niem:BaseType" value "ecf:ElectronicServiceInformationType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"

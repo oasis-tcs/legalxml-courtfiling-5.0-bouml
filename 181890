@@ -1,6 +1,6 @@
 format 212
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 105
+  revision 107
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -2455,10 +2455,10 @@ format 212
 	key "niem-profile:niem:OldXPath" value "documentrequest:DocumentQueryMessage/nc:CaseDocketID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/nc:Document/nc:DocumentFileControlID"
-	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
+	key "niem-profile:niem:Type" value "nc:DocumentType"
 	key "niem-profile:niem:Property" value "nc:DocumentFileControlID"
 	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "A number used to identify a document in electronic form in the court official record.  Should be the Document ID assigned by the court at the time of Record Docketing."
@@ -2519,8 +2519,8 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/nc:Document"
 	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:DocumentFileControlID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
+	key "niem-profile:niem:Property" value "nc:Document"
+	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
