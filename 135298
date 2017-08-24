@@ -1,6 +1,6 @@
 format 212
 "Base Classes" // UML::Base Classes
-  revision 245
+  revision 247
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -261,7 +261,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:FilingCompletionDate"
 	key "niem-profile:niem:Type" value "ecf:CallbackMessageType"
-	key "niem-profile:niem:Property" value "ecf:FilingCompletionDate, (nc:DateTime)"
+	key "niem-profile:niem:Property" value "ecf:FilingCompletionDate"
 	key "niem-profile:niem:BaseType" value "nc:DateType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""

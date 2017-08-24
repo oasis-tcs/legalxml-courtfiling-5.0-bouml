@@ -5,9 +5,15 @@ marked
   attribute_ref 159106 // serviceRecipientID
   class_ref 149506 // CaseParticipant
 end
-selected 
-  package_ref 129 // legalxml-courtfiling-5.0-bouml
+selected operation_ref 128770 // GetPolicy
 open
+  usecase_ref 128002 // Submit Court Filing
+  usecase_ref 128258 // Submit Service
+  component_ref 128642 // ECF System
+  component_ref 129026 // CMS/DMS
+  component_ref 129154 // Legal CMS
+  class_ref 2087554 // CourtPolicyMDE
+  classview_ref 135298 // Primitive Types
   
   package_ref 201602 // NIEM
 end

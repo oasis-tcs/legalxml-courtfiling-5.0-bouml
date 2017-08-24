@@ -1,6 +1,6 @@
 format 212
 "Messages - Scheduling" // UML::Messages - Scheduling
-  revision 102
+  revision 104
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -182,13 +182,13 @@ format 212
 	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:CourtEventLocationCode"
+	key "niem-profile:niem:Property" value "ecf:CourtLocationCode"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value "Genericode code list CodeLocationCode.gc"
+	key "niem-profile:niem:Notes" value "Genericode code list CourtLocationCode.gc"
 	comment "A court location"
       end
 

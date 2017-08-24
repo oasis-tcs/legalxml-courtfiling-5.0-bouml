@@ -1,6 +1,6 @@
 format 212
 "UML" // UML
-  revision 42
+  revision 43
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -744,9 +744,11 @@ ${members}};
       comment "The list of operations supported by the Service MDE."
       operation 129794 "ServeFiling"
 	public return_type class_ref 142082 // ServiceReceiptMessage
-	nparams 1
+	nparams 2
 	  param in name "" type class_ref 130690 // CoreFilingMessage
 	multiplicity "1..*"
+	  param in name "" type class_ref 135938 // PaymentMessage
+	multiplicity "0..1"
 	
 	
 	
@@ -757,9 +759,11 @@ ${members}};
 
       operation 142850 "ServeProcess"
 	public return_type class_ref 142082 // ServiceReceiptMessage
-	nparams 1
+	nparams 2
 	  param in name "" type class_ref 130690 // CoreFilingMessage
 	multiplicity "1..*"
+	  param in name "" type class_ref 135938 // PaymentMessage
+	multiplicity "0..1"
 	
 	
 	
