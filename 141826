@@ -1,6 +1,6 @@
 format 212
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 260
+  revision 263
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -5838,9 +5838,9 @@ format 212
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "criminal:CriminalCase/j:CaseAugmentation/j:CaseDefendantParty"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseDefendantParty"
-	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseDefendantParty"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseParty"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -9179,9 +9179,9 @@ format 212
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "juvenile:JuvenileCase/j:CaseAugmentation/j:CaseProsecutionAttorney/j:CaseOfficialCaseIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseProsecutionAttorney/j:CaseOfficialCaseIdentification"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/j:CaseOfficialCaseIdentification"
 	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseProsecutionAttorney"
+	key "niem-profile:niem:Property" value "j:CaseOfficial"
 	key "niem-profile:niem:BaseType" value "j:CaseOfficialType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""

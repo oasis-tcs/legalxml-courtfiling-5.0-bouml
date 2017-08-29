@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 300
+  revision 303
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -682,9 +682,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseInitiatingParty"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseInitiatingParty"
-	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseInitiatingParty"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseParty"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -701,9 +701,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseInitiatingAttorney"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseInitiatingAttorney"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial"
 	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseInitiatingAttorney"
+	key "niem-profile:niem:Property" value "j:CaseOfficial"
 	key "niem-profile:niem:BaseType" value "j:CaseOfficialType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -781,9 +781,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseOtherParty"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseParty"
 	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:CaseOtherParty"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -800,9 +800,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseOtherEntityAttorney"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseOtherEntityAttorney"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial"
 	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:CaseOtherEntityAttorney"
+	key "niem-profile:niem:Property" value "j:CaseOfficial"
 	key "niem-profile:niem:BaseType" value "j:CaseOfficialType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -876,9 +876,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseRespondentParty"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseRespondentParty"
-	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseRespondentParty"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseParty"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -895,9 +895,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseRespondentAttorney"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseRespondentPartyAttorney"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial"
 	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseRespondentAttorney, j:CaseDefenseAttorney"
+	key "niem-profile:niem:Property" value "j:CaseOfficial"
 	key "niem-profile:niem:BaseType" value "j:CaseOfficialType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -1337,9 +1337,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseLineageCase"
 	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseLineageCase/j:CaseAugmentation/j:CaseInitiatingParty"
-	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
-	key "niem-profile:niem:Property" value "j:CaseInitiatingParty"
+	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseLineageCase/ecf:CaseAugmentation/j:CaseParty"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -2238,7 +2238,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:RegisterActionDescriptionCode"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list RegisterActionDescriptionCode.gc"
 	key "niem-profile:niem:CodeList" value "Court-specific code list"
 	comment "The docket code used by the court for the type of document submitted. Allowable values set forth in Court Policy."
@@ -2512,11 +2512,11 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/ecf:AttachmentMetadata"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
-	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary"
+	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment"
 	key "niem-profile:niem:Type" value "ecf:DocumentRenditionType"
 	key "niem-profile:niem:Property" value "nc:Attachment"
 	key "niem-profile:niem:BaseType" value "nc:BinaryType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
@@ -2557,11 +2557,11 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentRendition/ecf:DocumentRenditionMetadata/nc:DocumentBinary"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:DocumentBinary"
+	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:DocumentRendition/nc:Attachment"
 	key "niem-profile:niem:Type" value "ecf:DocumentRenditionType"
 	key "niem-profile:niem:Property" value "nc:Attachment"
 	key "niem-profile:niem:BaseType" value "nc:BinaryType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Embedded document data, in an encoded form acceptable to be included within XML."

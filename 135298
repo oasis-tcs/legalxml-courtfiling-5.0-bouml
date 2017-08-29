@@ -1,6 +1,6 @@
 format 212
 "Base Classes" // UML::Base Classes
-  revision 247
+  revision 250
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -761,7 +761,7 @@ ${members}};
       key "niem-profile:niem:OldMultiplicity" value "1,1"
       key "niem-profile:niem:XPath" value "nc:DateType/nc:Date"
       key "niem-profile:niem:Type" value "nc:DateType"
-      key "niem-profile:niem:Property" value "nc:DateRepresentation, (nc:Date)"
+      key "niem-profile:niem:Property" value "nc:DateRepresentation, (nc:Date), (nc:DateTime)"
       key "niem-profile:niem:BaseType" value "niem-xs:date"
       key "niem-profile:niem:Multiplicity" value "1,1"
       key "niem-profile:niem:Notes" value ""

@@ -1,6 +1,6 @@
 format 212
 "UML" // UML
-  revision 43
+  revision 45
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -646,9 +646,11 @@ ${members}};
 
       operation 128386 "GetFeesCalculation"
 	public return_type class_ref 134530 // GetFeesCalculationResponseMessage
-	nparams 1
+	nparams 2
 	  param in name "" type class_ref 134402 // GetFeesCalculationRequestMessage
 	multiplicity "1"
+	  param in name "" type class_ref 135938 // PaymentMessage
+	multiplicity "0..1"
 	
 	
 	
@@ -713,7 +715,7 @@ ${members}};
 	public return_type class_ref 145666 // MessageReceiptMessage
 	nparams 2
 	  param in name "" type class_ref 130690 // CoreFilingMessage
-	multiplicity "1..*"
+	multiplicity "1"
 	  param in name "" type class_ref 135938 // PaymentMessage
 	multiplicity "0..1"
 	
@@ -746,7 +748,7 @@ ${members}};
 	public return_type class_ref 142082 // ServiceReceiptMessage
 	nparams 2
 	  param in name "" type class_ref 130690 // CoreFilingMessage
-	multiplicity "1..*"
+	multiplicity "1"
 	  param in name "" type class_ref 135938 // PaymentMessage
 	multiplicity "0..1"
 	
