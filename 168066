@@ -1,6 +1,6 @@
 format 212
 "UML" // UML
-  revision 45
+  revision 46
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -501,7 +501,7 @@ ${members}};
 	  param in name "" type class_ref 145794 // RecordDocketingMessage
 	multiplicity "1..*"
 	  param in name "" type class_ref 135938 // PaymentMessage
-	multiplicity "0..1"
+	multiplicity "0..2"
 	
 	
 	

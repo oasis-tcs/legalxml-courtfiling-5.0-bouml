@@ -1,6 +1,6 @@
 format 212
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 263
+  revision 264
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -2187,7 +2187,7 @@ format 212
 	key "niem-profile:niem:Type" value "j:EnforcementOfficialType"
 	key "niem-profile:niem:Property" value "nc:RoleOfPerson"
 	key "niem-profile:niem:BaseType" value "nc:PersonNameTextType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "The name of the law enforcement officer.
@@ -2862,7 +2862,7 @@ format 212
 	key "niem-profile:niem:Type" value "j:SubjectType"
 	key "niem-profile:niem:Property" value "@nc:RoleOfPerson"
 	key "niem-profile:niem:BaseType" value "nc:PersonType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
@@ -8831,7 +8831,7 @@ format 212
 	key "niem-profile:niem:Type" value "cyfs:JuvenileType"
 	key "niem-profile:niem:Property" value "@nc:RoleOfPerson"
 	key "niem-profile:niem:BaseType" value "nc:PersonType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
