@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 304
+  revision 305
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -4131,7 +4131,7 @@ ${items}};
 	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/nc:RelatedCaseAssociation/nc:Case/j:CaseAugmentation/j:CaseCourt/j:CourtName"
 	key "niem-profile:niem:Type" value "j:CourtType"
 	key "niem-profile:niem:Property" value "j:CourtName"
-	key "niem-profile:niem:BaseType" value "j:CourtType"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
