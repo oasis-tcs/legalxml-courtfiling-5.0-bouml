@@ -1,6 +1,6 @@
 format 212
 "Messages - Filing" // UML::Messages - Filing
-  revision 305
+  revision 307
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -2055,7 +2055,7 @@ ${items}};
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/ecf:AffectedPartyID"
 	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
-	key "niem-profile:niem:Property" value "ecf:AffectedParty"
+	key "niem-profile:niem:Property" value "ecf:AffectedParticipant"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
@@ -6061,9 +6061,9 @@ ${items}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentHashText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentAugmentation/ecf:DocumentHash"
-	key "niem-profile:niem:Type" value "ecf:ReviewedDocumentType"
-	key "niem-profile:niem:Property" value "ecf:DocumentHash"
+	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument/ecf:DocumentAugmentation/ecf:DocumentRendition/ecf:DocumentHash"
+	key "niem-profile:niem:Type" value "ecf:DocumentRenditionType"
+	key "niem-profile:niem:Property" value "ecf:DocumentRenditionHash"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""

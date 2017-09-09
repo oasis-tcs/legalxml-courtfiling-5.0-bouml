@@ -5,19 +5,12 @@ marked
   attribute_ref 159106 // serviceRecipientID
   class_ref 149506 // CaseParticipant
 end
-selected operation_ref 128770 // GetPolicy
+selected 
+  package_ref 129 // legalxml-courtfiling-5.0-bouml
 open
-  class_ref 2087554 // CourtPolicyMDE
-  class_ref 129538 // CourtRecordMDE
-  class_ref 198786 // CourtSchedulingMDE
-  class_ref 129410 // FilingAssemblyMDE
-  class_ref 129282 // FilingReviewMDE
-  class_ref 130434 // ServiceMDE
   
-package_ref 181890 // Messages - Request/Response
+  package_ref 161538 // niem-profile
   
-package_ref 161538 // niem-profile
-  
-package_ref 201602 // NIEM
+  package_ref 201602 // NIEM
 end
 end

@@ -1,6 +1,6 @@
 format 212
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 265
+  revision 267
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -103,7 +103,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "appellate:CaseAugmentation/appellate:AppellateCaseAddedParty/appellate:AppellateCaseParty"
 	key "niem-profile:niem:Type" value "appellate:AppellateCaseAddedPartyType"
-	key "niem-profile:niem:Property" value "appellate:AppellateCaseParty"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
@@ -839,7 +839,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "appellate:CaseAugmentation/appellate:AppellateCaseRemovedParty/appellate:AppellateCaseParty"
 	key "niem-profile:niem:Type" value "appellate:AppellateCaseRemovedPartyType"
-	key "niem-profile:niem:Property" value "appellate:AppellateCaseParty"
+	key "niem-profile:niem:Property" value "ecf:CaseParty"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
@@ -3172,7 +3172,7 @@ format 212
 	key "niem-profile:niem:BaseType" value "ncic:VSTCodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:CodeList" value "TODO: NIEM codelist contains duplicates. Use Genericode list instead?"
 	comment "model described in terms of 2 door, 4 door, van, pickup, etc."
       end
 
@@ -3195,7 +3195,7 @@ format 212
 	key "niem-profile:niem:BaseType" value "ncic:VCOCodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:CodeList" value "TODO: NIEM codelist contains duplicates. Use Genericode list instead?"
 	comment "A code identifying a single, upper-most, front-most, or majority color of a vehicle."
       end
 
@@ -3357,7 +3357,7 @@ format 212
 	key "niem-profile:niem:BaseType" value "ncic:VMACodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:CodeList" value "TODO: NIEM codelist contains duplicates. Use Genericode list instead?"
 	comment "A code identifying the manufacturer of a vehicle."
       end
 
@@ -3380,7 +3380,7 @@ format 212
 	key "niem-profile:niem:BaseType" value "ncic:VMOCodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:CodeList" value "TODO: NIEM codelist contains duplicates. Use Genericode list instead?"
 	comment "A code identifying the specific design or type of vehicle made by a manufacturer.  Sometimes referred to as the series model."
       end
 
@@ -6656,7 +6656,7 @@ format 212
 	key "niem-profile:niem:Property" value "nc:PhysicalFeatureCategory, (j:PhysicalFeatureCategoryCode)"
 	key "niem-profile:niem:BaseType" value ""
 	key "niem-profile:niem:Multiplicity" value "0,1"
-	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:CodeList" value "TODO: NIEM codelist contains duplicates. Use nc:PhysicalFeatureCategoryText and Genericode list instead?"
 	key "niem-profile:niem:OldXPath" value "nc:Person/nc:PersonPhysicalFeature/nc:PhysicalFeatureCategoryCode"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
