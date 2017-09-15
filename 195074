@@ -1,6 +1,6 @@
 format 212
 "Messages - Scheduling" // UML::Messages - Scheduling
-  revision 111
+  revision 123
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -121,7 +121,7 @@ format 212
       end
 
       attribute 14525570 "startTime"
-	public type class_ref 6085378 // time
+	public explicit_type ""
 	multiplicity "1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -145,7 +145,7 @@ format 212
       end
 
       attribute 14525698 "endTime"
-	public type class_ref 6627842 // time
+	public explicit_type ""
 	multiplicity "1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -358,7 +358,7 @@ format 212
       end
 
       attribute 14526082 "startTime"
-	public type class_ref 6085378 // time
+	public explicit_type ""
 	multiplicity "1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -382,7 +382,7 @@ format 212
       end
 
       attribute 14526210 "endTime"
-	public type class_ref 6085378 // time
+	public explicit_type ""
 	multiplicity "1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -619,7 +619,7 @@ format 212
       end
 
       attribute 14524930 "startAfterTime"
-	public type class_ref 6085378 // time
+	public explicit_type ""
 	multiplicity "0..3"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -643,7 +643,7 @@ format 212
       end
 
       attribute 14524802 "startBeforeTime"
-	public type class_ref 6085378 // time
+	public explicit_type ""
 	multiplicity "0..3"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -667,7 +667,7 @@ format 212
       end
 
       attribute 14525058 "duration"
-	public type class_ref 6081282 // duration
+	public explicit_type ""
 	multiplicity "0..1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""

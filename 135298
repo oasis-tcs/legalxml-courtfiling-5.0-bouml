@@ -1,6 +1,6 @@
 format 212
 "Base Classes" // UML::Base Classes
-  revision 254
+  revision 269
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -358,7 +358,7 @@ format 212
 	key "niem-profile:niem:BaseType" value "niem-xs:normalizedString"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value "Genericode code list FilingStatusCode.gc"
-	key "niem-profile:niem:CodeList" value "accepted=filing was received and accepted;  cancelled=filing was cancelled at filer's request; partially-accepted=filing was received, some documents were accepted, and some documents were rejected; received=filing has been received but not yet accepted; rejected=filing was received and completely rejected"
+	key "niem-profile:niem:CodeList" value "accepted=filing was received and accepted;  cancelled=filing was cancelled at filer's request; partially-accepted=filing was received, some documents were accepted, and some documents were rejected; received=filing has been received but not yet accepted; rejected=filing was received and completely rejected; issued=document has been issued;"
 	comment "Status of the filing as determined by the system sending the callback. Values: accepted, partially accepted (e.g., some documents but not others), rejected."
       end
 
@@ -389,7 +389,7 @@ format 212
 	relation 213506 o-->
 	  stereotype "niem-profile:niem"
 	  a role_name "reviewedConnectedDocument" multiplicity "*" public
-	    comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
+	    comment "This element will be present for every connected document that is reviewed by clerk review. The filing connected document must be referenced using nc:DocumentAssociation. The clerk review results must be recorded using ecf:DocumentReviewStatus, and ecf:DocumentReviewer (optional)."
 	    classrelation_ref 215682 // reviewedConnectedDocument (<directional aggregation>)
 	  b parent class_ref 132482 // ReviewedDocument
 	ncouples 9
@@ -432,7 +432,7 @@ format 212
 	relation 5324546 o-->
 	  stereotype "niem-profile:niem"
 	  a role_name "reviewedLeadDocument" multiplicity "0..1" public
-	    comment "This association will be present for every connected document that is reviewed by clerk review. For documents that were rejected by the clerk review process or the court record system, only the documentStatusCode, originalDocumentID, and (optionally) the documentStatusReasonDescription will be present. For documents that were accepted and recorded, all attributes will be present, except for documentStatusReasonDescription, which may or may not be present."
+	    comment "This element will be present for every lead document that is reviewed by clerk review. The filing lead document must be referenced using nc:DocumentAssociation. The clerk review results must be recorded using ecf:DocumentReviewStatus, and ecf:DocumentReviewer (optional)."
 	    classrelation_ref 5326850 // reviewedLeadDocument (<directional aggregation>)
 	  b parent class_ref 132482 // ReviewedDocument
 	ncouples 9
@@ -576,7 +576,7 @@ format 212
 	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:DocumentFiler"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
@@ -879,7 +879,7 @@ ${members}};
 	key "niem-profile:niem:CodeList" value "0=No error; 1=Invalid per schema or code list; 2=Invalid per ECF specification; 3=Invalid per service interaction profile; 4=Invalid per policy"
 	key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
-	key "niem-profile:niem:Notes" value "DISCUSS: Updated error code list"
+	key "niem-profile:niem:Notes" value "Genericode code list ErrorCodeText.gc"
 	comment "A code that uniquely identifies an error.  Allowable values set forth in court policy."
       end
 
@@ -897,7 +897,7 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "cbrn:MessageStatus/cbrn:SystemOperatingModeCode"
 	key "niem-profile:niem:Type" value "cbrn:SystemEventType"
-	key "niem-profile:niem:Property" value "nc:SystemOperatingMode, (cbrn:SystemOperatingModeCode)"
+	key "niem-profile:niem:Property" value "nc:SystemOperatingModeAbstract, (cbrn:SystemOperatingModeCode)"
 	key "niem-profile:niem:BaseType" value "cbrncl:SystemOperatingModeCodeType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -929,7 +929,7 @@ ${members}};
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
       comment "An identifier"
-      attribute 9576450 "idenficationSource"
+      attribute 9576450 "identficationSource"
 	public explicit_type "string"
 	multiplicity "0..1"
 	stereotype "niem-profile:niem"
@@ -946,10 +946,10 @@ ${members}};
 	key "niem-profile:niem:Property" value "nc:IdentificationSourceText"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value "nc:Identification/nc:IdentificationSourceText, nc:IdentificationCategoryText"
+	key "niem-profile:niem:CodeList" value "CourtRecord=CourtRecord MDE; CourtPolicy=Court Policy MDE; CourtScheduling=CourtScheduling MDE; FilingAssembly=FilingAssembly MDE; FilingReview=FilingReview MDE; Service=Service MDE"
+	key "niem-profile:niem:OldXPath" value "nc:Identification/nc:IdentificationSourceText, nc:IdentificationCategoryName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:Notes" value ""
+	key "niem-profile:niem:Notes" value "Genericode code list MajorDesignElementTypeCode.gc"
 	comment "The source of an identifier."
       end
 
@@ -989,9 +989,9 @@ ${members}};
 	mysql_decl ""
 	MysqlColumn
 	ncouples 9
-	key "niem-profile:niem:XPath" value "citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction/j:JurisdictionNCICLSTACode"
+	key "niem-profile:niem:XPath" value "citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction/j:JurisdictionANSID20AuthorityCode"
 	key "niem-profile:niem:Type" value "nc:JurisdictionType"
-	key "niem-profile:niem:Property" value "nc:JurisdictionAbstract,  (j:JurisdictionNCICLSTACode), (nc:JurisdictionText)"
+	key "niem-profile:niem:Property" value "nc:JurisdictionAbstract,  (j:JurisdictionANSID20AuthorityCode), (nc:JurisdictionText)"
 	key "niem-profile:niem:BaseType" value "ncic:CTZCodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -1127,7 +1127,7 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:AddressDeliveryPointID"
 	key "niem-profile:niem:Type" value "nc:AddressType"
-	key "niem-profile:niem:Property" value "nc:AddressDeliveryPoint, (nc:AddressDeliveryPointID)"
+	key "niem-profile:niem:Property" value "nc:AddressDeliveryPointAbstract, (nc:AddressDeliveryPointID)"
 	key "niem-profile:niem:BaseType" value "niem-xs:string"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -1175,7 +1175,7 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationCounty"
 	key "niem-profile:niem:Type" value "nc:AddressType"
-	key "niem-profile:niem:Property" value "nc:LocationCounty, (nc:LocationCountyName)"
+	key "niem-profile:niem:Property" value "nc:LocationCountyAbstract, (nc:LocationCountyName)"
 	key "niem-profile:niem:BaseType" value "nc:ProperNameTextType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -1199,8 +1199,8 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationState"
 	key "niem-profile:niem:Type" value "nc:AddressType"
-	key "niem-profile:niem:Property" value "nc:LocationState, (nc:LocationStateName), (j:LocationStateNCICLISCode)"
-	key "niem-profile:niem:BaseType" value "nc:ProperNameTextType"
+	key "niem-profile:niem:Property" value "nc:LocationState"
+	key "niem-profile:niem:BaseType" value "nc:StateType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateName"
@@ -1223,8 +1223,8 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationCountry"
 	key "niem-profile:niem:Type" value "nc:AddressType"
-	key "niem-profile:niem:Property" value "nc:LocationCountry, (nc:LocationCountryName), (nc:LocationCountryFIPS10-4Code)"
-	key "niem-profile:niem:BaseType" value "nc:ProperNameTextType"
+	key "niem-profile:niem:Property" value "nc:LocationCountry"
+	key "niem-profile:niem:BaseType" value "nc:CountryType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryName, nc:LocationCountryFIPS10-4Code"
@@ -1287,6 +1287,54 @@ ${members}};
 	    classrelation_ref 4525826 // <generalisation>
 	  b parent class_ref 5308418 // Address
       end
+
+      attribute 18320002 "countryName"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationCountry/nc:LocationCountryName"
+	key "niem-profile:niem:Type" value "nc:CountryType"
+	key "niem-profile:niem:Property" value "nc:CountryRepresentation, (nc:LocationCountryName), ( intel:LocationCountryFIPS10-4PlusNCTCCodeText)"
+	key "niem-profile:niem:BaseType" value "nc:ProperNameTextType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryName, nc:LocationCountryFIPS10-4Code"
+	key "niem-profile:niem:OldMultiplicity" value "0,1"
+	key "niem-profile:niem:Notes" value ""
+	comment "A country."
+      end
+
+      attribute 18409986 "stateName"
+	public explicit_type "string"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationState/nc:LocationStateName, j:LocationStateNCICLISCode"
+	key "niem-profile:niem:Type" value "nc:StateType"
+	key "niem-profile:niem:Property" value "nc:StateRepresentation, (nc:LocationStateName), (j:LocationStateNCICLISCode)"
+	key "niem-profile:niem:BaseType" value "nc:ProperNameTextType"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateName"
+	key "niem-profile:niem:OldMultiplicity" value "0,1"
+	key "niem-profile:niem:Notes" value ""
+	comment "A state."
+      end
     end
 
     class 5366018 "StreetAddress"
@@ -1302,7 +1350,7 @@ ${members}};
       ncouples 9
       key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationStreet"
       key "niem-profile:niem:Type" value "nc:AddressType"
-      key "niem-profile:niem:Property" value "nc:AddressDeliveryPoint, (nc:LocationStreet)"
+      key "niem-profile:niem:Property" value "nc:AddressDeliveryPointAbstract, (nc:LocationStreet)"
       key "niem-profile:niem:BaseType" value "nc:StreetType"
       key "niem-profile:niem:Multiplicity" value "0,1"
       key "niem-profile:niem:CodeList" value ""
@@ -1474,7 +1522,7 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber"
 	key "niem-profile:niem:Type" value "nc:TelephoneNumberType"
-	key "niem-profile:niem:Property" value "nc:TelephoneNumberRepresentation, (nc:NANPTelephoneNumber), (nc:FullTelephoneNumber)"
+	key "niem-profile:niem:Property" value "nc:TelephoneNumberAbstract, (nc:NANPTelephoneNumber), (nc:FullTelephoneNumber)"
 	key "niem-profile:niem:BaseType" value ""
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -1498,7 +1546,7 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber"
 	key "niem-profile:niem:Type" value "nc:TelephoneNumberType"
-	key "niem-profile:niem:Property" value "nc:TelephoneNumberRepresentation, (nc:InternationalTelephoneNumber)"
+	key "niem-profile:niem:Property" value "nc:TelephoneNumberAbstract, (nc:InternationalTelephoneNumber)"
 	key "niem-profile:niem:BaseType" value "nc:InternationalTelephoneNumberType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
@@ -1815,7 +1863,7 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Amount/nc:CurrencyCode, nc:CurrencyText"
 	key "niem-profile:niem:Type" value "nc:AmountType"
-	key "niem-profile:niem:Property" value "nc:Currency, (nc:CurrencyCode), (nc:CurrencyText)"
+	key "niem-profile:niem:Property" value "nc:CurrencyAbstract, (nc:CurrencyCode), (nc:CurrencyText)"
 	key "niem-profile:niem:BaseType" value "iso_4217:CurrencyCodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""

@@ -1,4 +1,4 @@
-window_sizes 2736 1699 553 2177 1411 211
+window_sizes 2560 1315 553 2001 1027 211
 cleanlooks_style
 marked
   attribute_ref 158722 // serviceRecipientID
@@ -6,11 +6,11 @@ marked
   class_ref 149506 // CaseParticipant
 end
 selected 
-  package_ref 129 // legalxml-courtfiling-5.0-bouml
+package_ref 208386 // NIEMReference
 open
   
-  package_ref 161538 // niem-profile
+package_ref 168066 // UML
   
-  package_ref 201602 // NIEM
+package_ref 201602 // NIEM
 end
 end
