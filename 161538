@@ -1,4 +1,4 @@
-format 212
+format 214
 "niem-profile" // niem-profile
   revision 1
   modified_by 2 "JamesECabral"
@@ -79,6 +79,7 @@ format 212
       key "stereotypeCheckParameters" value ""
       key "stereotypeApplyOn" value "Attribute Class ClassInstance Relation"
       key "stereotypeIconPath" value ""
+      comment "Mapping of UML classes and attributes to NIEM types, elements and attributes"
       attribute 246146 "XPath"
 	public explicit_type ""
 	cpp_decl ""
@@ -194,6 +195,39 @@ format 212
 	MysqlColumn
 	oid 253826
 	comment "Notes regarding the mapping of the source class and property to the NIEM"
+      end
+    end
+
+    class 212610 "webservice"
+      visibility package stereotype "stereotype"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      oid 212610
+      ncouples 6
+      key "stereotypeSet" value ""
+      key "stereotypeCheck" value ""
+      key "stereotypeSetParameters" value ""
+      key "stereotypeCheckParameters" value ""
+      key "stereotypeApplyOn" value "Operation"
+      key "stereotypeIconPath" value ""
+      attribute 267010 "HTTPMethods"
+	public explicit_type ""
+	stereotype "list"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	oid 267010
+	comment "HTTP methods supported by the web service"
       end
     end
   end

@@ -1,6 +1,6 @@
-format 212
+format 214
 "UML" // UML
-  revision 47
+  revision 48
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -387,6 +387,7 @@ ${members}};
       mysql_decl ""
       
       operation 128770 "GetPolicy"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 136834 // GetPolicyResponseMessage
 	nparams 1
 	  param in name "" type class_ref 130562 // GetPolicyRequestMessage
@@ -396,8 +397,11 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value ""
 	comment "An operation to request a court policy."
       end
+
     end
 
     class 129538 "CourtRecordMDE"

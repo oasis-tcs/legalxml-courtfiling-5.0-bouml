@@ -1,16 +1,16 @@
-window_sizes 2560 1315 553 2001 1027 211
+window_sizes 2736 1699 553 2177 1411 211
 cleanlooks_style
 marked
   attribute_ref 158722 // serviceRecipientID
   attribute_ref 159106 // serviceRecipientID
   class_ref 149506 // CaseParticipant
 end
-selected 
-package_ref 208386 // NIEMReference
 open
+  class_ref 2087554 // CourtPolicyMDE
   
-package_ref 168066 // UML
+  package_ref 141954 // Messages - Filing
+  classview_ref 172802 // Stereotypes
   
-package_ref 201602 // NIEM
+  package_ref 201602 // NIEM
 end
 end

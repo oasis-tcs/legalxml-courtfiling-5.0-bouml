@@ -1,6 +1,6 @@
-format 212
+format 214
 "Messages - Filing" // UML::Messages - Filing
-  revision 319
+  revision 320
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -130,6 +130,7 @@ ${members}};
 	key "niem-profile:niem:CodeList" value ""
 	comment "An extension point for the enclosing message."
       end
+
     end
 
     classdiagram 192258 "CancelFilingMessage"
