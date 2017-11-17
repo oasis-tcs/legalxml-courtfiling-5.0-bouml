@@ -1,6 +1,6 @@
 format 214
 "UML" // UML
-  revision 48
+  revision 49
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -401,7 +401,6 @@ ${members}};
 	key "niem-profile:webservice:HTTPMethods" value ""
 	comment "An operation to request a court policy."
       end
-
     end
 
     class 129538 "CourtRecordMDE"
@@ -422,6 +421,7 @@ ${members}};
       
       comment "The list of operations supported by the Court Record MDE."
       operation 149634 "AllocateCourtDate"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
 	nparams 1
 	  param in name "" type class_ref 198914 // AllocateCourtDateMessage
@@ -431,6 +431,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value ""
 	comment "An operation to request a court date."
       end
 
