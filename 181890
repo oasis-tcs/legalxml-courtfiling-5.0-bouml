@@ -1,6 +1,6 @@
-format 212
+format 214
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 128
+  revision 130
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -968,7 +968,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventActor/nc:RoleOf"
 	key "niem-profile:niem:Type" value "ecf:CourtEventActorType"
-	key "niem-profile:niem:Property" value "nc:RoleOfAbstract, (@nc:RoleOfPerson), (@nc:RoleOfOrganization), (@nc:RoleOfItem)"
+	key "niem-profile:niem:Property" value "nc:RoleOfAbstract, (^nc:RoleOfPerson), (^nc:RoleOfOrganization), (^nc:RoleOfItem)"
 	key "niem-profile:niem:BaseType" value ""
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
@@ -1362,7 +1362,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:ConnectedDocument"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
-	key "niem-profile:niem:Property" value "@ecf:ConnectedDocument"
+	key "niem-profile:niem:Property" value "^ecf:ConnectedDocument"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
@@ -1809,7 +1809,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/nc:SecondaryDocument/nc:DicumentIdentification/nc:IdenificationID, nc:DocumentAssociation/nc:PrimaryDocument/nc:DicumentIdentification/nc:IdenificationID"
 	key "niem-profile:niem:Type" value "nc:DocumentAssociationType"
-	key "niem-profile:niem:Property" value "@nc:PrimaryDocument"
+	key "niem-profile:niem:Property" value "^nc:PrimaryDocument"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
@@ -1905,7 +1905,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "filing:FilingMessage/filing:FilingConnectedDocument"
 	key "niem-profile:niem:Type" value "filing:FilingMessageType"
-	key "niem-profile:niem:Property" value "@filing:FilingConnectedDocument"
+	key "niem-profile:niem:Property" value "^filing:FilingConnectedDocument"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -2532,26 +2532,6 @@ format 212
       comment "The base information contained in any query message."
       size Letter-Landscape
     end
-
-    classinstance 3148162 "GetDocumentRequestMessage"
-      stereotype "niem-profile:niem"
-      type class_ref 134146 // GetDocumentRequestMessage
-      attributes
-        end
-      relations
-        end
-      ncouples 9
-      key "niem-profile:niem:OldXPath" value ""
-      key "niem-profile:niem:OldMultiplicity" value ""
-      key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage"
-      key "niem-profile:niem:Type" value ""
-      key "niem-profile:niem:Property" value "documentrequest:GetDocumentRequestMessage"
-      key "niem-profile:niem:BaseType" value "documentrequest:GetDocumentRequestMessageType"
-      key "niem-profile:niem:Multiplicity" value ""
-      key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:CodeList" value ""
-      comment "The base information contained in any query message."
-    end
   end
 
   classview 157058 "GetDocumentResponseMessage"
@@ -2571,6 +2551,26 @@ format 212
     activitydiagramsettings
      end
     comment "The court response to a request for an electronic document in the court official record."
+    classinstance 3148162 "GetDocumentRequestMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 134146 // GetDocumentRequestMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage"
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value "documentrequest:GetDocumentRequestMessage"
+      key "niem-profile:niem:BaseType" value "documentrequest:GetDocumentRequestMessageType"
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      key "niem-profile:niem:CodeList" value ""
+      comment "The base information contained in any query message."
+    end
+
     class 134274 "GetDocumentResponseMessage"
       visibility public stereotype "niem-profile:niem"
       cpp_decl ""
@@ -2636,7 +2636,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/nc:Document"
 	key "niem-profile:niem:Type" value "documentresponse:GetDocumentResponseMessageType"
-	key "niem-profile:niem:Property" value "@nc:Document"
+	key "niem-profile:niem:Property" value "^nc:Document"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""

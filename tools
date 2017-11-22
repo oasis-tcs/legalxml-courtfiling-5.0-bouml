@@ -32,8 +32,8 @@ tool "Check-out" "file_control co" Project Package
 tool "Deploy classes" "deplcl" Project ClassView
 tool "Global Change" "global_change" Project Package ClassView DeploymentView
 tool "Uml projection" "uml_proj" Project Package ClassView
-tool "Sort" "java Main sort" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram
-tool "Import NIEM reference model" "java Main importSchema" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram SeqDiagram ColDiagram ClassDiagram ObjectDiagram StateDiagram ActivityDiagram ComponentDiagram DeploymentDiagram UseCase Component Node Artifact Inherit DependOn
-tool "Import NIEM mapping" "java Main import" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram SeqDiagram ColDiagram ClassDiagram ObjectDiagram StateDiagram ActivityDiagram ComponentDiagram DeploymentDiagram UseCase Component Node Artifact Inherit DependOn
-tool "Generate NIEM IEPD" "java Main export" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram SeqDiagram ColDiagram ClassDiagram ObjectDiagram StateDiagram ActivityDiagram ComponentDiagram DeploymentDiagram UseCase Component Node Artifact Inherit DependOn
-tool "Generate NIEM models" "java com.mtgmc.niemtools.Main export" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram SeqDiagram ColDiagram ClassDiagram ObjectDiagram StateDiagram ActivityDiagram ComponentDiagram DeploymentDiagram UseCase Component Node Artifact Inherit DependOn
+tool "Sort" "java com.mtgmc.niemtools.Main sort" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram
+tool "Configure NIEM modeling" "java com.mtgmc.niemtools.Main configure" Project
+tool "Import NIEM reference model" "java com.mtgmc.niemtools.Main importSchema" Project
+tool "Import NIEM mapping" "java com.mtgmc.niemtools.Main import" Project
+tool "Generate NIEM models" "java com.mtgmc.niemtools.Main export" Project

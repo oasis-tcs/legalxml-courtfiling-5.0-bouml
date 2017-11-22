@@ -1,6 +1,6 @@
 format 214
 "legalxml-courtfiling-5.0-bouml"
-  revision 594
+  revision 598
   modified_by 2 "JamesECabral"
 
 
@@ -40,7 +40,7 @@ format 214
   mark_for_import
   
   stereotype "toplevel"
-  ncouples 21
+  ncouples 31
   key "gxmi path" value ""
   key "gxmi no model" value "no"
   key "gxmi gen views" value "no"
@@ -62,6 +62,16 @@ format 214
   key "IEPDContact" value "https://www.oasis-open.org/committees/legalxml-courtfiling"
   key "ignorePrefixes" value "cac,cbc,ds"
   key "externalSchemas" value "cac=urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/common/UBL-CommonAggregateComponents-2.1.xsd,cbc=urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/common/UBL-CommonBasicComponents-2.1.xsd,ds=http://www.w3.org/2000/09/xmldsig#=http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd,xcal=urn:ietf:params:xml:ns:icalendar-2.0=ws-calendar/iCalendar.xsd"
+  key "IEPDEmail" value "legalxml-courtfiling-comment@lists.oasis-open.org"
+  key "IEPDLicense" value "https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php"
+  key "IEPDTermsOfService" value "https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php"
+  key "IEPDReadMeFile" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\ecf-v5.0-wd26.docx"
+  key "IEPDChangeLogFile" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\Change Log.doc"
+  key "exportHTML" value "true"
+  key "exportXML" value "true"
+  key "exportWSDL" value "true"
+  key "exportJSON" value "true"
+  key "exportOpenAPI" value "true"
   package_ref 168066 // UML
 
   package_ref 161538 // niem-profile

@@ -1,6 +1,6 @@
 format 214
 "UML" // UML
-  revision 49
+  revision 52
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -389,16 +389,20 @@ ${members}};
       operation 128770 "GetPolicy"
 	stereotype "niem-profile:webservice"
 	public return_type class_ref 136834 // GetPolicyResponseMessage
-	nparams 1
-	  param in name "" type class_ref 130562 // GetPolicyRequestMessage
+	nparams 3
+	  param in name "body" type class_ref 130562 // GetPolicyRequestMessage
 	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "0..1"
+	  param in name "path: caseType" explicit_type "string"
+	multiplicity "0..1"
 	
 	
 	
 	
 	
 	ncouples 1
-	key "niem-profile:webservice:HTTPMethods" value ""
+	key "niem-profile:webservice:HTTPMethods" value "GET"
 	comment "An operation to request a court policy."
       end
     end
@@ -423,8 +427,12 @@ ${members}};
       operation 149634 "AllocateCourtDate"
 	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 198914 // AllocateCourtDateMessage
+	nparams 3
+	  param in name "body" type class_ref 198914 // AllocateCourtDateMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
 	multiplicity "1"
 	
 	
@@ -432,87 +440,125 @@ ${members}};
 	
 	
 	ncouples 1
-	key "niem-profile:webservice:HTTPMethods" value ""
+	key "niem-profile:webservice:HTTPMethods" value "POST"
 	comment "An operation to request a court date."
       end
 
       operation 169474 "DocumentStampInformation"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 2107138 // DocumentStampInformationMessage
+	nparams 3
+	  param in name "body" type class_ref 2107138 // DocumentStampInformationMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
 	comment "An operation that is a query for the information to be included on document stamps.  This operation is implemented by the system responsible for providing the document stamp information.  The operation is invoked by the system responsible for performing the stamping."
       end
 
       operation 129282 "GetCase"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145282 // GetCaseResponseMessage
-	nparams 1
-	  param in name "" type class_ref 145154 // GetCaseRequestMessage
+	nparams 3
+	  param in name "body" type class_ref 145154 // GetCaseRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET, POST"
 	comment "An operation to query information on a case."
       end
 
       operation 129154 "GetCaseList"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 133890 // GetCaseListResponseMessage
 	nparams 1
-	  param in name "" type class_ref 133762 // GetCaseListRequestMessage
+	  param in name "body" type class_ref 133762 // GetCaseListRequestMessage
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET, POST"
 	comment "An operation to query a list of cases that match a set of criteria."
       end
 
       operation 129410 "GetDocument"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 134274 // GetDocumentResponseMessage
-	nparams 1
-	  param in name "" type class_ref 134146 // GetDocumentRequestMessage
+	nparams 4
+	  param in name "body" type class_ref 134146 // GetDocumentRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: documentID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET, POST"
 	comment "An peration to query for a document."
       end
 
       operation 129666 "GetServiceInformation"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 142338 // GetServiceInformationResponseMessage
-	nparams 1
-	  param in name "" type class_ref 142210 // GetServiceInformationRequestMessage
+	nparams 3
+	  param in name "body" type class_ref 142210 // GetServiceInformationRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
 	comment "An operation to query for contact information required to serve a document."
       end
 
       operation 129026 "RecordDocketing"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 2
-	  param in name "" type class_ref 145794 // RecordDocketingMessage
+	nparams 3
+	  param in name "body" type class_ref 145794 // RecordDocketingMessage
 	multiplicity "1..*"
-	  param in name "" type class_ref 135938 // PaymentMessage
+	  param in name "body" type class_ref 135938 // PaymentMessage
 	multiplicity "0..2"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST"
 	comment "An operation to record and docket a court filing in a court record system."
       end
     end
@@ -535,41 +581,62 @@ ${members}};
       
       comment "The Court Scheduling MDE is to provide the capability for the filer to submit a request a hearing or calendar date (CourtScheduletQueryMessage) along with the electronic document filing.  This is because many court document filings are made specifically to schedule hearings or conference meetings. The MDE provides the ability for the court to respond to the request (allocateCourtDate).  And it also allows for the participant to query the court calendar for a specific date and/or time (CourtScheduletQueryMessage)."
       operation 149378 "GetCourtSchedule"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 199554 // GetCourtScheduleResponseMessage
-	nparams 1
-	  param in name "" type class_ref 199426 // GetCourtScheduleRequestMessage
+	nparams 2
+	  param in name "body" type class_ref 199426 // GetCourtScheduleRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET, POST"
 	comment "An operation to query for a schedule of upcoming court events"
       end
 
       operation 156162 "NotifyCourtDate"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 5257730 // NotifyCourtDateMessage
+	nparams 4
+	  param in name "body" type class_ref 5257730 // NotifyCourtDateMessage
 	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: dateRequestID" explicit_type "string"
+	multiplicity "0..1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST, PUT"
 	comment "An operaiton to notify a court date has been confirmed."
       end
 
       operation 149506 "ReserveCourtDate"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 199170 // ReserveCourtDateMessage
+	nparams 3
+	  param in name "body" type class_ref 199170 // ReserveCourtDateMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST, PUT"
 	comment "An operation to reserve a court date."
       end
     end
@@ -592,30 +659,46 @@ ${members}};
       
       comment "The list of operations supported by the Filing Assembly MDE."
       operation 156418 "NotifyCourtDate"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 5257730 // NotifyCourtDateMessage
+	nparams 4
+	  param in name "body" type class_ref 5257730 // NotifyCourtDateMessage
 	multiplicity "1"
-	
-	
-	
-	
-	
-	comment "An operaiton that is the asynchronous callback to an AllocateCourtDate or ReserveCourtDate operation to notify a court date has been confirmed."
-      end
-
-      operation 128898 "NotifyFilingReviewComplete"
-	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 2
-	  param in name "" type class_ref 132738 // NotifyFilingReviewCompleteMessage
+	  param in name "path: courtID" explicit_type "string"
 	multiplicity "1"
-	  param in name "" type class_ref 135938 // PaymentMessage
+	  param in name "path: caseTrackingID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: dateRequestID" explicit_type "string"
 	multiplicity "0..1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST, PUT"
+	comment "An operaiton that is the asynchronous callback to an AllocateCourtDate or ReserveCourtDate operation to notify a court date has been confirmed."
+      end
+
+      operation 128898 "NotifyFilingReviewComplete"
+	stereotype "niem-profile:webservice"
+	public return_type class_ref 145666 // MessageReceiptMessage
+	nparams 4
+	  param in name "body" type class_ref 132738 // NotifyFilingReviewCompleteMessage
+	multiplicity "1"
+	  param in name "body" type class_ref 135938 // PaymentMessage
+	multiplicity "0..1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: filingID" explicit_type "string"
+	multiplicity "1"
+	
+	
+	
+	
+	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "PUT"
 	comment "An operation that is the asynchrnous callback in response to a ReviewFiling operation to notify a filing has completed clerk review."
       end
     end
@@ -638,97 +721,140 @@ ${members}};
       
       comment "The list of operations supported by the Filing Review MDE."
       operation 156290 "CancelFiling"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 1498626 // CancelFilingMessage
+	nparams 3
+	  param in name "body" type class_ref 1498626 // CancelFilingMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: filingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "DELETE"
 	comment "An operation to request a filing be cancelled."
       end
 
       operation 128386 "GetFeesCalculation"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 134530 // GetFeesCalculationResponseMessage
-	nparams 2
-	  param in name "" type class_ref 134402 // GetFeesCalculationRequestMessage
+	nparams 3
+	  param in name "body" type class_ref 134402 // GetFeesCalculationRequestMessage
 	multiplicity "1"
-	  param in name "" type class_ref 135938 // PaymentMessage
+	  param in name "body" type class_ref 135938 // PaymentMessage
 	multiplicity "0..1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST"
 	comment "An operation to query for the estimated fees required for a filing."
       end
 
       operation 128514 "GetFilingList"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 133506 // GetFilingListResponseMessage
-	nparams 1
-	  param in name "" type class_ref 133250 // GetFilingListRequestMessage
+	nparams 2
+	  param in name "body" type class_ref 133250 // GetFilingListRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
 	comment "An operation to query for a list of filings that match a set of criteria."
       end
 
       operation 128642 "GetFilingStatus"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 133122 // GetFilingStatusResponseMessage
-	nparams 1
-	  param in name "" type class_ref 132994 // GetFilingStatusRequestMessage
+	nparams 3
+	  param in name "body" type class_ref 132994 // GetFilingStatusRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: filingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
 	comment "An operation to request the status of a filing."
       end
 
       operation 128258 "NotifyDocketingComplete"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 132738 // NotifyFilingReviewCompleteMessage
+	nparams 3
+	  param in name "body" type class_ref 132738 // NotifyFilingReviewCompleteMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: filingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "PUT"
 	comment "An operation that is an asynchronous callback in response to a RecordDocketing operation to notify that a filing has been recorded in the court record system."
       end
 
       operation 169602 "NotifyDocumentStampInformation"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 1
-	  param in name "" type class_ref 2113666 // NotifyDocumentStampInformationMessage
+	nparams 3
+	  param in name "body" type class_ref 2113666 // NotifyDocumentStampInformationMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
 	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "PUT"
 	comment "An operation that is an asynchronous callback in response to the GetDocumentStampInformation operation.  This operation is implemented by the system responsible for performing the stamping and is invoked by the system responsible for providing the information for the stamps."
       end
 
       operation 128130 "ReviewFiling"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 2
-	  param in name "" type class_ref 130690 // CoreFilingMessage
+	nparams 3
+	  param in name "body" type class_ref 130690 // CoreFilingMessage
 	multiplicity "1"
-	  param in name "" type class_ref 135938 // PaymentMessage
+	  param in name "body" type class_ref 135938 // PaymentMessage
 	multiplicity "0..1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST"
 	comment "An operation to submit a filing to a court for review."
       end
     end
@@ -751,32 +877,42 @@ ${members}};
       
       comment "The list of operations supported by the Service MDE."
       operation 129794 "ServeFiling"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 142082 // ServiceReceiptMessage
-	nparams 2
-	  param in name "" type class_ref 130690 // CoreFilingMessage
+	nparams 3
+	  param in name "body" type class_ref 130690 // CoreFilingMessage
 	multiplicity "1"
-	  param in name "" type class_ref 135938 // PaymentMessage
+	  param in name "body" type class_ref 135938 // PaymentMessage
 	multiplicity "0..1"
+	  param in name "path: serviceRecipientID" explicit_type "string"
+	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST"
 	comment "An operation to serve/deliver a filing to a service recipient."
       end
 
       operation 142850 "ServeProcess"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 142082 // ServiceReceiptMessage
-	nparams 2
-	  param in name "" type class_ref 130690 // CoreFilingMessage
+	nparams 3
+	  param in name "body" type class_ref 130690 // CoreFilingMessage
 	multiplicity "1..*"
-	  param in name "" type class_ref 135938 // PaymentMessage
+	  param in name "body" type class_ref 135938 // PaymentMessage
 	multiplicity "0..1"
+	  param in name "path: serviceRecipientID" explicit_type "string"
+	multiplicity "1"
 	
 	
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "POST"
 	comment "An operation to serve/deliver a filing to a process server or registered agent."
       end
     end

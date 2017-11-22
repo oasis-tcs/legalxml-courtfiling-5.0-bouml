@@ -1,6 +1,6 @@
-format 212
+format 214
 "Base Classes" // UML::Base Classes
-  revision 269
+  revision 270
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -397,7 +397,7 @@ format 212
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedConnectedDocument"
 	key "niem-profile:niem:Type" value "ecf:CallbackMessageType"
-	key "niem-profile:niem:Property" value "@ecf:ReviewedConnectedDocument"
+	key "niem-profile:niem:Property" value "^ecf:ReviewedConnectedDocument"
 	key "niem-profile:niem:BaseType" value "ecf:ReviewedDocumentType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
@@ -438,7 +438,7 @@ format 212
 	ncouples 9
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument"
 	key "niem-profile:niem:Type" value "ecf:CallbackMessageType"
-	key "niem-profile:niem:Property" value "@ecf:ReviewedLeadDocument"
+	key "niem-profile:niem:Property" value "^ecf:ReviewedLeadDocument"
 	key "niem-profile:niem:BaseType" value "ecf:ReviewedDocumentType"
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:CodeList" value ""
@@ -992,7 +992,7 @@ ${members}};
 	key "niem-profile:niem:XPath" value "citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction/j:JurisdictionANSID20AuthorityCode"
 	key "niem-profile:niem:Type" value "nc:JurisdictionType"
 	key "niem-profile:niem:Property" value "nc:JurisdictionAbstract,  (j:JurisdictionANSID20AuthorityCode), (nc:JurisdictionText)"
-	key "niem-profile:niem:BaseType" value "ncic:CTZCodeType"
+	key "niem-profile:niem:BaseType" value "aamva_d20:JurisdictionAuthorityCodeType"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:OldXPath" value "citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction"
@@ -1015,7 +1015,7 @@ ${members}};
       ncouples 9
       key "niem-profile:niem:XPath" value "nc:Location"
       key "niem-profile:niem:Type" value ""
-      key "niem-profile:niem:Property" value "@nc:Location"
+      key "niem-profile:niem:Property" value "^nc:Location"
       key "niem-profile:niem:BaseType" value "nc:LocationType"
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:CodeList" value ""
