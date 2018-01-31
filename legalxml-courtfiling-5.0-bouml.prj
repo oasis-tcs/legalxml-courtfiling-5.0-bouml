@@ -1,6 +1,6 @@
 format 214
 "legalxml-courtfiling-5.0-bouml"
-  revision 598
+  revision 599
   modified_by 2 "JamesECabral"
 
 
@@ -54,7 +54,7 @@ format 214
   key "gxmi comment exporter" value "no"
   key "gxmi linefeed" value "yes"
   key "html dir" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\model"
-  key "IEPDURI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/"
+  key "IEPDURI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0"
   key "IEPDName" value "LegalXML Electronic Court Filing Core Specification"
   key "IEPDVersion" value "5.0"
   key "IEPDStatus" value "Working Draft"

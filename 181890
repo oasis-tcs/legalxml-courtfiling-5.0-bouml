@@ -1,6 +1,6 @@
 format 214
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 130
+  revision 133
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -358,11 +358,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "nc:Case/nc:CaseTrackingID"
-	key "niem-profile:niem:Type" value "nc:CaseType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -765,11 +765,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caserequest:GetCaseRequestMessage/nc:Case/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/ecf:CaseTrackingID"
 	key "niem-profile:niem:Type" value "caserequest:GetCaseRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "1,2"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -809,11 +809,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryCase"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/nc:Case"
+	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/j:CaseNumberText"
 	key "niem-profile:niem:Type" value "caserequest:GetCaseRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "1,2"
+	key "niem-profile:niem:Property" value "j:CaseNumberText"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
@@ -2431,11 +2431,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "documentrequest:DocumentQueryMessage/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/ecf:CaseTrackingID"
 	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -2498,10 +2498,10 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "documentrequest:DocumentQueryMessage/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/j:CaseNumberText"
 	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
+	key "niem-profile:niem:Property" value "j:CaseNumberText"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
@@ -2614,11 +2614,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/nc:CaseTrackingID"
-	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/ecf:CaseTrackingID"
+	key "niem-profile:niem:Type" value "documentresponse:GetDocumentResponseMessageType"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -2636,9 +2636,9 @@ format 214
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/nc:Document"
 	key "niem-profile:niem:Type" value "documentresponse:GetDocumentResponseMessageType"
-	key "niem-profile:niem:Property" value "^nc:Document"
+	key "niem-profile:niem:Property" value "nc:Document"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
@@ -2700,10 +2700,10 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "documentresponse:DocumentResponseMessage/j:CaseCourt"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/j:CaseNumberText"
 	key "niem-profile:niem:Type" value "documentresponse:GetDocumentResponseMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
+	key "niem-profile:niem:Property" value "j:CaseNumberText"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
@@ -3066,11 +3066,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistrequest:FilingListQueryMessage/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/ecf:CaseTrackingID"
 	key "niem-profile:niem:Type" value "filinglistrequest:GetFilingListRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -3140,6 +3140,25 @@ format 214
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "An extension point for the enclosing message."
+      end
+
+      classrelation 7600642 // case (<directional aggregation>)
+	relation 7598338 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "case" multiplicity "*" public
+	    comment "A court case."
+	    classrelation_ref 7600642 // case (<directional aggregation>)
+	  b parent class_ref 131586 // Case
+	ncouples 9
+	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/j:CaseNumberText"
+	key "niem-profile:niem:Type" value "filinglistrequest:GetFilingListRequestMessageType"
+	key "niem-profile:niem:Property" value "j:CaseNumberText"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 
@@ -3340,11 +3359,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistresponse:MatchingFiling/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "ecf:MatchingFiling/nc:Case/nc:CaseTrackingID"
-	key "niem-profile:niem:Type" value "nc:CaseType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:XPath" value "ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -3572,11 +3591,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/ecf:CaseTrackingID"
 	key "niem-profile:niem:Type" value "filingstatusrequest:GetFilingStatusRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -3597,9 +3616,9 @@ format 214
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/ecf:ParticipantID"
 	key "niem-profile:niem:Type" value "ecf:CaseFilingType"
-	key "niem-profile:niem:Property" value "ecf:DocumentFiler"
-	key "niem-profile:niem:BaseType" value "nc:EntityType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Property" value "ecf:ParticipantID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "A unique identifier for a person or organization that requests information."
@@ -3662,11 +3681,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/nc:CaseTrackingID"
-	key "niem-profile:niem:Type" value "filinglistrequest:GetFilingListRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/j:CaseNumberText"
+	key "niem-profile:niem:Type" value "filingstatusrequest:GetFilingStatusRequestMessageType"
+	key "niem-profile:niem:Property" value "j:CaseNumberText"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end
@@ -3777,11 +3796,11 @@ format 214
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filingstatusresponse:FilingStatusResponseMessage/nc:Case/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
-	key "niem-profile:niem:XPath" value "filingstatusresponse:GetFilingStatusResponseMessage/ecf:MatchingFiling/nc:Case/nc:CaseTrackingID"
-	key "niem-profile:niem:Type" value "nc:CaseType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:XPath" value "filingstatusresponse:GetFilingStatusResponseMessage/ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID"
+	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -5709,11 +5728,11 @@ ${members}};
 	ncouples 9
 	key "niem-profile:niem:OldXPath" value "servicerequest:ServiceInformationQueryMessage/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
-	key "niem-profile:niem:XPath" value "serviceinformationrequest:GetServiceInformationRequestMessage/nc:CaseTrackingID"
+	key "niem-profile:niem:XPath" value "serviceinformationrequest:GetServiceInformationRequestMessage/ecf:CaseTrackingID"
 	key "niem-profile:niem:Type" value "serviceinformationrequest:GetServiceInformationRequestMessageType"
-	key "niem-profile:niem:Property" value "nc:CaseTrackingID"
-	key "niem-profile:niem:BaseType" value "niem-xs:string"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
+	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Court case number."
@@ -5741,6 +5760,25 @@ ${members}};
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "An extension point for the enclosing message."
+      end
+
+      classrelation 7600770 // case (<directional aggregation>)
+	relation 7598466 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "case" multiplicity "*" public
+	    comment "A court case."
+	    classrelation_ref 7600770 // case (<directional aggregation>)
+	  b parent class_ref 131586 // Case
+	ncouples 9
+	key "niem-profile:niem:XPath" value "serviceinformationrequest:GetServiceInformationRequestMessage/j:CaseNumberText"
+	key "niem-profile:niem:Type" value "serviceinformationrequest:GetServiceInformationRequestMessageType"
+	key "niem-profile:niem:Property" value "j:CaseNumberText"
+	key "niem-profile:niem:BaseType" value "nc:TextType"
+	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 

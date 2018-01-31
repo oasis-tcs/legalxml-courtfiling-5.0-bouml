@@ -1,6 +1,6 @@
 format 214
 "UML" // UML
-  revision 52
+  revision 54
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -801,9 +801,11 @@ ${members}};
       operation 128258 "NotifyDocketingComplete"
 	stereotype "niem-profile:webservice"
 	public return_type class_ref 145666 // MessageReceiptMessage
-	nparams 3
-	  param in name "body" type class_ref 132738 // NotifyFilingReviewCompleteMessage
+	nparams 4
+	  param in name "body" type class_ref 132610 // NotifyDocketingCompleteMessage
 	multiplicity "1"
+	  param in name "body" type class_ref 135938 // PaymentMessage
+	multiplicity "0..1"
 	  param in name "path: courtID" explicit_type "string"
 	multiplicity "1"
 	  param in name "path: filingID" explicit_type "string"
@@ -920,7 +922,7 @@ ${members}};
     sequencediagram 205314 "Filing Sequence"
       sequencediagramsettings shadow yes gradient none end
       fragment_color lightgray 
-      overlapping_bars size Letter-Landscape
+      overlapping_bars size 1200x1000
     end
 
     sequencediagram 205442 "Scheduling Sequence"

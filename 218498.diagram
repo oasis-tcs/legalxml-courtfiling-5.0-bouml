@@ -1,6 +1,6 @@
-format 212
+format 214
 
-classcanvas 128002 class_ref 2107138 // GetDocumentStampInformationRequestMessage
+classcanvas 128002 class_ref 2107138 // DocumentStampInformationMessage
   classdiagramsettings member_max_width 0 end
   xyz 40 225 2000
 end
@@ -18,9 +18,9 @@ relationcanvas 128258 relation_ref 1265922 // <generalisation>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 128514 relation_ref 1266306 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 514 295 3000 to ref 128386
-  role_a_pos 595 280 3000 no_role_b
-  multiplicity_a_pos 632 329 3000 no_multiplicity_b
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 514 302.5 3000 to ref 128386
+  role_a_pos 595 259 3000 no_role_b
+  multiplicity_a_pos 632 308 3000 no_multiplicity_b
 end
 preferred_whz 935 456 1
 end

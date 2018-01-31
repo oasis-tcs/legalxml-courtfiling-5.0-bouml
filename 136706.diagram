@@ -1,4 +1,4 @@
-format 212
+format 214
 
 classcanvas 128002 class_ref 132226 // BaseMessage
   classdiagramsettings hide_attributes yes member_max_width 0 end
@@ -12,6 +12,10 @@ classcanvas 128642 class_ref 133378 // TimeRange
   classdiagramsettings member_max_width 0 end
   xyz 40 185 2000
 end
+classcanvas 129026 class_ref 131586 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 376 393 2000
+end
 relationcanvas 128514 relation_ref 128386 // <generalisation>
   decenter_end 518
   from ref 128386 z 2007 to ref 128002
@@ -20,8 +24,13 @@ relationcanvas 128514 relation_ref 128386 // <generalisation>
 end
 relationcanvas 128770 relation_ref 162306 // <directional aggregation>
   from ref 128386 z 2007 stereotype "<<niem>>" xyz 237 259 3000 to ref 128642
-  role_a_pos 282 226 3000 no_role_b
+  role_a_pos 282 220 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129154 relation_ref 7598338 // <directional aggregation>
+  from ref 128386 z 2007 stereotype "<<niem>>" xyz 443 367 3000 to ref 129026
+  role_a_pos 507 356 3000 no_role_b
+  multiplicity_a_pos 478 356 3000 no_multiplicity_b
 end
 preferred_whz 711 416 1
 end
