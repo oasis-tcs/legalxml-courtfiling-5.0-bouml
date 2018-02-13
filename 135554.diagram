@@ -1,4 +1,4 @@
-format 212
+format 216
 
 classcanvas 128002 class_ref 132226 // BaseMessage
   classdiagramsettings hide_attributes yes member_max_width 0 end
@@ -35,14 +35,14 @@ end
 relationcanvas 128770 relation_ref 151554 // <directional aggregation>
   decenter_begin 949
   decenter_end 703
-  from ref 128386 z 2001 stereotype "<<niem>>" xyz 376.5 183.5 3000 to ref 128642
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 376 183 3000 to ref 128642
   role_a_pos 433 196 3000 no_role_b
   multiplicity_a_pos 373 196 3000 no_multiplicity_b
 end
 relationcanvas 128898 relation_ref 151682 // <directional aggregation>
   decenter_begin 282
   decenter_end 39
-  from ref 128386 z 2001 stereotype "<<niem>>" xyz 104.5 177 3000 to ref 128642
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 104 177 3000 to ref 128642
   role_a_pos 161 196 3000 no_role_b
   multiplicity_a_pos 101 196 3000 no_multiplicity_b
 end

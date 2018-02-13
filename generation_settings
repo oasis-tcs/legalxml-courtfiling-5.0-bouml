@@ -27,8 +27,9 @@
     "set" "set" "Set" "set" "sequence"
     "map" "map" "Map" "dict" "sequence"
   
-  classes_stereotypes 16 // uml cpp java php python idl
+  classes_stereotypes 17 // uml cpp java php python idl
     "class" "class" "class" "class" "class" "valuetype"
+    "trait" "class" "class" "trait" "class" "valuetype"
     "interface" "class" "interface" "interface" "class" "interface"
     "exception" "class" "class" "class" "class" "exception"
     "enum" "enum" "enum" "enum" "enum" "enum"
@@ -188,6 +189,9 @@ ${items}}
 "
   php_default_external_class_decl "${name}"
   php_default_interface_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+  php_default_trait_decl "${comment}trait ${name} {
 ${members}}
 "
   php_default_attribute_declaration "  ${comment}${visibility}${const}${static}${var}${name}${value};

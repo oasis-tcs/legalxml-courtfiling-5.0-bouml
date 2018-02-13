@@ -1,4 +1,4 @@
-window_sizes 2736 1699 563 2167 1411 211
+window_sizes 3840 2035 563 3271 1747 211
 cleanlooks_style
 marked
   attribute_ref 158722 // serviceRecipientID
@@ -6,9 +6,13 @@ marked
   class_ref 149506 // CaseParticipant
   classdiagram_ref 135298 // GetCaseListRequestMessage
 end
-selected 
-  package_ref 129 // legalxml-courtfiling-5.0-bouml
+selected classview_ref 156802 // GetPolicyResponseMessage
 open
+  class_ref 2087554 // CourtPolicyMDE
+  
+  package_ref 141954 // Messages - Filing
+  
+  package_ref 181890 // Messages - Request/Response
   classview_ref 172802 // Stereotypes
   
   package_ref 201602 // NIEM
