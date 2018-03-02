@@ -1,6 +1,6 @@
 format 216
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 135
+  revision 137
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -796,7 +796,7 @@ format 216
 	key "niem-profile:niem:Type" value "caserequest:GetCaseRequestMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -1416,7 +1416,7 @@ format 216
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "^ecf:ConnectedDocument"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -2527,7 +2527,7 @@ format 216
 	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -2716,7 +2716,7 @@ format 216
 	key "niem-profile:niem:Type" value "documentresponse:GetDocumentResponseMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -3181,7 +3181,7 @@ format 216
 	key "niem-profile:niem:Type" value "filinglistrequest:GetFilingListRequestMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -3725,7 +3725,7 @@ format 216
 	key "niem-profile:niem:Type" value "filingstatusrequest:GetFilingStatusRequestMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -5948,7 +5948,7 @@ ${members}};
 	key "niem-profile:niem:Type" value "serviceinformationrequest:GetServiceInformationRequestMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""

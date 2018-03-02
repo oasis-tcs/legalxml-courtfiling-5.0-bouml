@@ -1,20 +1,20 @@
-window_sizes 3840 2035 563 3271 1747 211
+window_sizes 2730 1684 568 2156 1396 211
 cleanlooks_style
 marked
   attribute_ref 158722 // serviceRecipientID
   attribute_ref 159106 // serviceRecipientID
   class_ref 149506 // CaseParticipant
   classdiagram_ref 135298 // GetCaseListRequestMessage
+  attribute_ref 139778 // caseTypeCode
+  attribute_ref 14429058 // caseTypeCode
+  attribute_ref 139906 // caseTypeCode
+  attribute_ref 140546 // personRelationshipToCaseTypeCode
 end
-selected classview_ref 156802 // GetPolicyResponseMessage
+selected class_ref 10445698 // VSTCodeSimpleType
 open
-  class_ref 2087554 // CourtPolicyMDE
   
   package_ref 141954 // Messages - Filing
-  
-  package_ref 181890 // Messages - Request/Response
   classview_ref 172802 // Stereotypes
-  
-  package_ref 201602 // NIEM
+  class_ref 10445698 // VSTCodeSimpleType
 end
 end

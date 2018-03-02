@@ -1,6 +1,6 @@
 format 216
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 285
+  revision 287
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -6789,7 +6789,7 @@ format 216
 	ncouples 10
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseDefendantParty/nc:EntityPerson/nc:PersonOtherIdentification/ecf:PersonIdentificationCategoryType"
 	key "niem-profile:niem:Type" value "nc:IdentificationType"
-	key "niem-profile:niem:Property" value "nc:IdentificationCategoryAbstract, (ecf:PersonIdentificationCategoryCode)"
+	key "niem-profile:niem:Property" value "nc:IdentificationCategoryAbstract, (ecf:PersonIdentificationCategoryCode), (nc:IdentificationCategoryDescriptionText)"
 	key "niem-profile:niem:BaseType" value "niem-xs:normalizedString"
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:CodeList" value "DefendantNumber;LocalAgencyID;PersonID;PrisonerID"

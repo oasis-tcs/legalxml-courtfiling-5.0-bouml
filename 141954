@@ -1,6 +1,6 @@
 format 216
 "Messages - Filing" // UML::Messages - Filing
-  revision 327
+  revision 329
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -601,7 +601,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
 	key "niem-profile:niem:Property" value "^j:CaseLineageCase"
 	key "niem-profile:niem:BaseType" value "nc:CaseType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -831,7 +831,7 @@ ${items}};
 	key "niem-profile:niem:OldXPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseOtherEntityAttorney"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial"
-	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
+	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
 	key "niem-profile:niem:Property" value "j:CaseOfficial"
 	key "niem-profile:niem:BaseType" value "j:CaseOfficialType"
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
@@ -961,7 +961,7 @@ ${items}};
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
-	comment "The abbreviated name of a case.   Examples: Smith v. Jones, et al.; State v. Alexander. No title exists when the message is initiating a new case.
+	comment "The abbreviated name of a case.   Examples: Smith v. Jones, et al.; State v. Alexander.
 "
       end
 
@@ -1020,7 +1020,6 @@ ${items}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	get_oper operation_ref 176130 // get_newCaseIndicator
 	ncouples 10
 	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseShortTitleText"
 	key "niem-profile:niem:Type" value "ecf:CaseAugmentationType"
@@ -1034,7 +1033,6 @@ ${items}};
 	key "niem-profile:niem:" value ""
 	comment "Indicates that the case is new."
       end
-
     end
 
     classdiagram 164994 "Case"
@@ -1443,7 +1441,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "j:CaseAugmentationType"
 	key "niem-profile:niem:Property" value "^j:CaseLineageCase"
 	key "niem-profile:niem:BaseType" value "nc:CaseType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -4414,7 +4412,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "stampinformation:DocumentStampInformationMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseTrackingID"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
