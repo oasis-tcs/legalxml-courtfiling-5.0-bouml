@@ -10,11 +10,11 @@ marked
   attribute_ref 139906 // caseTypeCode
   attribute_ref 140546 // personRelationshipToCaseTypeCode
 end
-selected class_ref 10445698 // VSTCodeSimpleType
+selected 
+  package_ref 201602 // NIEM
 open
   
   package_ref 141954 // Messages - Filing
   classview_ref 172802 // Stereotypes
-  class_ref 10445698 // VSTCodeSimpleType
 end
 end
