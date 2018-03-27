@@ -1,6 +1,6 @@
 format 216
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 139
+  revision 140
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -650,7 +650,7 @@ format 216
 	key "niem-profile:niem:Type" value "caserequest:CaseQueryCriteriaType"
 	key "niem-profile:niem:Property" value "caserequest:DocketEntryTypeCodeFilterText"
 	key "niem-profile:niem:BaseType" value "nc:TextType"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -1351,7 +1351,7 @@ format 216
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:CourtEventEnteredOnDocketDate"
 	key "niem-profile:niem:BaseType" value "nc:DateType"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -2617,7 +2617,7 @@ format 216
 	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
 	key "niem-profile:niem:Property" value "nc:Document"
 	key "niem-profile:niem:BaseType" value "nc:DocumentType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
