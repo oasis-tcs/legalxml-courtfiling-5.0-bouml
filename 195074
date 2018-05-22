@@ -1,6 +1,6 @@
 format 216
 "Messages - Scheduling" // UML::Messages - Scheduling
-  revision 134
+  revision 135
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -54,7 +54,7 @@ format 216
       mysql_decl ""
       
       associated_diagram classdiagram_ref 178306 // AllocateCourtDateMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage"
@@ -64,7 +64,6 @@ format 216
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A request to allocate a court date on the schedule."
       attribute 1545602 "messageExtension"
 	public type class_ref 2113794 // extension
@@ -77,7 +76,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/allocatedate:AllocateCourtDateMessageAugmentationPoint"
@@ -87,7 +86,6 @@ format 216
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -109,7 +107,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:CourtLocationCode"
@@ -119,7 +117,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A type of court event"
       end
 
@@ -134,7 +131,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/j:ScheduleDayStartTime"
 	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
 	key "niem-profile:niem:Property" value "nc:ScheduleDayStartTime"
@@ -144,7 +141,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The start date and time of a court event"
       end
 
@@ -159,7 +155,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime"
 	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
 	key "niem-profile:niem:Property" value "nc:ScheduleDayEndTime"
@@ -169,7 +165,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The end date and time of a court event"
       end
 
@@ -184,7 +179,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:CourtLocationCode"
@@ -194,7 +189,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value "Genericode code list CourtLocationCode.gc"
-	key "niem-profile:niem:" value ""
 	comment "A court location"
       end
 
@@ -209,7 +203,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/xcal:icalendar/xcal:xcalendar/xcal:components/xcal:vevent"
 	key "niem-profile:niem:Type" value "allocatedate:AllocateCourtDateMessageType"
 	key "niem-profile:niem:Property" value "xcal:icalendar"
@@ -219,7 +213,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An event to add to a calendar"
       end
 
@@ -230,7 +223,7 @@ format 216
 	    comment "A court case	"
 	    classrelation_ref 5176706 // case (<directional aggregation>)
 	  b parent class_ref 131586 // Case
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "allocatedate:AllocateCourtDateMessage/nc:Case"
 	key "niem-profile:niem:Type" value "allocatedate:AllocateCourtDateMessageType"
 	key "niem-profile:niem:Property" value "nc:Case"
@@ -240,7 +233,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -299,7 +291,7 @@ format 216
       mysql_decl ""
       
       associated_diagram classdiagram_ref 231554 // NotifyCourtDateMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage"
       key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
       key "niem-profile:niem:Property" value ""
@@ -309,7 +301,6 @@ format 216
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "The message returned when the a court date is scheduled, generally in response to a ReserveCourtDateRequest."
       classrelation 3894658 // <generalisation>
 	relation 3892482 ---|>
@@ -329,7 +320,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/datecallback:NotifyCourtDateMessageAugmentationPoint"
 	key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
 	key "niem-profile:niem:Property" value "datecallback:NotifyCourtDateMessageAugmentationPoint"
@@ -339,7 +330,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -354,7 +344,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:CourtEventTypeCode"
@@ -364,7 +354,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value "Genericode code list CourtEventTypeCode.gc"
-	key "niem-profile:niem:" value ""
 	comment "A type of court event"
       end
 
@@ -379,7 +368,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/j:ScheduleDayStartTime"
 	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
 	key "niem-profile:niem:Property" value "nc:ScheduleDayStartTime"
@@ -389,7 +378,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The start date and time of a court event"
       end
 
@@ -404,7 +392,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime"
 	key "niem-profile:niem:Type" value "nc:ScheduleDayType"
 	key "niem-profile:niem:Property" value "nc:ScheduleDayEndTime"
@@ -414,7 +402,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The end date and time of a court event"
       end
 
@@ -429,7 +416,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:CourtLocationCode"
@@ -439,7 +426,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value "Genericode code list CourtLocationCode.gc"
-	key "niem-profile:niem:" value ""
 	comment "A court location"
       end
 
@@ -454,7 +440,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/xcal:icalendar/xcal:xcalendar/xcal:components/xcal:vevent"
 	key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
 	key "niem-profile:niem:Property" value "xcal:icalendar"
@@ -464,7 +450,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An event to add to a calendar	"
       end
 
@@ -475,7 +460,7 @@ format 216
 	    comment "A court case"
 	    classrelation_ref 5176834 // case (<directional aggregation>)
 	  b parent class_ref 131586 // Case
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "datecallback:NotifyCourtDateMessage/nc:Case"
 	key "niem-profile:niem:Type" value "datecallback:NotifyCourtDateMessageType"
 	key "niem-profile:niem:Property" value "nc:Case"
@@ -485,7 +470,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -544,7 +528,7 @@ format 216
       mysql_decl ""
       
       associated_diagram classdiagram_ref 178562 // ReserveCourtDateMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage"
@@ -554,7 +538,6 @@ format 216
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A request to allocate a court date on the schedule."
       attribute 1545858 "messageExtension"
 	public type class_ref 2113794 // extension
@@ -567,7 +550,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:ReserveCourtDateMessageAugmentationPoint"
@@ -577,7 +560,6 @@ format 216
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -599,7 +581,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventTypeCode"
 	key "niem-profile:niem:Type" value "ecf:CourtEventAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:CourtEventTypeCode"
@@ -609,7 +591,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value "Genericode code list CourtEventTypeCode.gc"
-	key "niem-profile:niem:" value ""
 	comment "A type of court event"
       end
 
@@ -624,7 +605,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/ecf:CaseParticipantRoleCode"
 	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
 	key "niem-profile:niem:Property" value "ecf:CaseParticipantRoleCode"
@@ -634,7 +615,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A type of participant in a court case"
       end
 
@@ -649,7 +629,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:PotentialStartTimeRange/nc:StartDate"
 	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
 	key "niem-profile:niem:Property" value "reservedate:PotentialStartTimeRange"
@@ -659,7 +639,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A time after which a court event may begin"
       end
 
@@ -674,7 +653,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:PotentialTimeRange/nc:EndDate"
 	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
 	key "niem-profile:niem:Property" value "reservedate:PotentialStartTimeRange"
@@ -684,7 +663,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A time before which a court date must begin	"
       end
 
@@ -699,7 +677,7 @@ format 216
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/reservedate:EstimatedDuration"
 	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
 	key "niem-profile:niem:Property" value "reservedate:EstimatedDuration"
@@ -709,7 +687,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The estimated duration of a court hearing"
       end
 
@@ -719,7 +696,7 @@ format 216
 	  a role_name "case" multiplicity "0..1" public
 	    classrelation_ref 5176962 // case (<directional aggregation>)
 	  b parent class_ref 131586 // Case
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "reservedate:ReserveCourtDateMessage/nc:Case"
 	key "niem-profile:niem:Type" value "reservedate:ReserveCourtDateMessageType"
 	key "niem-profile:niem:Property" value "nc:Case"
@@ -729,7 +706,6 @@ format 216
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 

@@ -1,20 +1,9 @@
-window_sizes 2730 1684 568 2156 1396 211
+window_sizes 2736 1699 568 2162 1412 210
 cleanlooks_style
-marked
-  attribute_ref 158722 // serviceRecipientID
-  attribute_ref 159106 // serviceRecipientID
-  class_ref 149506 // CaseParticipant
-  classdiagram_ref 135298 // GetCaseListRequestMessage
-  attribute_ref 139778 // caseTypeCode
-  attribute_ref 14429058 // caseTypeCode
-  attribute_ref 139906 // caseTypeCode
-  attribute_ref 140546 // personRelationshipToCaseTypeCode
-end
-selected 
-  package_ref 201602 // NIEM
+selected attribute_ref 26307970 // identificationCategory
 open
-  
-  package_ref 141954 // Messages - Filing
+  classview_ref 347010 // Base Messages
+  class_ref 3381890 // Identification
   classview_ref 172802 // Stereotypes
 end
 end
