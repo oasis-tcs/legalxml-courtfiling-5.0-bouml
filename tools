@@ -6,6 +6,8 @@ tool "HTML doc. (flat, svg)" "ghtml -flat -svg" Class Operation Attribute Genera
 tool "C++ utilities" "cpp_util" Class
 tool "Global Change" "global_change" Class
 tool "Uml projection" "uml_proj" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue
+tool "Add NIEM Stereotype" "java com.mtgmc.niemtools.Main addStereotype" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue ExtraMember ClassInstance
+tool "Remove NIEM Stereotype" "java com.mtgmc.niemtools.Main removeStereotype" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue ExtraMember ClassInstance
 tool "HTML documentation" "ghtml" State Region StateAction Initial EntryPoint Final Terminate ExitPoint DeepHistory ShallowHistory Junction Choice Fork Join Transition
 tool "HTML doc. (flat)" "ghtml -flat" State Region StateAction Initial EntryPoint Final Terminate ExitPoint DeepHistory ShallowHistory Junction Choice Fork Join Transition
 tool "HTML doc. (svg)" "ghtml -svg" State Region StateAction Initial EntryPoint Final Terminate ExitPoint DeepHistory ShallowHistory Junction Choice Fork Join Transition
