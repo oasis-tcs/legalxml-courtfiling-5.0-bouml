@@ -1,6 +1,6 @@
 format 218
 "Messages - Filing" // UML::Messages - Filing
-  revision 336
+  revision 337
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -6323,7 +6323,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "ecf:DocumentReviewType"
 	key "niem-profile:niem:Property" value "^ecf:ReviewedDocument"
 	key "niem-profile:niem:BaseType" value "ecf:ReviewedDocumentType"
-	key "niem-profile:niem:Multiplicity" value "1,unbounded"
+	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
@@ -6472,7 +6472,6 @@ ${items}};
 	key "niem-profile:niem:" value ""
 	comment "A document review process"
       end
-
     end
 
     class 132482 "ReviewedDocument"

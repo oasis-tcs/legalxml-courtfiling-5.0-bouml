@@ -1,11 +1,12 @@
-window_sizes 3840 2035 568 3266 1748 210
+window_sizes 2736 1699 568 2162 1412 210
 cleanlooks_style
-selected classrelation_ref 1268482 // case (<directional aggregation>)
+selected classview_ref 210434 // DocumentStampInformationMessage
 open
-  class_ref 2107138 // DocumentStampInformationMessage
-  class_ref 2113666 // NotifyDocumentStampInformationMessage
-  class_ref 145794 // RecordDocketingMessage
-  class_ref 132482 // ReviewedDocument
+  classview_ref 148610 // Interfaces and Operations
+  
+  package_ref 141954 // Messages - Filing
+  
+  package_ref 181890 // Messages - Request/Response
   classview_ref 172802 // Stereotypes
 end
 end
