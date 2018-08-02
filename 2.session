@@ -1,10 +1,10 @@
-window_sizes 2565 1526 641 1914 1227 216
-
+window_sizes 2736 1699 641 2089 1406 216
+cleanlooks_style
 selected 
-  package_ref 129 // legalxml-courtfiling-5.0-bouml
+  package_ref 181890 // Messages - Request/Response
 open
   
-  package_ref 168066 // UML
+  package_ref 141954 // Messages - Filing
   
   package_ref 161538 // niem-profile
   

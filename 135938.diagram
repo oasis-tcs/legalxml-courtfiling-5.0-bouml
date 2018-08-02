@@ -1,4 +1,4 @@
-format 212
+format 218
 
 classcanvas 128130 class_ref 130562 // GetPolicyRequestMessage
   classdiagramsettings member_max_width 0 end
@@ -8,10 +8,19 @@ classcanvas 128386 class_ref 909826 // RequestMessage
   classdiagramsettings member_max_width 0 end
   xyz 120 41 2000
 end
+classcanvas 128642 class_ref 13000578 // PolicyQueryCriteria
+  classdiagramsettings member_max_width 0 end
+  xyz 634 197 2000
+end
 relationcanvas 128514 relation_ref 3940098 // <generalisation>
   from ref 128130 z 2001 to ref 128386
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 12124290 // <directional aggregation>
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 466 239.5 3000 to ref 128642
+  role_a_pos 417 204 3000 no_role_b
+  multiplicity_a_pos 610 253 3000 no_multiplicity_b
 end
 preferred_whz 439 353 1
 end

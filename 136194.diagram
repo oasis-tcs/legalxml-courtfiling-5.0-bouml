@@ -1,20 +1,24 @@
-format 212
+format 218
 
 classcanvas 128002 class_ref 132226 // BaseMessage
   classdiagramsettings hide_attributes yes member_max_width 0 end
-  xyz 144.891 41.5389 2000
+  xyz 144.651 41.8189 2000
 end
 classcanvas 128130 class_ref 134146 // GetDocumentRequestMessage
   classdiagramsettings member_max_width 0 end
-  xyz 40.1038 170.404 2006
+  xyz 38.3438 169.524 2006
 end
 classcanvas 128386 class_ref 131586 // Case
   classdiagramsettings member_max_width 0 end
-  xyz 104.891 386.083 2000
+  xyz 102.071 384.443 2000
 end
 classcanvas 128642 class_ref 131074 // Document
   classdiagramsettings member_max_width 0 end
-  xyz 447.809 213.404 2000
+  xyz 447.849 213.924 2000
+end
+classcanvas 128898 class_ref 13000194 // DocumentQueryCriteria
+  classdiagramsettings member_max_width 0 end
+  xyz 498.68 348.1 2000
 end
 relationcanvas 128258 relation_ref 128898 // <generalisation>
   decenter_end 472
@@ -24,14 +28,19 @@ relationcanvas 128258 relation_ref 128898 // <generalisation>
 end
 relationcanvas 128514 relation_ref 2416258 // <directional aggregation>
   decenter_end 481
-  from ref 128130 z 2007 stereotype "<<niem>>" xyz 156 358 3000 to ref 128386
-  role_a_pos 233 349 3000 no_role_b
-  multiplicity_a_pos 173 349 3000 multiplicity_b_pos 202 355 3000
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 152.5 356.5 3000 to ref 128386
+  role_a_pos 266 350 3000 no_role_b
+  multiplicity_a_pos 204 350 3000 multiplicity_b_pos 219 352 3000
 end
 relationcanvas 128770 relation_ref 3358082 // <directional aggregation>
-  from ref 128130 z 2007 stereotype "<<niem>>" xyz 367 243 3000 to ref 128642
-  role_a_pos 329 220 3000 no_role_b
-  multiplicity_a_pos 423 269 3000 multiplicity_b_pos 418 269 3000
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 366 243 3000 to ref 128642
+  role_a_pos 326 219 3000 no_role_b
+  multiplicity_a_pos 421 269 3000 multiplicity_b_pos 419 269 3000
+end
+relationcanvas 129154 relation_ref 12172162 // <directional aggregation>
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 409 332 3000 to ref 128898
+  role_a_pos 253 315 3000 no_role_b
+  multiplicity_a_pos 495 365 3000 no_multiplicity_b
 end
 preferred_whz 608 664 0.99
 end

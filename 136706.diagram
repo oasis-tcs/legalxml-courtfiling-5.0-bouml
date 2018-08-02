@@ -1,4 +1,4 @@
-format 214
+format 218
 
 classcanvas 128002 class_ref 132226 // BaseMessage
   classdiagramsettings hide_attributes yes member_max_width 0 end
@@ -16,6 +16,10 @@ classcanvas 129026 class_ref 131586 // Case
   classdiagramsettings member_max_width 0 end
   xyz 376 393 2000
 end
+classcanvas 129282 class_ref 13000322 // FilingListQueryCriteria
+  classdiagramsettings member_max_width 0 end
+  xyz 786 219 2000
+end
 relationcanvas 128514 relation_ref 128386 // <generalisation>
   decenter_end 518
   from ref 128386 z 2007 to ref 128002
@@ -29,8 +33,13 @@ relationcanvas 128770 relation_ref 162306 // <directional aggregation>
 end
 relationcanvas 129154 relation_ref 7598338 // <directional aggregation>
   from ref 128386 z 2007 stereotype "<<niem>>" xyz 443 367 3000 to ref 129026
-  role_a_pos 507 356 3000 no_role_b
-  multiplicity_a_pos 478 356 3000 no_multiplicity_b
+  role_a_pos 526 356 3000 no_role_b
+  multiplicity_a_pos 497 356 3000 no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 12124034 // <directional aggregation>
+  from ref 128386 z 2007 stereotype "<<niem>>" xyz 678.5 258 3000 to ref 129282
+  role_a_pos 542 223 3000 no_role_b
+  multiplicity_a_pos 762 272 3000 no_multiplicity_b
 end
 preferred_whz 711 416 1
 end
