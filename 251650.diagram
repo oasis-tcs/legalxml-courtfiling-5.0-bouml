@@ -1,16 +1,25 @@
-format 212
+format 218
 
-classcanvas 128002 class_ref 132226 // BaseMessage
-  classdiagramsettings hide_attributes yes member_max_width 0 end
-  xyz 158.749 79.2865 2005
-end
-classcanvas 128130 class_ref 6684290 // GetCourtAvailabilityRequestMessage
+classcanvas 128514 class_ref 132226 // BaseMessage
   classdiagramsettings member_max_width 0 end
-  xyz 20.5864 201.507 2000
+  xyz 143 40 2000
 end
-relationcanvas 128258 relation_ref 5121666 // <generalisation>
-  from ref 128130 z 2006 to ref 128002
+classcanvas 128642 class_ref 13742466 // RequestCourtDateRequestMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 93 331 2000
+end
+classcanvas 128898 class_ref 131586 // Case
+  classdiagramsettings member_max_width 0 end
+  xyz 669 333 2000
+end
+relationcanvas 128770 relation_ref 12875394 // <generalisation>
+  from ref 128642 z 2001 to ref 128514
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 12875650 // <directional aggregation>
+  from ref 128642 z 2001 stereotype "<<niem>>" xyz 536 464 3000 to ref 128898
+  role_a_pos 608 428 3000 no_role_b
+  multiplicity_a_pos 618 477 3000 no_multiplicity_b
 end
 end

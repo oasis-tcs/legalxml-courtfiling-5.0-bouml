@@ -1,6 +1,6 @@
-format 214
+format 218
 "UML" // UML
-  revision 54
+  revision 55
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -629,7 +629,7 @@ ${members}};
 	  param in name "path: courtID" explicit_type "string"
 	multiplicity "1"
 	  param in name "path: caseTrackingID" explicit_type "string"
-	multiplicity "1"
+	multiplicity "0..1"
 	
 	
 	
@@ -638,6 +638,26 @@ ${members}};
 	ncouples 1
 	key "niem-profile:webservice:HTTPMethods" value "POST, PUT"
 	comment "An operation to reserve a court date."
+      end
+
+      operation 176130 "RequestCourtDate"
+	stereotype "niem-profile:webservice"
+	public return_type class_ref 13742594 // RequestCourtDateResponseMessage
+	nparams 3
+	  param in name "body" type class_ref 13742466 // RequestCourtDateRequestMessage
+	multiplicity "1"
+	  param in name "path: courtID" explicit_type "string"
+	multiplicity "1"
+	  param in name "path: caseTrackingID" explicit_type "string"
+	multiplicity "0..1"
+	
+	
+	
+	
+	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
+	comment "An operation to request a list of available court dates."
       end
     end
 

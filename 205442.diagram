@@ -1,13 +1,13 @@
-format 212
+format 218
 
 classinstance 128002 class_ref 129410 // FilingAssemblyMDE
- color verylightorange  name ""   xyz 31.2943 4.02415 2000 life_line_z 2000
+ color verylightorange  name ""   xyz 31.2943 4.30415 2000 life_line_z 2000
 classinstance 128130 class_ref 198786 // CourtSchedulingMDE
- color lightred  name ""   xyz 450.741 4.02415 2000 life_line_z 2000
+ color lightred  name ""   xyz 456.821 4.30415 2000 life_line_z 2000
 classinstance 128258 class_ref 129538 // CourtRecordMDE
- color lightgreen  name ""   xyz 895.667 4.02415 2000 life_line_z 2000
+ color lightgreen  name ""   xyz 896.027 4.30415 2000 life_line_z 2000
 fragment 131842 "opt"
-  color lightgray xyzwh 27.5627 49.927 0 1068 400
+  color lightgray xyzwh 27.5227 49.567 0 1068 400
 end
 durationcanvas 128770 classinstance_ref 128002 // :FilingAssemblyMDE
   xyzwh 145 76.2 2010 11 40
@@ -19,33 +19,39 @@ durationcanvas 129282 classinstance_ref 128002 // :FilingAssemblyMDE
   xyzwh 145 226.2 2010 11 40
 end
 durationcanvas 129410 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 571 228.48 2010 11 31
+  xyzwh 573 228.48 2010 11 31
 end
 durationcanvas 130178 classinstance_ref 128130 // :CourtSchedulingMDE
   xyzwh 573 284.08 2010 11 40
 end
 durationcanvas 130306 classinstance_ref 128258 // :CourtRecordMDE
-  xyzwh 995 289.44 2010 11 31
+  xyzwh 996 289.44 2010 11 31
 end
 durationcanvas 130690 classinstance_ref 128258 // :CourtRecordMDE
-  xyzwh 993 354.28 2010 11 40
+  xyzwh 996 354.28 2010 11 40
 end
 durationcanvas 130818 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 571 358.92 2010 11 26
+  xyzwh 573 358.2 2010 11 26
 end
 durationcanvas 131074 classinstance_ref 128258 // :CourtRecordMDE
-  xyzwh 995 367.8 2010 11 26
+  xyzwh 996 367.44 2010 11 26
 end
 durationcanvas 131330 classinstance_ref 128130 // :CourtSchedulingMDE
-  xyzwh 571 412.16 2010 11 40
+  xyzwh 573 412.16 2010 11 40
 end
 durationcanvas 131458 classinstance_ref 128002 // :FilingAssemblyMDE
   xyzwh 145 415.44 2010 11 29
 end
+durationcanvas 131970 classinstance_ref 128002 // :FilingAssemblyMDE
+  xyzwh 145 142 2010 11 40
+end
+durationcanvas 132098 classinstance_ref 128130 // :CourtSchedulingMDE
+  xyzwh 573 141 2010 11 25
+end
 msg 129026 synchronous
   from durationcanvas_ref 128770
   to durationcanvas_ref 128898
-  yz 80 2015 msg operation_ref 149378 // "GetCourtSchedule(in  : GetCourtScheduleRequestMessage [1]) : GetCourtScheduleResponseMessage"
+  yz 80 2015 msg operation_ref 149378 // "GetCourtSchedule(in body : GetCourtScheduleRequestMessage [1], in path: courtID : string [1]) : GetCourtScheduleResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 253 56
 msg 129154 return
@@ -56,7 +62,7 @@ msg 129154 return
 msg 129538 synchronous
   from durationcanvas_ref 129282
   to durationcanvas_ref 129410
-  yz 232 2015 msg operation_ref 149506 // "ReserveCourtDate(in  : ReserveCourtDateMessage [1]) : MessageReceiptMessage"
+  yz 232 2015 msg operation_ref 149506 // "ReserveCourtDate(in body : ReserveCourtDateMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [0..1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 252 208
 msg 129666 return
@@ -67,7 +73,7 @@ msg 129666 return
 msg 130434 synchronous
   from durationcanvas_ref 130178
   to durationcanvas_ref 130306
-  yz 292 2015 msg operation_ref 149634 // "AllocateCourtDate(in  : AllocateCourtDateMessage [1]) : MessageReceiptMessage"
+  yz 292 2015 msg operation_ref 149634 // "AllocateCourtDate(in body : AllocateCourtDateMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 681 268
 msg 130562 return
@@ -78,7 +84,7 @@ msg 130562 return
 msg 130946 synchronous
   from durationcanvas_ref 130690
   to durationcanvas_ref 130818
-  yz 357 2015 msg operation_ref 156162 // "NotifyCourtDate(in  : NotifyCourtDateMessage [1]) : MessageReceiptMessage"
+  yz 357 2015 msg operation_ref 156162 // "NotifyCourtDate(in body : NotifyCourtDateMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1], in path: dateRequestID : string [0..1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 691 333
 msg 131202 return
@@ -89,7 +95,7 @@ msg 131202 return
 msg 131586 synchronous
   from durationcanvas_ref 131330
   to durationcanvas_ref 131458
-  yz 416 2015 msg operation_ref 156418 // "NotifyCourtDate(in  : NotifyCourtDateMessage [1]) : MessageReceiptMessage"
+  yz 416 2015 msg operation_ref 156418 // "NotifyCourtDate(in body : NotifyCourtDateMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1], in path: dateRequestID : string [0..1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 263 392
 msg 131714 return
@@ -97,5 +103,11 @@ msg 131714 return
   to durationcanvas_ref 131330
   yz 435 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 132226 synchronous
+  from durationcanvas_ref 131970
+  to durationcanvas_ref 132098
+  yz 139 2015 msg operation_ref 176130 // "RequestCourtDate(in body : RequestCourtDateRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [0..1]) : RequestCourtDateResponseMessage"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 260 114
 preferred_whz 1901 838 1.69
 end
