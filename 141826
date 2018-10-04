@@ -1,6 +1,6 @@
 format 218
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 305
+  revision 307
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -455,7 +455,7 @@ format 218
 	key "niem-profile:niem:Type" value "j:AppellateCaseType"
 	key "niem-profile:niem:Property" value "^j:AppellateCaseOriginalCase"
 	key "niem-profile:niem:BaseType" value "nc:CaseType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:" value ""
