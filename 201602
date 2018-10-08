@@ -1,10 +1,12 @@
-format 218
+format 220
 "NIEM" // NIEM
-  revision 184
+  revision 185
   modified_by 2 "JamesECabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
   
   usecasediagramsettings end
   
@@ -13,6 +15,8 @@ format 218
   collaborationdiagramsettings end
   
   objectdiagramsettings end
+  
+  objectcompositediagramsettings end
   
   componentdiagramsettings
    end
@@ -28,7 +32,7 @@ format 218
   
   package_ref 353538 // NIEMReference
 
-  package_ref 439426 // NIEMSubset
+  package_ref 446082 // NIEMSubset
 
-  package_ref 439554 // NIEMExtension
+  package_ref 446210 // NIEMExtension
 end

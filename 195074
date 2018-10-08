@@ -1,10 +1,12 @@
-format 218
+format 220
 "Messages - Scheduling" // UML::Messages - Scheduling
-  revision 150
+  revision 151
   modified_by 2 "JamesECabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
   
   usecasediagramsettings end
   
@@ -13,6 +15,8 @@ format 218
   collaborationdiagramsettings end
   
   objectdiagramsettings end
+  
+  objectcompositediagramsettings end
   
   componentdiagramsettings
    end
@@ -30,9 +34,13 @@ format 218
     
     classdiagramsettings member_max_width 0 end
     
+    classcompositediagramsettings end
+    
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -275,9 +283,13 @@ format 218
     
     classdiagramsettings member_max_width 0 end
     
+    classcompositediagramsettings end
+    
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -520,9 +532,13 @@ format 218
     
     classdiagramsettings member_max_width 0 end
     
+    classcompositediagramsettings end
+    
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -764,9 +780,13 @@ format 218
     
     classdiagramsettings member_max_width 0 end
     
+    classcompositediagramsettings end
+    
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -1006,9 +1026,13 @@ format 218
     
     classdiagramsettings member_max_width 0 end
     
+    classcompositediagramsettings end
+    
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -1033,7 +1057,7 @@ format 218
       key "niem-profile:niem:XPath" value "requestdateresponse:RequestCourtDateResponseMessage"
       key "niem-profile:niem:Type" value "requestdateresponse:RequestCourtDateResponseMessageType"
       key "niem-profile:niem:Property" value ""
-      key "niem-profile:niem:BaseType" value "ecf:CaseFilingType"
+      key "niem-profile:niem:BaseType" value "ecf:ResponseMessageType"
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:CodeList" value ""
       key "niem-profile:niem:OldXPath" value ""
