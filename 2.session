@@ -1,15 +1,12 @@
-window_sizes 3840 2035 641 3193 1742 216
+window_sizes 2740 1783 641 2093 1490 216
 cleanlooks_style
-selected operation_ref 149506 // ReserveCourtDate
+selected classdiagram_ref 178946 // GetCourtScheduleResponseMessage
 open
   class_ref 198786 // CourtSchedulingMDE
   class_ref 129282 // FilingReviewMDE
   class_ref 130434 // ServiceMDE
-  classview_ref 166018 // AllocateCourtDateMessage
-  class_ref 5257730 // NotifyCourtDateMessage
-  class_ref 13742466 // RequestCourtDateRequestMessage
   class_ref 13742594 // RequestCourtDateResponseMessage
-  class_ref 199426 // GetCourtScheduleRequestMessage
+  classview_ref 156162 // GetCaseListResponseMessage
   class_ref 199554 // GetCourtScheduleResponseMessage
   classview_ref 156802 // GetPolicyResponseMessage
   classview_ref 347010 // Base Messages
