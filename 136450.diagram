@@ -1,4 +1,4 @@
-format 212
+format 220
 
 classcanvas 128002 class_ref 132226 // BaseMessage
   classdiagramsettings hide_attributes yes member_max_width 0 end
@@ -10,7 +10,7 @@ classcanvas 128130 class_ref 134402 // GetFeesCalculationRequestMessage
 end
 classcanvas 128386 class_ref 130690 // CoreFilingMessage
   classdiagramsettings hide_attributes yes member_max_width 0 end
-  xyz 42 177 2000
+  xyz -14 177 2000
 end
 relationcanvas 128258 relation_ref 129154 // <generalisation>
   from ref 128130 z 2007 to ref 128002
@@ -19,8 +19,8 @@ relationcanvas 128258 relation_ref 129154 // <generalisation>
 end
 relationcanvas 128514 relation_ref 162050 // <directional aggregation>
   decenter_end 540
-  from ref 128130 z 2007 stereotype "<<niem>>" xyz 243 222 3000 to ref 128386
-  role_a_pos 288 187 3000 no_role_b
+  from ref 128130 z 2007 stereotype "<<niem>>" xyz 215 222 3000 to ref 128386
+  role_a_pos 232 187 3000 no_role_b
   no_multiplicity_a no_multiplicity_b
 end
 preferred_whz 785 353 1

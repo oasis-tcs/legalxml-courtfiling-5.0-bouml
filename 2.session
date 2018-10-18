@@ -1,18 +1,14 @@
-window_sizes 2740 1783 641 2093 1490 216
+window_sizes 2736 1699 641 2089 1406 216
 cleanlooks_style
-selected classdiagram_ref 178946 // GetCourtScheduleResponseMessage
+selected classdiagram_ref 136450 // GetFeesCalculationRequestMessage
 open
-  class_ref 198786 // CourtSchedulingMDE
-  class_ref 129282 // FilingReviewMDE
+  class_ref 129410 // FilingAssemblyMDE
   class_ref 130434 // ServiceMDE
-  class_ref 13742594 // RequestCourtDateResponseMessage
   classview_ref 156162 // GetCaseListResponseMessage
   class_ref 199554 // GetCourtScheduleResponseMessage
+  class_ref 134402 // GetFeesCalculationRequestMessage
   classview_ref 156802 // GetPolicyResponseMessage
-  classview_ref 347010 // Base Messages
   
   package_ref 161538 // niem-profile
-  
-  package_ref 201602 // NIEM
 end
 end
