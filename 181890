@@ -1,6 +1,6 @@
 format 220
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 159
+  revision 160
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -62,7 +62,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 135298 // GetCaseListRequestMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "caselistrequest:CaseListQueryMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "caselistrequest:GetCaseListRequestMessage"
@@ -72,7 +72,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "This is a query for a list of cases that match a set of criteria including case participants, case classification, case status, and date of the case was initiated."
       classrelation 128642 // <generalisation>
 	relation 128642 ---|>
@@ -88,7 +87,7 @@ format 220
 	    comment "Information describing a participant when a query seeks information about the cases in which the person or organization is a participant."
 	    classrelation_ref 153090 // caseParticipant (<directional aggregation>)
 	  b parent class_ref 149506 // CaseParticipant
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryCaseParticipant"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria/caselistrequest:CaseParticipant"
@@ -98,7 +97,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 139650 "caseStatus"
@@ -156,7 +154,7 @@ format 220
 	    comment " The beginning and ending filing dates/times of cases about which information is sought in this query."
 	    classrelation_ref 152962 // timeRange (<directional aggregation>)
 	  b parent class_ref 133378 // TimeRange
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caselistrequest:CaseListQueryMessage/caselistrequest:CaseListQueryTimeRange"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "caselistrequest:GetCaseListRequestMessage/caselistrequest:CaseListQueryCriteria/nc:DateRange"
@@ -166,7 +164,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 1545090 "messageExtension"
@@ -180,7 +177,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "caselistrequest:GetCaseListRequestMessage/caselistrequest:GetCaseListRequestMessageAugmentationPoint"
@@ -190,7 +187,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -297,7 +293,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 135426 // GetCaseListResponseMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "caselistresponse:GetCaseListResponseMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "caselistresponse:GetCaseListResponseMessage"
@@ -307,7 +303,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A synchronous response to a GetCaseListQueryMessage.
 "
       classrelation 128770 // <generalisation>
@@ -324,7 +319,7 @@ format 220
 	    comment "A case meeting the criteria set forth in a query."
 	    classrelation_ref 153474 // matchingCase (<directional aggregation>)
 	  b parent class_ref 134018 // MatchingCase
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caselistresponse:GetCaseListResponseMessage/nc:Case"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "caselistresponse:GetCaseListResponseMessage/nc:Case"
@@ -334,7 +329,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 1545218 "messageExtension"
@@ -348,7 +342,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "caselistresponse:GetCaseListResponseMessage/caselistresponse:GetCaseListResponseMessageAugmentationPoint"
@@ -358,7 +352,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
     end
@@ -624,7 +617,7 @@ format 220
 	    comment "A filter criterion for calendar events. If present, the response should only include calendar events that fall between the from and to dates and times."
 	    classrelation_ref 153730 // calendarEventTimeRange (<directional aggregation>)
 	  b parent class_ref 133378 // TimeRange
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caserequest:CaseQueryCriteria/caserequest:CalendarEventTimeRange"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/caserequest:CaseQueryCriteria"
@@ -634,7 +627,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 205186 "calendarEventTypeCodeFilter"
@@ -735,7 +727,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caserequest:CaseQueryCriteria/caserequest:IncludeDocketEntryIndicator"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/caserequest:CaseQueryCriteria/caserequest:IncludeDocketEntryIndicator"
@@ -745,7 +737,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether requester wishes docket entry information to be included in the response."
       end
 
@@ -808,7 +799,7 @@ format 220
 	    comment "Criteria limiting the case information to be returned."
 	    classrelation_ref 153602 // caseQueryCriteria (<directional aggregation>)
 	  b parent class_ref 170114 // CaseQueryCriteria
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "caserequest:GetCaseRequestMessage/caserequest:CaseQueryCriteria"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/caserequest:CaseQueryCriteria"
@@ -818,7 +809,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 173058 "caseTrackingID"
@@ -855,7 +845,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "caserequest:GetCaseRequestMessage/caserequest:GetCaseRequestMessageAugmentationPoint"
@@ -865,7 +855,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -947,7 +936,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventOnBehalfOfActor"
       key "niem-profile:niem:OldMultiplicity" value "0,1"
       key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventOnBehalfOfActor"
@@ -957,7 +946,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The actor on whose behalf the filing was submitted to the court as set forth in the docket entry."
       attribute 183042 "actorIDReference"
 	public type class_ref 156162 // id
@@ -969,7 +957,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventOfBehaldOfActor/nc:RoleOf"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventOfBehalfOfActor/nc:RoleOf"
@@ -979,7 +967,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A reference to an actor elsewhere in this message."
       end
 
@@ -1018,7 +1005,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventActor/nc:RoleOfPerson, nc:RoleOfOrganization"
       key "niem-profile:niem:OldMultiplicity" value "1,1"
       key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtEventActor"
@@ -1028,7 +1015,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The actor who performed the action as set forth in the docket entry. E.g. the person who filed the document.  Does not include the name of the court clerk composing the docket entry."
       attribute 182914 "actorIDReference"
 	public type class_ref 156162 // id
@@ -1108,7 +1094,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventLocationCode"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:CourtLocationCode"
@@ -1118,7 +1104,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list CourtLocationCode.gc"
 	key "niem-profile:niem:CodeList" value "Court-specific code list"
-	key "niem-profile:niem:" value ""
 	comment "A code referring to the location in a court of the calendar event."
       end
 
@@ -1155,7 +1140,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleActivityText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleActivityText"
@@ -1165,7 +1150,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "General description of the event."
       end
 
@@ -1179,7 +1163,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule/nc:ScheduleDayEndTime"
@@ -1189,7 +1173,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The scheduled ending time of an event on the court calendar."
       end
 
@@ -1204,7 +1187,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEventj:CourtEventSchedule"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule"
@@ -1214,7 +1197,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The schedule associated with a court event."
       end
     end
@@ -1285,7 +1267,7 @@ format 220
 	    comment "An event on the court calendar entered on the court docket or register of actions."
 	    classrelation_ref 154626 // calendarEvent (<directional aggregation>)
 	  b parent class_ref 149122 // CalendarEvent
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/j:CourtEventSchedule"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventSchedule"
@@ -1295,7 +1277,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 182274 "docketEntryID"
@@ -1420,7 +1401,7 @@ format 220
 	    comment " The judicial officer who signed the order or other document described in the docket entry."
 	    classrelation_ref 154754 // judicialOfficer (<directional aggregation>)
 	  b parent class_ref 149378 // JudicialOfficer
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/j:CourtEventJudge"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/j:CourtEventJudge"
@@ -1430,7 +1411,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       classrelation 154882 // leadDocument (<directional aggregation>)
@@ -1440,7 +1420,7 @@ format 220
 	    comment "The pleading, motion or order that is the subject of this docket entry."
 	    classrelation_ref 154882 // leadDocument (<directional aggregation>)
 	  b parent class_ref 148482 // LeadDocument
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventDocument, ecf:CourtEventDocumentReference"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/ecf:ConnectedDocument"
@@ -1450,7 +1430,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       classrelation 155394 // relatedDocketEntry (<directional aggregation>)
@@ -1501,7 +1480,7 @@ format 220
 	    comment "An entry in the docket or register of actions for this case."
 	    classrelation_ref 154498 // caseDocketEntry (<directional aggregation>)
 	  b parent class_ref 148354 // CaseDocketEntry
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent"
@@ -1511,7 +1490,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 175618 "caseInitiationDate"
@@ -1544,7 +1522,7 @@ format 220
 	    comment "Structure containing information about a participant in this case."
 	    classrelation_ref 154114 // caseParticipant (<directional aggregation>)
 	  b parent class_ref 149506 // CaseParticipant
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseParticipant"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity"
@@ -1554,7 +1532,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       classrelation 154370 // caseStatus (<directional aggregation>)
@@ -1586,7 +1563,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/nc:CaseTitleText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/nc:CaseTitleText"
@@ -1596,7 +1573,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Formal header for a pleading or opinion. E.g. Court, Party vs. Party, Case #."
       end
 
@@ -1610,7 +1586,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/j:CaseNumberText"
@@ -1620,7 +1596,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Court case number."
       end
 
@@ -1634,7 +1609,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/nc:CaseCategoryText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseTypeCode"
@@ -1644,7 +1619,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The classification used by a court to denote the type of case for purposes of statistical categorization, court record keeping, or case assignment.  Allowable values set forth in Court Policy."
       end
 
@@ -1655,7 +1629,7 @@ format 220
 	    comment " A judicial officer assigned to this case."
 	    classrelation_ref 154242 // judicialOfficer (<directional aggregation>)
 	  b parent class_ref 149378 // JudicialOfficer
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseJudge"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseJudge"
@@ -1665,7 +1639,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -1679,7 +1652,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Case/ecf:CaseAugmentation/ecf:CaseParticipant"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOtherEntity"
@@ -1689,7 +1662,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value "0,unbounded"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "Placeholder for all case participants, i.e. persons or organizations playing a role in a case. This is where all actor details are expressed."
       classrelation 155522 // <generalisation>
 	relation 153346 ---|>
@@ -1782,7 +1754,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "caseresponse:GetCaseResponseMessage/caseresponse:GetCaseResponseMessageAugmentationPoint"
@@ -1792,7 +1764,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
     end
@@ -1807,7 +1778,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Case/nc:ActivityStatus"
       key "niem-profile:niem:OldMultiplicity" value "0,1"
       key "niem-profile:niem:XPath" value "nc:Case/nc:ActivityStatus"
@@ -1817,7 +1788,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "Current disposition of the case."
       attribute 205314 "statusText"
 	public explicit_type "string"
@@ -1852,7 +1822,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/nc:ActivityStatus/ncStatusText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/nc:ActivityStatus/nc:StatusDate"
@@ -1862,7 +1832,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The date on which the current status was determined."
       end
     end
@@ -1877,7 +1846,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:CourtEventDocument/ecf:ConnectedDocument"
       key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
       key "niem-profile:niem:XPath" value "ecf:ReviewedDocument/ecf:ReviewedDocumentAugmentation/nc:DocumentAssociation"
@@ -1887,7 +1856,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A document included in a Filing that supports the lead Document.  This document is not separately entered on the docket or register of actions."
       attribute 182658 "docketDocumentID"
 	public type class_ref 156162 // id
@@ -1899,7 +1867,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Document/nc:DocumentIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Document/ecf:DocumentAugmentation/nc:DocumentAssociation/nc:SecondaryDocument/nc:DicumentIdentification/nc:IdenificationID, nc:DocumentAssociation/nc:PrimaryDocument/nc:DicumentIdentification/nc:IdenificationID"
@@ -1909,7 +1877,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Identifier that uniquely identifies the document in the court record."
       end
     end
@@ -1924,7 +1891,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial"
       key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
       key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial"
@@ -1934,7 +1901,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A judicial officer assigned to a calendar event.
 "
       classrelation 155650 // <generalisation>
@@ -1954,7 +1920,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/j:CaseOfficial/nc:RoleOfPersonReference"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseJudge"
@@ -1964,7 +1930,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A reference to a judicial officer assigned to a calendar event.
 "
       end
@@ -1980,7 +1945,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Document"
       key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
       key "niem-profile:niem:XPath" value "nc:Document"
@@ -1990,7 +1955,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The pleading, motion or order that is the main document in a Filing. A Document may have Attachments."
       classrelation 155010 // connectedDocument (<directional aggregation>)
 	relation 152834 o-->
@@ -2066,7 +2030,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Case/j:CaseAugmentation/ecf:CaseCourtEvent/ecf:ChildDocketReference"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "nc:Case/j:CaseAugmentation/j:CaseCourtEvent/ecf:CourtEventAugmentation/nc:CaseDocketID"
@@ -2076,7 +2040,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "ID to uniquely identify the child docket entry within the case and court."
       end
     end
@@ -2140,7 +2103,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 178818 // GetCourtScheduleRequestMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage"
@@ -2150,7 +2113,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A request for the schedule of upcoming events in a court"
       classrelation 222850 // <generalisation>
 	relation 220674 ---|>
@@ -2170,7 +2132,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage/schedulerequest:GetCourtScheduleRequestMessageAugmentationPoint"
@@ -2180,7 +2142,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -2195,7 +2156,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage/schedulerequest:ScheduleQueryCriteria/j:Judge/nc:RoleOfPerson/nc:PersonName"
 	key "niem-profile:niem:Type" value "schedulerequest:ScheduleQueryCriteriaType"
 	key "niem-profile:niem:Property" value "j:Judge"
@@ -2205,7 +2166,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The name of a judge associated with a case"
       end
 
@@ -2220,7 +2180,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage/j:Judge/j:JudicialOfficialRegistrationIdentification"
 	key "niem-profile:niem:Type" value "j:JudicialOfficialType"
 	key "niem-profile:niem:Property" value "j:JudicialOfficialRegistrationIdentification"
@@ -2230,7 +2190,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An identifier for a judge associated with a case"
       end
 
@@ -2245,7 +2204,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage/schedulerequest:ScheduleQueryCriteria/j:CourtAdministrativeUnitText"
 	key "niem-profile:niem:Type" value "schedulerequest:ScheduleQueryCriteriaType"
 	key "niem-profile:niem:Property" value "j:CourtAdministrativeUnitText"
@@ -2255,7 +2214,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An identifier for court unit managing a case"
       end
 
@@ -2338,7 +2296,7 @@ format 220
 	    comment "Criteria limiting the schedule information to be returned."
 	    classrelation_ref 12126082 // scheduleQueryCriteria (<directional aggregation>)
 	  b parent class_ref 13000066 // ScheduleQueryCriteria
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "schedulerequest:GetCourtScheduleRequestMessage/schedulerequest:ScheduleQueryCriteria"
 	key "niem-profile:niem:Type" value "schedulerequest:GetCourtScheduleRequestMessageType"
 	key "niem-profile:niem:Property" value "schedulerequest:ScheduleQueryCriteria"
@@ -2348,7 +2306,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -2488,7 +2445,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "scheduleresponse:GetCourtScheduleResponseMessage/xcal:icalendar/xcal:xcalendar/xcal:components/xcal:vevent"
 	key "niem-profile:niem:Type" value "scheduleresponse:GetCourtScheduleResponseMessageType"
 	key "niem-profile:niem:Property" value "xcal:icalendar"
@@ -2498,7 +2455,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A schedule of upcoming events in a court"
       end
     end
@@ -2562,7 +2518,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 136194 // GetDocumentRequestMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "documentrequest:DocumentQueryMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage"
@@ -2572,7 +2528,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The base information contained in any query message."
       classrelation 128898 // <generalisation>
 	relation 128898 ---|>
@@ -2614,7 +2569,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "documentrequest:DocumentQueryMessage/nc:CaseDocketID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/nc:Document/nc:DocumentFileControlID"
@@ -2624,7 +2579,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A number used to identify a document in electronic form in the court official record.  Should be the Document ID assigned by the court at the time of Record Docketing."
       end
 
@@ -2639,7 +2593,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/documentrequest:GetDocumentRequestMessageAugmentationPoint"
@@ -2649,7 +2603,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -2698,7 +2651,7 @@ format 220
 	    comment "Criteria limiting the document information to be returned."
 	    classrelation_ref 12174466 // documentQueryCriteria (<directional aggregation>)
 	  b parent class_ref 13000194 // DocumentQueryCriteria
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/documentrequest:DocumentQueryCriteria"
 	key "niem-profile:niem:Type" value "documentrequest:GetDocumentRequestMessageType"
 	key "niem-profile:niem:Property" value "documentrequest:DocumentQueryCriteria"
@@ -2708,7 +2661,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -2728,7 +2680,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "documentrequest:GetDocumentRequestMessage/documentrequest:DocumentQueryCriteria"
       key "niem-profile:niem:Type" value "documentrequest:DocumentQueryCriteriaType"
       key "niem-profile:niem:Property" value ""
@@ -2738,7 +2690,6 @@ format 220
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "Criteria limiting the document information to be returned."
     end
   end
@@ -2795,7 +2746,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 136322 // GetDocumentResponseMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "documentresponse:DocumentResponseMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage"
@@ -2805,7 +2756,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The court response to a request for an electronic document in the court official record.
 "
       classrelation 129026 // <generalisation>
@@ -2911,7 +2861,7 @@ format 220
 	    comment "The court case that is the subject of this query."
 	    classrelation_ref 2418562 // case (<directional aggregation>)
 	  b multiplicity "1" parent class_ref 131586 // Case
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "documentresponse:DocumentResponseMessage/j:CaseCourt"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "documentresponse:GetDocumentResponseMessage/j:CaseNumberText"
@@ -2921,7 +2871,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -2985,7 +2934,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 136450 // GetFeesCalculationRequestMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "feesrequest:FeesCalculationQueryMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "feesrequest:GetFeesCalculationRequestMessage"
@@ -2995,7 +2944,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "This query is a request for the total amount of court fees required for filing of one or more documents in a case.
 "
       classrelation 129154 // <generalisation>
@@ -3035,7 +2983,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "feesrequest:GetFeesCalculationRequestMessage/feesrequest:GetFeesCalculationRequestMessageAugmentationPoint"
@@ -3045,7 +2993,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
     end
@@ -3141,7 +3088,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "feesresponse:FeesCalculationResponseMessage/cac:AllowanceCharge"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "feesresponse:GetFeesCalculationResponseMessage/cac:AllowanceCharge"
@@ -3151,7 +3098,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A fee or price required to submit a document.
 "
       end
@@ -3316,7 +3262,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistrequest:FilingListQueryMessage/nc:DocumentSubmitter"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:FilingPartyID"
@@ -3326,7 +3272,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A unique identifier for a person or organization that requests information."
       end
 
@@ -3337,7 +3282,7 @@ format 220
 	    comment "A period of time bounded by upper and lower (to and from) dates/times."
 	    classrelation_ref 164482 // timeRange (<directional aggregation>)
 	  b parent class_ref 133378 // TimeRange
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistrequest:FilingListQueryMessage/nc:DateRange"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/nc:DateRange"
@@ -3347,7 +3292,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 1547138 "messageExtension"
@@ -3400,7 +3344,7 @@ format 220
 	    comment "Criteria limiting the list of filings to be returned."
 	    classrelation_ref 12126338 // filingListQueryCriteria (<directional aggregation>)
 	  b parent class_ref 13000322 // FilingListQueryCriteria
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria"
 	key "niem-profile:niem:Type" value "filinglistrequest:GetFilingListRequestMessageType"
 	key "niem-profile:niem:Property" value "filinglistrequest:FilingListQueryCriteria"
@@ -3410,7 +3354,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -3473,7 +3416,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "filinglistrequest:GetFilingListRequestMessage/filinglistrequest:FilingListQueryCriteria/nc:DocumentIdentification"
 	key "niem-profile:niem:Type" value "filinglistrequest:FilingListQueryCriteriaType
 "
@@ -3484,7 +3427,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A filing identifier"
       end
     end
@@ -3615,7 +3557,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseShortTitleText"
@@ -3625,7 +3567,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An abbreviated official name of a Case, usually shortened to contain only the last name of the first listed party on each side of the case.  Examples: Smith v. Jones, et al.; State v. Alexander. No title exists when the message is initiating a new case."
       end
 
@@ -3662,7 +3603,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistresponse:MatchingFiling/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID"
@@ -3672,7 +3613,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Court case number."
       end
 
@@ -3755,7 +3695,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistresponse:MatchingFiling/nc:DocumentSubmitter/nc:EntityOrganization/nc:OrganizationID, filinglistreponse:MatchingFiling/nc:DocumentSubmitter/nc:EntityPerson/nc:PersonID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:MatchingFiling/nc:DocumentSubmitter/nc:EntityPerson/ecf:PersonAugmentation/ecf:FilingPartyID"
@@ -3765,7 +3705,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A unique identifier for a person or organization which submits a Review Filing Message. This may refer to any combination of the assembler, authorizer, or the represented party in the filing."
       end
 
@@ -3799,7 +3738,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filinglistresponse:FilingListResponseMessage/nc:DocumentSubmitter"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:MatchingFiling/nc:DocumentSubmitter"
@@ -3809,7 +3748,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The submitter of a document"
       end
     end
@@ -3947,7 +3885,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filingstatusrequest:FilingStatusQueryMessage/nc:DocumentIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/nc:DocumentIdentification"
@@ -3957,7 +3895,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. \"Transaction\" means the sequence of messages from initial filing review through receipt of the asynchronous review callback."
       end
 
@@ -4011,7 +3948,7 @@ format 220
 	    comment "The document that is the subject of this query."
 	    classrelation_ref 3360770 // document (<directional aggregation>)
 	  b multiplicity "1" parent class_ref 131074 // Document
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filingstatusrequest:FilingStatusQueryMessage/nc:DocumentIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "filingstatusrequest:GetFilingStatusRequestMessage/filingstatusrequest:FilingStatusQueryCriteria/nc:DocumentIdentification"
@@ -4021,7 +3958,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       classrelation 12126466 // filingStatusQueryCriteria (<directional aggregation>)
@@ -4155,7 +4091,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filingstatusresponse:FilingStatusResponseMessage/nc:Case/nc:CaseTrackingID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "filingstatusresponse:GetFilingStatusResponseMessage/ecf:MatchingFiling/nc:Case/ecf:CaseAugmentation/ecf:CaseTrackingID"
@@ -4165,7 +4101,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Court case number."
       end
 
@@ -4202,7 +4137,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "filingstatusresponse:FilingStatusResponseMessage/ecf:FilingStatus"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "filingstatusresponse:GetFilingStatusResponseMessage/ecf:MatchingFiling/ecf:FilingStatus/ecf:FilingReviewStatusCode"
@@ -4212,7 +4147,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Details about the status of a court processing of a ReviewFilingMessage submitted to it, and of its processing of the documents contained within that message."
       end
 
@@ -4365,7 +4299,7 @@ format 220
       mysql_decl ""
       
       associated_diagram classdiagram_ref 135938 // GetPolicyRequestMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "policyrequest:CourtPolicyQueryMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "policyrequest:GetPolicyRequestMessage"
@@ -4375,7 +4309,6 @@ format 220
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A request for a court's Court Policy."
       attribute 1546114 "messageExtension"
 	public type class_ref 2113794 // extension
@@ -4388,7 +4321,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "policyrequest:GetPolicyRequestMessage/policyrequest:GetPolicyRequestMessageAugmentationPoint"
@@ -4398,7 +4331,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
 
@@ -4440,7 +4372,7 @@ format 220
 	    comment "Criteria limiting the policy information to be returned."
 	    classrelation_ref 12126594 // policyQueryCriteria (<directional aggregation>)
 	  b parent class_ref 13000578 // PolicyQueryCriteria
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyrequest:GetPolicyRequestMessage/policyrequest:PolicyQueryCriteria"
 	key "niem-profile:niem:Type" value "policyrequest:GetPolicyRequestMessageType"
 	key "niem-profile:niem:Property" value "policyrequest:PolicyQueryCriteria"
@@ -4450,7 +4382,6 @@ format 220
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -4490,7 +4421,7 @@ format 220
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "policyrequest:GetPolicyRequestMessage/policyrequest:PolicyQueryCriteria"
       key "niem-profile:niem:Type" value "policyrequest:PolicyQueryCriteriaType"
       key "niem-profile:niem:Property" value ""
@@ -4500,7 +4431,6 @@ format 220
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "Criteria limiting the policy information to be returned.
 "
     end
@@ -4558,7 +4488,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value ""
@@ -4568,7 +4498,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value ""
 	key "niem-profile:niem:Notes" value "Genericode description column"
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A description to be used for display purposes."
       end
 
@@ -4582,7 +4511,7 @@ format 220
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:RuntimePolicyParameters/policyresponse:CoreCodelist/policyresponse:EffectiveDate"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/nc:Metadata/nc:Metadata/nc:EffectiveDate"
@@ -4592,7 +4521,6 @@ format 220
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Reference nc:Metadata with policyresponse:CodeListExtension/@structures:metadata"
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The date and time on which this value became or will become allowed."
       end
 
@@ -4664,7 +4592,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedCaseType"
       key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
       key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedCaseCategories"
@@ -4674,7 +4602,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value "1,unbounded"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A list of ECF case types."
     end
 
@@ -4688,7 +4615,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:RuntimePolicyParameters/policyresponse:CoreCodelist"
       key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
       key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:RuntimePolicy/policyresponse:CodeListExtension"
@@ -4698,7 +4625,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The list in Court Policy of data elements and corresponding lists of valid codes for those elements in a particular court."
       classrelation 156802 // allowedCodeValues (<directional aggregation>)
 	relation 154626 o-->
@@ -4729,7 +4655,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:RuntimePolicyParameters/policyresponse:CoreCodelist"
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:RuntimePolicy/policyresponse:CodeListExtension/policyresponse:ExtensionURI"
@@ -4739,7 +4665,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The data element for which an allowable set of values is enumerated."
       end
     end
@@ -4841,7 +4766,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:AcceptDocumentsRequiringFeesIndicator"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:AcceptDocumentsRequiringFeesIndicator"
@@ -4851,7 +4776,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Whether the court will accept electronic filing of documents requiring filing fees."
       end
 
@@ -4866,7 +4790,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:AcceptMultipleLeadDocumentsIndicator"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:AcceptMultipleLeadDocumentsIndicator"
@@ -4876,7 +4800,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Does court accept placing multiple lead documents in a single message"
       end
 
@@ -4887,7 +4810,7 @@ ${members}};
 	    comment "A structure representing the court-specific extensions for this court"
 	    classrelation_ref 156930 // courtExtension (<directional aggregation>)
 	  b parent class_ref 137858 // CourtExtension
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:CourtExtension"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension"
@@ -4897,7 +4820,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 147202 "filingFeesMayBeApplicableIndicator"
@@ -4911,7 +4833,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:FilingFeesMayBeApplicableIndicator"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:FilingFeesMayBeApplicableIndicator"
@@ -4921,7 +4843,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether fees may be required for some filings."
       end
 
@@ -4978,7 +4899,7 @@ ${members}};
 	    comment "A structure containing indicators that signal support by the e-filing system for each ECF case type."
 	    classrelation_ref 157570 // supportedCaseTypes (<directional aggregation>)
 	  b parent class_ref 170626 // SupportedCaseTypes
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedCaseType"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedCaseCategories"
@@ -4988,7 +4909,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       classrelation 157314 // supportedSignatureProfile (<directional aggregation>)
@@ -5020,7 +4940,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:URLAttachmentSupportedIndicator"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:URLAttachmentSupportedIndicator"
@@ -5030,7 +4950,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Whether court allows attachments via remote URLs."
       end
 
@@ -5041,7 +4960,7 @@ ${members}};
 	    comment "An ECF major design element (MDE)"
 	    classrelation_ref 4585346 // majorDesignElement (<directional aggregation>)
 	  b parent class_ref 6073218 // MajorDesignElements
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement"
 	key "niem-profile:niem:Type" value "policyresponse:DevelopmentPolicyType"
 	key "niem-profile:niem:Property" value "policyresponse:MajorDesignElement"
@@ -5051,7 +4970,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 14429186 "maximumAllowedAttachmentPages"
@@ -5065,7 +4983,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MaximumAllowedAttachmentPageQuantity"
 	key "niem-profile:niem:Type" value "policyresponse:DevelopmentPolicyType"
 	key "niem-profile:niem:Property" value "policyresponse:MaximumAllowedAttachmentPageQuantity"
@@ -5075,7 +4993,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The maximum allowed number of pages in an attachment."
       end
 
@@ -5114,7 +5031,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension"
@@ -5124,7 +5041,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A structure representing a court-specific data structure passed to a particular operation on a particular MDE."
       attribute 147714 "argumentSchema"
 	public type class_ref 162818 // binary
@@ -5182,7 +5098,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:ExpirationDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/nc:Metadata/nc:Metadata/nc:ExpirationDate"
@@ -5192,7 +5108,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The date and time on which the value was or will be terminated."
       end
 
@@ -5206,7 +5121,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:MajorDesignElementTypeCode"
@@ -5216,7 +5131,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value "Genericode code list MajorDesignElementTypeCode.gc"
 	key "niem-profile:niem:CodeList" value "CourtRecord=CourtRecord MDE; CourtPolicy=Court Policy MDE; CourtScheduling=CourtScheduling MDE; FilingAssembly=FilingAssembly MDE; FilingReview=FilingReview MDE; Service=Service MDE"
-	key "niem-profile:niem:" value ""
 	comment "Name of a major design element."
       end
 
@@ -5230,7 +5144,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation"
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:OperationNameCode"
@@ -5240,7 +5154,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Name of an MDE operation."
       end
 
@@ -5255,7 +5168,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:CourtExtension"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:CanonicalURI"
@@ -5265,7 +5178,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A court extension to ECF."
       end
 
@@ -5280,7 +5192,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SchemaExtension/policyresponse:OperationNameCode"
 	key "niem-profile:niem:Type" value "policyresponse:SchemaExtensionType"
 	key "niem-profile:niem:Property" value "policyresponse:ExtensionElementName"
@@ -5290,7 +5202,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The element(s) in the extension schema that are are the root of the extension and substitute for an extension (augmentation) point."
       end
     end
@@ -5331,7 +5242,7 @@ ${members}};
 	    comment "The response to a request for a court Court Policy."
 	    classrelation_ref 156290 // developmentPolicyParameters (<directional aggregation>)
 	  b parent class_ref 137602 // DevelopmentPolicyParameters
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy"
@@ -5341,7 +5252,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 145666 "lastUpdateTime"
@@ -5354,7 +5264,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:PolicyLastUpdateDate"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/nc:Metadata/nc:LastUpdatedDate"
@@ -5364,7 +5274,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The date and time on which a court Court Policy was last revised."
       end
 
@@ -5378,7 +5287,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:PolicyVersionID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:PolicyVersionID"
@@ -5388,7 +5297,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The version of court policy reported by this message.  Up to the court to define the format of this, and describe in human-readable court policy."
       end
 
@@ -5399,7 +5307,7 @@ ${members}};
 	    comment "Within Court Policy, the policies that are accessed dynamically by applications interacting with a court."
 	    classrelation_ref 156418 // runtimePolicyParameters (<directional aggregation>)
 	  b parent class_ref 136962 // RuntimePolicyParameters
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:RuntimePolicyParameters"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:RuntimePolicy"
@@ -5409,7 +5317,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 1546242 "messageExtension"
@@ -5423,7 +5330,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:GetPolicyResponseMessageAugmentationPoint"
@@ -5433,7 +5340,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
     end
@@ -5474,7 +5380,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement"
       key "niem-profile:niem:Type" value "policyresponse:MajorDesignElementType"
       key "niem-profile:niem:Property" value ""
@@ -5484,7 +5390,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "An ECF Major Design Element (MDE)"
       attribute 11744770 "mdeLocationID"
 	public type class_ref 156162 // id
@@ -5497,7 +5402,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/polocyresponse:MajorDesignElementLocationID"
 	key "niem-profile:niem:Type" value "policyresponse:MajorDesignElementType"
 	key "niem-profile:niem:Property" value "policyresponse:MajorDesignElementLocationID"
@@ -5507,7 +5412,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The unique URL location of a major design element."
       end
 
@@ -5522,7 +5426,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/ecf:MajorDesignElementTypeCode"
 	key "niem-profile:niem:Type" value "policyresponse:MajorDesignElementType"
 	key "niem-profile:niem:Property" value "policyresponse:MajorDesignElementTypeCode"
@@ -5532,7 +5436,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "Code identifying the service interaction profile being used by the MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF."
       end
 
@@ -5543,7 +5446,7 @@ ${members}};
 	    comment "A structure containing indicators that signal support by the e-filing system for optional ECF operations. E.g. particular queries"
 	    classrelation_ref 4585218 // supportOperation (<directional aggregation>)
 	  b parent class_ref 170498 // SupportedOperations
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedOperations"
 	key "niem-profile:niem:Type" value "policyresponse:MajorDesignElementType"
 	key "niem-profile:niem:Property" value "policyresponse:SupportedOperations"
@@ -5553,7 +5456,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
 
       classrelation 4585602 // supportedMessageProfile (<directional aggregation>)
@@ -5782,7 +5684,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedCaseType"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedCaseCategories/ecf:CaseTypeCode"
@@ -5792,7 +5694,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether the e-filing system supports electronic filing of a certain case type."
       end
 
@@ -5806,7 +5707,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedCaseType"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedCaseCategories/ecf:CaseTypeCode"
@@ -5816,7 +5717,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether the e-filing system supports electronic filing of a certain case type."
       end
 
@@ -5875,7 +5775,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedMessageProfileCode"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedServiceInteractionProfiles/policyresponse:ServiceInteractionProfileCode"
@@ -5885,7 +5785,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value "Genericode code list ServiceInteractionProfileCode.gc"
 	key "niem-profile:niem:CodeList" value "urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0=ECF Web Services SIP;"
-	key "niem-profile:niem:" value ""
 	comment "An identifier, from a list of allowed values defined in the Court Filing specification, of a message profile supported by this court."
       end
     end
@@ -5900,7 +5799,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation"
       key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
       key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedOperations"
@@ -5910,7 +5809,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A structure containing indicators that signal support by the e-filing system for optional ECF operations. E.g. particular queries."
       attribute 205698 "getCalculatedFeesSupportedIndicator"
 	public explicit_type "bool"
@@ -5922,7 +5820,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedOperations/policyresponse:OperationNameCode"
@@ -5932,7 +5830,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether the e-filing system supports a certain operation."
       end
 
@@ -5946,7 +5843,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedOperations/policyresponse:OperationNameCode"
@@ -5956,7 +5853,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether the e-filing system supports a certain operation."
       end
 
@@ -6039,7 +5935,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedOperations/policyresponse:OperationNameCode"
@@ -6049,7 +5945,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether the e-filing system supports a certain operation."
       end
 
@@ -6063,7 +5958,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedOperation"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:MajorDesignElement/policyresponse:SupportedOperations/policyresponse:OperationNameCode"
@@ -6073,7 +5968,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Indicates whether the e-filing system supports a certain operation."
       end
     end
@@ -6109,7 +6003,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "policyresponse:CourtPolicyResponseMessage/policyresponse:DevelopmentPolicyParameters/policyresponse:SupportedMessageProfileCode"
 	key "niem-profile:niem:OldMultiplicity" value "1,unbounded"
 	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:SupportedSignaturesProfiles/ecf:SignatureProfileCode"
@@ -6119,7 +6013,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value "Genericode code list SignatureProfileCode.gc"
 	key "niem-profile:niem:CodeList" value "urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:ApplicationSignature-1.0=Application-Specific Document Signature Profile; urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:NullSignature-1.0=Null Document Signature Profile; urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:ProxySignature-1.0=Proxy Document Signature Profile; urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:SymmetricSignature-1.0=Symmetric Key Document Signature Profile; urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0=XML Signature Document Signature Profile"
-	key "niem-profile:niem:" value ""
 	comment "A signature profile approved for use with ECF by the OASIS LegalXML Member Section Electronic Court Filing Technical Committee that is supported by this court."
       end
     end
@@ -6157,7 +6050,7 @@ ${members}};
       mysql_decl ""
       
       associated_diagram classdiagram_ref 138498 // GetServiceInformationRequestMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "servicerequest:ServiceInformationQueryMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "serviceinformationrequest:GetServiceInformationRequestMessage"
@@ -6167,7 +6060,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A message requesting information concerning the persons entitled to services of filings in a particular court case, together with the electronic addresses and message profiles of their Filing Assembly MDEs and their physical addresses if they are not currently using a Filing Assembly MDE."
       classrelation 130050 // <generalisation>
 	relation 130050 ---|>
@@ -6230,7 +6122,7 @@ ${members}};
 	    comment "A court case."
 	    classrelation_ref 7600770 // case (<directional aggregation>)
 	  b parent class_ref 131586 // Case
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "serviceinformationrequest:GetServiceInformationRequestMessage/j:CaseNumberText"
 	key "niem-profile:niem:Type" value "serviceinformationrequest:GetServiceInformationRequestMessageType"
 	key "niem-profile:niem:Property" value "j:CaseNumberText"
@@ -6240,7 +6132,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
     end
 
@@ -6303,7 +6194,7 @@ ${members}};
       mysql_decl ""
       
       associated_diagram classdiagram_ref 138626 // GetServiceInformationResponseMessage
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "serviceresponse:ServiceInformationResponseMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "serviceinformationresponse:GetServiceInformationResponseMessage"
@@ -6313,7 +6204,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The response to a serviceInformationQueryMessage, setting forth the requested information."
       classrelation 130178 // <generalisation>
 	relation 130178 ---|>
@@ -6371,7 +6261,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:XPath" value "serviceinformationresponse:GetServiceInformationResponseMessage/serviceinformationresponse:GetServiceInformationResponseMessageAugmentationPoint"
@@ -6381,7 +6271,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension point for the enclosing message."
       end
     end
