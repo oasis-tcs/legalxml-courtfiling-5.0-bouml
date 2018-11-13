@@ -1,14 +1,12 @@
 window_sizes 2736 1699 641 2089 1406 216
 cleanlooks_style
-selected classdiagram_ref 136450 // GetFeesCalculationRequestMessage
+selected classview_ref 157186 // GetFeesCalculationRequestMessage
 open
   class_ref 129410 // FilingAssemblyMDE
-  class_ref 130434 // ServiceMDE
-  classview_ref 156162 // GetCaseListResponseMessage
-  class_ref 199554 // GetCourtScheduleResponseMessage
-  class_ref 134402 // GetFeesCalculationRequestMessage
-  classview_ref 156802 // GetPolicyResponseMessage
+  class_ref 129282 // FilingReviewMDE
   
-  package_ref 161538 // niem-profile
+  package_ref 141954 // Messages - Filing
+  
+  package_ref 181890 // Messages - Request/Response
 end
 end
