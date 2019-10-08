@@ -1,6 +1,6 @@
-format 220
+format 221
 "Messages - Filing" // UML::Messages - Filing
-  revision 352
+  revision 355
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -2484,7 +2484,7 @@ ${items}};
 	key "niem-profile:niem:Property" value "ecf:DocumentRelatedCode"
 	key "niem-profile:niem:BaseType" value "niem-xs:normalizedString"
 	key "niem-profile:niem:Multiplicity" value "1,1"
-	key "niem-profile:niem:CodeList" value "parent;prior-related;reviewed"
+	key "niem-profile:niem:CodeList" value "parent=association with a lead document;prior-related=association with a previously filed document"
 	key "niem-profile:niem:OldXPath" value "ecf:Document/ecf:DocumentMetadata/ecf:PriorRelatedDocumentID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list DocumentRelatedCode.gc"
