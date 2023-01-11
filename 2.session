@@ -1,17 +1,7 @@
-window_sizes 2736 1699 641 2089 1406 216
+window_sizes 1920 1001 516 1398 949 0
 cleanlooks_style
-diagrams
-  classdiagram_ref 136450 // GetFeesCalculationRequestMessage
-    785 353 100 Letter-Landscape 0 0
-  active  classdiagram_ref 135810 // CoreFilingMessage
-    2089 1406 100 C 0 0
-end
-selected classdiagram_ref 135810 // CoreFilingMessage
+selected 
+  package_ref 129 // legalxml-courtfiling-5.0-bouml
 open
-  classview_ref 148610 // Interfaces and Operations
-  classview_ref 156546 // CoreFilingMessage
-  class_ref 134402 // GetFeesCalculationRequestMessage
-  
-  package_ref 201602 // NIEM
 end
 end

@@ -1,7 +1,7 @@
-format 221
+format 224
 "Messages - Filing" // UML::Messages - Filing
-  revision 355
-  modified_by 2 "JamesECabral"
+  revision 356
+  modified_by 2 "jim.cabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
@@ -2008,7 +2008,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "nc:OrganizationType"
 	key "niem-profile:niem:Property" value "nc:OrganizationIdentification"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "A unique identifier for a court.  Court identifiers are established for all of the courts within a state by the highest judicial administrative authority within the state and for the federal courts by the Administrative Office of United States Courts."
@@ -3421,7 +3421,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "nc:OrganizationType"
 	key "niem-profile:niem:Property" value "nc:OrganizationIdentification"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "The unique identifier assigned by the court at the time the organization is first associated with the case.  If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this blank."
@@ -4052,7 +4052,7 @@ ${items}};
 	key "niem-profile:niem:Type" value "nc:ItemType"
 	key "niem-profile:niem:Property" value "nc:ItemOtherIdentification"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "The unique identifier assigned by the court at the time the property is first associated with the case. If the court has not yet assigned an identifier in this case, then the filing assembly MDE will leave this blank."

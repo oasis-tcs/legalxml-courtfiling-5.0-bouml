@@ -1,7 +1,7 @@
-format 221
+format 224
 "NIEM" // NIEM
-  revision 193
-  modified_by 2 "JamesECabral"
+  revision 198
+  modified_by 2 "jim.cabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
@@ -32,7 +32,7 @@ format 221
   
   package_ref 353538 // NIEMReference
 
-  package_ref 503426 // NIEMSubset
+  package_ref 542850 // NIEMSubset
 
-  package_ref 503554 // NIEMExtension
+  package_ref 542978 // NIEMExtension
 end

@@ -1,309 +1,239 @@
-format 214
+format 224
 
 classinstance 128002 class_ref 130434 // ServiceMDE
-  name ""   xyz 205.593 4.73903 2005 life_line_z 2005
-classinstance 128130 class_ref 2087554 // CourtPolicyMDE
- color blue  name ""   xyz 16.2085 4.73903 2005 life_line_z 2005
+  name ""   xyz 61.2422 4.31439 2005 life_line_z 2005
 classinstance 128258 class_ref 129410 // FilingAssemblyMDE
- color verylightorange  name ""   xyz 360.161 4.73903 2005 life_line_z 2005
+ color verylightorange  name ""   xyz 223.14 5.53892 2005 life_line_z 2005
 classinstance 128386 class_ref 129282 // FilingReviewMDE
- color lightmagenta  name ""   xyz 646.257 5.58053 2005 life_line_z 2005
+ color lightmagenta  name ""   xyz 502.175 4.31439 2005 life_line_z 2005
 classinstance 128514 class_ref 129538 // CourtRecordMDE
- color lightgreen  name ""   xyz 930.87 4.73903 2005 life_line_z 2005
+ color lightgreen  name ""   xyz 786.747 4.31439 2005 life_line_z 2005
 fragment 137346 "opt"
-  xyzwh 17.5686 44.5776 2000 1095 155
+  xyzwh 34.2525 46.7723 2000 935 153
 end
 fragment 137474 "opt"
-  xyzwh 15.5501 247.047 2000 1099 303
+  xyzwh 32.4463 245.101 2000 941 153
 end
 fragment 137602 "opt"
-  xyzwh 20.3486 745.099 2000 1087 228
-end
-durationcanvas 128642 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 473 61.2 2010 11 39
-end
-durationcanvas 128770 classinstance_ref 128130 // :CourtPolicyMDE
-  xyzwh 110 60.46 2010 11 40
+  xyzwh 31.8474 529.103 2000 926 264
 end
 durationcanvas 129154 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 103.06 2010 11 34
+  xyzwh 293 105.349 2010 11 37
 end
 durationcanvas 129282 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 103.06 2010 11 34
+  xyzwh 849 105.349 2010 11 37
 end
 durationcanvas 129666 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 160.46 2010 11 40
+  xyzwh 293 162.41 2010 11 40
 end
 durationcanvas 129794 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 162.72 2010 11 33
+  xyzwh 564 164.644 2010 11 34
 end
 durationcanvas 130178 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 473 211 2010 11 80
+  xyzwh 293 213.685 2010 11 82
 end
 durationcanvas 130306 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 221.64 2010 11 31
+  xyzwh 564 223.402 2010 11 32
 end
 durationcanvas 130690 classinstance_ref 128002 // :ServiceMDE
-  xyzwh 276 259.24 2010 11 36
+  xyzwh 106 261.063 2010 11 36
 end
 durationcanvas 131074 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 296.1 2010 11 40
+  xyzwh 293 299.108 2010 11 40
 end
 durationcanvas 131202 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 299.62 2010 11 29
+  xyzwh 564 298.594 2010 11 35
 end
 durationcanvas 131586 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 341.4 2010 11 40
+  xyzwh 293 343.002 2010 11 43
 end
 durationcanvas 131714 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 346.36 2010 11 37
-end
-durationcanvas 132098 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 396.1 2010 11 40
-end
-durationcanvas 132226 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 400.1 2010 11 31
-end
-durationcanvas 132610 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 452.32 2010 11 34
-end
-durationcanvas 132738 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 456.32 2010 11 26
-end
-durationcanvas 133506 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 603.02 2010 11 42
-end
-durationcanvas 133634 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 610.5 2010 11 31
+  xyzwh 564 347.717 2010 11 39
 end
 durationcanvas 134274 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 660.46 2010 11 40
+  xyzwh 849 480.529 2010 11 42
 end
 durationcanvas 134402 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 666.2 2010 11 29
+  xyzwh 564 480.64 2010 11 33
 end
 durationcanvas 134786 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 707.5 2010 11 37
+  xyzwh 564 555.61 2010 11 37
 end
 durationcanvas 134914 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 473 705.76 2010 11 39
-end
-durationcanvas 135298 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 757.24 2010 11 40
-end
-durationcanvas 135426 classinstance_ref 128002 // :ServiceMDE
-  xyzwh 276 764.24 2010 11 26
+  xyzwh 293 553.093 2010 11 39
 end
 durationcanvas 135810 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 811.2 2010 11 40
+  xyzwh 293 626.727 2010 11 40
 end
 durationcanvas 135938 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 816.2 2010 11 30
+  xyzwh 849 633.859 2010 11 32
 end
 durationcanvas 136322 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 869.12 2010 11 40
+  xyzwh 293 686.436 2010 11 40
 end
 durationcanvas 136450 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 873.64 2010 11 27
+  xyzwh 849 690.134 2010 11 29
 end
 durationcanvas 136834 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 474 919.12 2010 11 40
+  xyzwh 293 736.943 2010 11 40
 end
 durationcanvas 136962 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 923.64 2010 11 27
+  xyzwh 849 741.48 2010 11 28
 end
-durationcanvas 137730 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 1030 510.46 2015 11 40
+durationcanvas 138754 classinstance_ref 128258 // :FilingAssemblyMDE
+  xyzwh 293 56.2337 2015 11 40
 end
-durationcanvas 137858 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 746 509.54 2015 11 25
+durationcanvas 138882 classinstance_ref 128386 // :FilingReviewMDE
+  xyzwh 564 58.3035 2015 11 32
 end
-msg 128898 synchronous
-  from durationcanvas_ref 128642
-  to durationcanvas_ref 128770
-  yz 69 2015 msg operation_ref 128770 // "GetPolicy(in body : GetPolicyRequestMessage [1], in path: courtID : string [0..1], in path: caseType : string [0..1]) : GetPolicyResponseMessage"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 266 45
-msg 129026 return
-  from durationcanvas_ref 128770
-  to durationcanvas_ref 128642
-  yz 89 2020 unspecifiedmsg
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+durationcanvas 139266 classinstance_ref 128386 // :FilingReviewMDE
+  xyzwh 564 417.049 2015 11 40
+end
+durationcanvas 139394 classinstance_ref 128514 // :CourtRecordMDE
+  xyzwh 849 418.148 2015 11 36
+end
 msg 129410 synchronous
   from durationcanvas_ref 129154
   to durationcanvas_ref 129282
-  yz 111 2015 msg operation_ref 129666 // "GetServiceInformation(in body : GetServiceInformationRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : GetServiceInformationResponseMessage"
+  yz 114 2015 msg operation_ref 129666 // "GetServiceInformation(in body : GetServiceInformationRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : GetServiceInformationResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 598 87
+  label_xy 461 89
 msg 129538 return
   from durationcanvas_ref 129282
   to durationcanvas_ref 129154
-  yz 127 2015 unspecifiedmsg
+  yz 129 2015 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 129922 synchronous
   from durationcanvas_ref 129666
   to durationcanvas_ref 129794
-  yz 163 2015 msg operation_ref 128386 // "GetFeesCalculation(in body : GetFeesCalculationRequestMessage [1], in body : PaymentMessage [0..1], in path: courtID : string [1]) : GetFeesCalculationResponseMessage"
+  yz 166 2015 msg operation_ref 128386 // "GetFeesCalculation(in body : GetFeesCalculationRequestMessage [1], in body : PaymentMessage [0..1], in path: courtID : string [1]) : GetFeesCalculationResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 489 139
+  label_xy 351 141
 msg 130050 return
   from durationcanvas_ref 129794
   to durationcanvas_ref 129666
-  yz 184 2015 unspecifiedmsg
+  yz 187 2015 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 130434 synchronous
   from durationcanvas_ref 130178
   to durationcanvas_ref 130306
-  yz 222 2015 msg operation_ref 128130 // "ReviewFiling(in body : CoreFilingMessage [1], in body : PaymentMessage [0..1], in path: courtID : string [1]) : MessageReceiptMessage"
+  yz 224 2015 msg operation_ref 128130 // "ReviewFiling(in body : CoreFilingMessage [1..*], in body : PaymentMessage [0..1], in path: courtID : string [1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 523 197
+  label_xy 386 199
 msg 130562 return
   from durationcanvas_ref 130306
   to durationcanvas_ref 130178
-  yz 232 2020 unspecifiedmsg
+  yz 234 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 130818 synchronous
   from durationcanvas_ref 130178
   to durationcanvas_ref 130690
-  yz 265 2015 msg operation_ref 129794 // "ServeFiling(in body : CoreFilingMessage [1], in body : PaymentMessage [0..1], in path: serviceRecipientID : string [1]) : ServiceReceiptMessage"
+  yz 267 2015 msg operation_ref 129794 // "ServeFiling(in body : CoreFilingMessage [1..*], in body : PaymentMessage [0..1], in path: serviceRecipientID : string [1]) : ServiceReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 311 241
+  label_xy 166 244
 msg 130946 return
   from durationcanvas_ref 130690
   to durationcanvas_ref 130178
-  yz 281 2020 unspecifiedmsg
+  yz 283 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 131330 synchronous
   from durationcanvas_ref 131074
   to durationcanvas_ref 131202
-  yz 299 2015 msg operation_ref 128514 // "GetFilingList(in body : GetFilingListRequestMessage [1], in path: courtID : string [1]) : GetFilingListResponseMessage"
+  yz 301 2015 msg operation_ref 128514 // "GetFilingList(in body : GetFilingListRequestMessage [1], in path: courtID : string [1]) : GetFilingListResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 525 269
+  label_xy 388 272
 msg 131458 return
   from durationcanvas_ref 131202
   to durationcanvas_ref 131074
-  yz 318 2020 unspecifiedmsg
+  yz 321 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 131842 synchronous
   from durationcanvas_ref 131586
   to durationcanvas_ref 131714
-  yz 346 2015 msg operation_ref 128642 // "GetFilingStatus(in body : GetFilingStatusRequestMessage [1], in path: courtID : string [1], in path: filingID : string [1]) : GetFilingStatusResponseMessage"
+  yz 348 2015 msg operation_ref 128642 // "GetFilingStatus(in body : GetFilingStatusRequestMessage [1], in path: courtID : string [1], in path: filingID : string [1]) : GetFilingStatusResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 527 322
+  label_xy 389 325
 msg 131970 return
   from durationcanvas_ref 131714
   to durationcanvas_ref 131586
-  yz 370 2020 unspecifiedmsg
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-msg 132354 synchronous
-  from durationcanvas_ref 132098
-  to durationcanvas_ref 132226
-  yz 401 2015 msg operation_ref 156290 // "CancelFiling(in body : CancelFilingMessage [1], in path: courtID : string [1], in path: filingID : string [1]) : MessageReceiptMessage"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 528 376
-msg 132482 return
-  from durationcanvas_ref 132226
-  to durationcanvas_ref 132098
-  yz 420 2020 unspecifiedmsg
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-msg 132866 synchronous
-  from durationcanvas_ref 132610
-  to durationcanvas_ref 132738
-  yz 454 2015 msg operation_ref 169474 // "DocumentStampInformation(in body : DocumentStampInformationMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : MessageReceiptMessage"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 712 429
-msg 133378 return
-  from durationcanvas_ref 132738
-  to durationcanvas_ref 132610
-  yz 469 2020 unspecifiedmsg
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-msg 133762 synchronous
-  from durationcanvas_ref 133506
-  to durationcanvas_ref 133634
-  yz 609 2015 msg operation_ref 129026 // "RecordDocketing(in body : RecordDocketingMessage [1..*], in body : PaymentMessage [0..2], in path: courtID : string [1]) : MessageReceiptMessage"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 801 585
-msg 134146 return
-  from durationcanvas_ref 133634
-  to durationcanvas_ref 133506
-  yz 629 2020 unspecifiedmsg
+  yz 373 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 134530 synchronous
   from durationcanvas_ref 134274
   to durationcanvas_ref 134402
-  yz 666 2015 msg operation_ref 128258 // "NotifyDocketingComplete(in body : NotifyDocketingCompleteMessage [1], in body : PaymentMessage [0..1], in path: courtID : string [1], in path: filingID : string [1]) : MessageReceiptMessage"
+  yz 482 2015 msg operation_ref 128258 // "NotifyDocketingComplete(in body : NotifyDocketingCompleteMessage [1..*], in body : PaymentMessage [0..1], in path: courtID : string [1], in path: filingID : string [1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 739 642
+  label_xy 595 459
 msg 134658 return
   from durationcanvas_ref 134402
   to durationcanvas_ref 134274
-  yz 684 2015 unspecifiedmsg
+  yz 497 2015 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 135042 synchronous
   from durationcanvas_ref 134786
   to durationcanvas_ref 134914
-  yz 712 2015 msg operation_ref 128898 // "NotifyFilingReviewComplete(in body : NotifyFilingReviewCompleteMessage [1], in body : PaymentMessage [0..1], in path: courtID : string [1], in path: filingID : string [1]) : MessageReceiptMessage"
+  yz 559 2015 msg operation_ref 128898 // "NotifyFilingReviewComplete(in body : NotifyFilingReviewCompleteMessage [1..*], in body : PaymentMessage [0..1], in path: courtID : string [1], in path: filingID : string [1]) : MessageReceiptMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 469 691
+  label_xy 327 538
 msg 135170 return
   from durationcanvas_ref 134914
   to durationcanvas_ref 134786
-  yz 733 2020 unspecifiedmsg
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-msg 135554 synchronous
-  from durationcanvas_ref 135298
-  to durationcanvas_ref 135426
-  yz 764 2015 msg operation_ref 142850 // "ServeProcess(in body : CoreFilingMessage [1..*], in body : PaymentMessage [0..1], in path: serviceRecipientID : string [1]) : ServiceReceiptMessage"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 316 740
-msg 135682 return
-  from durationcanvas_ref 135426
-  to durationcanvas_ref 135298
-  yz 777 2020 unspecifiedmsg
+  yz 580 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 136066 synchronous
   from durationcanvas_ref 135810
   to durationcanvas_ref 135938
-  yz 817 2015 msg operation_ref 129154 // "GetCaseList(in body : GetCaseListRequestMessage [1]) : GetCaseListResponseMessage"
+  yz 634 2015 msg operation_ref 129154 // "GetCaseList(in body : GetCaseListRequestMessage [1]) : GetCaseListResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 642 793
+  label_xy 500 610
 msg 136194 return
   from durationcanvas_ref 135938
   to durationcanvas_ref 135810
-  yz 835 2020 unspecifiedmsg
+  yz 652 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 136578 synchronous
   from durationcanvas_ref 136322
   to durationcanvas_ref 136450
-  yz 873 2015 msg operation_ref 129282 // "GetCase(in body : GetCaseRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : GetCaseResponseMessage"
+  yz 690 2015 msg operation_ref 129282 // "GetCase(in body : GetCaseRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : GetCaseResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 659 849
+  label_xy 517 667
 msg 136706 return
   from durationcanvas_ref 136450
   to durationcanvas_ref 136322
-  yz 889 2020 unspecifiedmsg
+  yz 706 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
 msg 137090 synchronous
   from durationcanvas_ref 136834
   to durationcanvas_ref 136962
-  yz 924 2015 msg operation_ref 129410 // "GetDocument(in body : GetDocumentRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1], in path: documentID : string [1]) : GetDocumentResponseMessage"
+  yz 741 2015 msg operation_ref 129410 // "GetDocument(in body : GetDocumentRequestMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1], in path: documentID : string [1]) : GetDocumentResponseMessage"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 637 900
+  label_xy 494 717
 msg 137218 return
   from durationcanvas_ref 136962
   to durationcanvas_ref 136834
-  yz 939 2020 unspecifiedmsg
+  yz 756 2020 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-msg 137986 asynchronous
-  from durationcanvas_ref 137730
-  to durationcanvas_ref 137858
-  yz 508 2020 msg operation_ref 169602 // "NotifyDocumentStampInformation(in body : NotifyDocumentStampInformationMessage [1], in path: courtID : string [1], in path: caseTrackingID : string [1]) : MessageReceiptMessage"
+msg 139010 synchronous
+  from durationcanvas_ref 138754
+  to durationcanvas_ref 138882
+  yz 63 2020 explicitmsg "GetPolicy()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 706 484
-msg 138114 return
-  from durationcanvas_ref 137858
-  to durationcanvas_ref 137730
-  yz 523 2025 unspecifiedmsg
+  label_xy 398 46
+msg 139138 return
+  from durationcanvas_ref 138882
+  to durationcanvas_ref 138754
+  yz 77 3005 unspecifiedmsg
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-preferred_whz 1615 1278 1.38
+msg 139522 synchronous
+  from durationcanvas_ref 139266
+  to durationcanvas_ref 139394
+  yz 419 2020 explicitmsg "RecordFiling()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 664 399
+msg 139650 return
+  from durationcanvas_ref 139394
+  to durationcanvas_ref 139266
+  yz 440 2020 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+preferred_whz 0 0 1
 end

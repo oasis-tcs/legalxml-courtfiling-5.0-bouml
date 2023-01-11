@@ -1,7 +1,7 @@
-format 221
+format 224
 "legalxml-courtfiling-5.0-bouml"
-  revision 606
-  modified_by 2 "JamesECabral"
+  revision 612
+  modified_by 2 "jim.cabral"
 
 
   
@@ -45,7 +45,7 @@ format 221
   mark_for_import
   
   stereotype "toplevel"
-  ncouples 31
+  ncouples 32
   key "gxmi path" value ""
   key "gxmi no model" value "no"
   key "gxmi gen views" value "no"
@@ -58,7 +58,7 @@ format 221
   key "gxmi gen eclipse" value "no"
   key "gxmi comment exporter" value "no"
   key "gxmi linefeed" value "yes"
-  key "html dir" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\model"
+  key "html dir" value "C:\\Users\\jim.cabral\\OneDrive\\xml\\ecf5\\model"
   key "IEPDURI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0"
   key "IEPDName" value "LegalXML Electronic Court Filing Core Specification"
   key "IEPDVersion" value "5.0"
@@ -70,13 +70,14 @@ format 221
   key "IEPDEmail" value "legalxml-courtfiling-comment@lists.oasis-open.org"
   key "IEPDLicense" value "https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php"
   key "IEPDTermsOfService" value "https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php"
-  key "IEPDReadMeFile" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\ecf-v5.0-wd26.docx"
-  key "IEPDChangeLogFile" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\Change Log.doc"
+  key "IEPDReadMeFile" value "C:\\Users\\jim.cabral\\OneDrive\\xml\\ecf5\\ecf-v5.0-wd26.docx"
+  key "IEPDChangeLogFile" value "C:\\Users\\jim.cabral\\OneDrive\\xml\\ecf5\\Change Log.doc"
   key "exportHTML" value "true"
   key "exportXML" value "true"
   key "exportWSDL" value "true"
   key "exportJSON" value "true"
   key "exportOpenAPI" value "true"
+  key "exportMetamodel" value "true"
   package_ref 168066 // UML
 
   package_ref 161538 // niem-profile

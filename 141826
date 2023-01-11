@@ -1,7 +1,7 @@
-format 221
+format 224
 "Case Type Extensions" // UML::Case Type Extensions
-  revision 313
-  modified_by 2 "JamesECabral"
+  revision 314
+  modified_by 2 "jim.cabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
@@ -2017,7 +2017,7 @@ format 221
 	key "niem-profile:niem:Type" value "nc:OrganizationType"
 	key "niem-profile:niem:Property" value "nc:OrganizationIdentification, (j:OrganizationORIIdentification)"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment " ORIID of agency of charging law enforcement officer"
@@ -4425,7 +4425,7 @@ format 221
 	key "niem-profile:niem:Type" value "nc:OrganizationType"
 	key "niem-profile:niem:Property" value "nc:OrganizationIdentification, (j:OrganizationORIIdentification)"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "An alphanumeric identifier issued by the FBI to identify a specific criminal justice agency, in this instance the law enforcement agency which made the arrest. (Ex.  AZ0071300, etc.)"
@@ -4730,7 +4730,7 @@ format 221
 	key "niem-profile:niem:Type" value "nc:OrganizationType"
 	key "niem-profile:niem:Property" value "nc:OrganizationIdentification, (j:OrganizationORIIdentification)"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "Official FBI-issued identifier for a law enforcement agency."
@@ -5105,7 +5105,7 @@ format 221
 	key "niem-profile:niem:Type" value "nc:OrganizationType"
 	key "niem-profile:niem:Property" value "nc:OrganizationIdentification"
 	key "niem-profile:niem:BaseType" value "nc:IdentificationType"
-	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
 	comment "An alpha numeric identifier issued by the FBI to identify a specific criminal justice agency. In this instance the Law Enforcement Agency which booked the suspect into jail. (Ex.  AZ0071300, etc.)
@@ -7748,7 +7748,7 @@ format 221
 	key "niem-profile:niem:Type" value "nc:ObligationType"
 	key "niem-profile:niem:Property" value "nc:ObligationEntity"
 	key "niem-profile:niem:BaseType" value "nc:EntityType"
-	key "niem-profile:niem:Multiplicity" value "1,1"
+	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
       end

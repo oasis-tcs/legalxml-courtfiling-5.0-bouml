@@ -1,7 +1,7 @@
-format 221
+format 224
 "Messages - Request/Response" // UML::Messages - Request/Response
-  revision 163
-  modified_by 2 "JamesECabral"
+  revision 165
+  modified_by 2 "jim.cabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
@@ -5008,7 +5008,7 @@ ${members}};
 	mysql_decl ""
 	MysqlColumn
 	ncouples 9
-	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:FilerRequiredToServendicator"
+	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:FilerRequiredToServeIndicator"
 	key "niem-profile:niem:Type" value "policyresponse:DevelopmentPolicyType"
 	key "niem-profile:niem:Property" value "policyresponse:FilerRequiredToServeIndicator"
 	key "niem-profile:niem:BaseType" value "niem-xs:boolean"
@@ -5019,6 +5019,32 @@ ${members}};
 	key "niem-profile:niem:Notes" value ""
 	comment "Indicator whether the filer is required to serve"
       end
+
+      attribute 36109186 "requireAsynchronousResponsesIndicator"
+	public explicit_type "bool"
+	multiplicity "0,1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 182658 // get_requireAsynchronousResponsesIndicator
+	ncouples 9
+	key "niem-profile:niem:XPath" value "policyresponse:GetPolicyResponseMessage/policyresponse:DevelopmentPolicy/policyresponse:RequireAsynchronousResponsesIndicator"
+	key "niem-profile:niem:Type" value "policyresponse:DevelopmentPolicyType"
+	key "niem-profile:niem:Property" value "policyresponse:RequireAsynchronousResponesIndicator"
+	key "niem-profile:niem:BaseType" value "niem-xs:boolean"
+	key "niem-profile:niem:Multiplicity" value "0,1"
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Indicates whether all MDEs must support asynchronous responses to messages they submit."
+      end
+
     end
 
     class 137986 "ExtensionReference"

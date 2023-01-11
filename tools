@@ -6,8 +6,8 @@ tool "HTML doc. (flat, svg)" "ghtml -flat -svg" Class Operation Attribute Genera
 tool "C++ utilities" "cpp_util" Class
 tool "Global Change" "global_change" Class
 tool "Uml projection" "uml_proj" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue
-tool "Add NIEM Stereotype" "java com.mtgmc.niemtools.Main addStereotype" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue ExtraMember ClassInstance
-tool "Remove NIEM Stereotype" "java com.mtgmc.niemtools.Main removeStereotype" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue ExtraMember ClassInstance
+tool "Add NIEM Stereotype" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Main addStereotype" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue ExtraMember ClassInstance
+tool "Remove NIEM Stereotype" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Main removeStereotype" Class Operation Attribute Generalisation Realize Dependency Association DirectionalAssociation Aggregation AggregationByValue DirectionalAggregation DirectionalAggregationByValue ExtraMember ClassInstance
 tool "HTML documentation" "ghtml" State Region StateAction Initial EntryPoint Final Terminate ExitPoint DeepHistory ShallowHistory Junction Choice Fork Join Transition
 tool "HTML doc. (flat)" "ghtml -flat" State Region StateAction Initial EntryPoint Final Terminate ExitPoint DeepHistory ShallowHistory Junction Choice Fork Join Transition
 tool "HTML doc. (svg)" "ghtml -svg" State Region StateAction Initial EntryPoint Final Terminate ExitPoint DeepHistory ShallowHistory Junction Choice Fork Join Transition
@@ -34,8 +34,8 @@ tool "Check-out" "file_control co" Project Package
 tool "Deploy classes" "deplcl" Project ClassView
 tool "Global Change" "global_change" Project Package ClassView DeploymentView
 tool "Uml projection" "uml_proj" Project Package ClassView
-tool "Sort" "java com.mtgmc.niemtools.Main sort" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram
-tool "Configure NIEM modeling" "java com.mtgmc.niemtools.Main configure" Project
-tool "Import NIEM reference model" "java com.mtgmc.niemtools.Main importSchema" Project
-tool "Import NIEM mapping" "java com.mtgmc.niemtools.Main import" Project
-tool "Generate NIEM models" "java com.mtgmc.niemtools.Main export" Project
+tool "Sort" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Main sort" Project Package UseCaseView ClassView ComponentView DeploymentView UseCaseDiagram
+tool "Configure NIEM modeling" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Main configure" Project
+tool "Import NIEM reference model" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Main importSchema" Project
+tool "Import NIEM mapping" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Mainimport" Project
+tool "Generate NIEM models" "java -cp C:/Users/jim.cabral/git/niem-tools/* com.infotrack.niemtools.Main export" Project
