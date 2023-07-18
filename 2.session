@@ -1,7 +1,7 @@
-window_sizes 1920 1001 516 1398 949 0
+window_sizes 2880 1779 516 2358 1702 0
 cleanlooks_style
-selected 
-  package_ref 129 // legalxml-courtfiling-5.0-bouml
+selected sequencediagram_ref 205314 // Filing Sequence
 open
+  classview_ref 148610 // Interfaces and Operations
 end
 end

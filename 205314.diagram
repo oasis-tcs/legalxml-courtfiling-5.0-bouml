@@ -15,82 +15,82 @@ fragment 137474 "opt"
   xyzwh 32.4463 245.101 2000 941 153
 end
 fragment 137602 "opt"
-  xyzwh 31.8474 529.103 2000 926 264
+  xyzwh 28.8474 455.103 2000 931 333
 end
 durationcanvas 129154 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 105.349 2010 11 37
+  xyzwh 337 105 2010 11 37
 end
 durationcanvas 129282 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 849 105.349 2010 11 37
+  xyzwh 886 105 2010 11 37
 end
 durationcanvas 129666 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 162.41 2010 11 40
+  xyzwh 337 162 2010 11 40
 end
 durationcanvas 129794 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 164.644 2010 11 34
+  xyzwh 602 164 2010 11 34
 end
 durationcanvas 130178 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 213.685 2010 11 82
+  xyzwh 337 213 2010 11 82
 end
 durationcanvas 130306 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 223.402 2010 11 32
+  xyzwh 602 223 2010 11 32
 end
 durationcanvas 130690 classinstance_ref 128002 // :ServiceMDE
-  xyzwh 106 261.063 2010 11 36
+  xyzwh 132 261 2010 11 36
 end
 durationcanvas 131074 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 299.108 2010 11 40
+  xyzwh 337 299 2010 11 40
 end
 durationcanvas 131202 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 298.594 2010 11 35
+  xyzwh 602 298 2010 11 35
 end
 durationcanvas 131586 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 343.002 2010 11 43
+  xyzwh 337 343 2010 11 43
 end
 durationcanvas 131714 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 347.717 2010 11 39
+  xyzwh 602 347 2010 11 39
 end
 durationcanvas 134274 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 849 480.529 2010 11 42
+  xyzwh 886 480 2010 11 42
 end
 durationcanvas 134402 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 480.64 2010 11 33
+  xyzwh 602 480 2010 11 33
 end
 durationcanvas 134786 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 555.61 2010 11 37
+  xyzwh 602 555 2010 11 37
 end
 durationcanvas 134914 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 553.093 2010 11 39
+  xyzwh 337 553 2010 11 39
 end
 durationcanvas 135810 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 626.727 2010 11 40
+  xyzwh 337 626 2010 11 40
 end
 durationcanvas 135938 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 849 633.859 2010 11 32
+  xyzwh 886 633 2010 11 32
 end
 durationcanvas 136322 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 686.436 2010 11 40
+  xyzwh 337 686 2010 11 40
 end
 durationcanvas 136450 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 849 690.134 2010 11 29
+  xyzwh 886 690 2010 11 29
 end
 durationcanvas 136834 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 736.943 2010 11 40
+  xyzwh 337 736 2010 11 40
 end
 durationcanvas 136962 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 849 741.48 2010 11 28
+  xyzwh 886 741 2010 11 28
 end
 durationcanvas 138754 classinstance_ref 128258 // :FilingAssemblyMDE
-  xyzwh 293 56.2337 2015 11 40
+  xyzwh 337 56 2015 11 40
 end
 durationcanvas 138882 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 58.3035 2015 11 32
+  xyzwh 602 58 2015 11 32
 end
 durationcanvas 139266 classinstance_ref 128386 // :FilingReviewMDE
-  xyzwh 564 417.049 2015 11 40
+  xyzwh 602 417 2015 11 40
 end
 durationcanvas 139394 classinstance_ref 128514 // :CourtRecordMDE
-  xyzwh 849 418.148 2015 11 36
+  xyzwh 886 418 2015 11 36
 end
 msg 129410 synchronous
   from durationcanvas_ref 129154
