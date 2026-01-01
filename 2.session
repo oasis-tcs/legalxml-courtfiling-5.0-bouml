@@ -1,7 +1,9 @@
-window_sizes 2880 1779 516 2358 1702 0
+window_sizes 2880 1779 949 1925 1486 216
 cleanlooks_style
-selected sequencediagram_ref 205314 // Filing Sequence
+selected 
+  package_ref 201602 // NIEM
 open
-  classview_ref 148610 // Interfaces and Operations
+  
+  package_ref 135298 // Base Classes
 end
 end

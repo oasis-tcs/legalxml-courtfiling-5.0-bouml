@@ -1,7 +1,7 @@
 format 224
 "NIEMReference" // NIEM::NIEMReference
-  revision 27
-  modified_by 2 "jim.cabral"
+  revision 33
+  modified_by 2 "JamesCabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
