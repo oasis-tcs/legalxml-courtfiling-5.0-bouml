@@ -1,6 +1,6 @@
 format 224
 "Base Classes" // UML::Base Classes
-  revision 311
+  revision 312
   modified_by 2 "JamesCabral"
   // class settings
   
@@ -61,7 +61,7 @@ format 224
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "ecf:CaseFiling"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "ecf:CaseFiling"
@@ -71,7 +71,6 @@ format 224
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The core information contained in an ECF 5.0 message."
       classrelation 137730 // court (<directional aggregation>)
 	relation 137730 o-->
@@ -80,7 +79,7 @@ format 224
 	    comment "The specific entity within the judicial branch of government in which a case or document is to be filed."
 	    classrelation_ref 137730 // court (<directional aggregation>)
 	  b parent class_ref 145026 // Court
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling"
@@ -90,7 +89,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 135682 "receivedTime"
@@ -103,7 +101,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Document/nc:DocumentReceivedDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/nc:DocumentReceivedDate"
@@ -113,7 +111,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The time an MDE received a Message, on the clock of the MDE, expressed in terms of a 24 hour clock. This time should be no earlier than the ReviewFilingMessage.submissionTime."
       end
 
@@ -127,7 +124,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:CaseFiling/ecf:SendingMDELocationID, ecf:QueryMessage/ecf:SendingMDELocationID, ecf:QueryResponseMessage/ecf:SendingMDELocationID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/ecf:SendingMDELocationID"
@@ -137,7 +134,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Location for the MDE to which asynchronous and service messages can be sent. This unique location is self-assigned by the MDE."
       end
 
@@ -151,7 +147,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:CaseFiling/ecf:SendingMDEProfileCode, ecf:QueryMessage/ecf:SendingMDEProfileCode, ecf:QueryResponseMessage/ecf:SendingMDEProfileCode"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/ecf:SendingMDEProfileCode"
@@ -161,7 +157,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "Code identifying the service interaction profile being used by the sending filing assembly MDE.  This list should be extensible to accommodate future service interaction profiles. Each code value is specified within the service interaction profile approved for use with ECF."
       end
 
@@ -175,7 +170,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:Document/nc:DocumentPostDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/nc:DocumentPostDate"
@@ -185,7 +180,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The time that the message left the control of the sending MDE. In a filing this is the Filing Assembly MDE."
       end
 
@@ -199,7 +193,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:CaseFiling/nc:DocumentSubmitter/nc:EntityPerson/nc:PersonOtherIdentification, nc:EntityOrganization/nc:OrganizationOtherIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/nc:DocumentSubmitter/nc:EntityRepresentation"
@@ -209,7 +203,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A unique identifier assigned by the filing assembly MDE for the person who is managing the interface between the filer and the filing assembly MDE. This person will receive secondary service on behalf of the filer. This is also the serviceRecipientID for subsequent filings in this case, and asynchronous responses to this filing."
       end
     end
@@ -224,7 +217,7 @@ format 224
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "ecf:CallbackMessage"
@@ -234,7 +227,6 @@ format 224
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The base message for an asynchronous response to a message."
       classrelation 131202 // <generalisation>
 	relation 131202 ---|>
@@ -250,7 +242,7 @@ format 224
 	    comment "This association will always be present, except in the situation where the filing was a case initiation filing and was rejected (therefore, no case was initiated in the court record system.)"
 	    classrelation_ref 179842 // docketedCase (<directional aggregation>)
 	  b parent class_ref 146050 // DocketedCase
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/nc:Case"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/nc:Case"
@@ -260,7 +252,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 174978 "filingCompletionTime"
@@ -273,7 +264,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/ecf:FilingCompletionDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:FilingCompletionDate"
@@ -283,7 +274,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "the date and time at which the Court Record MDE filing process was completed following the acceptance by the Filing Review MDE"
       end
 
@@ -297,7 +287,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/nc:DocumentEffectiveDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/nc:DocumentEffectiveDate"
@@ -307,7 +297,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "the date and time of day on which an entry in the docket or register of action in the court CMS was completed for a filing"
       end
 
@@ -321,7 +310,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/nc:DocumentIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/nc:DocumentIdentification"
@@ -331,7 +320,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. \"Transaction\" means the sequence of messages from initial filing review through receipt of the asynchronous review callback."
       end
 
@@ -345,7 +333,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/nc:DocumentFiledDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/nc:DocumentFiledDate"
@@ -355,7 +343,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "the date of filing of a document recognized by the court in its docket entry upon acceptance of the document for entry into the court official records.  Note:  This date may be, but need to be, affixed to the document with an electronic filestamp.  There is no corresponding official hour of the filing.  The court may subsequently change the officialFilingDate by judicial order.
 "
       end
@@ -370,7 +357,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/ecf:FilingStatus/ecf:FilingReviewStatusCode"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:FilingStatus/ecf:FilingReviewStatusCode"
@@ -380,7 +367,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value "Genericode code list FilingReviewStatusCode.gc"
 	key "niem-profile:niem:CodeList" value "accepted=filing was received and accepted;  cancelled=filing was cancelled at filer's request; partially-accepted=filing was received, some documents were accepted, and some documents were rejected; received=filing has been received but not yet accepted; rejected=filing was received and completely rejected; issued=document has been issued;"
-	key "niem-profile:niem:" value ""
 	comment "Status of the filing as determined by the system sending the callback. Values: accepted, partially accepted (e.g., some documents but not others), rejected."
       end
 
@@ -394,7 +380,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/nc:DocumentStatus/nc:StatusDescriptionText"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:FilingStatus/nc:StatusDescriptionText"
@@ -404,7 +390,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A textual description of the reason for the setting of the status in the filingStatusCode."
       end
 
@@ -415,7 +400,7 @@ format 224
 	    comment "This element will be present for every connected document that is reviewed by clerk review. The filing connected document must be referenced using nc:DocumentAssociation. The clerk review results must be recorded using ecf:DocumentReviewStatus, and ecf:DocumentReviewer (optional)."
 	    classrelation_ref 215682 // reviewedConnectedDocument (<directional aggregation>)
 	  b parent class_ref 132482 // ReviewedDocument
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/ecf:ReviewedConnectedDocument"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedConnectedDocument"
@@ -425,7 +410,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 11303042 "filingStatus"
@@ -439,7 +423,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:FilingStatus"
 	key "niem-profile:niem:Type" value "ecf:CallbackMessageType"
 	key "niem-profile:niem:Property" value "ecf:FilingStatus"
@@ -449,7 +433,6 @@ format 224
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The status of a filing"
       end
 
@@ -460,7 +443,7 @@ format 224
 	    comment "This element will be present for every lead document that is reviewed by clerk review. The filing lead document must be referenced using nc:DocumentAssociation. The clerk review results must be recorded using ecf:DocumentReviewStatus, and ecf:DocumentReviewer (optional)."
 	    classrelation_ref 5326850 // reviewedLeadDocument (<directional aggregation>)
 	  b parent class_ref 132482 // ReviewedDocument
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "ecf:CallbackMessage/ecf:ReviewedLeadDocument"
 	key "niem-profile:niem:Type" value "ecf:CallbackMessageType"
 	key "niem-profile:niem:Property" value "ecf:LeadDocumentReview"
@@ -470,7 +453,6 @@ format 224
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingCallbackMessage/ecf:ReviewedLeadDocument"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 30403458 "filingDocketingStatusCode"
@@ -484,7 +466,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "ecf:ElectronicFilingCallbackMessage/ecf:FilingStatus/ecf:FilingDocketingStatusCode"
 	key "niem-profile:niem:Type" value "ecf:FilingStatusType"
 	key "niem-profile:niem:Property" value "ecf:FilingDocketingStatusCode"
@@ -495,7 +477,6 @@ format 224
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value "Genericode code list FilingDocketingStatusCode.gc"
-	key "niem-profile:niem:" value ""
 	comment "The docketing status of the filing or document	"
       end
     end
@@ -510,7 +491,7 @@ format 224
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "ecf:CaseFiling"
@@ -520,7 +501,6 @@ format 224
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The base message for a message with an asynchronous response."
       classrelation 129410 // <generalisation>
 	relation 129410 ---|>
@@ -536,7 +516,7 @@ format 224
 	    comment "Information provided by the filing assembly MDE to the court identifying the persons being served electronically with a copy of this document."
 	    classrelation_ref 137986 // electronicServiceInformation (<directional aggregation>)
 	  b parent class_ref 142466 // ElectronicServiceInformation
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingMessage/ecf:ElectronicServiceInformation"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "filing:FilingMessage/ecf:ElectronicServiceInformation"
@@ -546,7 +526,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 148354 "filingAuthorizedTime"
@@ -559,7 +538,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingMessage/nc:DocumentInformationCutOffDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/nc:DocumentInformationCutOffDate"
@@ -569,7 +548,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The time that the filer submitted the filing to the control of the filing assembly provider and authorized it for filing into the court.   At that point and time, the filer could no longer make any changes to the filing."
       end
 
@@ -583,7 +561,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:ElectronicFilingMessage/nc:DocumentIdentification"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/nc:DocumentIdentification"
@@ -593,7 +571,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "1,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "An identifier for a single electronic filing transaction assigned by the Filing Review MDE.  The identifier is unique within a court and case. \"Transaction\" means the sequence of messages from initial filing review through receipt of the asynchronous review callback."
       end
 
@@ -604,7 +581,7 @@ format 224
 	    comment "The court case associated with a filing."
 	    classrelation_ref 1268226 // case (<directional aggregation>)
 	  b parent class_ref 131586 // Case
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/nc:Case"
 	key "niem-profile:niem:Type" value "filing:FilingMessageType"
 	key "niem-profile:niem:Property" value "nc:Case"
@@ -614,7 +591,6 @@ format 224
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 15464322 "filerID"
@@ -628,7 +604,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "ecf:CaseFiling/ecf:DocumentFiler"
 	key "niem-profile:niem:Type" value "ecf:DocumentAugmentationType"
 	key "niem-profile:niem:Property" value "ecf:DocumentFiler"
@@ -638,7 +614,6 @@ format 224
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An attorney, judicial official or a pro se (self-represented) litigant who electronically provides  filings (combinations of data and documents) for acceptance and filing by a court, or who has successfully filed filings with a court."
       end
     end
@@ -653,7 +628,7 @@ format 224
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "ecf:QueryMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "ecf:RequestMessage"
@@ -663,7 +638,6 @@ format 224
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The base message for a synchronous request/query."
       classrelation 740994 // <generalisation>
 	relation 738818 ---|>
@@ -683,7 +657,7 @@ format 224
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "ecf:QueryResponseMessage"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "ecf:ResponseMessage"
@@ -693,7 +667,6 @@ format 224
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "The base message for a synchronous response to a request.
 "
       classrelation 153346 // <generalisation>
@@ -713,7 +686,7 @@ format 224
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "ecf:QueryResponseMessage/ecf:Error"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "ecf:ResponseMessage/cbrn:MessageStatus/cbrn:MessageContentError"
@@ -723,7 +696,6 @@ format 224
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A query error should be generated when:  * The query arguments are considered to be invalid by the receiver, and the query cannot be processed.  * The query represents a request for a specific data item, which cannot be retrieved. (another flavor of invalid argument) * The receiving system explicitly fails while processing the query."
       end
     end
@@ -775,7 +747,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress"
       key "niem-profile:niem:Type" value "nc:LocationType"
       key "niem-profile:niem:Property" value "nc:LocationAddressAbstract, (nc:Address)"
@@ -785,7 +757,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:AddressFullText"
       key "niem-profile:niem:OldMultiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "An address."
     end
 
@@ -799,7 +770,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "nc:Case/nc:CaseAugmentationPoint"
@@ -809,7 +780,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value "1,unbounded"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "Information defined within one of the specific case types defined in the ECF 5.0 specification -- bankruptcy, civil, criminal, domestic relations, juvenile, and traffic."
     end
 
@@ -823,7 +793,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:DateType/nc:Date"
       key "niem-profile:niem:OldMultiplicity" value "1,1"
       key "niem-profile:niem:XPath" value "nc:DateType/nc:Date"
@@ -833,7 +803,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value "1,1"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A date."
     end
 
@@ -847,7 +816,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error"
       key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
       key "niem-profile:niem:XPath" value "ecf:ResponseMessage"
@@ -857,7 +826,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "Representation of an error that occured when synchronously processing the message."
       attribute 176002 "errorCode"
 	public type class_ref 192130 // code
@@ -869,7 +837,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error/ecf:ErrorCode"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "cbrn:MessageStatus/cbrn:MessageStatusCode"
@@ -879,7 +847,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A code that uniquely identifies an error.  Allowable values set forth in court policy."
       end
 
@@ -893,7 +860,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error/ecf:ErrorDescriptionText"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:XPath" value "cbrn:MessageStatus/cbrn:MessageContentError/cbrn:ErrorDescription/cbrn:ErrorCodeDescriptionText"
@@ -903,7 +870,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A more \"user friendly\" description of the error."
       end
 
@@ -918,7 +884,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:XPath" value "cbrn:MessageStatus/cbrn:MessageContentError"
@@ -928,7 +894,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "A content error message."
       end
 
@@ -942,7 +907,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "cbrn:MessageStatus/cbrn:MessageContentError/cbrn:ErrorDescription/cbrn:ErrorCodeDescriptionText"
 	key "niem-profile:niem:Type" value "cbrn:MessageErrorType"
 	key "niem-profile:niem:Property" value "cbrn:ErrorCodeText"
@@ -952,7 +917,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "messagereceipt:MessageReceiptMessage/ecf:Error"
 	key "niem-profile:niem:OldMultiplicity" value "0,unbounded"
 	key "niem-profile:niem:Notes" value "Genericode code list ErrorCodeText.gc"
-	key "niem-profile:niem:" value ""
 	comment "A code that uniquely identifies an error.  Allowable values set forth in court policy."
       end
 
@@ -967,7 +931,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "cbrn:MessageStatus/cbrn:SystemOperatingModeCode"
 	key "niem-profile:niem:Type" value "cbrn:SystemEventType"
 	key "niem-profile:niem:Property" value "nc:SystemOperatingModeAbstract, (cbrn:SystemOperatingModeCode)"
@@ -977,7 +941,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The system environment (e.g. production, test, development) in which the error occured."
       end
     end
@@ -992,7 +955,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:Identification/nc:IdentificationID"
       key "niem-profile:niem:OldMultiplicity" value "0,1"
       key "niem-profile:niem:XPath" value "nc:Identification/nc:IdentificationID"
@@ -1002,7 +965,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "An identifier"
       attribute 9576450 "identficationSource"
 	public explicit_type "string"
@@ -1015,7 +977,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Identification/nc:IdentificationSourceText"
 	key "niem-profile:niem:Type" value "nc:IdentificationType"
 	key "niem-profile:niem:Property" value "nc:IdentificationSourceText"
@@ -1025,7 +987,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Identification/nc:IdentificationSourceText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list MajorDesignElementTypeCode.gc"
-	key "niem-profile:niem:" value ""
 	comment "The source of an identifier."
       end
 
@@ -1040,7 +1001,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction"
 	key "niem-profile:niem:Type" value "nc:IdentificationType"
 	key "niem-profile:niem:Property" value "nc:IdentificationJurisdiction"
@@ -1050,7 +1011,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The jurisdiction that issued an identifier."
       end
 
@@ -1065,7 +1025,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "citation:CaseAugmentation/j:IncidentViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction/j:JurisdictionANSID20AuthorityCode"
 	key "niem-profile:niem:Type" value "nc:JurisdictionType"
 	key "niem-profile:niem:Property" value "nc:JurisdictionAbstract,  (j:JurisdictionANSID20AuthorityCode), (nc:JurisdictionText)"
@@ -1075,7 +1035,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "citation:CitationCaseAugmentation/j:ViolatedStatuteAssociation/j:Statute/j:StatuteJurisdiction"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A code for the jurisdiction that issued an identifier."
       end
 
@@ -1090,7 +1049,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Identification/nc:IdentificationCategoryDescriptionText"
 	key "niem-profile:niem:Type" value "nc:IdentificationType"
 	key "niem-profile:niem:Property" value "nc:IdentificationCategoryDescriptionText"
@@ -1100,7 +1059,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:IdentificationCategoryName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list IdentificationCategoryName.gc"
-	key "niem-profile:niem:" value ""
 	comment "The category of an identifier."
       end
     end
@@ -1115,7 +1073,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "nc:Location"
       key "niem-profile:niem:Type" value ""
       key "niem-profile:niem:Property" value "^nc:Location"
@@ -1125,7 +1083,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value "nc:Location"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "A location."
       classrelation 3997314 // address (<directional aggregation>)
 	relation 3995138 o-->
@@ -1134,7 +1091,7 @@ ${members}};
 	    comment "An address."
 	    classrelation_ref 3997314 // address (<directional aggregation>)
 	  b parent class_ref 5308418 // Address
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:Address"
 	key "niem-profile:niem:Type" value "nc:LocationType"
 	key "niem-profile:niem:Property" value "nc:LocationAddressAbstract, (nc:Address)"
@@ -1144,7 +1101,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:Address"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
       end
 
       attribute 9754498 "name"
@@ -1158,7 +1114,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationName"
 	key "niem-profile:niem:Type" value "nc:LocationType"
 	key "niem-profile:niem:Property" value "nc:LocationName"
@@ -1168,7 +1124,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The name of a location."
       end
     end
@@ -1184,7 +1139,7 @@ ${members}};
       mysql_decl ""
       
       associated_diagram classdiagram_ref 245122 // ContactInformation
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress"
       key "niem-profile:niem:Type" value ""
       key "niem-profile:niem:Property" value "nc:Address"
@@ -1194,7 +1149,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress"
       key "niem-profile:niem:OldMultiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "A postal address."
       attribute 9585026 "recipientName"
 	public explicit_type "string"
@@ -1207,7 +1161,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:AddressRecipientName"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:AddressRecipientName"
@@ -1217,7 +1171,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:AddressRecipientName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The name of a recipient at an address."
       end
 
@@ -1232,7 +1185,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:AddressDeliveryPointID"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:AddressDeliveryPointAbstract, (nc:AddressDeliveryPointID)"
@@ -1242,7 +1195,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:AddressDeliveryPointID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A mail delivery point (e.g. mailbox number)."
       end
 
@@ -1257,7 +1209,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationCityName"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:LocationCityName"
@@ -1267,7 +1219,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCityName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A city."
       end
 
@@ -1282,7 +1233,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationCounty"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:LocationCountyAbstract, (nc:LocationCountyName)"
@@ -1292,7 +1243,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountyName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A county."
       end
 
@@ -1307,7 +1257,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationState"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:LocationState"
@@ -1317,7 +1267,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A state."
       end
 
@@ -1332,7 +1281,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationCountry"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:LocationCountry"
@@ -1342,7 +1291,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryName, nc:LocationCountryFIPS10-4Code"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A country."
       end
 
@@ -1357,7 +1305,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationPostalCode"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:LocationPostalCode"
@@ -1367,7 +1315,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateUSPostalServiceCode"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A postal code for mail delivery within a country."
       end
 
@@ -1382,7 +1329,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationPostalExtensionCode"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:LocationPostalExtensionCode"
@@ -1392,7 +1339,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationPostalExtensionCode"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A extension to a postal code."
       end
 
@@ -1414,7 +1360,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationCountry/nc:LocationCountryName"
 	key "niem-profile:niem:Type" value "nc:CountryType"
 	key "niem-profile:niem:Property" value "nc:CountryRepresentation, (nc:LocationCountryName)"
@@ -1424,7 +1370,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value "Genericode code list LocationCountryName.gc"
-	key "niem-profile:niem:" value ""
 	comment "A country."
       end
 
@@ -1439,7 +1384,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationState/nc:LocationStateName, j:LocationStateNCICLISCode"
 	key "niem-profile:niem:Type" value "nc:StateType"
 	key "niem-profile:niem:Property" value "nc:StateRepresentation, (nc:LocationStateName), (j:LocationStateNCICLISCode), (nc:LocationStateUSPostalServiceCode)"
@@ -1449,7 +1394,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStateName"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A state."
       end
 
@@ -1464,7 +1408,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationCountry/intel:LocationCountryFIPS10-4PlusNCTCCodeText"
 	key "niem-profile:niem:Type" value "nc:CountryType"
 	key "niem-profile:niem:Property" value "nc:CountryRepresentation, (intel:LocationCountryFIPS10-4PlusNCTCCodeText)"
@@ -1474,7 +1418,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationCountryFIPS10-4Code"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A country code"
       end
     end
@@ -1489,7 +1432,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationStreet"
       key "niem-profile:niem:Type" value "nc:AddressType"
       key "niem-profile:niem:Property" value "nc:AddressDeliveryPointAbstract, (nc:LocationStreet)"
@@ -1499,7 +1442,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStreet"
       key "niem-profile:niem:OldMultiplicity" value "0,1"
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "A street address."
       attribute 9584642 "fullAddress"
 	public explicit_type ""
@@ -1512,7 +1454,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationStreet/nc:StreetFullText"
 	key "niem-profile:niem:Type" value "nc:AddressType"
 	key "niem-profile:niem:Property" value "nc:AddressFullText"
@@ -1522,7 +1464,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStreet/nc:StreetFullText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A complete street address."
       end
 
@@ -1537,7 +1478,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationAddress/nc:LocationStreet/nc:StreetNumberText"
 	key "niem-profile:niem:Type" value "nc:StreetType"
 	key "niem-profile:niem:Property" value "nc:StreetNumberText"
@@ -1547,7 +1488,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStreet/nc:StreetNumberText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A number of a location on a street."
       end
 
@@ -1562,7 +1502,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Location/nc:LocationStreet/nc:StreetPredirectionalText, nc:StreetName, nc:StreetCategoryText, nc:StreetPostdirectionalText, nc:StreetExtensionText"
 	key "niem-profile:niem:Type" value "nc:StreetType"
 	key "niem-profile:niem:Property" value "nc:StreetFullText, nc:StreetPredirectionalText, nc:StreetName, nc:StreetCategoryText, nc:StreetPostdirectionalText, nc:StreetExtensionText"
@@ -1572,7 +1512,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Location/nc:LocationAddress/nc:StructuredAddress/nc:LocationStreet/nc:StreetPredirectionalText, nc:StreetName, nc:StreetCategoryText, nc:StreetPostdirectionalText, nc:StreetExtensionText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "The name of a street."
       end
 
@@ -1595,7 +1534,7 @@ ${members}};
       mysql_decl ""
       
       associated_diagram classdiagram_ref 245122 // ContactInformation
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value ""
       key "niem-profile:niem:Type" value ""
       key "niem-profile:niem:Property" value ""
@@ -1605,7 +1544,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "A telephone number."
       attribute 9575042 "fullTelephoneNumber"
 	public explicit_type ""
@@ -1618,7 +1556,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:FullTelephoneNumber/nc:TelephoneNumberFullID"
 	key "niem-profile:niem:Type" value "nc:FullTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneNumberFullID"
@@ -1628,7 +1566,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:FullTelephoneNumber/nc:TelephoneNumberFullID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A complete telephone number"
       end
 
@@ -1643,7 +1580,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:FullTelephoneNumber/nc:TelephoneSuffixID"
 	key "niem-profile:niem:Type" value "nc:FullTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneSuffixID"
@@ -1653,7 +1590,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:FullTelephoneNumber/nc:TelephoneSuffixID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A telephone extension."
       end
 
@@ -1668,7 +1604,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber"
 	key "niem-profile:niem:Type" value "nc:TelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneNumberAbstract, (nc:NANPTelephoneNumber), (nc:FullTelephoneNumber)"
@@ -1678,7 +1614,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A North American Numbering Plan (NANP) telephone number."
       end
 
@@ -1693,7 +1628,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber"
 	key "niem-profile:niem:Type" value "nc:TelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneNumberAbstract, (nc:InternationalTelephoneNumber)"
@@ -1703,7 +1638,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An international telephone number."
       end
 
@@ -1718,7 +1652,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber/nc:TelephoneNumberID"
 	key "niem-profile:niem:Type" value "nc:InternationalTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneNumberID"
@@ -1728,7 +1662,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber/nc:TelephoneNumberID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An international telephone number without country prefix."
       end
 
@@ -1743,7 +1676,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber/nc:TelephoneCountryCodeID"
 	key "niem-profile:niem:Type" value "nc:InternationalTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneCountryCodeID"
@@ -1753,7 +1686,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber/nc:TelephoneCountryCodeID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A telephone prefix for a country."
       end
 
@@ -1768,7 +1700,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber/nc:TelephoneSuffixID"
 	key "niem-profile:niem:Type" value "nc:InternationalTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneSuffixID"
@@ -1778,7 +1710,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:InternationalTelephoneNumber/nc:TelephoneSuffixID"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension to an interational telephone number."
       end
 
@@ -1793,7 +1724,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneAreaCodeID"
 	key "niem-profile:niem:Type" value "nc:NANPTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneAreaCodeID"
@@ -1803,7 +1734,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneAreaCodeID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A North American Numbering Plan (NANP) telephone area code."
       end
 
@@ -1818,7 +1748,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneExchangeID"
 	key "niem-profile:niem:Type" value "nc:NANPTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneExchangeID"
@@ -1828,7 +1758,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneExchangeID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A North American Numbering Plan (NANP) telephone exchange number."
       end
 
@@ -1843,7 +1772,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneLineID"
 	key "niem-profile:niem:Type" value "nc:NANPTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneLineID"
@@ -1853,7 +1782,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneLineID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A North American Numbering Plan (NANP) telephone line number."
       end
 
@@ -1868,7 +1796,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneSuffixID"
 	key "niem-profile:niem:Type" value "nc:NANPTelephoneNumberType"
 	key "niem-profile:niem:Property" value "nc:TelephoneSuffixID"
@@ -1878,7 +1806,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:ContactInformation/nc:ContactTelephoneNumber/nc:NANPTelephoneNumber/nc:TelephoneSuffixID"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "An extension to a North American Numbering Plan (NANP) telephone number."
       end
     end
@@ -1893,7 +1820,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:OldXPath" value "nc:DateRange"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:XPath" value "nc:DateRange"
@@ -1903,7 +1830,6 @@ ${members}};
       key "niem-profile:niem:Multiplicity" value ""
       key "niem-profile:niem:Notes" value ""
       key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:" value ""
       comment "A period of time bounded by upper and lower (to and from) dates/times."
       attribute 138370 "fromTime"
 	public type class_ref 156034 // dateTime
@@ -1915,7 +1841,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:DateRange/nc:StartDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:DateRange/nc:StartDate"
@@ -1925,7 +1851,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The beginning time, in the time zone of the court on the beginning date."
       end
 
@@ -1939,7 +1864,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:OldXPath" value "nc:DateRange/nc:EndDate"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:XPath" value "nc:DateRange/nc:EndDate"
@@ -1949,7 +1874,6 @@ ${members}};
 	key "niem-profile:niem:Multiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
 	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:" value ""
 	comment "The ending time, in the time zone of the court on the ending date.
 "
       end
@@ -1975,7 +1899,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value "nc:Amount"
       key "niem-profile:niem:Type" value ""
       key "niem-profile:niem:Property" value ""
@@ -1985,7 +1909,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value "nc:Amount"
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "A monetary amount"
       attribute 11651458 "amountValue"
 	public explicit_type ""
@@ -1998,7 +1921,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Amount"
 	key "niem-profile:niem:Type" value "nc:AmountType"
 	key "niem-profile:niem:Property" value "nc:Amount"
@@ -2008,7 +1931,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Amount"
 	key "niem-profile:niem:OldMultiplicity" value "1,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A decimal amount."
       end
 
@@ -2023,7 +1945,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "nc:Amount/nc:CurrencyCode, nc:CurrencyText"
 	key "niem-profile:niem:Type" value "nc:AmountType"
 	key "niem-profile:niem:Property" value "nc:CurrencyAbstract, (nc:CurrencyCode), (nc:CurrencyText)"
@@ -2033,7 +1955,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value "nc:Amount/nc:currencyCode, nc:Amount/nc:currencyText"
 	key "niem-profile:niem:OldMultiplicity" value "0,1"
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A type of monetary currency."
       end
     end
@@ -2048,7 +1969,7 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
+      ncouples 9
       key "niem-profile:niem:XPath" value ""
       key "niem-profile:niem:Type" value "c:TextType"
       key "niem-profile:niem:Property" value ""
@@ -2058,7 +1979,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:" value ""
       comment "A data type for a code with codes sourced from an external code list"
       attribute 144863746 "TextLiteral"
 	public explicit_type "string"
@@ -2071,7 +1991,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value "c:TextType"
 	key "niem-profile:niem:Property" value "c:TextLiteral"
@@ -2081,7 +2001,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A code value with codes sourced from an external code list"
       end
 
@@ -2096,7 +2015,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "cli:@codeListColumnName"
 	key "niem-profile:niem:Type" value "c:TextType"
 	key "niem-profile:niem:Property" value "cli:@codeListColumnName"
@@ -2106,7 +2025,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A local name for a code list column within a code list."
       end
 
@@ -2121,7 +2039,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "cli:@codeListConstrainingIndicator"
 	key "niem-profile:niem:Type" value "c:TextType"
 	key "niem-profile:niem:Property" value "cli:@codeListConstrainingIndicator"
@@ -2131,7 +2049,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "True if a code list binding constrains the validity of a code list value; false otherwise."
       end
 
@@ -2146,7 +2063,7 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
+	ncouples 9
 	key "niem-profile:niem:XPath" value "cli:@codeListURI"
 	key "niem-profile:niem:Type" value "c:TextType"
 	key "niem-profile:niem:Property" value "cli:@codeListURI"
@@ -2156,7 +2073,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:" value ""
 	comment "A universal identifier for a code list."
       end
     end
@@ -2171,8 +2087,8 @@ ${members}};
       explicit_switch_type ""
       mysql_decl ""
       
-      ncouples 10
-      key "niem-profile:niem:" value ""
+      ncouples 9
+      key "niem-profile:niem:CodeList" value ""
       key "niem-profile:niem:XPath" value ""
       key "niem-profile:niem:Type" value "c:NormalizedStringType"
       key "niem-profile:niem:Property" value ""
@@ -2181,7 +2097,6 @@ ${members}};
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      key "niem-profile:niem:CodeList" value ""
       comment "A data type for a code with codes sourced from an external code list"
       attribute 186423554 "NormalizedStringLiteral"
 	public explicit_type "string"
@@ -2194,8 +2109,8 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
-	key "niem-profile:niem:" value ""
+	ncouples 9
+	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value "c:NormalizedStringType"
 	key "niem-profile:niem:Property" value "c:NormalizedStringLiteral"
@@ -2204,7 +2119,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
 	comment "A code value with codes sourced from an external code list"
       end
 
@@ -2219,8 +2133,8 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
-	key "niem-profile:niem:" value ""
+	ncouples 9
+	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:XPath" value "cli:@codeListColumnName"
 	key "niem-profile:niem:Type" value "c:NormalizedStringType"
 	key "niem-profile:niem:Property" value "cli:@codeListColumnName"
@@ -2229,7 +2143,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
 	comment "A local name for a code list column within a code list."
       end
 
@@ -2244,8 +2157,8 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
-	key "niem-profile:niem:" value ""
+	ncouples 9
+	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:XPath" value "cli:@codeListConstrainingIndicator"
 	key "niem-profile:niem:Type" value "c:NormalizedStringType"
 	key "niem-profile:niem:Property" value "cli:@codeListConstrainingIndicator"
@@ -2254,7 +2167,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
 	comment "True if a code list binding constrains the validity of a code list value; false otherwise."
       end
 
@@ -2269,8 +2181,8 @@ ${members}};
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	ncouples 10
-	key "niem-profile:niem:" value ""
+	ncouples 9
+	key "niem-profile:niem:CodeList" value ""
 	key "niem-profile:niem:XPath" value "cli:@codeListURI"
 	key "niem-profile:niem:Type" value "c:NormalizedStringType"
 	key "niem-profile:niem:Property" value "cli:@codeListURI"
@@ -2279,7 +2191,6 @@ ${members}};
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	key "niem-profile:niem:CodeList" value ""
 	comment "A universal identifier for a code list."
       end
     end

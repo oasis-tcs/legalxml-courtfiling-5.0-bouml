@@ -1,9 +1,9 @@
-window_sizes 2880 1779 949 1925 1486 216
+window_sizes 2852 1751 949 1897 1458 216
 cleanlooks_style
 selected 
   package_ref 201602 // NIEM
 open
   
-  package_ref 135298 // Base Classes
+  package_ref 168066 // UML
 end
 end

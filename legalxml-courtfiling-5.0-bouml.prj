@@ -1,6 +1,6 @@
 format 224
 "legalxml-courtfiling-5.0-bouml"
-  revision 614
+  revision 615
   modified_by 2 "JamesCabral"
 
 
@@ -45,7 +45,7 @@ format 224
   mark_for_import
   
   stereotype "toplevel"
-  ncouples 72
+  ncouples 64
   key "gxmi path" value ""
   key "gxmi no model" value "no"
   key "gxmi gen views" value "no"
@@ -65,21 +65,14 @@ format 224
   key "IEPDStatus" value "Working Draft"
   key "IEPDOrganization" value "OASIS LegalXML Electronic Court Filing Technical Committee"
   key "IEPDContact" value "https://www.oasis-open.org/committees/legalxml-courtfiling"
-  key "ignorePrefixes" value "cac,cbc,ds"
-  key "externalSchemas" value ""
   key "IEPDEmail" value "legalxml-courtfiling-comment@lists.oasis-open.org"
   key "IEPDLicense" value "https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php"
   key "IEPDTermsOfService" value "https://www.oasis-open.org/committees/legalxml-courtfiling/ipr.php"
   key "IEPDReadMeFile" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\ecf-v5.0-wd26.docx"
   key "IEPDChangeLogFile" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\ecf5\\Change Log.doc"
-  key "exportHTML" value "true"
-  key "exportXML" value "true"
-  key "exportWSDL" value "true"
-  key "exportJSON" value "true"
-  key "exportOpenAPI" value "true"
   key "ExportProjectDir" value "C:\\Users\\JamesCabral\\OneDrive\\xml\\ecf5"
   key "niem-mapping" value "C:/Users/JamesCabral/OneDrive/xml/ecf5/model/niem-mapping.csv"
-  key "ExportExternalSchemas" value "cac=urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/common/UBL-CommonAggregateComponents-2.2.xsd=ubl/UBL-CommonAggregateComponents-2.2.xsd,cbc=urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/common/UBL-CommonBasicComponents-2.2.xsd=ubl/UBL-CommonBasicComponents-2.2.xsd,ds=http://www.w3.org/2000/09/xmldsig#=http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd=xmlsig/xmldsig-core-schema.xsd,xcal=urn:ietf:params:xml:ns:icalendar-2.0=https://docs.oasis-open.org/ws-calendar/ws-calendar-spec/v1.0/cs01/xsd/iCalendar.xsd=ws-calendar/iCalendar.xsd,xmlsig=urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0=https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.01/csd03/schema/xmlsig/ecf-v3.0-xmlsig.xsd=xmlsig/ecf-v3.0-xmlsig.xsd"
+  key "ExportExternalSchemas" value "cac=urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/common/UBL-CommonAggregateComponents-2.2.xsd=ubl/UBL-CommonAggregateComponents-2.2.xsd,cbc=urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2=http://docs.oasis-open.org/ubl/os-UBL-2.2/xsd/common/UBL-CommonBasicComponents-2.2.xsd=ubl/UBL-CommonBasicComponents-2.2.xsd,ds=http://www.w3.org/2000/09/xmldsig#=http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd=ubl/UBL-xmldsig-core-schema-2.2.xsd,xcal=urn:ietf:params:xml:ns:icalendar-2.0=https://docs.oasis-open.org/ws-calendar/ws-calendar-spec/v1.0/cs01/xsd/iCalendar.xsd=ws-calendar/iCalendar.xsd,xmlsig=urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:XMLSignature-1.0=https://docs.oasis-open.org/legalxml-courtfiling/ecf/v5.01/csd03/schema/xmlsig/ecf-v3.0-xmlsig.xsd=xmlsig/ecf-v3.0-xmlsig.xsd"
   key "ImportExcludeCodes" value "ag_codes,apco_event,atf,post-canada,census_commodity,census_uscounty,dea_ctlsub,dod_jcs-pub2.0,dol_soc,dot_hazmat,have-codes,edxl_rm,fbi_cjis,fbi_ndex,fbi_nibrs,fips_5-2,genc,hl7,it_codes,jc3iedm,jp3-52,nga_datum,nlets,occs_facility,pmise_sar,usda_fsa,xCard"
   key "ExportCMFTooltoJSON" value "cmftool.bat m2jmsg -o"
   key "ExportCMFtoXSDModel" value "true"
@@ -92,7 +85,7 @@ format 224
   key "ExportURI" value "https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0"
   key "ImportReferenceModelDir" value "C:\\Users\\JAMESC~1\\AppData\\Local\\Temp\\\\niem-model-4.1"
   key "ExportXSDModelDir" value "schema"
-  key "ImportMaxFacets" value "2000"
+  key "ImportMaxFacets" value ""
   key "ExportHTML" value "true"
   key "ExportXMLDir" value "xml\\examples"
   key "ExportXSDDir" value "xml/schema"
@@ -108,12 +101,11 @@ format 224
   key "ImportExcludeDomains" value ""
   key "ExportXSD" value "true"
   key "ExportCodeListsDir" value "codelists"
-  key "ExportOpenAPIDir" value "json"
+  key "ExportOpenAPIDir" value "json\\openapi"
   key "ExportWantlistFile" value "model/wantlist"
   key "ImportCodeDescriptions" value "true"
   key "ExportWSDLDir" value "xml\\wsdl"
   key "IEPDConformanceFile" value "conformance-assertion.pdf"
-  key "C:/Users/JamesCabral/OneDrive/xml/ecf5/model/niem-mapping.csv" value "C:\\Users\\JamesCabral\\OneDrive\\xml\\ecf5\\model\\niem-mapping.csv"
   key "ExportAttribution" value "<!--
      Electronic Court Filing Version 5.0
      Committee Specification 01
